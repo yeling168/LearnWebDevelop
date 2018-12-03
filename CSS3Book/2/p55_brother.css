@@ -1,0 +1,7 @@
+li + li {
+    font-weight: bold;
+}
+
+ol + ul {
+    color: red;
+}

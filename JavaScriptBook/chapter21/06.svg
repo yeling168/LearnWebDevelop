@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/2000/svg">
+    <!--声明HTML作为默认的命名空间，以"svg:"前缀的为SVG的命名空间-->
+    <body>
+        This is a red square:<svg width="10" height="10">
+            <svg:rect x="0" y="0" width="10" height="10" fill="red"/>
+        </svg>
+        This is a blue circle:<svg width="10" height="10">
+        <svg:circle cx="5" cy="5" r="5" fill="blue"/>
+        </svg>
+    </body>
+</html>
+
+http://www.w3school.com.cn/svg/svg_example.asp

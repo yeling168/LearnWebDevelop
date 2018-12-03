@@ -1,0 +1,9 @@
+p {
+    text-decoration: underline;
+    color: black;
+}
+
+strong {
+    text-decoration: underline overline line-through;
+    color: gray;
+}

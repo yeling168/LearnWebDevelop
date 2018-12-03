@@ -1,0 +1,11 @@
+p {
+    font-size: medium;
+}
+
+strong, em {
+    font-size: larger;
+}
+
+h1 {
+    font-size: xx-large;
+}

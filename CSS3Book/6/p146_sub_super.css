@@ -1,0 +1,7 @@
+span.raise {
+    vertical-align: super;
+}
+
+span.lower {
+    vertical-align: sub;
+}

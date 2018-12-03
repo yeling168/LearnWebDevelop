@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            //关心一些UI细节
+            var nick = prompt("Enter your nickname");
+            var input = document.getElementById("input");
+            input.focus();//设置光标
+
+            //打开一个WebSocket,用于发送和接收聊天消息
+            //假设下载的HTTP服务器作为WebSocket服务器运作，并且使用同样的主机名和端口
+            //只是协议由http://变成ws://
+
+            var socket = new WebSocket("ws://" + location.host + "/");
+
+            //下面展示了如何通过WebSocket从服务器获取消息
+            socket.onmessage = function (event) {
+                var msg = event.data;
+                var node = document.createTextNode(msg);
+                var div = document.createElement("div");
+                div.appendChild(node);
+                document.body.insertBefore(div, input);//在input前添加该div
+                input.scrollIntoView();//确保输入框可见
+            }
+
+            //下面展示了如何通过WebSocket发送消息给服务器端
+            input.onchange = function () {
+                var msg = nick + ":" + input.value;
+                socket.send(msg);
+                input.value = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input id="input" style="width:100%">
+</body>
+
+</html>

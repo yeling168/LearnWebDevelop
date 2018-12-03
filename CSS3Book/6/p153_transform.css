@@ -1,0 +1,15 @@
+h1 {
+    text-transform: capitalize;
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+p.cumming {
+    text-transform: lowercase;
+}
+
+p.raw {
+    text-transform: none;
+}

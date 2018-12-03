@@ -1,0 +1,9 @@
+p:before {
+    content: "hhh";
+    color: red;
+}
+
+h2:after {
+    content: "after";
+    background-color: green;
+}

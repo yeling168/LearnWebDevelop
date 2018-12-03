@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //独立的对象，建2个一个xiaowang一个xiaoli
+        //让xiaoli跟xiaowang通过门铃进行通信
+        //先看一下xiaowang家有没有门，如果有门直接通过门铃通讯didi，如果没有门先建门
+        //两个单例之间看是通讯
+        var xiaowang = (function (argument /*可选*/ ) {
+            var men;
+            var xiaowangjia = function (msg) {
+                //this指向window对象
+                this.menling = msg;
+            };
+            //测试this,调用xiaowangjia();
+            var info = {
+                sendMessage: function (msg) {
+                    if (!men) {
+                        men = new xiaowangjia(msg);
+                    }
+                    return men;
+                },
+                abc: function () {
+                    return 123;
+                }
+            };
+            return info;
+        })();
+        var xiaoli = {
+            callXiaowang: function (msg) {
+                var _xw = xiaowang.sendMessage(msg);
+                alert(_xw.menling); //输出didi
+                console.log(_xw.menling); //输出didi
+                _xw = null; //等待垃圾回收
+
+                var abc = xiaowang.abc();
+                console.log(abc); //输出123
+            }
+        }
+        xiaoli.callXiaowang("didi");
+    </script>
+</body>
+
+</html>

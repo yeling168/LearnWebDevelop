@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function fileinfo(files){
+            for(var i=0;i<files.length;i++){
+                var f=files[i];
+                console.log(f);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="file" accept="image/*" multiple onchange="fileinfo(this.files)"/>
+</body>
+</html>

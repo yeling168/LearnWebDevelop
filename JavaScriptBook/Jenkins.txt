@@ -1,0 +1,15 @@
+�û���:study0918
+����lixiang19901104
+ȫ��:study0918
+�����ʼ���ַ:664815062@qq.com
+Jenkins URL:http://localhost:8080/
+
+https://blog.csdn.net/u011904605/article/details/54590383
+https://www.cnblogs.com/weschen/p/6867885.html
+https://blog.csdn.net/boling_cavalry/article/details/78943061
+
+Jenkins token:f5c41fb7c83430663552e77fd79622bfb07c4ca3
+
+http://192.168.0.100:8080/
+
+https://www.jianshu.com/p/63912e2b6cd4

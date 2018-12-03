@@ -1,0 +1,13 @@
+p {
+    font-size: 14px;
+    line-height: 1em;
+}
+
+a:link {
+    border: 5px solid blue;
+}
+
+big {
+    font-size: 250%;
+    line-height: 1em;
+}

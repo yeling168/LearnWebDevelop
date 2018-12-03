@@ -1,0 +1,69 @@
+:q!不保存强行退出
+:wq保存且退出
+x保存退出
+x只有在真正修改了文档内容才会更新最新修改时间
+wq每次都会更新最新修改时间
+返回上一级目录 cd ..
+返回根目录 cd /
+也可以返回上一级目录 ..
+全局搜索upstream.json 文件:find . -name upstream.json(在当前目录下查找)
+find / -name upstream.json
+模糊匹配：find / -name domain*
+cd /opt/oss/envs/Product-BasicWebsite/20180721191236170/etc/sysconf 
+cd /opt/oss/envs/
+实时查看日志文件 tail -f access_er.log
+通过 cd /回到根目录查看进程：ps –ef |grep eviewwebsite
+备份文件：cp -r [文件名] [备份后的文件名] 如:cp -r upload upload01
+移除某个文件夹下面的所有文件，先cd到该文件夹:执行 rm -rf *
+一次显示整个文件,用cat命令，比如:cat global_process_infos.json
+总线日志：/opt/oss/log/SOP/ERService/nginx 
+切换到root用户  su root此时需要输入后台密码
+切换为su ossadm
+upstream.json记录路由信息
+shift+g跳转到最后
+date输出当前时间
+source命令:读入该路径下的shell文件并依次执行文件中的所有语句
+su ossadm
+source /opt/oss/manager/agent/bin/engr_profile.sh
+ipmc_adm -cmd restartapp -app
+
+
+ipmc_adm -cmd startnode开启服务
+ipmc_adm -cmd stopnode停止服务
+
+查看app状态：ipmc_adm -cmd statusapp
+这个是什么意思？history |grep standby
+zgrep过滤当日日志
+bash status.sh
+在当前目录下备份一个文件：cp eViewBasic.js ./eViewBasic.js.bak
+在当前目录的上一级目录备份一个文件:cp eViewBasic.js ../eViewBasic.js.bak 
+改变指定文件的用户属组:chown ossuser:ossgroup eViewBasic.js.bak
+重命名某个文件：rename eViewBasic.js.bak eView.js eViewBasic.js.bak
+要想保证重命名的文件也能像https://10.248.194.165:31945/eviewwebsite/release/eView.js被读取到，需要保证命名后的文件eView.js和eViewBasic.js的属组一样，比如eViewBasic.js的属组为
+
+ossadm，需要通过chown ossadm:ossgroup eView.js改变eView.js的属组，其中chown后的一个参数为属组(:前面那个，比如ossadm属组，ossuser属组)
+删除文件：rm eView.js.bak
+新建一个文件:touch eViewBasic.js  然后输入vi eViewBasic.js表示在vim中编辑，输入i进入编辑模式，编辑完之后按下esc退出编辑，再输入:wq保存并退出
+如何打开一个文件并搜索文件中的关键字并修改？
+打开文件后使用 /搜索
+连接ssh -v -p 32038 10.248.194.165
+df -hl查看硬盘空间
+指定展示某一部分列表
+ll wtmp-201808*
+
+access_er.log：
+客户端ip、请求返回时间点、请求类型和请求url、响应码、请求body大小(byte)、引用http请求完整url路径、请求RouterID、完成请求所使用时间(s)
+
+本机调用：
+su ossadm
+. /opt/oss/manager/bin/engr_profile.sh 
+python
+
+Python 2.7.12 (default, May 19 2017, 18:16:36) 
+[GCC 4.8.4] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import util.httpclient
+>>> client = util.httpclient.CommonHttpClient("127.0.0.1",31806, isHttps = True, gzip=True)
+>>> client.get('/eviewwebsite/release/eViewBasic.js?v=testwithpython')
+
+退出输入exit

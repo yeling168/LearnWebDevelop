@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    This is a red square:
+    <canvas id="my_canvas_id" width="10" height="10"></canvas>
+    <script>
+        var canvas = document.getElementById("my_canvas_id");
+        var c = canvas.getContext('2d');
+        c.beginPath();
+        c.moveTo(100, 200);
+        c.lineTo(200, 200);
+        c.lineTo(100, 200);
+        c.fill();
+        c.stroke();
+    </script>
+</body>
+
+</html>

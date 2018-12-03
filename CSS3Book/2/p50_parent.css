@@ -1,0 +1,7 @@
+h1 em, ul ul em {
+    color: gray;
+}
+
+h1 > strong {
+    color: red;
+}

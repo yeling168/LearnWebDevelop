@@ -1,0 +1,6 @@
+strong {
+    border-top: 10px solid green;
+    border-bottom: 5px solid gray;
+    border-left: 10px double gray;
+    background-color: silver;
+}

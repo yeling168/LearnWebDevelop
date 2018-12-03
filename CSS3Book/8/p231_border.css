@@ -1,0 +1,7 @@
+a img {
+    width: 300px;
+    height: 300px;
+    border-style: outset solid dashed dotted;
+    border-color: red green black;
+    border-width: 5px;
+}

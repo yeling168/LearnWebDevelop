@@ -1,0 +1,10 @@
+img {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+p {
+    text-indent: -25px;
+    /*padding-left: 4em;*/
+}

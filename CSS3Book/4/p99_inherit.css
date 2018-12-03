@@ -1,0 +1,8 @@
+#toolbar {
+    background: blue;
+    color: white;
+}
+
+#toolbar a {
+    color: inherit;
+}

@@ -1,0 +1,21 @@
+ul li {
+    display: inline-block;
+    width: 70px;
+    border-right: 1px solid;
+}
+
+/*ul li:first-child {*/
+/*border-left: 1px solid;*/
+/*}*/
+
+ul li:last-child {
+    border-right: none;
+}
+
+ul {
+    border: 1px solid;
+    width: 400px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}

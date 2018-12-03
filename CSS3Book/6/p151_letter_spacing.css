@@ -1,0 +1,11 @@
+p {
+    letter-spacing: 0;
+}
+
+p.spacious {
+    letter-spacing: 0.25em;
+}
+
+p.tight{
+    letter-spacing: -0.25em;
+}

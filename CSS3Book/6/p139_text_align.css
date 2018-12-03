@@ -1,0 +1,19 @@
+div {
+    width: 600px;
+}
+
+p.one {
+    text-align: left;
+}
+
+p.two {
+    text-align: center;
+}
+
+p.three {
+    text-align: right;
+}
+
+p.four {
+    text-align: justify;
+}

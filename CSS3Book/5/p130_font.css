@@ -1,0 +1,11 @@
+h1, h2, h3 {
+    font: italic normal small-caps 250% sans-serif;
+}
+
+h2 {
+    font: 200% sans-serif;
+}
+
+h3 {
+    font-size: 150%;
+}

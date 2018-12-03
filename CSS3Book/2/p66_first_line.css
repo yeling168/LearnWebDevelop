@@ -1,0 +1,8 @@
+:first-letter {
+    font-size: 200%;
+    color: red;
+}
+
+p:first-line {
+    color: green;
+}

@@ -1,0 +1,7 @@
+h1 {
+    font-variant: small-caps;
+}
+
+h1 code, p {
+    font-variant: normal;
+}

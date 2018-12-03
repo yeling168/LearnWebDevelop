@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.工厂应该有厂长来决定到底运行哪条产品线
+        //2.消费类->>子类
+        var gongchang = {};
+        gongchang.chanyifu = function () {
+            //this指向gongchang这个对象
+            this.gongren = 50;
+            alert("我们有" + this.gongren);
+        }
+        gongchang.chanxie = function () {
+            this.gongren = 100;
+            alert("产鞋子");
+        }
+        gongchang.yunshu = function () {
+            this.gongren = 10;
+            alert("运输");
+        }
+        gongchang.changzhang = function (para) {
+            return new gongchang[para]();
+        }
+        var me = gongchang.changzhang("chanxie");
+        alert(me.gongren);
+        //调用该方法:gongchang.chanyifu();
+    </script>
+</body>
+
+</html>

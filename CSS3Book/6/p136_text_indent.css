@@ -1,0 +1,8 @@
+body p {
+    text-indent: 3em;
+}
+
+p {
+    text-indent: -3em;
+    padding-left: 3em;
+}

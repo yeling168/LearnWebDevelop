@@ -1,0 +1,21 @@
+div.one {
+    height: auto;
+    background: silver;
+}
+
+div.one p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+div.two {
+    height: auto;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    background: silver;
+}
+
+div.two p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

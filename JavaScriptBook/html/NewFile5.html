@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+<div class='form-group'>
+  <label class='control-label'>图片</label>
+  <br/>
+  <input type='text' name='textfield' id='textfield' class='txt'/>
+  <span onclick='file.click()'  class='mybtn'>浏览...</span>
+  <input type='file' name='file' class='file' id='file' size="28"
+  onchange='document.getElementById("textfield").value =this.value'/>
+  <span onclick='UploadFile()'  class='mybtn'>上传</span>
+  
+</div>
+<script>
+
+ function UploadFile(){
+	 var file = document.getElementById("file").files[0];
+	 /*var filesuffix = file.name.substring(file.name.length-4);
+	 var allowFile = ".jpg|.png|.gif";
+	 if(allowFile.indexOf(fileSuffix.toLowerCase()) == -1){
+		 alert("请使用"+allowFile+"后缀的文件");
+	 }*/
+	 
+	 var reader = new FileReader();
+	 reader.readAsDataURL(file);
+	 reader.onload = function(e){
+		 var imageBase64Data = e.target.result;
+		 console.log(imageBase64Data);
+		 $.ajax({
+			 
+		 })
+	 }
+	 
+	 
+ }
+</script>
+</body>
+</html>

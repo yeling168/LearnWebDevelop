@@ -1,0 +1,11 @@
+.warning {
+    font-weight: bold;
+}
+
+.urgent {
+    font-style: italic;
+}
+
+.warning.urgent {
+    background: silver;
+}

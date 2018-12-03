@@ -1,0 +1,18 @@
+img {
+    width: auto;
+}
+
+img.one {
+    width: 25px;
+    margin: 0;
+}
+
+img.two {
+    width: 50px;
+    margin: 0;
+}
+
+img.three {
+    width: 100px;
+    margin: 0;
+}
