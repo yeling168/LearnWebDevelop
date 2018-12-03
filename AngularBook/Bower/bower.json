@@ -1,0 +1,14 @@
+{
+  "name": "myApp",
+  "version": "0.0.1",
+  "authors": [
+    "Ari Lerner <ari@fullstack.io>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-route": "~1.2.13"
+  },
+  "devDependencies": {
+    "bootstrapp-sass": "~3.0.0"
+  }
+}

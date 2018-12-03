@@ -1,0 +1,19 @@
+.odd {
+    background-color: blue;
+}
+
+.even {
+    background-color: red;
+}
+
+.input.ng-invalid{
+    border:1px solid red;
+}
+
+.input.ng-invalid{
+    border:1px solid green;
+}
+
+.red{
+    background-color: red;
+}
