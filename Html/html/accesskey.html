@@ -5,9 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script type="text/javascript">
+        function showDetails(animal){
+            var animalType=animal.getAttribute("data-animal-type");
+            alert(animal.innerHTML + "是一种" + animalType + "。");
+        }
+    </script>
 </head>
 <body>
+    <!--快捷键-->
     <a href="http://www.w3school.com.cn/html/" accesskey="h">HTML</a><br/>
     <a href="http://www.w3school.com.cn/html/" accesskey="c">CSS</a><br/>
+    <hr/>
+    <!--右键菜单-->
+    <div contextmenu="mymenu">
+        <menu type="context" id="mymenu">222
+            <menuitem label="Refresh"></menuitem>
+            <menuitem label="Twitter"></menuitem>
+        </menu>
+    </div>
+    <hr/>
+    <!--使用 data-* 属性来嵌入自定义数据-->
+    <ul>
+        <li onclick="showDetails(this)" id="owl" data-animal-type="鸟类">喜鹊</li>
+    </ul>
+    <hr/>
+    <!--HTML dir 属性-->
+    <p dir="rtl">Write this text right-to-left!</p>
+    <p dir="ltr">Write this text right-to-left!</p>
+    <hr/>
+    <!--HTML draggable 属性-->
+    <p draggable="true">这是一个可拖动的段落。</p>
+    <hr/>
+    <!--HTML hidden 属性-->
+    <p hidden>这个段落应该被隐藏。</p>
+    <hr/>
+    <!-- HTML lang 属性 -->
+    <p lang="fr">Ceci est un paragraphe.</p>
+    <hr/>
+    <!-- HTML spellcheck 属性 -->
+    <p contenteditable="true" spellcheck="true">这是一个段落。</p>
+    <!--HTML tabindex 属性-->
+    <hr/>
+    <a href="http://www.w3school.com.cn/" tabindex="2">W3School</a>
+    <a href="http://www.google.com/" tabindex="1">Google</a>
+    <a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
+    <!-- HTML translate 属性 -->
+    <hr/>
+    <p translate="no">请勿翻译本段。</p>
+    <p>本段可被译为任意语言。</p>
 </body>
 </html>
