@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+
+<body>
+    <form id="myForm">
+        Firstname: <input id="fname" type="text" value="Mickey" />
+        Lastname: <input id="lname" type="text" value="Mouse" />
+        <input id="sub" type="button" value="Submit" />
+    </form>
+    <hr />
+    <form id="myFormacceptCharset" acceptCharset="ISO-8859-1">
+        Text: <input type="text" value="Hello World!">
+        <input type="button" onclick="showCharset()" value="Show charset">
+    </form>
+    <hr />
+    <form id="myFormAction" action="js_examples.asp">
+        Name: <input type="text" value="Mickey Mouse" />
+        <input type="button" onclick="changeAction()" value="Change action attribute and submit form" />
+    </form>
+    <hr />
+    <form id="myFormReset">
+        Name: <input type="text" size="20" value="30"><br />
+        Age: <input type="text" size="20" value="30"><br />
+        <br />
+        <input type="button" onclick="formReset()" value="Reset">
+    </form>
+    <hr />
+    <form id="myFormSubmit" action="js_form_action.asp" method="get">
+        Firstname: <input type="text" name="firstname" size="20"><br />
+        Lastname: <input type="text" name="lastname" size="20"><br />
+        <br />
+        <input type="button" onclick="formSubmit()" value="Submit">
+    </form>
+    <script type="text/javascript">
+        var x = document.getElementById("myForm");
+        console.log(x);
+        for (var i = 0; i < x.length; i++) {
+            document.write(x.elements[i].value);
+            document.write("<br />");
+            document.write(x.elements[i].type);
+            document.write("<br />");
+        }
+
+        function showCharset() {
+            var y = document.getElementById("myFormacceptCharset")
+            alert(y.acceptCharset);
+        }
+
+        function changeAction() {
+            var z = document.getElementById("myFormAction")
+            alert("Original action: " + z.action)
+            z.action = "index.asp"
+            alert("New action: " + z.action)
+            z.submit()
+        }
+
+        function formReset() {
+            document.getElementById("myFormReset").reset()
+        }
+
+        function formSubmit() {
+            document.getElementById("myFormSubmit").submit()
+        }
+    </script>
+</body>
+
+</html>

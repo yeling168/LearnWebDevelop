@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function showCDoc() {
+            var x = parent.document.getElementById("leftFrame");
+            console.log(parent);
+            alert(x.contentDocument.documentElement.tagName)
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" onclick="showCDoc()" value="Show content-document's first tag" />
+
+</body>
+
+</html>
