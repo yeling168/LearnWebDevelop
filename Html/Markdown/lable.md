@@ -57,6 +57,8 @@
 Form对象代表一个HTML表单。
 在HTML文档中`<form>`每出现一次，Form对象就会被创建一次。
 
+[http://www.w3school.com.cn/jsref/dom_obj_form.asp](http://www.w3school.com.cn/jsref/dom_obj_form.asp "HTML DOM Form 对象")
+
 ## HTML DOM elements 集合 ##
 
 elements 集合可返回包含表单中所有元素的数组。
@@ -68,3 +70,8 @@ elements 集合可返回包含表单中所有元素的数组。
 <font face="微软雅黑" size="3" color="#ff9955">提示:</font>如果 elements[] 数组具有名称（input 标签的 id 或 name 属性），那么该元素的名称就是 formObject 的一个属性，因此可以使用名称而不是数字来引用 input 对象。
 
 举例，假设 x 是一个 form 对象，其中的一个 input 对象的名称是 fname，则可以使用 x.fname 来引用该对象。
+
+## HTML DOM Frame 对象 ##
+Frame 对象代表一个 HTML 框架。
+
+在 HTML 文档中 `<frame>` 每出现一次，就会创建一个 Frame对象。
