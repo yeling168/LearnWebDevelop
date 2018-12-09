@@ -268,8 +268,73 @@
         <option disabled="disabled">Mercedes</option>
         <option>Audi</option>
     </select>
-    <hr/>
+    <hr />
     <input type="range">
+    <hr />
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+    </form>
+    <p><b>注释：</b>Internet Explorer 不支持 <output> 标签。</p>
+    <hr />
+    <pre>
+        &lt;html&gt;
+        
+        &lt;head&gt;
+          &lt;script type=&quot;text/javascript&quot; src=&quot;loadxmldoc.js&quot;&gt;
+        &lt;/script&gt;
+        &lt;/head&gt;
+        
+        &lt;body&gt;
+        
+          &lt;script type=&quot;text/javascript&quot;&gt;
+            xmlDoc=<a href="dom_loadxmldoc.asp">loadXMLDoc</a>(&quot;books.xml&quot;);
+            document.write(&quot;xmlDoc is loaded, ready for use&quot;);
+          &lt;/script&gt;
+        
+        &lt;/body&gt;
+        
+        &lt;/html&gt;
+    </pre>
+    <hr />
+    下载进度：
+    <progress value="22" max="100">
+    </progress>
+
+    <p><b>注释：</b>Internet Explorer 9 以及更早的版本不支持 <progress> 标签。</p>
+    <hr />
+    <p>Here comes a short quotation: <q>This is a short quotation</q></p>
+
+    <p>请注意，浏览器在引用的周围插入了引号。</p>
+    <section>
+        <h1>WWF</h1>
+        <p>
+            The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+            founded in 1961.
+        </p>
+    </section>
+
+    <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>
+            The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi
+            Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of
+            WWF.
+        </p>
+    </section>
+    <hr />
+    <p><span>some text.</span>some other text.</p>
+    <hr />
+    这段文本包含 <sub>下标</sub>
+    <hr />
+    <details>
+        <summary>HTML 5</summary>
+        This document teaches you everything you have to learn about HTML 5.
+    </details>
+    <hr/>
+    这段文本包含 <sup>上标</sup>
     <hr/>
 </body>
 
