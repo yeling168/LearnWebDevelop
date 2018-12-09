@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="charset" content="iso-8859-1">
+    <meta http-equiv="expires" content="31 Dec 2008">
     <title>Del</title>
 </head>
 
@@ -189,25 +191,51 @@
             <p>Firefox 是一款来自 Mozilla 的免费开源 web 浏览器，发布于 2004 年。</p>
         </article>
     </main>
-    <hr/>
+    <hr />
     <menu type="popup">
         <li>
-         <menu label="File">
-          <button type="button" onclick="file_new()">新建</button>
-          <button type="button" onclick="file_open()">打开</button>
-          <button type="button" onclick="file_save()">保存</button>
-         </menu>
+            <menu label="File">
+                <button type="button" onclick="file_new()">新建</button>
+                <button type="button" onclick="file_open()">打开</button>
+                <button type="button" onclick="file_save()">保存</button>
+            </menu>
         </li>
         <li>
-         <menu label="Edit">
-          <button type="button" onclick="edit_cut()">剪切</button>
-          <button type="button" onclick="edit_copy()">复制</button>
-          <button type="button" onclick="edit_paste()">粘贴</button>
-         </menu>
+            <menu label="Edit">
+                <button type="button" onclick="edit_cut()">剪切</button>
+                <button type="button" onclick="edit_copy()">复制</button>
+                <button type="button" onclick="edit_paste()">粘贴</button>
+            </menu>
         </li>
-       </menu>
-       
-       <p><b>注释：</b>所有主流浏览器均不支持 menu 元素。</p>
+    </menu>
+
+    <p><b>注释：</b>所有主流浏览器均不支持 menu 元素。</p>
+    <hr />
+    <meter value="3" min="0" max="10">十分之三</meter>
+
+    <meter value="0.6">60%</meter>
+
+    <h1>显示度量：</h1>
+
+    <p>
+        张三的分数：<meter min="0" low="40" high="90" max="100" value="95"></meter>
+    </p>
+
+    <p>
+        李四的成绩：<meter min="0" low="40" high="90" max="100" value="65"></meter>
+    </p>
+
+    <p>
+        王五的成绩：<meter min="0" low="40" high="90" max="100" value="35"></meter>
+    </p>
+    <p><meter value="0.5" high="0.9" low="0.1" optimum="0.5"></meter></p>
+    <p><b>注释：</b>Internet Explorer 不支持 meter 标签。</p>
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
 </body>
 
 </html>
