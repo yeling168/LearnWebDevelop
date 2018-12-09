@@ -104,6 +104,110 @@
         <input type="file" name="pic" accept="image/*">
         <input type="submit">
     </form>
+    <hr />
+    <h4>Disc 项目符号列表：</h4>
+    <ul type="disc">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ul>
+
+    <h4>Circle 项目符号列表：</h4>
+    <ul type="circle">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ul>
+
+    <h4>Square 项目符号列表：</h4>
+    <ul type="square">
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>柠檬</li>
+        <li>桔子</li>
+    </ul>
+    <hr />
+    <ol>
+        <li>咖啡</li>
+        <li>牛奶</li>
+        <li>茶</li>
+    </ol>
+
+    <ol start="50">
+        <li>咖啡</li>
+        <li>牛奶</li>
+        <li>茶</li>
+    </ol>
+    <hr />
+    <h4>一个嵌套列表：</h4>
+    <ul>
+        <li>咖啡</li>
+        <li>茶
+            <ul>
+                <li>红茶</li>
+                <li>绿茶
+                    <ul>
+                        <li>中国茶</li>
+                        <li>非洲茶</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>牛奶</li>
+    </ul>
+    <hr />
+    <h4>一个嵌套列表：</h4>
+    <ul>
+        <li>咖啡</li>
+        <li>茶
+            <ul>
+                <li>红茶</li>
+                <li>绿茶</li>
+            </ul>
+        </li>
+        <li>牛奶</li>
+    </ul>
+    <hr />
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome、Firefox 以及 Internet Explorer 是目前最流行的浏览器。</p>
+
+        <article>
+            <h1>Google Chrome</h1>
+            <p>Google Chrome 是由 Google 开发的一款免费的开源 web 浏览器，于 2008 年发布。</p>
+        </article>
+
+        <article>
+            <h1>Internet Explorer</h1>
+            <p>Internet Explorer 由微软开发的一款免费的 web 浏览器，发布于 1995 年。</p>
+        </article>
+
+        <article>
+            <h1>Mozilla Firefox</h1>
+            <p>Firefox 是一款来自 Mozilla 的免费开源 web 浏览器，发布于 2004 年。</p>
+        </article>
+    </main>
+    <hr/>
+    <menu type="popup">
+        <li>
+         <menu label="File">
+          <button type="button" onclick="file_new()">新建</button>
+          <button type="button" onclick="file_open()">打开</button>
+          <button type="button" onclick="file_save()">保存</button>
+         </menu>
+        </li>
+        <li>
+         <menu label="Edit">
+          <button type="button" onclick="edit_cut()">剪切</button>
+          <button type="button" onclick="edit_copy()">复制</button>
+          <button type="button" onclick="edit_paste()">粘贴</button>
+         </menu>
+        </li>
+       </menu>
+       
+       <p><b>注释：</b>所有主流浏览器均不支持 menu 元素。</p>
 </body>
 
 </html>
