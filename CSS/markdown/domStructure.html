@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>domStructure</title>
+    <style type="text/css">
+    h1 em{
+        color: gray;
+    }
+    ul ol ul em{
+        color: gray;
+    }
+    p>strong{
+        color: red;
+    }
+    a:link,a:visited{
+        font-size: 13px;
+    }
+    a:hover{
+        font-size: 20px;
+    }
+    p:first-child{
+        font-weight: bold;
+    }
+    li:first-child{
+        text-transform: uppercase;
+    }
+    p:first-letter{
+        color: red;
+    }
+    h1:first-letter{
+        font-size: 200%;
+    }
+    p:first-line{
+        color: purple;
+    }
+    h2:before{
+        content:"{{";
+        color: silver;
+    }
+    h2:after{
+        content:"}}";
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <base href="http://www/meerkat.web/">
+    <title>MeerKat Central</title>
+    <h1>
+        MeerKat <em>Central</em>
+    </h1>
+    <p>
+        Welcome to MeerKat <em>Central</em>,the <strong>best meerkat web site
+        on<a href="inet.html">the <em>entire </em>Internet</a></strong>!
+    </p>
+    <ul>
+        <li>
+            we offer:
+            <ul>
+                <li><strong>Detailed information</strong> on how to adopt a meerkat</li>
+                <li>Tips for living with a meerkat</li>
+                <li><em>Fun</em> things to do with a meerkat,including:
+                    <ol>
+                        <li>Playing fetch</li>
+                        <li>Digging for food</li>
+                        <li>Hide and seek</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>...and so much more!</li>
+    </ul>
+    <p>Questions?<a href="mailto:suricate@meetkat.web">Contact us!</a></p>
+    <hr/>
+    <div>
+        <p>These are the necessary steps:</p>
+        <ul>
+            <li>Insert key</li>
+            <li>Turn key <strong>clockwise</strong></li>
+            <li>Push accelerator</li>
+        </ul>
+        <p>Do <em>not</em> push the brake at the same time as the accelerator.Do <em>not</em> push the brake at the same time as the accelerator.</p>
+        <h2>This is a h2 Element.</h2>
+    </div>
+</body>
+</html>
