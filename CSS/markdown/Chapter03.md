@@ -10,3 +10,10 @@
 
 #### 继承 ####
 <font color="#ff995" face="微软雅黑" size="3">**基于继承机制，样式不仅应用到指定的元素，还会应用到它的后代元素。**</font>
+
+[http://markdownpad.com/faq.html#livepreview-directx](http://markdownpad.com/faq.html#livepreview-directx "markdown")
+
+元素的声明会沿着树向下传播到后代元素，并一直继续，直到再没有更多的后代元素继承这个值为止。值绝对不会向上传播，也就是说，元素不会把值向上传递到其祖先。
+
+<font color="#ff995" face="微软雅黑" size="3">**注意:**</font>在HTML中，对于向上传播规则有一个例外:应用到body元素的背景样式可以传递到html元素(html是文档的根元素)，相应地可以定义其画布。
+
