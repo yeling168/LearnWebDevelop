@@ -18,4 +18,18 @@
 **要注意ID选择器与指定id属性的属性选择器不是一回事。换句话说,h1#page-title和h1[id="page-title"]之间存在着微妙但很重要的差别**
 
 #### 根据部分属性值选择元素 ####
->为什么还要有这种"~="属性选择器呢？因为它能用于任何属性，而不只是class。
+><font color="#ff995" face="微软雅黑" size="3">为什么还要有这种"~="属性选择器呢？因为它能用于任何属性，而不只是class。</font>
+
+#### 伪类选择器 ####
+你可能已经注意到了，:link和:visited伪类选择器在功能上与body属性link和vlink是等价的。假设一个创作人员希望所有未访问页面的锚都是紫色，而所有已访问页面的锚是银色。在HTML3.2中，这要如下指定:
+
+    <body link="purple" vlink="silver">
+在CSS中，利用以下规则可以达到同样的效果
+
+    a:link{color:purple;}
+    a:visited{color:silver;}
+
+#### :first-letter和:first-line的限制 ####
+><font color="#ff995" face="微软雅黑" size="3">:first-letter和:first-line伪元素只能应用于标记或段落之类的块级元素，而不能应用于超链接等的行内元素。</font>
+
+所有伪元素都必须放在出现该伪元素的选择器的最后面。如果写成p:first-line em就是不合法的，因为伪元素在选择器前面出现(主体是这里所列的最后一个元素，即em)。这个规则同样适用于CSS2.1定义的另外两个伪元素。
