@@ -1,6 +1,5 @@
 #### 文本属性 ####
-<font color="#ff995" face="微软雅黑" size="3">**text-indent**</font>
-
+## <font color="#ff995" face="微软雅黑" size="3">**text-indent**</font> ##
 
 | 值 | `<length> <percentage> inherit` |
 | ------ | ------ |
@@ -25,7 +24,7 @@ text-indent可以使用所有长度单位(包括百分数值)
 #### 用百分数实现文本缩进 ####
 注意，即使插入了行分隔符，这种缩进也只应用于一个元素的第一行。关于text-indent有意思的是，由于这个属性可以继承，它可能有预想不到的效果
 
-<font color="#ff995" face="微软雅黑" size="3">**text-align**</font>
+## <font color="#ff995" face="微软雅黑" size="3">**text-align**</font> ##
 
 | CSS2.1 | `left center right justify inherit` |
 | ------ | ------ |
@@ -52,12 +51,10 @@ text-indent可以使用所有长度单位(包括百分数值)
 
 CSS也没有指定应当如何处理连字符(CSS中没有说明如何处理连字符，因为不同的语言有不同的连字符规则。规范没有尝试去调和这样一些很可能不完备的规则，而是干脆不提这个问题)。大多数两端对齐文本都使用将连字符分开放在两行上，从而缩小单词之间的间隔，改善文本行的外观。不过，由于CSS没有定义连字符的薪给，用户代理不太可能自动添加连字符。因此，在CSS中，两端对齐恩本看上去没有打印出来好看，特别是元素可能太窄，以至于每行只能放下几个单词。当然，使用窄设计元素是可以的，不过要当心相应的缺点。
 
-<font color="#ff995" face="微软雅黑" size="3">**line-height**</font>
+## <font color="#ff995" face="微软雅黑" size="3">**line-height**</font> ##
 
 #### 行高 ####
 line-height属性是指文本行基线之间的距离，而不是字体的大小，它确定了将各个元素框的高度增加或减少多少。在最基本的情况下，指定line-height可以用来增加(或减少)文本行之间的垂直距离。line-height控制了行间距，这是文本行之间超出了字体大小的额外空间。换句话说，line-height值和字体大小之差就是行间距。
-
-
 
 | 值 | `length percentage number normal inherit` |
 | ------ | ------ |
@@ -100,3 +97,69 @@ line-height小，font-size大，这就带来了问题
 对于这种line-height太小的问题，一种解决办法是为每个元素设置一个显式的line-height，但是这种放大不太实用，更好的办法是指定一个数，由它设置缩放因子。
 
 指定一个数时，缩放因子将是继承值而不是计算值。这个数会应用到该元素及其所有子元素，所以各元素都根据自己的font-size计算line-height.
+
+## <font color="#ff995" face="微软雅黑" size="3">**vertical-align**</font> ##
+#### 垂直对齐文本 ####
+
+如果你曾用过sup和sub(上标和下标元素),或者曾用过`<img src="foo.gif" align="middle">`之类标记的图像，说明你已经做过一些基本的垂直对齐。在CSS中,<font color="#ff995" face="微软雅黑" size="3">**vertical-align属性只应用于行内元素和替换元素**</font>，如图像和表单输入元素。<font color="#ff995" face="微软雅黑" size="3">**vertical-align属性不能继承。**</font>
+
+vertical-align只接受8个关键字，一个百分数值或一个长度值。这些关键字有些我们很熟悉，有些可能不熟悉，包括:baseline(默认值)、sub、super、bottom、text-bottom、middle、top和text-top。 我们将分析各关键字如何作用域行内元素。
+
+| 值 | `baseline sub super top text-top middle bottom text-bottom <percentage> <length> inherit` |
+| ------ | ------ |
+| 初始值 | baseline |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**行内元素和表单元格**</font> |
+| 继承性 | 无 |
+| 百分数 | 相对于元素的line-height值 |
+| 计算值 | <font color="#ff995" face="微软雅黑" size="3">**对于百分数和长度值，为绝对长度;否则，根据指定确定**</font>|
+| 说明 | 应用到表单元格时，只能识别baseline、top、middle和bottom等值 |
+
+<font color="#ff995" face="微软雅黑" size="3">**警告:**</font>要记住:vertical-align不影响块级元素中内容的对齐。不过，可以用它来影响表单元格中元素的垂直对齐。
+
+#### 基线对齐 ####
+vertical-align:<font color="#ff995" face="微软雅黑" size="3">**baseline要求一个元素的基线与其父元素的基线对齐。**</font>大多数情况下，浏览器都会这么做，以内你显然希望一行中所有文本元素的底端都对齐。
+
+如果一个垂直对齐元素没有基线--也就是说，如果这是一个图像或表单输入元素，或者是其他替换元素---那么该元素的底端与其父元素的基线对齐。
+
+#### 图像的基线对齐 ####
+这个对齐规则很重要，因为它使得一些web浏览器总把替换元素的底边放在基线上，即使该行中没有其他文本。例如，假设一个表单元格中只有一个图像。这个图像可能实际在基线上，不过在某些浏览器中，基线下面的空间会导致图像下出现一段空白。另外一些浏览器则会把图像"紧包"在表单元格中，所以不会出现空白。
+解决方案:[http://developer.mozilla.org/en/docs/Images._Tables._and_Mysterious_Gaps](http://developer.mozilla.org/en/docs/Images._Tables._and_Mysterious_Gaps "解决方案")
+
+#### 上标和下标 ####
+vertical-align:sub声明会使一个元素变成下标，这意味着其基线(或者如果这是一个替换元素，则是其底端)相对于其父元素的基线降低。规范并没有定义元素降低的距离，所以对于不同的用户代理，这个距离可能有所不同。
+
+super刚好和sub相反;它将元素的基线(或替换元素的底端)相对于父元素的基线升高。同样地，文本升高的距离取决于具体的用户代理。
+
+注意:值sub和super不会改变元素的字体大小，所以下标或上标文本不会变小(或变大)。相反，下标或上标元素中的所有恩本默认地都应当与父元素中的文本大小相同。
+
+#### 底端对齐 ####
+vertical-align:bottom将元素行内框的底端与行框的底端对齐。
+
+vertical-align:text-bottom是指行内文本的底端。替换元素或任何其他类型的非文本元素会忽略这个值。对于这些元素，将考虑一个"默认"的文本框。这个默认框由父元素的font-size得到。要对齐元素的行内框底端再与这个默认文本框的底端对齐。
+
+#### 顶端对齐 ####
+vertical-align:top的效果与bottom刚好相反。类似地，vertical-align:text-top则与text-bottom的作用相反。
+
+#### 居中对齐 ####
+还有一个值middle，它往往（但并不总是）应用于图像。middle会把行内元素框的中点与父元素基线上方0.5ex处的一个点对齐，这里的1ex相对于父元素的font-size定义。
+
+#### 百分数 ####
+使用百分数不能模仿图像的align="middle"对齐。相反，如果为vertical-align设置一个百分数，会把元素的基线升高或降低指定的量(你指定的百分数要计算为该元素line-height的百分数，而不是相对于其父元素的line-height)。正百分数值会使元素升高，负值则会使其降低。取决于文本的升高或降低，可能看上去它放在了相邻的行上。
+
+
+#### 长度对齐 ####
+根据指定长度垂直对齐。vertical-align很明确：它把一个元素升高或降低指定的距离。因此，vertical-align:5px；会把一个元素与对齐前相比上升5像素。负长度值会使元素下降。这种简单的对齐形式在CSS1中不存在，但在CSS2中已经增加。
+
+字间隔和字母间隔
+## <font color="#ff995" face="微软雅黑" size="3">**word-spacing**</font> ##
+#### 字间隔 ####
+word-spacing属性接受一个正长度值或负长度值。这个长度会增加到字之间的标准间隔。实际上，word-spacing用于修改字间间隔。因此，默认值normal与设置值为0是一样的。
+
+| 值 | `<length> normal inherit` |
+| ------ | ------ |
+| 初始值 | normal |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 有 |
+| 百分数 | 相对于元素的line-height值 |
+| 计算值 | 对于normal，为绝对长度0；否则，是绝对长度|
+| 说明 | 应用到表单元格时，只能识别baseline、top、middle和bottom等值 |
