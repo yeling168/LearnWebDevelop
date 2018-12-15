@@ -57,7 +57,7 @@ CSS也没有指定应当如何处理连字符(CSS中没有说明如何处理连�
 line-height属性是指文本行基线之间的距离，而不是字体的大小，它确定了将各个元素框的高度增加或减少多少。在最基本的情况下，指定line-height可以用来增加(或减少)文本行之间的垂直距离。line-height控制了行间距，这是文本行之间超出了字体大小的额外空间。换句话说，line-height值和字体大小之差就是行间距。
 
 | 值 | `length percentage number normal inherit` |
-| ------ | ------ |
+| ------ | :------ |
 | 初始值 | normal |
 | 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
 | 继承性 | 有 |
@@ -106,7 +106,7 @@ line-height小，font-size大，这就带来了问题
 vertical-align只接受8个关键字，一个百分数值或一个长度值。这些关键字有些我们很熟悉，有些可能不熟悉，包括:baseline(默认值)、sub、super、bottom、text-bottom、middle、top和text-top。 我们将分析各关键字如何作用域行内元素。
 
 | 值 | `baseline sub super top text-top middle bottom text-bottom <percentage> <length> inherit` |
-| ------ | ------ |
+| ------ | :------ |
 | 初始值 | baseline |
 | 应用于 | <font color="#ff995" face="微软雅黑" size="3">**行内元素和表单元格**</font> |
 | 继承性 | 无 |
@@ -156,10 +156,50 @@ vertical-align:top的效果与bottom刚好相反。类似地，vertical-align:te
 word-spacing属性接受一个正长度值或负长度值。这个长度会增加到字之间的标准间隔。实际上，word-spacing用于修改字间间隔。因此，默认值normal与设置值为0是一样的。
 
 | 值 | `<length> normal inherit` |
-| ------ | ------ |
+| ------ | :------ |
 | 初始值 | normal |
 | 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
 | 继承性 | 有 |
 | 百分数 | 相对于元素的line-height值 |
 | 计算值 | 对于normal，为绝对长度0；否则，是绝对长度|
 | 说明 | 应用到表单元格时，只能识别baseline、top、middle和bottom等值 |
+
+"字"可以是任何非空白字符组成的串，并由某种空白符包围。这个定义没有实际语义，它只是假设一个文档包含由一个或多个空白符包围的字。
+
+## <font color="#ff995" face="微软雅黑" size="3">**letter-spacing**</font> ##
+#### 字母间隔 ####
+
+| 值 | `<length> normal inherit` |
+| ------ | :------ |
+| 初始值 | normal |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 有 |
+| 计算值 | 对于长度值，为绝对长度；否则，为normal|
+
+#### 间隔和对齐 ####
+word-spacing的值可能受text-align属性值的影响。如果一个元素是两端对齐的，字母和字之间的空间可能会调整，以便文本在整行中刚好放下。这可能又会改变创作人员用word-spacing声明的字间隔。如果为letter-spacing指定一个长度值，字符间隔则不会受text-align影响，但是如果letter-spacing的值是normal，字符间的间隔就可能改变，以便将文本两端对齐。
+
+一般地，一个元素的子元素会继承该元素的计算值。无法为word-spacing或letter-spacing定义一个可继承的缩放因子来取代计算值(像line-height那样)。
+
+## <font color="#ff995" face="微软雅黑" size="3">**text-transform**</font> ##
+#### 文本转换 ####
+
+| 值 | `uppercase lowercase capitalize none inherit` |
+| ------ | :------ |
+| 初始值 | none |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 有 |
+| 计算值 | 根据指定确定|
+
+默认值none对文本不做任何改动，将使用源文档中原有的大小写。顾名思义，uppercase和lowcase将文本转换为全大写或全小写字符。最后，capitalize只对**每个**单词的首字母大写。
+
+## <font color="#ff995" face="微软雅黑" size="3">**text-decoration**</font> ##
+#### 文本装饰 ####
+| 值 | `none underline overline line-through blink inherit` |
+| ------ | :------ |
+| 初始值 | none |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 无 |
+| 计算值 | 根据指定确定|
+
+underline会对元素加下划线，就像HTML中的U元素一样。overline的作用恰好相反，会在文本的顶端画一个上划线。值line-through则会在文本中间画一个贯穿线，这也称为贯穿文本。blink会让文本闪烁。
