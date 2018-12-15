@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text-indent-percent</title>
+    <style>
+        div{
+            width: 400px;
+        }
+        p{
+            text-indent: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            This paragraph is contained inside a DIV that is 400px wide,so the first line of thr
+            paragraph is indented 40px(400*10%=40).This is because percentages are computed with 
+            respect to the width of the element.
+        </p>
+    </div>
+</body>
+</html>

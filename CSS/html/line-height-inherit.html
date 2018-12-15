@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>line-height-inherit</title>
+    <style>
+        body{
+            font-size: 10px;
+        }
+        div{
+            /* line-height: 1em; */
+            /* 对于这种line-height太小的问题，一种解决办法是为每个元素设置一个显式的line-height，但是这种放大不太实用，更好的办法是指定一个数，由它设置缩放因子。 */
+            line-height: 1;
+        }
+        p{
+            /* 基于继承机制，样式不仅应用到指定的元素，还会应用到它的后代元素。 */
+            font-size: 18px;       
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            This paragraph's 'font-size' is 18px,but the inherit value is only 10px.This may cause the lines of the text overlap each other by a small amout.
+            This paragraph's 'font-size' is 18px,but the inherit value is only 10px.This may cause the lines of the text overlap each other by a small amout.
+        </p>
+    </div>
+</body>
+</html>

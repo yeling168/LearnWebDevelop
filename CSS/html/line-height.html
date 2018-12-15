@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>line-height</title>
+    <style>
+        body{
+            line-height: 14px;
+            font-size: 13px;
+        }
+        p.cl1{
+            line-height: 1.5em;
+        }
+        p.cl2{
+            font-size: 10px;
+            line-height: 150%;
+        }
+        p.cl3{
+            line-height: 0.33in;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        This paragraph inherits a 'line-height' of 14px from the body,as well as
+        a 'font-size' of 13px.
+    </p>
+    <p class="cl1">
+          This paragrap inherits has a 'line-height' of 19.5px(13*1.5),so it will 
+          have a  sighttly more line-height than usual.
+    </p>
+    <P class="cl2">
+        This paragraph has a 'line-height' of 15px(10*150%),so it will have sighttly
+        more line-height than usual.
+    </P>
+    <p class="cl3">
+        This paragraph has a 'line-height' of 0.33in,so it will have sighttly
+        more line-height than usual.
+    </p>
+</body>
+</html>

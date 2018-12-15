@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text-indent-strench</title>
+    <style>
+        div#outer{
+            width: 500px;
+        }
+        div#inner{
+            text-indent: 10%;
+        }
+        p{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            This first line of the DIV is indented by 50 pixes.
+            <p>
+                This paragraph is 200px wide,and the first line of the paragraph is 
+                indented 50px.This is because computed values for 'text-indent'
+                are inherited,instead of the declared values.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

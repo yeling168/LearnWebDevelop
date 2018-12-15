@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>水平对齐</title>
+    <style>
+        div {
+            width: 600px;
+        }
+
+        p.one {
+            text-align: left;
+        }
+
+        p.two {
+            text-align: right;
+        }
+
+        p.three {
+            text-align: center;
+        }
+
+        p.four {
+            /* width: 400px; */
+            text-align: justify;
+        }
+
+        i {
+            text-align: right;
+            /*i是行内元素，必须加display:block才生效*/
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <i>
+            This is text i element.
+            This is text i element.
+            This is text i element.
+            This is text i element.
+            This is text i element.
+            This is text i element.
+        </i>
+        <p class="one">
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+        </p>
+        <p class="two">
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+        </p>
+        <p class="three">
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+        </p>
+        <p class="four">
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.
+        </p>
+        <center>我是center</center>
+    </div>
+</body>
+
+</html>
