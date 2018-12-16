@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Border</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <p style="width:200px;background-color: brown;">wideness?</p>
+    <p style="width:200px;padding: 10px;margin: 20px;background-color: brown">wideness?</p>
+
+    <div style="width:400px;">
+        <p style="margin-left:auto;margin-right:100px;width:100px">
+                margin-left will be 200px.
+        </p>
+    </div>
+    <!-- 只是对从左往右读的语言将margin-left强制为auto。如果是从右往左读的语言，一切正相反，所以会把margin-left强制为auto，而不是margin-right. -->
+    <div style="width:400px;">
+        <p style="margin-left:100px;margin-right:100px;width:100px">
+                margin-right will force to be 200px.
+        </p>
+    </div>
+    <div style="width:400px;">
+        <p style="margin-left:100px;margin-right:100px;width:auto">
+                width will force to be 200px.
+        </p>
+    </div>
+    <!-- 和之前相同，width也为200px -->
+    <div style="width:400px;">
+        <p style="margin-left:100px;margin-right:100px;">
+                width will force to be 200px.
+        </p>
+    </div>
+    <div style="width:400px;background-color: burlywood">
+        <p style="width:100px;margin-left:auto;margin-right:auto">A paragraph.</p>
+    </div>
+    <div style="width:400px;background-color: rgb(21, 170, 145)">
+            <p style="width:auto;margin-left:auto;margin-right:100px">left margin evaluates to 0.</p>
+    </div>
+    <div style="width: 400px;border: 3px solid black">Another paragraph.
+        <p class="wide" style="margin-left:10px;width:auto;margin-right:-50px">A paragraph.</p>
+    </div>
+    <img src="../image/dot.jpg" style="display:block;width:auto;margin:0"/>
+    <hr/>
+    <img src="../image/dot.jpg" style="display:block;width:25px;margin:0"/>
+    <img src="../image/dot.jpg" style="display:block;width:50px;margin:0"/>
+    <img src="../image/dot.jpg" style="display:block;width:100px;margin:0"/>
+    <hr/>
+    <p style="height:3em">
+       A paragraph.
+    </p>
+    <p style="height:10em">
+        This paragraph has been given a height of 3em.This will probably mean that it's
+        shorter than the content would ordinarily make necessary.A border has been added
+        to show the edge of the content area,but in this case,a scrollbar should appear in .    
+    </p>
+</body>
+</html>
