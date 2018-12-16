@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>white-space</title>
+    <style>
+        p.cl1 {
+            white-space: normal;
+        }
+
+        p.cl2 {
+            white-space: pre;
+        }
+
+        p.cl3 {
+            white-space: nowrap;
+        }
+
+        td {
+            white-space: nowrap;
+        }
+
+        p.cl4 {
+            white-space: pre-wrap;
+        }
+
+        p.cl5 {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="cl1">normal:This paragraph has many
+        spaces in it.</p>
+
+    <p class="cl2">pre:This paragraph has many
+        spaces in it.</p>
+    <p class="cl3">
+        This paragraph is not allowed to wrap,which means that the only way to end
+        a line is to insert a line-break element.If no such element is inserted,then
+        the line will go forever,forcing the user to scroll horizontally to read whatever can't be
+        initially displayed <br /> in the brower window.
+    </p>
+    <table>
+        <tr>
+            <td>The contents of this cell are not wrapped.</td>
+            <td>Neither are the contents of this cell.</td>
+            <td>Nor this one,or any after it,or any other cell in this table.</td>
+            <td>CSS prevents any wrapping from happening.</td>
+        </tr>
+    </table>
+    <p class="cl4">
+        This paragraph has a great many s p a c e s within its
+        content, but their preservation will not prevent line
+        wrapping or line breaking.
+    </p>
+    <p class="cl5">
+        This paragraph has a great many s p a c e s within its
+        content, but their collapse will not prevent line
+        wrapping or line breaking.
+    </p>
+</body>
+
+</html>
