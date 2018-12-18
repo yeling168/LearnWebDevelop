@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>line-height-em</title>
+    <style>
+        p.cl1 {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        p.cl1>small {
+            font-size: 66%;
+        }
+
+        p.cl1>big {
+            font-size: 100%;
+        }
+
+        p.cl2 {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        p.cl2>small {
+            font-size: 66%;
+        }
+
+        p.cl2>big {
+            font-size: 200%;
+            line-height: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="cl1">
+        This paragraph has a line-height of 1.5 times its font-size.In addtion,any
+        elements within it <small>such as this small element</small> also have
+        line-heights 1.5 times their font-size...and that includes <big>this big
+            element right here. </big>.By using a scaling factor,line-height scale to match
+        the font-size of any element.
+    </p>
+    <hr />
+    <p class="cl2">
+        This paragraph has a line-height of 1.5 times its font-size.In addtion,any
+        elements within it <small>such as this small element</small> also have
+        line-heights 1.5 times their font-size...and that includes <big>this big
+            element right here. </big>.By using a scaling factor,line-height scale to match
+        the font-size of any element.
+    </p>
+</body>
+
+</html>
