@@ -143,3 +143,11 @@ sub:与super相同，只不过元素会下移而不是上移。
     body{line-height:1.5}
 
 缩放因子1.5在元素间逐层传递，在各层上，这个因子都做为一个乘数与各元素的font-size相乘。
+
+><font color="#ff995" face="微软雅黑" size="3">行内元素可能是一个块元素的后代，但是反过来则不行。</font>
+
+因此，尽管链接可以放在一个段落中，但是链接却不能包围段落。
+
+><font color="#ff995" face="微软雅黑" size="3">width和text-align不能应用于行内元素。</font>
+
+><font color="#ff995" face="微软雅黑" size="3">run-in框后面是一个块级框时run-in才起作用。如果不是这样，run-in框本身会成为块级框。</font>
