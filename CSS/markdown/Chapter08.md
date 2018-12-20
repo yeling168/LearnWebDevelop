@@ -66,3 +66,14 @@ CSS为属性border-style定义了10个不同的非inherit样式，包括默认�
 | 继承性 | 无 |
 | 计算值 | 见各个属性(border-top-style)等|
 | 说明 | 根据CSS1和CSS2，HTML用户代理只需支持solid和none；其余的值(除hidden外)可能被解释为solid；这个限制在CSS2.1中被去除|
+
+#### 多种样式 ####
+
+#### 单边样式 ####
+## <font color="#ff995" face="微软雅黑" size="3">**border-top-style、border-right-style、border-bottom-style、border-left-style**</font> ##
+| 值 | `none hidden dotted dashed solid double groove ridge inset outset inherit` |
+| ------ | ------ |
+| 初始值 | none |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 无 |
+| 计算值 | 根据指定确定|
