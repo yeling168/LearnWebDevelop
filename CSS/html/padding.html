@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>padding</title>
+    <style>
+        p {
+            margin: 1em 0;
+            padding: 1em 0;
+        }
+
+        p.one,
+        p.three {
+            background: purple;
+        }
+
+        p.two,
+        p.four {
+            background: silver;
+        }
+
+        p.three,
+        p.four {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one">
+        This,the first paragraph,has both padding and margin,Its background is gray.
+    </p>
+    <p class="two">
+        In the second paragraph,we have both padding and margin with a silver background.
+    </p>
+    <p class="three">
+        The third paragraph has padding,but not margin,and a gray background.
+    </p>
+    <p class="four">
+        Paragraph number four also has padding but no margin,and a silver background.
+    </p>
+    <hr/>
+</body>
+
+</html>
