@@ -91,3 +91,19 @@ CSS为属性border-style定义了10个不同的非inherit样式，包括默认�
 | 百分数 | 相对于包含块的width|
 | 计算值 | 见单个属性(padding-top等)|
 | 说明 | 内边距绝对不能为负|
+
+><font color="#ff995" face="微软雅黑" size="3">**外边距会合并但是内边距不合并。**</font>
+#### 百分数值和内边距 ####
+可以为元素的内边距设置百分数值。像外边距一样，百分数值要相对于其父元素的width计算。如果父元素的width改变，它们也会改变。
+
+
+#### 单边内边距 ####
+## <font color="#ff995" face="微软雅黑" size="3">**padding-top、padding-right、padding-bottom、padding-left**</font> ##
+| 值 | `length、percentage、inherit` |
+| ------ | ------ |
+| 初始值 | 0 |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 无 |
+| 百分数 | 相对于包含块的width|
+| 计算值 | 对于百分数值，根据指定确定;对于长度值，则为绝对长度|
+| 说明 | 内边距绝对不能为负|
