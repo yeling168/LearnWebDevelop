@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>padding-strong</title>
+    <style>
+        strong {
+            padding-left: 10px;
+            padding-right: 10px;
+            background: silver;
+        }
+        p.one strong{
+            padding-top: 0.5em;
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        This paragraph contains some ordinary,unstyled text,whose purpose is to provide
+        filter It also contains <strong>strongly emphasized text</strong> that has been styled
+        as indicated.This can lead to unwanted layout consequences,so authors should exercise caution.
+    </p>
+    <p class="one">
+        This paragraph contains some ordinary,unstyled text,whose purpose is to provide
+        filter It also contains <strong>strongly emphasized text</strong> that has been styled
+        as indicated.This can lead to unwanted layout consequences,so authors should exercise caution.
+    </p>
+</body>
+
+</html>
