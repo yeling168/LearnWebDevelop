@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-postion</title>
+    <style>
+        p {
+            background-image: url(../image/star.jpg);
+            background-repeat: no-repeat;
+            padding: 5px;
+            border: 1px dotted gray;
+        }
+
+        p.c1 {
+            background-position: 0% 0%;
+            padding: 20px;
+            border: 10px solid red;
+        }
+
+        p.c2 {
+            background-position: 50% 50%;
+        }
+
+        p.c3 {
+            background-position: 100% 100%;
+        }
+
+        p.c4 {
+            background-position: 0% 100%;
+        }
+
+        p.c5 {
+            background-position: 100% 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="c1">
+        This element should have a single background image in the top left corner of the
+        background area.This is due to the background-postion values (0% 0%) supplied for
+        the class associated with this element(c1).
+    </p>
+    <p class="c2">
+        This element should have a single background image in the top left corner of the
+        background area.This is due to the background-postion values (50% 50%) supplied for
+        the class associated with this element(c2).
+    </p>
+    <p class="c3">
+        This element should have a single background image in the top left corner of the
+        background area.This is due to the background-postion values (100% 100%) supplied for
+        the class associated with this element(c3).
+    </p>
+    <p class="c4">
+        This element should have a single background image in the top left corner of the
+        background area.This is due to the background-postion values (0% 100%) supplied for
+        the class associated with this element(c4).
+    </p>
+    <p class="c5">
+        This element should have a single background image in the top left corner of the
+        background area.This is due to the background-postion values (100% 0%) supplied for
+        the class associated with this element(c5).
+    </p>
+</body>
+
+</html>
