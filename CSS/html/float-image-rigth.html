@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float-image-right</title>
+</head>
+
+<body>
+    <h1>Test</h1>
+    <p style="margin:0;">
+        This is paragraph text,but you knew that.within the content of this
+        paragraph is an image that's been floated.
+        <img src="../image/star.jpg" style="float:right;"/>
+        The containing block for the floated image is the paragraph.
+    </p>
+    <div style="border:1px solid red;width: 500px">
+        Parent div
+        <div style="border:1px solid blue;width: 200px;float:right;">
+            I am first child.
+        </div>
+        <div style="border:1px solid green;width: 200px;float:right;">
+            I am second child.
+        </div>
+        <div style="border:1px solid rgb(0, 255, 179);width: 200px;float:right;">
+            I am third child.
+        </div>
+    </div>
+</body>
+
+</html>

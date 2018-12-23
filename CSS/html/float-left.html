@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>float-left</title>
+    <style>
+        p.aside {
+            float: right;
+            width: 15em;
+            margin: 0 1em 1em;
+            padding: 0.25em;
+            border: 1px solid;
+        }
+
+        p img {
+            margin: 25px;
+            float: left;
+        }
+
+        #one {
+            width: 600px;
+            box-sizing: border-box;
+            padding: 0 100px;
+            border: 1px solid purple;
+        }
+    </style>
 </head>
+
 <body>
     <p>
-        styles sheets were our last,best hope for structure.They <img src="../image/B4.jpg" style="float:left;" alt="b4"/>succeed
-        It was the dawn of the second age of web browsers.This is the 
+        styles sheets were our last,best hope for structure.They <img src="../image/B4.jpg" style="float:left;" alt="b4" />succeed
+        It was the dawn of the second age of web browsers.This is the
         story of the first important steps towards same makeup and assceeibility.
     </p>
-    <hr/>
-    
+    <hr />
+    <div style="width:600px;border: 1px solid red;">
+        <p>
+            So we browsed the shops,buying here and there.but browsing at least every
+            other store.The street vendors were less abundant,but much more persistent,
+            which was sort of funny.Kat was fun to watch,too,as she haggled with various sellers.
+            I don't think we paid more that two-thirds the original asking price on anything.
+        </p>
+        <p class="aside">
+            Of course,we found our later just how badly we'd done.But hey,that's what
+            tourists are for.
+        </p>
+        <p>
+            All of our buying was done in shops on the outskirts of the market area.
+            The main section of the market was actually sort of a letdown,being more expensive,
+            more touristy,and less friendly,in a way.About this time I started to wean
+            down,so we caught a taxi back to the New Otani.
+        </p>
+    </div>
+    <hr />
+    <div id="one">
+        <p>
+            Lorem ipsum,dolor sit amet,consectetuer adipiscing elit,sed diam nonunmmy nibh euismnod
+            tinciduent ut laoreet dolore magna <img src="../image/star.jpg" alt="star"> aliquam erat volutpat.Ut wisi
+            enim ad
+            minim veniam quis nostrud exerci tation ullamcorper suscripit lobortis nisl
+            ut aliquip exea commodo consequat.Duis autem vel eum inure dolor in hendrenrit
+            in vulptate velit esse molestic consequat.vel illun dolore en feugiat nulla facilisis at vendors
+            eros et assumsan et iusto o dio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi.
+        </p>
+        <p>
+            Lorem ipsum,dolor sit amet,consectetuer adipiscing elit,sed diam nonunmmy nibh euismnod
+            tinciduent ut laoreet dolore magna <img src="../image/star.jpg" alt="star"> aliquam erat volutpat.Ut wisi
+            enim ad
+            minim veniam quis nostrud exerci tation ullamcorper suscripit lobortis nisl
+            ut aliquip exea commodo consequat.Duis autem vel eum inure dolor in hendrenrit
+            in vulptate velit esse molestic consequat.vel illun dolore en feugiat nulla facilisis at vendors
+            eros et assumsan et iusto o dio dignissim qui blandit praesent luptatum zzril delenit
+            augue duis dolore te feugait nulla facilisi.
+        </p>
+    </div>
+
 </body>
+
 </html>
