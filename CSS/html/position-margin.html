@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position-top</title>
+    <style>
+        #one {
+            border: 1px solid red;
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        #two {
+            border: 1px solid blue;
+            background-color: yellow;
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 50%;
+        }
+
+        #three {
+            border: 1px solid red;
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        #four {
+            border: 1px solid blue;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            left: 50%;
+            right: 0;
+            margin: 1em;
+        }
+
+        #five {
+            border: 1px solid red;
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        #six {
+            border: 1px solid blue;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            left: 50%;
+            right: 0;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">
+        div1
+        <div id="two">
+            div2
+        </div>
+    </div>
+    <hr />
+    <div id="three">
+        div1
+        <div id="four">
+            start point from margin left top.
+        </div>
+    </div>
+    <hr />
+    <div id="five">
+        div1
+        <div id="six">
+            start point from padding left top.
+        </div>
+    </div>
+</body>
+
+</html>

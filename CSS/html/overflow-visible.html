@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>overflow-visible</title>
+    <style>
+        div#sidebar {
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 5em;
+            background: #BBB;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        This is a pisitioned element that is acting as a 'sidebar',
+        but it's only 7em tall.Any overflowing content will be overflowing
+        content will be visible outside the boundaries of the element box,
+        whether or not that's what the author really wanted.
+    </div>
+</body>
+
+</html>
