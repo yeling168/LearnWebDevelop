@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position-absoule</title>
+    <style>
+        div {
+            position: relative;
+            width: 10%;
+            height: 10em;
+            border: 1px solid;
+            background-color: #EEE;
+        }
+
+        div.a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15em;
+            height: 100%;
+            margin-left: auto;
+            background: #CCC;
+        }
+
+        div.b {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 10em;
+            height: 50%;
+            margin-top: auto;
+            background: #AAA;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="a">
+            absolutely positioned element A
+            <div class="b">
+                absolutely positioned element B
+            </div>
+        </div>
+        containing block.
+    </div>
+</body>
+
+</html>
