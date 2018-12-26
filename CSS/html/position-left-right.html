@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position-left-right</title>
+</head>
+
+<body>
+    <div style="position:relative;width:25em;border:1px dotted;">
+        An absolutely positioned element can have its content
+        <span style="position:absolute;top:0;left:0;right:auto;width:auto;background:silver;">
+            shrink-wrapped
+        </span>
+        thanks to the way positioning rules work.
+    </div>
+    <!-- 假设左右外边距都设置为auto，而left、width和right不是auto -->
+    <div style="position:relative;width:25em;border:1px dotted;">
+        An absolutely positioned element can have its content
+        <span style="background:silver;position:absolute;top:0;left:1em;right: 1em;width: 10em;margin: 0 auto;">
+            shrink-wrapped
+        </span>
+        thanks to the way positioning rules work.
+    </div>
+    <hr />
+    <div style="position:relative;width:25em;border:1px dotted;">
+        An absolutely positioned element can have its content
+        <span style="background:silver;position:absolute;top:0;left: 1em;right: 1em;width: 10em;margin-left: 1em;margin-right: 1em;">
+            shrink-wrapped
+        </span>
+        thanks to the way positioning rules work.
+    </div>
+    <hr />
+    <div style="position:relative;width:25em;border:1px dotted;">
+        An absolutely positioned element can have its content
+        <span style="background:silver;position:absolute;top:0;left: 1em;right: 1em;width: 10em;margin-left: 1em;margin-right: 12em;">
+            shrink-wrapped
+        </span>
+        thanks to the way positioning rules work.
+    </div>
+    <hr/>
+    <!-- 如果将左外边距置为auto，则会重置左外边距 -->
+    <div style="position:relative;width:25em;border:1px dotted;">
+        An absolutely positioned element can have its content
+        <span style="background:silver;position:absolute;top:0;left: 1em;right: 1em;width: 10em;margin-left: auto;margin-right: 1em;">
+            shrink-wrapped
+        </span>
+        thanks to the way positioning rules work.
+    </div>
+    <hr/>
+    <div style="position:relative;width:25em;border:1px dotted;">
+        An absolutely positioned element can have its content
+        <span style="background:silver;position:absolute;top:0;left: 1em;right: 1em;width: auto;margin-left: 1em;margin-right: 1em;">
+            shrink-wrapped
+        </span>
+        thanks to the way positioning rules work.
+    </div>
+    <hr/>
+    <div style="position:relative;width:30em;height:10em;border:1px solid;">
+        <div style="position: absolute;left:0;width:30%;background: red;top:0">
+            element A
+        </div>
+        <div style="position: absolute;background:green;left: 35%;top: 0;height: 50%;width: 30%;">
+            element B
+        </div>
+        <div style="position:absolute;background:blue;left: 70%;width: 30%;height: 50%;bottom: 0">
+            element C
+        </div>
+    </div>
+    <hr/>
+    <!-- 居中对齐 -->
+    <div style="position:relative;width:10em;height:10em;border:1px solid;">        
+        <div style="position:absolute;left:0;width:100%;background:orange;height: 5em;margin: auto 0;top:0;bottom: 0;">
+            element D
+        </div>
+    </div>
+    <hr/>
+    <!-- 居中对齐的另一种实现 -->
+    <div style="position:relative;width:10em;height:10em;border:1px solid;">        
+        <div style="position:absolute;left:0;width:100%;background:pink;height: 5em;margin: 25% 0;">
+            element D
+        </div>
+    </div>
+    <div style="position:relative;width:10em;height:10em;border:1px solid;">        
+        <div style="position:absolute;left:0;width:100%;background:pink;height: 5em;margin: 0;top:0;bottom: 0;">
+            element E
+        </div>
+    </div>
+</body>
+
+</html>
