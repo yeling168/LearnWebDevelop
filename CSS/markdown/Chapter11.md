@@ -60,3 +60,23 @@ table-caption
 | colgroup | `{display:table-column-group}`|
 | td、th | `{display:table-cell}`|
 | caption | `{display:table-caption}`|
+
+#### 列 ####
+
+尽管CSS表模型是面向行的，列在布局中仍有很重要的地位。虽然单元格在文档源中是行元素的后代，但它们可能同时属于上下文(行和列)。不过，在CSS中列和列组只能接受4种样式:border、background、width和visibility
+
+border
+
+   只有当border-collapse属性值为collapse时才能为列和列组设置边框。在这种情况下，列和列组边框会参与设置各单元格边界边框样式的合并算法。
+
+background
+
+   只有当单元格及其行有透明背景时，列或列组的背景才可见。
+
+width
+  
+  width属性定义了列或列组的最小宽度。列(或列组)中单元格的内容可能要求列更宽。
+
+visibility
+
+  如果一个列或列组的visibility为collapse，则该列(或列组)中所有单元格都不显示。从合并列跨到其他列的单元格会被裁剪，这类似于从其他列跨到隐藏列中的单元格。另外，表的总宽度会减去已合并列的宽度。如果对列或列组将visibility声明为任何非collapse值，则会被忽略。
