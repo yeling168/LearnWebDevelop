@@ -111,3 +111,25 @@ display值为table或inline-table的元素不能有任何内边距，不过它�
 | 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
 | 继承性 | 有 |
 | 计算值 | 根据指定确定|
+
+#### 重置和递增 ####
+创建计数器的基础包括两个方面，一是能设置计数器的起点，二是能将其递增一定的量。前者由属性counter-reset处理。
+## <font color="#ff995" face="微软雅黑" size="3">**counter-reset**</font> ##
+
+| 值 | `identifier、integer none 、inherit` |
+| ------ | ------ |
+| 初始值 | 取决于具体的用户代理 |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 无 |
+| 计算值 | 根据指定确定|
+
+还需要一个属性来指示元素将计数器递增。否则，计数器将永远保持计数器重置声明中指定的值。
+
+## <font color="#ff995" face="微软雅黑" size="3">**counter-increment**</font> ##
+
+| 值 | `identifier、integer none 、inherit` |
+| ------ | ------ |
+| 初始值 | 取决于具体的用户代理 |
+| 应用于 | <font color="#ff995" face="微软雅黑" size="3">**所有元素**</font> |
+| 继承性 | 无 |
+| 计算值 | 根据指定确定|
