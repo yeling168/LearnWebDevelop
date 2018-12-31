@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>colorfont</title>
     <style>
-        body{
+        body {
             color: black;
         }
-        a:link{
+
+        a:link {
             color: #808080;
         }
-        a:active{
+
+        a:active {
             color: silver;
         }
-        a:visited{
+
+        a:visited {
             color: #333333;
+        }
+
+        a.external {
+            cursor: url("../image/arrow.jpg"),pointer;
         }
     </style>
 </head>
+
 <body text="black" link="#808080" alink="silver" vlink="#333333">
     <h1>
         Emerging Into The Light
     </h1>
     <p>
-        When the city of <a href="">Seattle</a> was found,it was on a tidal flood plain in 
+        When the city of <a href="">Seattle</a> was found,it was on a tidal flood plain in
         <a href="">Puget Sound</a> If this seems like a bad move,it was,but then <a href="">the founders</a> were
         men from the Midwests who didn't know a whole lot about tides.You'd think they'd have figureed it all
         out before actullay building the town,but apparently not. A city was established right there,and construction
         work began.
     </p>
+    <hr />
+    <p>请把鼠标移动到单词上，可以看到鼠标指针发生变化：</p>
+    <span style="cursor:auto">
+        Auto</span><br />
+    <span style="cursor:crosshair">
+        Crosshair</span><br />
+    <span style="cursor:default">
+        Default</span><br />
+    <span style="cursor:pointer">
+        Pointer</span><br />
+    <span style="cursor:move">
+        Move</span><br />
+    <span style="cursor:e-resize">
+        e-resize</span><br />
+    <span style="cursor:ne-resize">
+        ne-resize</span><br />
+    <span style="cursor:nw-resize">
+        nw-resize</span><br />
+    <span style="cursor:n-resize">
+        n-resize</span><br />
+    <span style="cursor:se-resize">
+        se-resize</span><br />
+    <span style="cursor:sw-resize">
+        sw-resize</span><br />
+    <span style="cursor:s-resize">
+        s-resize</span><br />
+    <span style="cursor:w-resize">
+        w-resize</span><br />
+    <span style="cursor:text">
+        text</span><br />
+    <span style="cursor:wait">
+        wait</span><br />
+    <span style="cursor:help">
+        help</span>
+    <hr />
+    <a class="external">Music</a>
 </body>
+
 </html>
