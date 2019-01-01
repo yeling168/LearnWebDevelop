@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-origin</title>
+    <style>
+        div {
+            border: 10px solid black;
+            padding: 35px;
+            background-image: url(image/bg_flower.gif);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        #div1 {
+            background-origin: border-box;
+        }
+
+        #div2 {
+            background-origin: content-box;
+        }
+
+        #div3 {
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+
+<body>
+    <p>background-origin:border-box:</p>
+    <div id="div1">
+        这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+    </div>
+
+    <p>background-origin:content-box:</p>
+    <div id="div2">
+        这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+    </div>
+
+    <p>background-origin:padding-box:</p>
+    <div id="div3">
+        这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+    </div>
+</body>
+
+</html>
