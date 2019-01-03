@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fix</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function TZDemo() {
+            var d, tz, s = "The current local time is ";
+            d = new Date();
+            tz = d.getTimezoneOffset();
+            if (tz < 0) {
+                s += tz / 60 + " hours before GMT";
+            } else if (tz == 0) {
+                s += "GMT";
+            } else {
+                s += tz / 60 + "hours after GMT";
+            }
+            return s;
+        }
+        document.write(TZDemo());
+    </script>
+</body>
+
+</html>

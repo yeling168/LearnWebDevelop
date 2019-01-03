@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fix</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function GetTimeTest() {
+            var d, s, t;
+            var MinMilli = 1000 * 60;
+            var HrMilli = MinMilli * 60;
+            var DyMilli = HrMilli * 24;
+            d = new Date();
+            t = d.getTime();
+            s = "It's been "
+            s += Math.round(t / DyMilli) + " days since 1/1/70";
+            return (s);
+        }
+        document.write(GetTimeTest());
+    </script>
+</body>
+
+</html>

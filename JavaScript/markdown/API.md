@@ -12,3 +12,14 @@ escape 方法返回一个包含了 charstring 内容的字符串值（ Unicode �
 字符值大于 255 的以 %uxxxx 格式存储。 
 
 <font color="#ff995" face="微软雅黑" size="3">**注意:**</font>   escape 方法不能够用来对统一资源标示码 (URI) 进行编码。对其编码应使用 encodeURI 和encodeURIComponent 方法。
+
+一个错误:Maximum call stack size exceeded
+
+	function Date() {
+	            var d, s = "今天日期是: ";
+	            d = new Date();
+	            s += (d.getMonth() + 1) + "/";
+	            s += d.getDate() + "/";
+	            s += d.getYear();
+	            return (s);
+	        }

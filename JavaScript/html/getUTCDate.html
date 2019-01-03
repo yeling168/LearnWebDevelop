@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fix</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function UTCDateDemo() {
+            var d, s = "今天UTC日期是:";
+            d = new Date();
+            s += (d.getUTCMonth() + 1) + "/";
+            s += d.getUTCDate() + "/";
+            s += d.getUTCFullYear();
+            return s;
+        }
+        document.write(UTCDateDemo());
+    </script>
+</body>
+
+</html>

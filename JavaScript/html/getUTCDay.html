@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fix</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function DateDemo() {
+            var d, day, x, s = "今天是";
+            var x = new Array("星期日", "星期一", "星期二");
+            x = x.concat("星期三", "星期四", "星期五");
+            x = x.concat("星期六");
+            d = new Date();
+            day = d.getUTCDay();
+            return (s += x[day]);
+        }
+        document.write(DateDemo());
+    </script>
+</body>
+
+</html>
