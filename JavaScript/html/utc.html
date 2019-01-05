@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fix</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function DaysBetweenDateAndNow(yr, mo, dy) {
+            var d, r, t1, t2, t3; // 声明变量。
+            var MinMilli = 1000 * 60 // 初始化变量。
+            var HrMilli = MinMilli * 60
+            var DyMilli = HrMilli * 24
+            t1 = Date.UTC(yr, mo - 1, dy) // 获取从 1/1/1970 开始的毫秒数。
+            d = new Date(); // 创建 Date 对象。
+            t2 = d.getTime(); // 获取当前时间。 
+            if (t2 >= t1)
+                t3 = t2 - t1;
+            else t3 = t1 - t2;
+            r = Math.round(t3 / DyMilli);
+            return (r); // 返回差。
+        }
+        document.write(DaysBetweenDateAndNow(2019, 1, 5));
+    </script>
+</body>
+
+</html>

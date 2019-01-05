@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fix</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var test = new Array();
+
+        if (test.constructor == Array) {
+            document.write("This is an Array");
+        }
+        if (test.constructor == Boolean) {
+            document.write("This is a Boolean");
+        }
+        if (test.constructor == Date) {
+            document.write("This is a Date");
+        }
+        if (test.constructor == String) {
+            document.write("This is a String");
+        }
+
+        function employee(name, job, born) {
+            this.name = name;
+            this.job = job;
+            this.born = born;
+        }
+
+        var bill = new employee("Bill Gates", "Engineer", 1985);
+
+        document.write(bill.constructor);
+    </script>
+</body>
+
+</html>

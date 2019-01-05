@@ -23,3 +23,12 @@ escape 方法返回一个包含了 charstring 内容的字符串值（ Unicode �
 	            s += d.getYear();
 	            return (s);
 	        }
+
+
+Browser 对象：
+
+[http://www.w3school.com.cn/jsref/dom_obj_window.asp](http://www.w3school.com.cn/jsref/dom_obj_window.asp "Browser 对象")
+
+JavaScript HTML DOM：
+
+[http://www.runoob.com/js/js-htmldom.html](http://www.runoob.com/js/js-htmldom.html "DOM")
