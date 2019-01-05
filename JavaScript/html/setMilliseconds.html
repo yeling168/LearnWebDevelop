@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setMilliseconds</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function SetMSecDemo(nmsec) {
+            var d, s;
+            var sep = ":";
+            d = new Date();
+            d.setMilliseconds(nmsec);
+            s = "Current settting is ";
+            s += d.toLocaleString() + sep + d.getMilliseconds();
+            return s;
+        }
+        document.write(SetMSecDemo(995));
+    </script>
+</body>
+
+</html>
