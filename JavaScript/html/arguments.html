@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fix</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function ArgTest() {
+            var i, s, numargs = arguments.length;
+            s = numargs;
+            if (numargs < 2) {
+                s += "argument was passed to ArgTest.It was"
+            } else {
+                s += "arguments were passed to ArgTest.They were ";
+            }
+            for (i = 0; i < numargs; i++) {
+                s += arguments[i] + " ";
+            }
+            return s;
+        }
+        document.write(ArgTest());
+    </script>
+</body>
+
+</html>
