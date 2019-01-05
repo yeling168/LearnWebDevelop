@@ -10,15 +10,16 @@
 
 <body>
     <script type="text/javascript">
-        function setUTCDate(newdate) {
+        function SetUTCMSecDemo(nmsec) {
             var d, s;
+            var sep = ":";
             d = new Date();
-            d.setUTCDate(newdate);
-            s = "Current Setting is ";
-            s += d.toLocaleString();
+            d.setUTCMilliseconds(nmsec);
+            s = "Current setting is ";
+            s += d.toUTCString() + sep + d.getUTCMilliseconds();
             return s;
         }
-        document.write(setUTCDate(5));
+        document.write(SetUTCMSecDemo(2019));
     </script>
 </body>
 

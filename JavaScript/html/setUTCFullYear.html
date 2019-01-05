@@ -10,15 +10,15 @@
 
 <body>
     <script type="text/javascript">
-        function setUTCDate(newdate) {
+        function SetUTCFullYearDemo(newyear) {
             var d, s;
             d = new Date();
-            d.setUTCDate(newdate);
+            d.setUTCFullYear(newyear);
             s = "Current Setting is ";
-            s += d.toLocaleString();
+            s += d.toUTCString();
             return s;
         }
-        document.write(setUTCDate(5));
+        document.write(SetUTCFullYearDemo(2019));
     </script>
 </body>
 

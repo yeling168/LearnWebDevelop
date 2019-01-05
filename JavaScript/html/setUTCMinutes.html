@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>setTime</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function SetUTCMinutesDemo(nmin, nsec) {
+            var d, s; // 声明变量。
+            d = new Date(); // 创建 Date 对象。
+            d.setUTCMinutes(nmin, nsec); // 设置 UTC 分钟。
+            s = "Current setting is " + d.toUTCString()
+            return (s); // 返回新设置。
+        }
+        
+        document.write(SetUTCMinutesDemo(01,30));
+    </script>
+</body>
+
+</html>

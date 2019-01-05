@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>setTime</title>
+    <title>sort</title>
 </head>
 
 <body>
     <script type="text/javascript">
-        function setUTCDate(newdate) {
-            var d, s;
-            d = new Date();
-            d.setUTCDate(newdate);
-            s = "Current Setting is ";
-            s += d.toLocaleString();
-            return s;
+        function SortDemo() {
+            var a, l; // 声明变量。
+            a = new Array("X", "y", "d", "Z", "v", "m", "r");
+            l = a.sort(); // 排序数组。
+            return (l); // 返回排序的数组。
         }
-        document.write(setUTCDate(5));
+        document.write(SortDemo());
     </script>
 </body>
 
