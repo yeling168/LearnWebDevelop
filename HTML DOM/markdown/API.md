@@ -15,3 +15,18 @@ innerHTML：https://www.cnblogs.com/jongsuk0214/p/6930876.html
 1. getElementById---这个调用将返回一个对象
 2. getElementsByTagName---这个调用返回一个对象数组
 3. getElementsByClassName---这个调用返回一个对象数组
+
+#### 知识点 ####
+文档中的每个元素节点都是一个对象。不仅如此，这些对象中的每一个还天生具有一系列非常有用的方法，这要归功于DOM。利用这些预先定义好的方法，我们不仅可以检索出文档里任何一个对象的信息，甚至还可以改变元素的属性。
+
+- 一份文档就是一棵节点数木
+- 节点分为不同的类型:元素节点，属性节点和文本节点等，
+- getElementById将返回一个对象，该对象对应着文档里的一个特定的元素节点。
+- getElementsByTagName和getElementByclassName将返回一个对象数组，它们分别对应着文档里的一组特定的元素节点。
+- 每个节点都是一个对象。
+
+#### getAttribute ####
+getAttribute方法不属于document对象，所以不能通过document对象调用。它只能通过元素节点对象调用。
+
+#### setAttribute ####
+setAttribute()有点不同:它允许我们对属性节点的值做出修改。与getAttribute一样，setAttribute也只能用于元素节点。setAttribute做出的修改不会反映在文档本身的源代码里。这种"表里不一"的现象源自DOM的工作模式:先加载文档的静态内筒，再动态刷新，动态刷新不影响文档的静态内容。这正是DOM的真正威力:对页面内筒进行刷新却不需要在浏览器里刷新页面。
