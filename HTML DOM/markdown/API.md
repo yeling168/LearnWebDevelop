@@ -30,3 +30,10 @@ getAttribute方法不属于document对象，所以不能通过document对象调�
 
 #### setAttribute ####
 setAttribute()有点不同:它允许我们对属性节点的值做出修改。与getAttribute一样，setAttribute也只能用于元素节点。setAttribute做出的修改不会反映在文档本身的源代码里。这种"表里不一"的现象源自DOM的工作模式:先加载文档的静态内筒，再动态刷新，动态刷新不影响文档的静态内容。这正是DOM的真正威力:对页面内筒进行刷新却不需要在浏览器里刷新页面。
+
+
+#### appendChild()  ####
+只能传一个节点，且不直接支持传字符串【需要 appendChild(document.createTextElement('字符串'))代替】，返回追加的 Node 节点;
+<font color="#ff995" face="微软雅黑" size="3">若 appendChild() 的参数是页面存在的一个元素，则执行后原来的元素会被移除；</font>
+
+例如：document.getElement("a").appendChild(document.getElementByIdx("b"))，执行后，b 元素会先被移除，然后再添加到 a 中。
