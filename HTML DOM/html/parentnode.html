@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parentnode</title>
+</head>
+
+<body>
+    <p>列表示例：</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <p id="demo">点击按钮来获得列表中首个列表项的父节点节点名。</p>
+
+    <button onclick="myFunction()">试一下</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            var y = document.getElementsByTagName("LI")[0];
+            x.innerHTML = y.parentNode.nodeName;
+        }
+    </script>
+</body>
+
+</html>

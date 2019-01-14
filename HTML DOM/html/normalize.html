@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>normalize</title>
+</head>
+
+<body>
+    <p id="demo">点击按钮添加文本，点击另一个按钮来正规化元素。</p>
+
+    <button onclick="addTextNode()">添加文本节点</button>
+
+    <button onclick="normPara()">对段落进行正规化</button>
+    <script>
+        function addTextNode() {
+            var y = document.createTextNode("请再次点击。");
+            var x = document.getElementById("demo");
+            x.appendChild(y);
+            var z = document.getElementById("cc");
+            z.innerHTML = x.childNodes.length;
+        }
+
+        function normPara() {
+            var x = document.getElementById("demo");
+            x.normalize();
+            var z = document.getElementById("cc");
+            z.innerHTML = x.childNodes.length;
+        }
+    </script>
+    <p>上面的段落有 <span id="cc">1</span> 个子节点。</p>
+</body>
+
+</html>
