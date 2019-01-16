@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link href="index.css" rel="stylesheet">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="02.js"></script>
+</head>
+<body>
+    <ul id="selected-plays">
+      <li>喜剧
+        <ul>
+          <li><a href="/asyoulikeit/">你喜欢他</a></li>
+          <li>开始结束都好</li>
+          <li>仲夏之夜</li>
+          <li>12个夜晚</li>
+        </ul>
+      </li>
+      <li>悲剧
+        <ul>
+          <li><a href="hamlet.pdf">哈姆雷特</a></li>
+          <li>Machev</li>
+          <li>Romo安定</li>
+        </ul>
+      </li>
+      <li>历史
+        <ul>
+          <li>Henry IV(<a href="mailto:henryiv@king.co.uk">email</a>)
+            <ul>
+              <li>Part I</li>
+              <li>Part II</li>
+            </ul>
+          </li>
+          <li><a href="http://www.shakespeare.co.uk/henryv.htm">Hernry V</a></li>
+          <li>Ricjed II</li>
+        </ul>
+      </li>
+    </ul>
+    <img src="images/pdf.png" title="pdf" alt="pdf">
+    <table id="plays">
+      <tr>
+          <td>As You Like It</td>
+          <td>Comedy</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>All's Well that Ends Well</td>
+          <td>Comedy</td>
+          <td>1601</td>
+        </tr>
+        <tr>
+          <td>Hamlet</td>
+          <td>Tragedy</td>
+          <td>1604</td>
+        </tr>
+        <tr>
+          <td>Macbeth</td>
+          <td>Tragedy</td>
+          <td>1606</td>
+        </tr>
+        <tr>
+          <td>Romeo and Juliet</td>
+          <td>Tragedy</td>
+          <td>1595</td>
+        </tr>
+        <tr>
+          <td>Henry IV, Part I</td>
+          <td>History</td>
+          <td>1596</td>
+        </tr>
+        <tr>
+          <td>Henry V</td>
+          <td>History</td>
+          <td>1599</td>
+        </tr>
+    </table>
+
+    <table id="sonnets">
+      <tr>
+          <td>The Fair Youth</td>
+          <td>1–126</td>
+        </tr>
+        <tr>
+          <td>The Dark Lady</td>
+          <td>127–152</td>
+        </tr>
+        <tr>
+          <td>The Rival Poet</td>
+          <td>78–86</td>
+        </tr>
+    </table>
+    <input type="text" disabled="disabled">
+    <input type="button">
+    <input type="checkbox" checked="checked">
+    <select>
+      <option value="1">1</option>
+      <option value="2" selected="selected">2</option>
+    </select>
+    <p><label><input type="radio" name="time">十点半</label></p>
+    <p><label><input type="radio" name="time">收到新</label></p>
+    <label for="test1">小城市</label><input type="radio" id="test1" name="test">
+    <label for="test2">是dvd</label><input type="radio" id="test2" name="test">
+    <br>
+    <label for="male">Male</label><input type="radio" name="sex" id="male" />
+    <br />
+    <label for="female">Female</label><input type="radio" name="sex" id="female" />
+    <a href="#" onclick="alert(12);return false">都是</a>测试文本<span>测试元素</span>
+</body>
+</html>

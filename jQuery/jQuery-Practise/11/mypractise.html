@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <meta charset='utf-8'>
+</head>
+<body>
+<button id="stop">停止动画</button>
+    <button id="begin">继续动画</button>
+<p class="testslide" style="background-color: blue;width:100px;height:400px">
+
+    </p>
+    <script type="text/javascript">
+    $(function(){
+      $('#begin').click(function(){
+        $('.testslide').slideUp(3000,function(){console.log(1)}).slideDown(3000, function() {
+          console.log(2)
+        });
+      });
+      $('#stop').click(function(){
+        $('.testslide').stop();
+      });
+    });
+    </script>
+</body>
+</html>
