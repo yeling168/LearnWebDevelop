@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <style type="text/css">
+  .books{
+    width:461px;
+    height: 323px;
+    box-sizing: border-box;
+    list-style-type: none;
+    position: relative;
+  }
+  .books li{
+    width:461px;
+    height:323px;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+
+  </style>
+</head>
+<body>
+<ul class="books">
+  <li><img src="images/jq-game.jpg"></li>
+  <li><img src="images/jquery-designers.jpg"></li>
+  <li><img src="images/jqmobile-cookbook.jpg"></li>
+</ul>
+<script type="text/javascript">
+(function($){
+
+  $(function(){
+    $('li').eq(0).css('z-index',4);//初始化第一张图z-index使被覆盖的它重新凸显出来
+    var t=setInterval(fade,3000);
+  })
+  function fade(){
+    $('li').each(function(i,el){
+      //找出z-index为4的那个图，改变他的z-index和opacity，改变他下一个的z-index
+      if($(this).css('z-index')==4){
+        if($(this).next().length!=0){
+          $(this).css({opacity:'0','z-index':'1'});
+          $(this).next().css('z-index','4');
+          return false;//因为已经找到要修改的项，修改后要退出这个each遍历，不然程序会继续each
+        }else{
+          $('li').css('opacity','1');
+          $('li').eq(0).css('z-index','4');
+          $(this).css('z-index','1');
+          return false;//情况特殊的最后一项改完，这里退出防止后面$(this).css({opacity,'0')覆盖本项的$('li').css('opacity','1');
+        }
+        // $(this).css({opacity:'0','z-index':'1'});
+        // return false;//因为已经找到要修改的项，修改后要退出这个each遍历，不然程序会继续each
+      }
+    })
+  }
+})(jQuery)
+</script>
+</body>
+</html>
