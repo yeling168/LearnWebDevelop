@@ -75,6 +75,7 @@ html, body {
   }
   .selected {
     font-weight: bold;
+    color:red;
   }
   .hidden{
     display: none;
