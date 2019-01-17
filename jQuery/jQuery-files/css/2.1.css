@@ -104,6 +104,7 @@ html, body {
   .highlight {
     font-weight: bold;
     font-style: italic;
+    color:green;
   }
   
   .italic {
