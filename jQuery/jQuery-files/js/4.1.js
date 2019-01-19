@@ -99,33 +99,135 @@
 //             .css({
 //                 position: 'relative'
 //             })
-//             .fadeTo('fast', 0.5)
+//             .fadeTo(5000, 0.5)
 //             .animate({
 //                 left: paraWidth - switcherWidth
-//             }, 'slow')
-//             .fadeTo('slow', 1.0)
-//             .slideUp('slow').slideDown('slow');
+//             }, 5000)
+//             .fadeTo(5000, 1.0)
+//             .slideUp(5000).slideDown(5000);
 //     });
 // });
 
+// $(document).ready(function () {
+//     $('div.label').click(function () {
+//         var paraWidth = $('div.speech p').outerWidth();
+//         var $switcher = $(this).parent();
+//         var switcherWidth = $switcher.outerWidth();
+//         $switcher
+//             .css({
+//                 position: 'relative'
+//             })
+//             .fadeTo(10000, 0)
+//             .animate({
+//                 left: paraWidth - switcherWidth
+//             }, {
+//                 duration: 1000,
+//                 queue: false
+//             })
+//             .fadeTo(5000, 1.0)
+//             .slideUp(2000)
+//             .slideDown(2000);
+//     });
+// });
+
+
+// $(document).ready(function () {
+//     $('div.label').click(function () {
+//         var paraWidth = $('div.speech p').outerWidth();
+//         var $switcher = $(this).parent();
+//         var switcherWidth = $switcher.outerWidth();
+//         $switcher
+//             .css({
+//                 position: 'relative'
+//             })
+//             .fadeTo(10000, 0)
+//             .animate({
+//                 left: paraWidth - switcherWidth
+//             }, {
+//                 duration: 1000,
+//                 queue: false
+//             })
+//             .fadeTo(5000, 1.0)
+//             .css({
+//                 backgroundColor: '#f00'
+//             })
+//             .slideUp(2000)
+//             .slideDown(2000);
+//     });
+// });
+
+// $(document).ready(function () {
+//     $('div.label').click(function () {
+//         var paraWidth = $('div.speech p').outerWidth();
+//         var $switcher = $(this).parent();
+//         var switcherWidth = $switcher.outerWidth();
+//         $switcher
+//             .css({
+//                 position: 'relative'
+//             })
+//             .fadeTo(10000, 0)
+//             .animate({
+//                 left: paraWidth - switcherWidth
+//             }, {
+//                 duration: 1000,
+//                 queue: false
+//             })
+//             .fadeTo(5000, 1.0)
+//             .css({
+//                 backgroundColor: '#f00'
+//             })
+//             .slideUp(2000)
+//             .slideDown(2000);
+//     });
+// });
+
+// $(document).ready(function () {
+//     $('div.label').click(function () {
+//         var paraWidth = $('div.speech p').outerWidth();
+//         var $switcher = $(this).parent();
+//         var switcherWidth = $switcher.outerWidth();
+//         $switcher
+//             .css({
+//                 position: 'relative'
+//             })
+//             .fadeTo(10000, 0)
+//             .animate({
+//                 left: paraWidth - switcherWidth
+//             }, {
+//                 duration: 1000,
+//                 queue: false
+//             })
+//             .fadeTo(5000, 1.0)
+//             .slideUp(5000)
+//             .queue(function (next) {
+//                 $switcher.css({
+//                     backgroundColor: '#f00'
+//                 });
+//                 next();
+//             })
+//             .slideDown(2000);
+//     });
+// });
+
+// $(document).ready(function () {
+//     $('p').eq(2).css('border', '1px solid #333');
+//     $('p').eq(3).css('backgroundColor', '#ccc').hide();
+// });
+
+// $(document).ready(function () {
+//     $('p').eq(2)
+//         .css('border', '1px solid #333')
+//         .click(function () {
+//             $(this).slideUp('slow').next().slideDown('slow');
+//         });
+//     $('p').eq(3).css('backgroundColor', '#ccc').hide();
+// });
+
 $(document).ready(function () {
-    $('div.label').click(function () {
-        var paraWidth = $('div.speech p').outerWidth();
-        var $switcher = $(this).parent();
-        var switcherWidth = $switcher.outerWidth();
-        $switcher
-            .css({
-                position: 'relative'
-            })
-            .fadeTo('fast', 0.5)
-            .animate({
-                left: paraWidth - switcherWidth
-            }, {
-                duration: 'slow',
-                queue: false
-            })
-            .fadeTo('slow', 1.0)
-            .slideUp('slow')
-            .slideDown('slow');
-    });
+    $('p').eq(2)
+        .css('border', '1px solid #333')
+        .click(function () {
+            $(this).slideUp('slow').next().slideDown('slow');
+        });
+    $('p').eq(3).css('backgroundColor', '#ccc').hide();
 });
