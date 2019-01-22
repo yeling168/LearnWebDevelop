@@ -127,14 +127,28 @@
 //     });
 // });
 
+// $(document).ready(function () {
+//     $('#letter-e a').click(function (event) {
+//         event.preventDefault();
+//         var requestData = {
+//             term: $(this).text()
+//         };
+//         $.get('e.php', requestData, function (data) {
+//             $('#dictionary').html(data);
+//         });
+//     });
+// });
+
+// $(document).ready(function () {
+//     $('#letter-a a').click(function (event) {
+//         event.preventDefault();
+//         $('#dictionary').load('h.html');
+//     });
+// });
+
 $(document).ready(function () {
-    $('#letter-e a').click(function (event) {
+    $('#letter-a a').click(function (event) {
         event.preventDefault();
-        var requestData = {
-            term: $(this).text()
-        };
-        $.get('e.php', requestData, function (data) {
-            $('#dictionary').html(data);
-        });
+        $('#dictionary').load('h.html .entry');
     });
 });
