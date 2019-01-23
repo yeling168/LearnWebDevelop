@@ -10,10 +10,35 @@
 // });
 
 
+// $(document).ready(function () {
+//     $('#books').cycle({
+//         timeout: 2000,
+//         speed: 200,
+//         pause: true
+//     });
+// });
+
+// $.fn.cycle.defaults.timeout = 10000;
+// $.fn.cycle.defaults.random = true;
+
+// $(document).ready(function () {
+//     $("#books").cycle({
+//         timeout: 2000,
+//         speed: 2000,
+//         pause: true
+//     });
+// })
+
 $(document).ready(function () {
-    $('#books').cycle({
-        timeout: 2000,
-        speed: 200,
-        pause: true
-    });
+    var $books = $('#books');
+    var $controls = $('<div id="books-controls"></div>');
+    $controls.insertAfter($books);
+    $('<button>Pause</button>').click(function (event) {
+        event.preventDefault();
+        $books.cycle('pause');
+    }).appendTo($controls);
+    $('<button>Resume</button>').click(function (event) {
+        event.preventDefault();
+        $books.cycle('resume');
+    }).appendTo($controls);
 });
