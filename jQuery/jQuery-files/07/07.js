@@ -29,16 +29,29 @@
 //     });
 // })
 
-$(document).ready(function () {
-    var $books = $('#books');
-    var $controls = $('<div id="books-controls"></div>');
-    $controls.insertAfter($books);
-    $('<button>Pause</button>').click(function (event) {
-        event.preventDefault();
-        $books.cycle('pause');
-    }).appendTo($controls);
-    $('<button>Resume</button>').click(function (event) {
-        event.preventDefault();
-        $books.cycle('resume');
-    }).appendTo($controls);
-});
+// $(document).ready(function () {
+//     var $books = $('#books');
+//     var $controls = $('<div id="books-controls"></div>');
+//     $controls.insertAfter($books);
+//     $('<button>Pause</button>').click(function (event) {
+//         event.preventDefault();
+//         $books.cycle('pause');
+//     }).appendTo($controls);
+//     $('<button>Resume</button>').click(function (event) {
+//         event.preventDefault();
+//         $books.cycle('resume');
+//     }).appendTo($controls);
+// });
+
+// var $controls = $('<div id="books-controls"></div>')
+//     .insertAfter($books);
+// $('<button>Pause</button>').click(function (event) {
+//     event.preventDefault();
+//     $books.cycle('pause');
+//     $.cookie('cyclePaused', 'y');
+// }).appendTo($controls);
+// $('<button>Resume</button>').click(function (event) {
+//     event.preventDefault();
+//     $('ul:paused').cycle('resume');
+//     $.cookie('cyclePaused', null);
+// }).appendTo($controls);
