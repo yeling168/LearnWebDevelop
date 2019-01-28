@@ -120,6 +120,18 @@ $(document).ready(function () {
             $books.cycle(ui.value);
         }
     }).appendTo($controls);
+
+    $('<button>Resume</button>').click(function (event) {
+        event.preventDefault();
+        var $paused = $('ul:paused');
+        if ($paused.length) {
+            $paused.cycle('resume');
+        } else {
+            $(this).effect('shake', {
+                distance: 10
+            });
+        }
+    }).appendTo($controls);
 })
 
 // $(document).ready(function(){
@@ -128,8 +140,8 @@ $(document).ready(function () {
 //     })
 // })
 
-$(document).ready(function () {
-    $('h1').click(function () {
-        $(this).toggleClass('highlighted', 'slow', 'easeInExpo');
-    });
-});
+// $(document).ready(function () {
+//     $('h1').click(function () {
+//         $(this).toggleClass('highlighted', 'slow', 'easeInExpo');
+//     });
+// });
