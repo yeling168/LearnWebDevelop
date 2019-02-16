@@ -132,6 +132,40 @@ $(document).ready(function () {
             });
         }
     }).appendTo($controls);
+
+    //$books.find('.title').resizable();
+    $books.find('.title').resizable({
+        handles: 's'
+    });
+
+    $('<button>Pause</button>').click(function (event) {
+        // ...
+    }).button({
+        icons: {
+            primary: 'ui-icon-pause'
+        }
+    }).appendTo($controls);
+    $('<button>Resume</button>').click(function (event) {
+        // ...
+    }).button({
+        icons: {
+            primary: 'ui-icon-play'
+        }
+    }).appendTo($controls);
+
+    // $('<div id="slider"></div>').slider({
+    //     min: 0,
+    //     max: $('#books li').length - 1
+    // }).appendTo($controls);
+
+    $('<div id="slider"></div>').slider({
+        min: 0,
+        max: $('#books li').length - 1,
+        slide: function (event, ui) {
+            console.log(ui);
+            $books.cycle(ui.value);
+        }
+    }).appendTo($controls);
 })
 
 // $(document).ready(function(){
