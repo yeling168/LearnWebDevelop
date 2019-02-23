@@ -177,12 +177,51 @@
     //         }
     //     });
     // };
+
+    $.widget('ljq.tooltip', {
+        _create: function () {
+            //this引用的是当前部件实例
+            this._tooltipDiv = $('<div></div>').addClass('ljq-tooltip-text' + 'ui-widget ui-state-highlight ui-corner-all')
+                .hide().appendTo('body');
+            //this.element中保存着一个jQuery对象，这个对象指向最初选择的元素    
+            //.proxy()函数会修改方法中this的指向
+            this.element.addClass('ljq-tooltip-trigger')
+                .on('mouseenter.ljq-tooltip',
+                    $.proxy(this._open, this))
+                .on('mouseleave.ljq-tooltip',
+                    $.proxy(this._close, this));
+        },
+        destroy: function () {
+            this._tooltipDiv.remove();
+            this.element.removeClass('ljq-tooltip-trigger')
+                .off('.ljq-tooltip');
+            $.widget.prototype.destroy.apply(this, arguments);
+        },
+        _open: function () {
+            if (!this.options.disabled) {
+                var elementOffset = this.element.offset();
+                this._tooltipDiv.css({
+                    position: 'absolute',
+                    left: elementOffset.left,
+                    top: elementOffset.top + this.element.height()
+                }).text(this.element.data('tooltip-text'));
+                this._tooltipDiv.show();
+            }
+        },
+        _close: function () {
+            this._tooltipDiv.hide();
+        }
+    })
 })(jQuery);
 
 $(document).ready(function () {
     $('table').click(function () {
         $('tr').swapClass('one', 'two');
     })
+})
+
+$(document).ready(function () {
+    $('a').tooltip();
 })
 
 // $(document).ready(function(){
