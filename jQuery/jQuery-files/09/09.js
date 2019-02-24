@@ -38,6 +38,20 @@
 //   });
 // });
 
+// $(document).ready(function () {
+//   $('#news').find('tr:nth-child(even)').addClass('alt')
+// })
+
+// $(document).ready(function () {
+//   $('#news tr').filter(function (index) {
+//     return (index % 4) < 2;
+//   }).addClass('alt');
+// })
+
 $(document).ready(function () {
-  $('#news').find('tr:nth-child(even)').addClass('alt')
-})
+  $('#news tbody').each(function () {
+    $(this).children().has('td').filter(function (index) {
+      return (index % 4) < 2;
+    }).addClass('alt');
+  });
+});
