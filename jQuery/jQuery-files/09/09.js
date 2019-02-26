@@ -56,6 +56,19 @@
 //   });
 // });
 
+(function ($) {
+  $.extend($.expr[':'], {
+    group: function (element, index, matches, set) {
+      var num = parseInt(matches[3], 10);
+      if (isNaN(num)) {
+        return false;
+      }
+      return index % (num * 2) < num;
+    }
+  });
+})(jQuery);
+
+
 $(document).ready(function () {
   function stripe() {
     $('#news').find('tr.alt').removeClass('alt');
@@ -80,4 +93,12 @@ $(document).ready(function () {
     }
     stripe();
   });
+})
+
+
+
+$(document).ready(function () {
+  function stripe() {
+    //$('#news').find('tr.alt').removeClass('alt');
+  }
 })
