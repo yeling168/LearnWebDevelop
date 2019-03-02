@@ -66,6 +66,21 @@
       return index % (num * 2) < num;
     }
   });
+  $.fn.column = function () {
+    var $cells = $();
+    this.each(function () {
+      var $td = $(this).closest('td, th');
+      if ($td.length) {
+        var colNum = $td[0].cellIndex + 1;
+        var $columnCells = $td
+          .closest('table')
+          .find('td, th')
+          .filter(':nth-child(' + colNum + ')');
+        $cells = $cells.add($columnCells);
+      }
+    });
+    return this.pushStack($cells);
+  };
 })(jQuery);
 
 
@@ -102,3 +117,17 @@ $(document).ready(function () {
     //$('#news').find('tr.alt').removeClass('alt');
   }
 })
+
+//性能测试:https://jsperf.com/
+
+// $(document).ready(function () {
+//   var $cell = $('#release').nextAll();
+//   $cell.addClass('highlight');
+//   console.log($cell.context);
+//   console.log($cell.selector);
+//   console.log($cell.prevObject);
+// });
+
+// $(document).ready(function () {
+//   $('#release').nextAll().addBack().addClass('highlight');
+// });
