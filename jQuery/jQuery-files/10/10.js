@@ -10,7 +10,7 @@ $(document).ready(function () {
                 $('#gallery').append(data);
             });
             pageNum++;
-            if (pageNum < 2) {
+            if (pageNum < 20) {
                 $link.attr('href', 'pages/' + pageNum + '.html');
             } else {
                 $link.remove();
