@@ -68,3 +68,47 @@ a {
     display: block;
     padding: 10px;
 }
+
+.photo .details {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 160px;
+    height: 120px;
+    z-index: 1;
+    background-color: #333;
+    color: #fff;
+}
+
+.photo .details .description {
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.photo .details .date {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 9px;
+}
+
+.photo .details .photographer {
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    font-size: 9px;
+}
+
+.selected .details {
+    background-color: #060;
+}
+
+.photo .details.entered {
+    opacity: 1;
+}
+
+#gallery .hide {
+    display: none;
+}
