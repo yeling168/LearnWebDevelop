@@ -126,3 +126,11 @@
         }
     })
 })
+
+$(document).ready(function () {
+    $('#more-photos').click(function () {
+        $(this).trigger('nextPage', [true]);
+        return false;
+    });
+    $(window).scroll(checkScrollPosition).trigger('scroll');
+});
