@@ -50,7 +50,15 @@
 
 $(document).ready(function () {
     function showDetails() {
-        $(this).find('div').css({
+        var $member = $(this);
+        if ($member.hasClass('active')) {
+            return;
+        }
+        $('div.member.active')
+            .removeClass('active')
+            .children('div').fadeOut();
+        $member.addClass('active');
+        $member.find('div').css({
             display: 'block',
             left: '-300px',
             top: 0
@@ -58,6 +66,11 @@ $(document).ready(function () {
             $(this).animate({
                 left: 0,
                 top: 25 * index
+            },{
+                duration:'slow',
+                specialEasing:{
+                    top:'easeInQuart'
+                }
             })
         })
     }
