@@ -1,3 +1,33 @@
+(function ($) {
+    var div = document.createElement('div');
+    $.support.textShadow = div.style.textShadow === '';
+    $.support.filter = div.style.filter === '';
+    div = null;
+    if ($.support.textShadow) {
+        $.cssHooks.glowColor = {
+            set: function (elem, value) {
+                if (value == 'none') {
+                    elem.style.textShadow = '';
+                } else {
+                    elem.style.textShadow = '0 0 2px ' + value;
+                }
+            }
+        }
+    } else {
+        $.cssHooks.glowColor = {
+            set: function (elem, value) {
+                if (value == 'none') {
+                    elem.style.filter = '';
+                } else {
+                    elem.style.zoom = 1;
+                    elem.style.filter = 'progid:DXImageTransform.Microsoft' +
+                        '.Glow(Strength=2, Color=' + value + ');';
+                }
+            }
+        }
+    }
+})(jQuery);
+
 function buildRow(row) {
     var html = '<tr>';
     html += '<td><img src="images/' + row.img + '"></td>';
@@ -48,7 +78,7 @@ $.getJSON('books.json', function (json) {
                 },
                 css: {
                     glowColor: '#00ff00',
-                    cursor:'pointer'
+                    cursor: 'pointer'
                 }
             }).insertBefore($table);
         });
