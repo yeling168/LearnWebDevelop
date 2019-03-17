@@ -1,0 +1,18 @@
+{
+    "url": "http://api.jquery.com/innerWidth/",
+    "name": "innerWidth",
+    "title": ".innerWidth()",
+    "type": "method",
+    "signatures": [{
+        "added": "1.2.6"
+    }],
+    "desc": "Get the current computed width for the first element in the set of matched elements,including padding but not border.",
+    "longdesc": "<p>This method returns the width of the element, including left and right padding,in pixels. < /p>\n<p>This method is not applicable to <code>window</code > and <code > document < /code> objects; for these, use <code><a href=\"/width\">.width()</a></code> instead.</p > \n < p class = \"image\"><imgsrc=\"/images/0042_04_05.png\"/></p>",
+    "categories": [
+        "CSS",
+        "Dimensions",
+        "Manipulation > Style Properties",
+        "Version > Version 1.2.6"
+    ],
+    "download": ""
+}
