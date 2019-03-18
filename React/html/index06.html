@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello React!</title>
+
+  <link rel="stylesheet" href="" type="text/css" />
+
+  <script type="text/javascript">
+    function counter(start) {
+      let nextValue = Math.round(start);
+      return {
+        next: function () {
+          return nextValue++;
+        }
+      }
+    }
+    let serialNumberGenerator = counter(1000);
+    let sn1 = serialNumberGenerator.next();
+    console.log(sn1);
+    let sn2 = serialNumberGenerator.next();
+    console.log(sn2);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

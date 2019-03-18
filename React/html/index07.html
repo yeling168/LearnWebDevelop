@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello React!</title>
+
+  <link rel="stylesheet" href="" type="text/css" />
+
+  <script type="text/javascript">
+    function rangeIter(first, last) {
+      let nextValue = Math.ceil(first);
+      return {
+        next: function () {
+          if (nextValue > last) {
+            throw StopIteration;
+          }
+          return nextValue++;
+        }
+      };
+    }
+    let r = rangeIter(1, 5);
+    while (true) {
+      try {
+        console.log(r.next());
+      } catch (e) {
+        if (e == StopIteration) break;
+        else throw e;
+      }
+    }
+    console.log(r);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

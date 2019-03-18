@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello React!</title>
+
+  <link rel="stylesheet" href="" type="text/css" />
+
+  <script type="text/javascript">
+    function range(min, max) {
+      return {
+        get min() {
+          return min;
+        },
+        get max() {
+          return max;
+        },
+        includes: function (x) {
+          return min <= x && x <= max;
+        },
+        toString: function () {
+          return "[" + min + "," + max + "]";
+        },
+        __iterator__: function () {
+          let val = Math.ceil(min);
+          return {
+            next: function () {
+              if (val > max) {
+                throw StopIteration;
+              }
+              return val++;
+            }
+          }
+        }
+      }
+    }
+    var a = range(1, 10);
+    console.log(a);
+    for (let i in range(1, 10)) {
+      console.log(i);
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
