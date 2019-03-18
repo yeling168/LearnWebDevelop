@@ -1,7 +1,7 @@
 //https://www.jianshu.com/p/3add54f9df17
 const List=()=>(
     <div>
-    <Title>This is title</Title>
+    <title>This is title</title>
     <ul>
     <li>list item</li>
     <li>list item</li>
