@@ -18,6 +18,7 @@ export default class Home extends Component {
         status: 1
       });
     }, 3000);
+    console.log("Constructor");
     //console.log(this);
   }
 
@@ -35,14 +36,47 @@ export default class Home extends Component {
     this.props.changeLink(this.state.homeLink);
   }
 
-  onHandleChange(event){
+  onHandleChange(event) {
     console.log(event);
     this.setState({
-      homeLink:event.target.value
-    })
+      homeLink: event.target.value
+    });
+  }
+
+  componentWillMount() {
+    console.log("Component will mount");
+  }
+
+  componentDidMount() {
+    console.log("Component did mount");
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log("Component will receive props", nextProps);
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("Component should update", nextProps, nextState);
+    if (nextState.status === 1) {
+      return false;
+    }
+    return true;
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log("Component will update", nextProps, nextState);
+  }
+
+  componentDidUpdate(preProps, prevState) {
+    console.log("Component did update", preProps, prevState);
+  }
+
+  componentWillMount() {
+    console.log("Component will unmount");
   }
   render() {
     //console.log(this.props);
+    console.log("render");
     return (
       <div className="container">
         <div className="row">
@@ -66,7 +100,12 @@ export default class Home extends Component {
               Greet
             </button>
             <hr />
-            <input type="text" defaultValue={this.props.initialName} value={this.state.initialName} onChange={(event)=>this.onHandleChange(event)}/>
+            <input
+              type="text"
+              defaultValue={this.props.initialName}
+              value={this.state.initialName}
+              onChange={event => this.onHandleChange(event)}
+            />
             <button
               className="btn btn-primary"
               onClick={this.onChangeLink.bind(this)}
@@ -85,5 +124,5 @@ Home.propTypes = {
   age: propTypes.number,
   user: propTypes.object,
   greet: propTypes.func,
-  initialName:propTypes.string
+  initialName: propTypes.string
 };
