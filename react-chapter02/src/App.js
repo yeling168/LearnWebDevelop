@@ -5,7 +5,7 @@ import PostList from './component/PostList';
 class App extends Component {
   render() {
     return ( 
-      <PostList / >
+      <PostList/ >
     );
   }
 }
