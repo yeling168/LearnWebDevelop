@@ -20,7 +20,8 @@
 
 .like img {
     width: 20px;
-    height: 20px
+    height: 20px;
+    cursor: pointer
 }
 
 .like span {
