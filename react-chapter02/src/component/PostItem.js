@@ -1,5 +1,9 @@
 import React from "react";
 
+import PropTypes from "prop-types";
+
+import '../theme/PostItem.css';
+
 function PostItem(props) {
   const handleClick = () => {
     props.onVote(props.post.id);
@@ -23,4 +27,8 @@ function PostItem(props) {
   );
 }
 
+PostItem.propTypes = {
+  post: PropTypes.object,
+  onVote: PropTypes.func
+};
 export default PostItem;

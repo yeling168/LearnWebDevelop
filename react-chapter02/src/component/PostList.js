@@ -2,6 +2,10 @@ import React, { Component } from "react";
 
 import PostItem from "./PostItem";
 
+import Welcome from './Welcome';
+
+import '../theme/PostList.css';
+
 class PostList extends Component {
   constructor(props) {
     super(props);
@@ -71,6 +75,9 @@ class PostList extends Component {
         {this.state.posts.map((item, i) => (
           <PostItem key={i} post={item} onVote={this.handleVote} />
         ))}
+      </ul>
+      <ul>
+        <Welcome name='world'/>
       </ul>
     </div>
     )
