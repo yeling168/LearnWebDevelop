@@ -2,9 +2,11 @@ import React, { Component } from "react";
 
 import PostItem from "./PostItem";
 
-import Welcome from './Welcome';
+import Welcome from "./Welcome";
 
-import '../theme/PostList.css';
+import Blog from "./Blog";
+
+import "../theme/PostList.css";
 
 class PostList extends Component {
   constructor(props) {
@@ -19,34 +21,32 @@ class PostList extends Component {
   componentDidMount() {
     //用setTimeout模拟异步从服务器端获取数据
     this.timer = setTimeout(() => {
-      this.setState(
-        {
-          posts: [
-            {
-              id: 1,
-              title: "大家一起来讨论React 吧",
-              author: "张三",
-              date: "2017-09-01 10:00",
-              vote : 0
-            },
-            {
-              id: 2,
-              title: "前端框架，你最爱哪一个",
-              author: "李四",
-              date: "2017-09-01 12:00",
-              vote : 0
-            },
-            {
-              id: 3,
-              title: "Web App的时代已经到来",
-              author: "王五",
-              date: "2017-09-01 14:00",
-              vote : 0
-            }
-          ]
-        },
-      );
-    },1000);
+      this.setState({
+        posts: [
+          {
+            id: 1,
+            title: "大家一起来讨论React 吧",
+            author: "张三",
+            date: "2017-09-01 10:00",
+            vote: 0
+          },
+          {
+            id: 2,
+            title: "前端框架，你最爱哪一个",
+            author: "李四",
+            date: "2017-09-01 12:00",
+            vote: 0
+          },
+          {
+            id: 3,
+            title: "Web App的时代已经到来",
+            author: "王五",
+            date: "2017-09-01 14:00",
+            vote: 0
+          }
+        ]
+      });
+    }, 1000);
   }
 
   //componentWillUnmount在组件从 DOM 中移除之前立刻被调用。
@@ -68,19 +68,34 @@ class PostList extends Component {
   }
 
   render() {
+    //posts 结构
+    const posts = [
+      { id: 1, title: "Hello React", content: "Welcome to learning React !" },
+      {
+        id: 2,
+        title: "Installation",
+        content: "You can install React from npm."
+      }
+    ];
     return (
       <div>
-      帖子列表:
-      <ul>
-        {this.state.posts.map((item, i) => (
+        帖子列表:
+        <ul>
+          {/* {this.state.posts.map((item, i) => (
           <PostItem key={i} post={item} onVote={this.handleVote} />
-        ))}
-      </ul>
-      <ul>
-        <Welcome name='world'/>
-      </ul>
-    </div>
-    )
+        ))} */}
+          {this.state.posts.map((item, i) => (
+            <PostItem key={i} post={item} onVote={this.handleVote} />
+          ))}
+        </ul>
+        <ul>
+          <Welcome name="world" />
+        </ul>
+        <ul>
+          <Blog name="beyondthestars" posts={posts}/>
+        </ul>
+      </div>
+    );
   }
 }
 
