@@ -138,18 +138,21 @@ class MyComponent extends React.Component {
   }
   render() {
     return (
-      <ul>
-        {this.state.list.map(item => (
-          // bind 除了绑定this ，还绑定item 作为参数，供handleClick 使用
-          <li
-            key={item}
-            className={this.state.current === item ? "current" : ""}
-            onClick={this.handleClick.bind(this, item)}
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <ul>
+          {this.state.list.map(item => (
+            // bind 除了绑定this ，还绑定item 作为参数，供handleClick 使用
+
+            <li
+              key={item}
+              className={this.state.current === item ? "current" : ""}
+              onClick={this.handleClick.bind(this, item)}
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 }
