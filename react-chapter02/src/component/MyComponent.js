@@ -1,5 +1,6 @@
 import React from "react";
 import { className } from "postcss-selector-parser";
+import "../theme/MyComponent.css";
 
 // class MyComponent extends React.Component{
 //     //constructor通常用户初始化组件的state以及绑定事件处理方法等工作
@@ -141,6 +142,7 @@ class MyComponent extends React.Component {
         {this.state.list.map(item => (
           // bind 除了绑定this ，还绑定item 作为参数，供handleClick 使用
           <li
+            key={item}
             className={this.state.current === item ? "current" : ""}
             onClick={this.handleClick.bind(this, item)}
           >
