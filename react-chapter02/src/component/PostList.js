@@ -6,6 +6,8 @@ import Welcome from "./Welcome";
 
 import Blog from "./Blog";
 
+import MyComponent from './MyComponent';
+
 import "../theme/PostList.css";
 
 class PostList extends Component {
@@ -93,6 +95,9 @@ class PostList extends Component {
         </ul>
         <ul>
           <Blog name="beyondthestars" posts={posts}/>
+        </ul>
+        <ul>
+          <MyComponent/>
         </ul>
       </div>
     );
