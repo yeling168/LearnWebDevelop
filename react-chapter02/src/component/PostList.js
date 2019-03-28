@@ -8,7 +8,10 @@ import Blog from "./Blog";
 
 import MyComponent from './MyComponent';
 
+import LoginForm from './LoginForm';
+
 import "../theme/PostList.css";
+
 
 class PostList extends Component {
   constructor(props) {
@@ -98,6 +101,9 @@ class PostList extends Component {
         </ul>
         <ul>
           <MyComponent/>
+        </ul>
+        <ul>
+          <LoginForm/>
         </ul>
       </div>
     );
