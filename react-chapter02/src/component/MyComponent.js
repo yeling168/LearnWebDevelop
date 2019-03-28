@@ -1,5 +1,5 @@
 import React from "react";
-import { className } from "postcss-selector-parser";
+
 import "../theme/MyComponent.css";
 
 // class MyComponent extends React.Component{
@@ -135,6 +135,7 @@ class MyComponent extends React.Component {
     this.setState({
       current: item
     });
+    console.log(this);
   }
   render() {
     return (
