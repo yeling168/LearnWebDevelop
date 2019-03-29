@@ -6,12 +6,15 @@ import Welcome from "./Welcome";
 
 import Blog from "./Blog";
 
-import MyComponent from './MyComponent';
+import MyComponent from "./MyComponent";
 
-import LoginForm from './LoginForm';
+import LoginForm from "./LoginForm";
+
+import ReactStackForm from "./ReactStackForm";
+
+import CheckboxAndradio from "./checkboxAndradio";
 
 import "../theme/PostList.css";
-
 
 class PostList extends Component {
   constructor(props) {
@@ -97,13 +100,19 @@ class PostList extends Component {
           <Welcome name="world" />
         </ul>
         <ul>
-          <Blog name="beyondthestars" posts={posts}/>
+          <Blog name="beyondthestars" posts={posts} />
         </ul>
         <ul>
-          <MyComponent/>
+          <MyComponent />
         </ul>
         <ul>
-          <LoginForm/>
+          <LoginForm />
+        </ul>
+        <ul>
+          <ReactStackForm />
+        </ul>
+        <ul>
+          <CheckboxAndradio />
         </ul>
       </div>
     );

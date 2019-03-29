@@ -13,7 +13,7 @@ class LoginForm extends React.Component {
   }
   //监听用户名和密码两个input值的变化
   handleChange(event) {
-      //屏蔽一些console报错
+    //屏蔽一些console报错
     event.persist();
     console.log(event);
     const target = event.target;
