@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import PostItem from "./BbsPostItem";
 
+import SimpleForm from './SimpleForm';
+
 import "../theme/BbsPostList.css";
 
 class PostList extends Component {
@@ -98,6 +100,10 @@ class PostList extends Component {
               onSave={this.handleSave}
             />
           ))}
+        </ul>
+        <hr/>
+        <ul>
+          <SimpleForm/>
         </ul>
       </div>
     );
