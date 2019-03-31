@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
 class Modal extends Component {
   constructor(props) {
     super(props);
     //从根节点下创建一个div节点
     this.container = document.createElement("div");
+    document.body.appendChild(this.container);
   }
 
   //组件从DOM 中被卸载的过程， 这个过程中只有一个生命周期方法componentWillUnmount
