@@ -18,7 +18,7 @@ class App extends Component {
       <div>
         <h2>Dashboard</h2>
         {this.state.showModal && (
-          <Modal onClose={this.closeModal}>Modal Dialog </Modal>
+          <Modal onClose={this.closeModal}>Modal Dialog</Modal>
         )}
       </div>
     );
