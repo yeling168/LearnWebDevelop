@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Hello from './component/Hello';
+import Timer from './component/Timer';
 import './App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div>
         <Hello/>
+        <Timer/>
       </div>
     );
   }
