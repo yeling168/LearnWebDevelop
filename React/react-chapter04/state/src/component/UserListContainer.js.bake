@@ -1,0 +1,42 @@
+import React, { Component } from "react";
+
+//组件在挂载阶段如何与服务器通信
+//componentDidMount
+// 在组件被挂载到DOM 后调用， 且只会被调用一次。这时候已经可以获取到DOM 结构，因此
+// 依赖DOM 节点的操作可以放到这个方法中。这个方法通常还会用于向服务器端请求数据。在这个
+// 方法中调用this.s etState 会引起组件的重新渲染。
+
+class UserListContainer extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    componentDidMount(){
+        var that=this;
+        fetch('path/to/user-api').then(function(response){
+            response.json().then(function(data){
+                that.setState({
+                    users:data
+                })
+            })
+        })
+    }
+
+    // 在执行fetch 请求时，要先对新老props 中的category 做比较， 只
+    // 有不一致才说明category 有了更新，才需要重新进行服务器通信。componentWillReceiveProps 的执
+    // 行并不能保证props 一定发生了修改。
+    componentWillReceiveProps(nextProps){
+        var that=this;
+        if(nextProps.category!==this.props.category){
+            fetch ('/ path/to/user-api?category='+ nextProps.category).then(function(response){
+                response.json().then(function(data){
+                    that.setState({
+                        users:data
+                    })
+                })
+            })
+        }
+    }
+}
+//UserListContainer是在componentDidMount中与服务器进行通信的，这时候组件已经挂载，真实的DOM也已经渲染完成，是调用服务器API最安全的地方，也是React官方推荐的进行服务器通信的地方
+export default UserListContainer;
