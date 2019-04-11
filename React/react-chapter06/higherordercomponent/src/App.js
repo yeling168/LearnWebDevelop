@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import MyComponent from "./Component/MyComponent";
-import MyComponentWithPersistentData from './Component/WithPersistentData';
+import MyComponentWithPersistentData from './Component/WithPersistentDataProps';
 import "./App.css";
 
 class App extends Component {
