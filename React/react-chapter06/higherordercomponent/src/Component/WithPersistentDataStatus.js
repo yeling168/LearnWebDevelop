@@ -24,17 +24,20 @@ function withControlledState(WrappedComponent) {
         }
       };
       //通过{...this.props}把传递给当前组件的属性传递给被包装的组件
-      return <WrappedComponent {...this.props} {...newProps} />;
+      //return <WrappedComponent {...this.props} {...newProps} />;
+      //我们还可以在高阶组件渲染WrappedComponent 时添加额外的元素，这种情况通常用于为WrappedComponent增加布局或修改样式。
+      return <div style={{backgroundColor:'red'}}><WrappedComponent {...this.props} {...newProps}/></div>
     }
   };
 }
 
-class MyComponent extends Component {
-  render() {
-    return <div>{this.props.data}</div>;
+class SimpleControlledComponent extends Component{
+  render(){
+    //此时的SimpleControlledComponent 为无状态组件，状态由高阶组件维护
+    return <input name="simple" {...this.props.controlledProps}/>
   }
 }
 
-const MyComponentWithPersistentData = withPersistentData(MyComponent);
+const ComponentWithControlledState = withControlledState(SimpleControlledComponent);
 
-export default MyComponentWithPersistentData;
+export default ComponentWithControlledState;

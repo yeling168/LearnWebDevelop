@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import MyComponentWithPersistentData from './Component/WithPersistentDataProps';
+//import MyComponentWithPersistentData from './Component/WithPersistentDataProps';
+import ComponentWithControlledState from './Component/WithPersistentDataStatus'
 import "./App.css";
 
 class App extends Component {
@@ -7,7 +8,8 @@ class App extends Component {
     return (
       <div className="App">
         {/* <MyComponent /> */}
-        <MyComponentWithPersistentData/>
+        {/* <MyComponentWithPersistentData/> */}
+        <ComponentWithControlledState/>
       </div>
     );
   }
