@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+//通过asyncComponent 导入组件，创建代码分片点
+import asyncComponent from "./asyncComponent";
+const AsyncHome=asyncComponent(()=>import("./components/Home"));
+const AsyncLogin=asyncComponent(()=>import("./components/Login"));
+// import Home from "./components/Home";
+// import Login from "./components/Login";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={AsyncHome} />
+          <Route path="/login" component={AsyncLogin} />
+          <Route path="/posts" component={AsyncHome} />
+        </Switch>
+      </Router>
     );
   }
 }

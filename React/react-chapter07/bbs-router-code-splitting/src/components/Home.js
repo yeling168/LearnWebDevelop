@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import PostList from "./PostList";
+//import PostList from "./PostList";
 import Header from "./Header";
-import Post from "./Post";
+//import Post from "./Post";
+
+import asyncComponent from "./../asyncComponent";
+const AsyncPost = asyncComponent(() => import("./Post"));
+const AsyncPostList = asyncComponent(() => import("./PostList"));
 
 class Home extends Component {
   constructor(props) {
@@ -38,12 +42,12 @@ class Home extends Component {
         <Route
           path={match.url}
           exact
-          render={props => <PostList userId={userId} {...props} />}
+          render={props => <AsyncPostList userId={userId} {...props} />}
         />
         {/* 帖子详情路由配置 */}
         <Route
           path={`${match.url}/:id`}
-          render={props => <Post userId={userId} {...props} />}
+          render={props => <AsyncPost userId={userId} {...props} />}
         />
       </div>
     );
