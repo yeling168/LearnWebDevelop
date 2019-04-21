@@ -30,7 +30,7 @@ class PostEditor extends Component {
   }
 
   //取消帖子的编辑
-  handleSaveClick() {
+  handleCancelClick() {
     this.props.onCancel();
   }
 

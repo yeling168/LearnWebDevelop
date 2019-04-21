@@ -1,9 +1,32 @@
-import { React, Component } from "react";
+import React, { Component } from "react";
+import { Route } from "react-router-dom";
+import PostList from "./PostList";
+import Header from "./Header";
+import Post from "./Post";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userId: sessionStorage.getItem("userId"),
+      username: sessionStorage.getItem("username")
+    };
+    this.handleLogout = this.handleLogout.bind(this);
+  }
+
+  handleLogout() {
+    //注销用户
+    sessionStorage.removeItem("userId");
+    sessionStorage.removeItem("username");
+    this.setState({
+      userId: null,
+      username: null
+    });
+  }
+
   render() {
     const { match, location } = this.props;
-    const { username } = this.state;
+    const { userId, username } = this.state;
     return (
       <div>
         <Header

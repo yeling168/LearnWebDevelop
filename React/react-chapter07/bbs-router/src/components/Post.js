@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import React, { Component } from "react";
 import PostEditor from "./PostEditor";
 import PostView from "./PostView";
 import CommentList from "./CommentList";
@@ -70,24 +69,7 @@ class Post extends Component {
       editing: false
     });
   }
-  //提交新建的评论
-  handleCommentSubmit(content) {
-    const postId = this.props.match.params.id;
-    const comment = {
-      author: this.props.userId,
-      post: postId,
-      content: content
-    };
-    this.saveComment(comment);
-  }
-  //保存新的评论到服务器
-  saveComment(comment) {
-    post(url.createComment(), comment).then(data => {
-      if (!data.error) {
-        this.refreshComments();
-      }
-    });
-  }
+
   //同步帖子的修改到服务器
   savePost(id, post) {
     put(url.updatePost(id), post).then(data => {
@@ -102,7 +84,7 @@ class Post extends Component {
       }
     });
   }
-  //当CommentList 中有新的评论被创建时,Post 同样需要把新评论同步到服务器
+  //提交新建的评论,当CommentList 中有新的评论被创建时,Post 同样需要把新评论同步到服务器
   handleCommentSubmit(content) {
     const postId = this.props.match.params.id;
     const comment = {

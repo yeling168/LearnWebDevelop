@@ -4,7 +4,7 @@ import "./Header.css";
 
 class Header extends Component {
   render() {
-    const { username, onLogout, loacation } = this.props;
+    const { username, onLogout, location } = this.props;
     return (
       <div className="header">
         <div className="nav">

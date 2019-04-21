@@ -1,4 +1,4 @@
-import { React, Component } from "react";
+import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import { post } from "../utils/request";
 import url from "../utils/url";
@@ -8,7 +8,7 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "jack",
+      username: "jack"||"",
       password: "123456",
       redirectToReferrer: false // 是否重定向到之前的页面
     };
@@ -45,7 +45,7 @@ class Login extends Component {
       password
     };
 
-    post(url.login, params).then(data => {
+    post(url.login(), params).then(data => {
       if (data.error) {
         alert(data.error.message || "login failed");
       } else {

@@ -1,3 +1,16 @@
+import { SHA1 } from "./SHA1";
+
+const AppId = "A6053788184630";
+const AppKey = "8B3F5860-2646-2C47-DC50-39106919B260";
+var now = Date.now();
+const secureAppKey = SHA1(AppId + "UZ" + AppKey + "UZ" + now) + "." + now;
+
+const headers = new Headers({
+  "X-APICloud-AppId": AppId,
+  "X-APICloud-AppKey": secureAppKey,
+  Accept: "application/json",
+  "Content-Type": "application/json"
+});
 //我们使用HTML 5 fetch 接口调用API ，在utils/request.js 中对fetch 进行了封装，定义了get、post 、
 //put 三个方法，分别满足以不同HTTP 方法(Get、Post、Put)调用API的场景
 
