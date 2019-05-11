@@ -23,3 +23,6 @@ const reducer = (state = initialState, action) => {
 };
 
 export default reducer;
+
+//action和reducer之间并不是一对一的关系。一个action是可以被多个模块reducer处理的
+//尤其是当模块之间存在关联关系时，这种场景更为常见
