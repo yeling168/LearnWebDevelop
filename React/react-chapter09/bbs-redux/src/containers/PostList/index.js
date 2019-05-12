@@ -1,9 +1,48 @@
-import { connect } from "react-redux";
+import React, { Component } from "react";
 import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import PostsView from "./components/PostsView";
+import PostEditor from "../Post/components/PostEditor";
 import { getLoggedUser } from "../../redux/modules/auth";
 import { actions as postActions } from "../../redux/modules/posts";
 import { actions as uiActions, isAddDialogOpen } from "../../redux/modules/ui";
 import { getPostListWithAuthors } from "../../redux/modules";
+import "./style.css";
+
+class PostList extends Component{
+  componentDidMount(){
+    this.props.fetchAllPosts();//获取帖子列表
+  }
+
+  //保存帖子
+  handleSave=data=>{
+    this.props.createPost(data.title,data.content);
+  }
+
+  //取消新建帖子
+  handleCancel=()=>{
+    this.props.closeAddDialog();
+  }
+
+  //新建帖子
+  handleNewPost=()=>{
+    this.props.openAddDialog();
+  }
+
+  render(){
+    const {posts,user,isAddDialogOpen}=this.props;
+    return (
+      <div className="postList">
+        <div>
+          <h2>话题列表</h2>
+          {user.userId?(<button onClick={this.handleNewPost}>发帖</button>):null}
+        </div>
+        {isAddDialogOpen?(<PostEditor onSave={this.handleSave} onCancel={this.handleCancel}/>):null}
+        <PostsView posts={posts}/>
+      </div>
+    )
+  }
+}
 //Redux模块准备好了，下面就可以通过Redux的connect函数把组件和Redux的store进行连接了。我们以组件PostList为例介绍连接过程
 
 //注入state

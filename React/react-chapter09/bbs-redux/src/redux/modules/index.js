@@ -5,7 +5,7 @@ import app from './app';
 import auth from './auth';
 import ui from './ui';
 import comments from './comments';
-inport posts,{getPostIds,getPostById} from './posts';
+import posts, { getPostIds, getPostById } from "./posts";
 import users,{getUserById} from './users';
 
 //合并所有模块的reducer成一个根reducer
