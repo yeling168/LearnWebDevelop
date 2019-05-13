@@ -1,8 +1,13 @@
-import { get } from "http";
-import { puts } from "util";
+import { combineReducers } from "redux";
+import { get, put, post } from "../../utils/request";
+import url from "../../utils/url";
+import { actions as appActions } from "./app";
 
 //posts模块负责与帖子相关的状态管理，包括获取帖子列表，获取帖子详情，新建帖子和修改帖子。使用到的action types定义如下
-
+const initialState = {
+  byId: {},
+  allIds: []
+};
 // action types
 export const types = {
   CREATE_POST: "POSTS/CREATE_POST", //新建帖子
@@ -113,6 +118,43 @@ const updatePostSuccess = post => ({
   post: post
 });
 
+const shouldFetchAllPosts = state => {
+  return !state.posts.allIds || state.posts.allIds.length === 0;
+};
+
+const shouldFetchPost = (id, state) => {
+  //state中如果已经存在该post对象，且有content字段
+  //则表明state中已经有该post的完整信息，无需再次发送请求
+  return !state.posts.byId[id] || !state.posts.byId[id].content;
+};
+
+const convertPostsToPlain = posts => {
+  let postsById = {};
+  let postsIds = [];
+  let authorsById = {};
+  posts.forEach(item => {
+    postsById[item.id] = { ...item, author: item.author.id };
+    postsIds.push(item.id);
+    if (!authorsById[item.author.id]) {
+      authorsById[item.author.id] = item.author;
+    }
+  });
+  return {
+    posts: postsById,
+    postsIds,
+    authors: authorsById
+  };
+};
+
+const convertSinglePostToPlain = post => {
+  const plainPost = { ...post, author: post.author.id };
+  const author = { ...post.author };
+  return {
+    post: plainPost,
+    author
+  };
+};
+
 /* 1）每一个action type实际上对应两个action creator，一个创建异步action发送API请求，
 例如fetchAllPosts;另一个根据API返回的数据创建普通的action，例如fetchAllPostsSuccess。
 
@@ -163,8 +205,16 @@ const byId = (state = initialState.byId, action) => {
   }
 };
 
-const reducer=combineReducers({
-  allIds,byId
+const reducer = combineReducers({
+  allIds,
+  byId
 });
 
 export default reducer;
+
+// selectors
+export const getPostIds = state => state.posts.allIds;
+
+export const getPostList = state => state.posts.byId;
+
+export const getPostById = (state, id) => state.posts.byId[id];
