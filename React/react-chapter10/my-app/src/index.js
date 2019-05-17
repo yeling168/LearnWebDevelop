@@ -38,3 +38,21 @@ function Todo() {
     finished: false
   });
 }
+
+//显然，使用装饰器的代码更为清晰简洁， MobX 使用了大量装饰器语法，这也是官方推荐的方
+//式，本书也是使用装饰器语法完成MobX的项目代码。经过@observable的修饰之后，Todo的title
+//和finished 两个属性变成可观测状态(注意属性和状态的概念，状态对象的属性也是状态)，它们
+//的改变会自动被观察者获知。id没有被@observable 修饰，所以只是一个普通属性。
+
+//基于可观测的state可以创建computed value。例如，todos中需要获取未完成的任务总数，使
+//用@computed定义一个unfinishedTodoCount的computed value ，计算未完成的任务总数：
+
+import { observable,computed } from 'mobx';
+
+class TodoList{
+  @observable todos=[];
+  //根据todos和todo.finished两个state，创建computed value
+  @computed get unfinishedTodoCount(){
+    return this.todos.filter(todo=>!todo.finished).length;
+  }
+}
