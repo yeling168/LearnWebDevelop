@@ -47,12 +47,79 @@ function Todo() {
 //基于可观测的state可以创建computed value。例如，todos中需要获取未完成的任务总数，使
 //用@computed定义一个unfinishedTodoCount的computed value ，计算未完成的任务总数：
 
-import { observable,computed } from 'mobx';
+import { observable, computed } from "mobx";
 
-class TodoList{
-  @observable todos=[];
+class TodoList {
+  @observable todos = [];
   //根据todos和todo.finished两个state，创建computed value
-  @computed get unfinishedTodoCount(){
-    return this.todos.filter(todo=>!todo.finished).length;
+  @computed get unfinishedTodoCount() {
+    return this.todos.filter(todo => !todo.finished).length;
   }
 }
+
+//这里又定义了一个新的state:TodoList。TodoList的属性todos是一个可观测的数组，它的元素
+//是前面定义的Todo的实例对象。当todos中的元素数量发生变化或某一个todo元素的finised
+//属性变化时，unfinishedTodoCount都会自动更新(更严谨的说法是，在需要时才自动更新，后面还会介绍)
+
+
+//除了computed value会响应state的变化外，reaction也会响应state的变化，不同的是，reaction
+//并不创建一个值，而是用来执行有副作用的逻辑，例如输出日志到控制台，发送网络请求，根据
+//React组件树更新DOM等。mobx-react包提供了@observe装饰器和observer函数，可以将React组件封装成reaction，自动根据
+//state的变化更新组件UI。例如，创建TodoListView和TodoView两个组件(也是两个reaction)代表应用的UI
+
+import React , { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { observer } from 'mobx-react';
+import { action } from 'mobx';
+
+//使用@observer装饰器创建reaction
+
+@observer
+class TodoListView extends Component{
+  render(){
+    return (
+      <div>
+        <ul>
+          {this.props.todoList.todos.map(todo=>(
+            <TodoView todo={todo} key={todo.id}/>
+          ))}
+        </ul>
+        Tasks left:{this.props.todoList.unfinishedTodoCount}
+      </div>
+    )
+  }
+}
+
+//使用observer函数创建reaction
+
+const TodoView=observer(({todo})=>{
+  return (
+    <li>
+      <input type="checkbox" checked={todo.finished}/>
+    </li>
+  )
+});
+
+const store=new TodoList();
+
+ReactDOM.render(<TodoListView todoList={store}/>,document.getElementById('root'));
+
+//TodoListView使用到的可观测state是todos和todo.finished(通过unfinishedTodoCount间接使用)，
+//因此它们的改变将会更新TodoListView代表的DOM，同样地，todo.finished和todo.title的
+//改变会更新使用这个todo对象的TodoView代表的DOM
+
+//MobX通过action改变state。我们在TodoView中定义一个action，用来改变todo.finishe
+
+const TodoView=observer(({todo})=>{
+  //改变action，改变todo.finish
+  const handleClick=action(()=>todo.finished=!todo.finished);
+  return (
+    <li>
+      <input type="checkbox" checked={todo.finished} onClick={handleClick} />
+      {todo.title}
+    </li>
+  );
+})
+
+//handleClick就是用来改变状态todo.finish的action，一般习惯使用MobX提供action函数包裹
+//应用中定义的action。至此，这个精简版的todos应用已经包含了MobX涉及的主要概念。
