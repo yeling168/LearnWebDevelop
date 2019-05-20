@@ -68,27 +68,25 @@ autorun(() => console.log(todo.title));
 
 todo = observable({ title: "Bar" });
 
+var todo = observable({
+  title: "Learn React"
+});
 
-var todo=observable({
-    title:"Learn React"
-})
+autorun(() => console.log(todo.title));
 
-autorun(()=>console.log(todo.title))
+todo.title = "Bar";
 
-todo.title="Bar"
+var todo = observable({
+  title: "Learn React"
+});
 
-var todo=observable({
-    title:"Learn React"
-})
+var title = todo.title;
 
-var title=todo.title;
+autorun(() => {
+  console.log(title);
+});
 
-autorun(()=>{
-    console.log(title);
-})
-
-title="Bar"
-
+title = "Bar";
 
 var todo = observable({
   task: {
@@ -109,3 +107,35 @@ todo.task = {
   title: "Learn MobX",
   content: "Read more books about MobX"
 };
+
+var todo = observable({
+  title: "Learn React"
+});
+
+autorun(() => {
+  setTimeout(() => console.log(todo.title), 100);
+});
+
+todo.title = "Bar";
+
+const MyComponent = observable(({ todo }) => (
+  <SomeContainer title={() => <TitleRenderer todo={todo} />} />
+));
+
+//TitleRenderer是一个可观测组件，SomeContainer通过使用TitleRenderer
+//响应title的变化
+
+const TitleRenderer = observable(({ todo }) => <div>{todo.title}</div>);
+
+todo.title = "Bar"; //组件会重新渲染
+
+import { observer } from "mobx-react";
+
+const MyComponent = ({ todo }) => (
+  <SomeContainer
+    title={() => <Observer>{() => <div>{todo.title}</div>}</Observer>}
+  />
+);
+
+
+todo.title="Bar";//组件会重新渲染
