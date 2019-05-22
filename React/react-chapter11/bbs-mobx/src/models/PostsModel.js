@@ -1,7 +1,8 @@
+//PostsStore负责帖子对应的领域，我们单独创建一个class PostModel，用来描述帖子对应的state
 import { observable, action } from "mobx";
 
 class PostModel {
-  store;
+  store; //PostModel实例对象所属的store
   id;
   @observable title;
   @observable content;
@@ -20,8 +21,9 @@ class PostModel {
     this.createdAt = createdAt;
     this.updatedAt = updatedAt;
   }
-  
-  // 根据JSON对象更新帖子
+
+  //根据JSON对象更新帖子
+
   @action updateFromJS(json) {
     this.title = json.title;
     this.content = json.content;
@@ -31,7 +33,7 @@ class PostModel {
     this.updatedAt = json.updatedAt;
   }
 
-  // 静态方法，创建新的PostModel实例
+  //静态方法，创建新的PostModel实例
   static fromJS(store, object) {
     return new PostModel(
       store,
@@ -41,10 +43,9 @@ class PostModel {
       object.vote,
       object.author,
       object.createdAt,
-      object.updatedAt
+      object.updateAt
     );
   }
-
 }
 
 export default PostModel;
