@@ -32,3 +32,8 @@ webpack-dev-server
 去掉不想关的链接和顶部head，运行webpack-dev-server:webpack-dev-server --contentbase src  访问[localhost:8080](localhost:8080)
 
 热加载:webpack-dev-server --content-base src --inline --hot 访问localhost:8080
+
+
+react-devtools：[https://github.com/facebook/react-devtools](https://github.com/facebook/react-devtools)
+
+virtual-dom:[https://github.com/Matt-Esch/virtual-dom](https://github.com/Matt-Esch/virtual-dom)
