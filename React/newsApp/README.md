@@ -37,3 +37,5 @@ webpack-dev-server
 react-devtools：[https://github.com/facebook/react-devtools](https://github.com/facebook/react-devtools)
 
 virtual-dom:[https://github.com/Matt-Esch/virtual-dom](https://github.com/Matt-Esch/virtual-dom)
+
+Unicode转码:[http://tool.chinaz.com/tools/unicode.aspx](http://tool.chinaz.com/tools/unicode.aspx)
