@@ -39,3 +39,6 @@ react-devtools：[https://github.com/facebook/react-devtools](https://github.com
 virtual-dom:[https://github.com/Matt-Esch/virtual-dom](https://github.com/Matt-Esch/virtual-dom)
 
 Unicode转码:[http://tool.chinaz.com/tools/unicode.aspx](http://tool.chinaz.com/tools/unicode.aspx)
+
+state是组件内部属性，props是组件外来属性
+
