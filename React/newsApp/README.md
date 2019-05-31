@@ -42,3 +42,4 @@ Unicode转码:[http://tool.chinaz.com/tools/unicode.aspx](http://tool.chinaz.com
 
 state是组件内部属性，props是组件外来属性
 
+在子页面中通过调用父页面传递过来的事件props进行组件间的参数传递
