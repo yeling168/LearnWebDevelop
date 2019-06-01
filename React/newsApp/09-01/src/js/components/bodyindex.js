@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import BodyChild from "./bodychild";
 import ReactMixin from "react-mixin";
 import MixinLog from "./mixins";
