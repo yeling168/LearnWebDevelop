@@ -44,4 +44,16 @@ state是组件内部属性，props是组件外来属性
 
 在子页面中通过调用父页面传递过来的事件props进行组件间的参数传递
 
+
+8-4：
 [https://facebook.github.io/react/docs/reusable-components.html](https://facebook.github.io/react/docs/reusable-components.html)
+
+React-DOM：[http://www.ptbird.cn/react-reactdom-api-reference.html#finddomnode](http://www.ptbird.cn/react-reactdom-api-reference.html#finddomnode)
+
+Refs是访问到组件内部DOM节点唯一可靠的方法。
+
+不要滥用refs
+
+8-6
+
+Mixins用于做组件之间事件的共享
