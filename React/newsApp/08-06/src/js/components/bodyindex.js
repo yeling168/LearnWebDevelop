@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import BodyChild from "./bodychild";
+import ReactMixin from "react-mixin";
+import MixinLog from "./mixins";
 
 //定义默认属性
 const defaultProps = {
@@ -26,7 +28,9 @@ class BodyIndex extends React.Component {
     //第二种方式
     console.log(this.refs.submitButton);
     this.refs.submitButton.getElementsByClassName.color = "red";
+    MixinLog.log();
   }
+
   handleChildValueChange(event) {
     this.setState({
       age: event.target.value
@@ -72,3 +76,5 @@ BodyIndex.propTypes = {
 };
 
 BodyIndex.defaultProps = defaultProps;
+
+ReactMixin(BodyIndex.propTypes, MixinLog);
