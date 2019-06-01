@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import BodyChild from "./bodychild";
 
 //定义默认属性
@@ -18,6 +19,9 @@ class BodyIndex extends React.Component {
 
   changeUserInfo(age) {
     this.setState({ age: age });
+    //第一种方式
+    var mySubmitButton = document.getElementById("submitButton");
+    React.findDOM;
   }
   handleChildValueChange(event) {
     this.setState({
@@ -36,6 +40,7 @@ class BodyIndex extends React.Component {
         </p>
         <p>age:{this.state.age}</p>
         <input
+          id="submitButton"
           type="button"
           value="提交"
           onClick={this.changeUserInfo.bind(this, 99)}
