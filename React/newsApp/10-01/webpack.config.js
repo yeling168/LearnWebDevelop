@@ -18,10 +18,7 @@ module.exports = {
         }
       },
       //下面是添加的 css 的 loader，也即是 css 模块化的配置方法
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
-      },
+      { test: /\.css$/,loader: 'style-loader!css-loader'},
     ]
   },
   output: {
