@@ -22,4 +22,9 @@ export default class Root extends React.Component {
   }
 }
 
-ReactDOM.render(<Root />, document.getElementById("mainController"));
+ReactDOM.render(<Root />, document.getElementById("mainContainer"));
+
+//ReactDOM.render(<Root />, document.getElementById("mainController"));
+
+//VM1882 bundle.js:913 Uncaught Invariant Violation: _registerComponent(...): Target container is not a DOM element.
+//https://www.imooc.com/qadetail/164384
