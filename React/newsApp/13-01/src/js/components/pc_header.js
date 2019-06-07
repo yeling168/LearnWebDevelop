@@ -11,16 +11,50 @@ import {
   CheckBox,
   Modal
 } from "antd";
+const FormItem = Form.Item;
 const { SubMenu } = Menu;
+const MenuItemGroup = Menu.ItemGroup;
 
-export default class PCHeader extends React.Component {
+class PCHeader extends React.Component {
   constructor() {
     super();
     this.state = {
-      current: "top"
+      //绑定当前选定的导航栏
+      current: "top",
+      //是否显示或隐藏
+      modalVisible: false,
+      //按钮是用于登录还是注册
+      action: "login",
+      //是否已经登录
+      hasLogined: false,
+      //用户昵称
+      userNickName: "",
+      //用户id
+      userid: 0
     };
   }
   render() {
+    //接受页面的参数
+    let { getFieldProps } = this.props.form;
+    //通过判断是否登录
+    const userShow = this.state.hasLogined ? (
+      <Menu.Item key="logout" class="register">
+        <Button type="primary" htmlType="button">
+          {this.state.userNickName}
+        </Button>
+        &nbsp;&nbsp;
+        <Link target="_blank">
+          <Button type="dashed" htmlType="button">
+            个人中心
+          </Button>
+        </Link>
+        &nbsp;&nbsp;
+      </Menu.Item>
+    ) : (
+      <Menu.Item key="register" class="register">
+        <Icon type="appstore" />注册/登录
+      </Menu.Item>
+    );
     return (
       <header>
         <Row>
@@ -65,6 +99,7 @@ export default class PCHeader extends React.Component {
                 <Icon type="appstore" />
                 时尚
               </Menu.Item>
+              {userShow}
             </Menu>
           </Col>
           <Col span={2} />
@@ -73,3 +108,5 @@ export default class PCHeader extends React.Component {
     );
   }
 }
+
+export default (PCHeader = Form.create({})(PCHeader));
