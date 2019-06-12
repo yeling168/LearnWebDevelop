@@ -1,5 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
+import PCHeader from "./pc_header";
+import PCFooter from "./pc_footer";
 export default class PCNewsDetails extends React.Component {
   constructor() {
     super();
@@ -8,6 +10,9 @@ export default class PCNewsDetails extends React.Component {
     };
   }
   componentDidMount() {
+    var myFetchOptions = {
+      method: "GET"
+    };
     fetch(
       "http://newsapi.gugujiankong.com/Handler.ashx?action=getnewsitem&uniquekey=" +
         this.props.params.uniquekey,
@@ -26,6 +31,7 @@ export default class PCNewsDetails extends React.Component {
   render() {
     return (
       <div>
+        <PCHeader />
         <Row>
           <Col span={2} />
           <Col span={14} className="container">
@@ -37,6 +43,7 @@ export default class PCNewsDetails extends React.Component {
           <Col span={6} />
           <Col span={2} />
         </Row>
+        <PCFooter />
       </div>
     );
   }
