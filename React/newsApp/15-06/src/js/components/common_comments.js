@@ -24,13 +24,40 @@ class CommonComments extends React.Component {
       comments: ""
     };
   }
+  componentDidMount() {
+    var myFetchOptions = {
+      method: "GET"
+    };
+    fetch(
+      "http://newsapi.gugujiankong.com/Handler.ashx?action=getcomments&uniquekey=" +
+        this.props.uniquekey,
+      myFetchOptions
+    )
+      .then(response => response.json())
+      .then(json => {
+        this.setState({ comments: json });
+      });
+  }
   handleSubmit() {}
   render() {
     let { getFieldDecorator } = this.props.form;
+    const { commnets } = this.state;
+    const commnetList = commnets.length
+      ? commnets.map((comment, index) => (
+          <Card
+            key={index}
+            title={comment.UserName}
+            extra={<a href="#">发布于{comment.datetime}</a>}
+          >
+            <p>{comment.Commnets}</p>
+          </Card>
+        ))
+      : "没有加载到任何评论";
     return (
       <div class="comment">
         <Row>
           <Col span={24}>
+            {commnetList}
             <Form onSubmit={this.handleSubmit.bind(this)}>
               <FormItem label="您的评论">
                 <Input
