@@ -10,7 +10,8 @@ import {
   Button,
   CheckBox,
   Modal,
-  Card
+  Card,
+  notification
 } from "antd";
 const FormItem = Form.Item;
 const SubMenu = Menu.SubMenu;
@@ -60,16 +61,25 @@ class CommonComments extends React.Component {
       });
   }
 
-  addUserCollection(){
+  addUserCollection() {
     var myFetchOptions = {
-      method: 'GET'
+      method: "GET"
     };
-    fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=uc&userid="+localStorage.userid+"&uniquekey="+this.props.uniquekey,myFetchOptions)
-    .then(response=>response.json())
-    .then(json=>{
-      //收藏成功以后进行一下全局的提醒
-      
-    });
+    fetch(
+      "http://newsapi.gugujiankong.com/Handler.ashx?action=uc&userid=" +
+        localStorage.userid +
+        "&uniquekey=" +
+        this.props.uniquekey,
+      myFetchOptions
+    )
+      .then(response => response.json())
+      .then(json => {
+        //收藏成功以后进行一下全局的提醒
+        notification["success"]({
+          message: "ReactNews提醒",
+          description: "收藏此文章成功"
+        });
+      });
   }
   render() {
     let { getFieldDecorator } = this.props.form;
@@ -102,8 +112,12 @@ class CommonComments extends React.Component {
                 提交评论
               </Button>
               &nbsp;&nbsp;
-              <Button type="primary" htmlType="button" onClick={this.addUserCollection.bind(this)}>
-                  收藏该文章
+              <Button
+                type="primary"
+                htmlType="button"
+                onClick={this.addUserCollection.bind(this)}
+              >
+                收藏该文章
               </Button>
             </Form>
           </Col>
