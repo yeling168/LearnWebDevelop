@@ -15,7 +15,7 @@ const FormItem = Form.Item;
 const SubMenu = Menu.SubMenu;
 const TabPane = Tabs.TabPane;
 const MenuItemGroup = Menu.ItemGroup;
-import {Router, Route, Link, browserHistory} from 'react-router'
+import { Router, Route, Link, browserHistory } from "react-router";
 class MobileHeader extends React.Component {
   constructor() {
     super();
@@ -30,6 +30,15 @@ class MobileHeader extends React.Component {
   }
   setModalVisible(value) {
     this.setState({ modalVisible: value });
+  }
+  componentWillMount() {
+    if (localStorage.userid != "") {
+      this.setState({ hasLogined: true });
+      this.setState({
+        userNickName: localStorage.userNickName,
+        userid: localStorage.userid
+      });
+    }
   }
   handleClick(e) {
     if ((e.key = "register")) {
