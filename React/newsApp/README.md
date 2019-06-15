@@ -88,3 +88,13 @@ fetch:[https://github.com/github/fetch](https://github.com/github/fetch)
 17-01 HTML to JSX Compiler
 
 [https://magic.reactjs.net/htmltojsx.htm](https://magic.reactjs.net/htmltojsx.htm)
+
+19-01 雅虎军规
+
+英文原文:[https://developer.yahoo.com/performance/rules.html](https://developer.yahoo.com/performance/rules.html)
+
+中文翻译:[https://www.tuicool.com/articles/J3uyaa](https://www.tuicool.com/articles/J3uyaa)
+
+19-02 性能检查
+
+YSlow
