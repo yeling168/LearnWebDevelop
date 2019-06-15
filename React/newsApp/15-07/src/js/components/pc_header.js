@@ -15,6 +15,7 @@ const FormItem = Form.Item;
 const { SubMenu } = Menu.SubMenu;
 const TabPane = Tabs.TabPane;
 const MenuItemGroup = Menu.ItemGroup;
+import { Router, Route, Link, browserHistory } from "react-router";
 
 class PCHeader extends React.Component {
   constructor() {
@@ -33,6 +34,17 @@ class PCHeader extends React.Component {
       //用户id
       userid: 0
     };
+  }
+  componentWillMount() {
+    if (localStorage.userid != "") {
+      this.setState({
+        hasLogined: true
+      });
+      this.setState({
+        userNickName: localStorage.userNickName,
+        userid: localStorage.userid
+      });
+    }
   }
   setModalVisible(value) {
     this.setState({
@@ -71,9 +83,29 @@ class PCHeader extends React.Component {
       .then(response => response.json())
       .then(json => {
         this.setState({ userNickName: json.NickUserName, userid: json.UserId });
+        localStorage.userid = json.UserId;
+        localStorage.userNickName = json.NickUserName;
       });
+    if (this.state.action == "login") {
+      this.setState({
+        hasLogined: true
+      });
+    }
     message.success("请求成功！");
     this.setModalVisible(false);
+  }
+  callback(key) {
+    if (key == 1) {
+      this.setState({ action: "login" });
+    } else if (key == 2) {
+      this.setState({ action: "register" });
+    }
+  }
+
+  logout() {
+    localStorage.userid = "";
+    localStorage.userNickName = "";
+    this.setState({ hasLogined: false });
   }
   render() {
     //接受页面的参数
@@ -91,6 +123,9 @@ class PCHeader extends React.Component {
           </Button>
         </Link>
         &nbsp;&nbsp;
+        <Button type="ghost" htmlType="button" onClick={this.logout.bind(this)}>
+          退出
+        </Button>
       </Menu.Item>
     ) : (
       <Menu.Item key="register" class="register">
@@ -156,7 +191,27 @@ class PCHeader extends React.Component {
               onOk={() => this.setModalVisible(false)}
               okText="关闭"
             >
-              <Tabs type="card">
+              <Tabs type="card" onChange={this.callback.bind(this)}>
+                <TabPane tab="登录" key="1">
+                  <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
+                    <FormItem label="账户">
+                      <Input
+                        placeholder="请输入您的账号"
+                        {...getFieldDecorator("userName")}
+                      />
+                    </FormItem>
+                    <FormItem label="密码">
+                      <Input
+                        type="password"
+                        placeholder="请输入您的密码"
+                        {...getFieldDecorator("password")}
+                      />
+                    </FormItem>
+                    <Button type="primary" htmlType="submit">
+                      登录
+                    </Button>
+                  </Form>
+                </TabPane>
                 <TabPane tab="注册" key="2">
                   <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
                     <FormItem label="账户">

@@ -9,7 +9,8 @@ import {
   Input,
   Button,
   CheckBox,
-  Modal
+  Modal,
+  Card
 } from "antd";
 const FormItem = Form.Item;
 const SubMenu = Menu.SubMenu;
@@ -38,7 +39,7 @@ class CommonComments extends React.Component {
         this.setState({ comments: json });
       });
   }
-  handleSubmit() {
+  handleSubmit(e) {
     e.preventDefault();
     var myFetchOptions = {
       method: "GET"
@@ -60,15 +61,15 @@ class CommonComments extends React.Component {
   }
   render() {
     let { getFieldDecorator } = this.props.form;
-    const { commnets } = this.state;
-    const commnetList = commnets.length
-      ? commnets.map((comment, index) => (
+    const { comments } = this.state;
+    const commnetList = comments.length
+      ? comments.map((comment, index) => (
           <Card
             key={index}
             title={comment.UserName}
             extra={<a href="#">发布于{comment.datetime}</a>}
           >
-            <p>{comment.Commnets}</p>
+            <p>{comment.Comments}</p>
           </Card>
         ))
       : "没有加载到任何评论";
