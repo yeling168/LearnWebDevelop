@@ -29,3 +29,6 @@ webpack和babel的桥梁 babel-loader
 -w代表监视文件更改，自动执行编译
 
 缺少 @babel/core 模块，安装指定版本模块：npm i babel-loader@7 -D
+
+
+webpack-dev-server --contentbase src
