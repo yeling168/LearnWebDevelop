@@ -99,8 +99,19 @@ fetch:[https://github.com/github/fetch](https://github.com/github/fetch)
 
 YSlow
 
-19-01
+19-01 上拉刷新
 
 awesome-react:[https://github.com/enaqx/awesome-react](https://github.com/enaqx/awesome-react)
 
 下拉更多：react-touch-loader：[https://github.com/Broltes/react-touch-loader](https://github.com/Broltes/react-touch-loader)
+
+19-02 下拉刷新
+
+组件地址:[https://github.com/bryaneaton13/react-pull-to-refresh](https://github.com/bryaneaton13/react-pull-to-refresh)
+
+npm install react-pull-to-refresh
+
+npm包安装：[https://blog.csdn.net/xuaner8786/article/details/81630445](https://blog.csdn.net/xuaner8786/article/details/81630445)
+
+--save 是你发布之后还依赖的东西
+--save-dev 是你开发时候依赖的东西
