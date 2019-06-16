@@ -32,3 +32,9 @@ webpack和babel的桥梁 babel-loader
 
 
 webpack-dev-server --contentbase src
+
+cnpm install babel-plugin-transform-class-properties@6.24.1
+
+2-2 什么是decorator
+
+Decorator是在声明阶段实现类与类成员注解的一种语法

@@ -26,6 +26,9 @@ const config = {
           options: {
             presets: ["env"]
           }
+        },
+        query: {  
+          plugins: ['transform-class-properties'],
         }
       }
     ]
