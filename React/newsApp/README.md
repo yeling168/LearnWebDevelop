@@ -123,3 +123,15 @@ you-might-not-need-redux:[https://medium.com/@dan_abramov/you-might-not-need-red
 官网:[https://redux.js.org/](https://redux.js.org/)
 
 code-cartoons:[https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)
+
+19-04
+
+react-widgets:[http://jquense.github.io/react-widgets/](http://jquense.github.io/react-widgets/)
+
+扁平化组件,react-toolbox:[http://react-toolbox.io/](http://react-toolbox.io/)
+
+react-bootstrap:[https://react-bootstrap.github.io/](https://react-bootstrap.github.io/)
+
+chartjs:[https://www.chartjs.org/](https://www.chartjs.org/)
+
+react-icons:[https://github.com/react-icons/react-icons](https://github.com/react-icons/react-icons)
