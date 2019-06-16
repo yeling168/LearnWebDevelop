@@ -89,12 +89,18 @@ fetch:[https://github.com/github/fetch](https://github.com/github/fetch)
 
 [https://magic.reactjs.net/htmltojsx.htm](https://magic.reactjs.net/htmltojsx.htm)
 
-19-01 雅虎军规
+18-01 雅虎军规
 
 英文原文:[https://developer.yahoo.com/performance/rules.html](https://developer.yahoo.com/performance/rules.html)
 
 中文翻译:[https://www.tuicool.com/articles/J3uyaa](https://www.tuicool.com/articles/J3uyaa)
 
-19-02 性能检查
+18-02 性能检查
 
 YSlow
+
+19-01
+
+awesome-react:[https://github.com/enaqx/awesome-react](https://github.com/enaqx/awesome-react)
+
+下拉更多：react-touch-loader：[https://github.com/Broltes/react-touch-loader](https://github.com/Broltes/react-touch-loader)
