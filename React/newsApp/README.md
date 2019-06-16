@@ -115,3 +115,11 @@ npm包安装：[https://blog.csdn.net/xuaner8786/article/details/81630445](https
 
 --save 是你发布之后还依赖的东西
 --save-dev 是你开发时候依赖的东西
+
+19-03 redux
+
+you-might-not-need-redux:[https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
+
+官网:[https://redux.js.org/](https://redux.js.org/)
+
+code-cartoons:[https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)
