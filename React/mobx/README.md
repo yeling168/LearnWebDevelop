@@ -38,3 +38,5 @@ cnpm install babel-plugin-transform-class-properties@6.24.1
 2-2 什么是decorator
 
 Decorator是在声明阶段实现类与类成员注解的一种语法
+
+cnpm install babel-plugin-transform-decorators-legacy@1.3.4 -D
