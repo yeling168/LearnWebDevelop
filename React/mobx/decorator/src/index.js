@@ -16,3 +16,5 @@ class Numberic {
         return nums.reduce((p,n)=>(p+n),0)
     }
 }
+
+new Numberic().add(1,2);
