@@ -49,22 +49,44 @@
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	__webpack_require__(2);
 
-	var Test = function Test() {
-	    _classCallCheck(this, Test);
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
 
-	    this.a = 'hello world';
-	};
+	"use strict";
 
-	var test = new Test();
-	console.log(test);
+	// function test() {
+	//   for (let i = 1; i < 3; i++) {
+	//     console.log(i);//1,2
+	//   }
+	//   console.log(i);//Uncaught ReferenceError: i is not defined
+	// }
 
-	document.body.innerHTML = test.a;
+	// test();
+
+	// function test() {
+	//   let a = 1;
+	//   let a = 2;
+	// }
+
+	// test();
+
+	function last() {
+	  var PI = 3.1415926;
+	  var k = {
+	    a: 1
+	  };
+	  k.b = 3;
+	  console.log(PI, k);
+	}
+
+	last();
 
 /***/ })
 /******/ ]);
