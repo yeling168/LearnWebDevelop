@@ -61,32 +61,63 @@
 
 	"use strict";
 
-	// function test() {
-	//   for (let i = 1; i < 3; i++) {
-	//     console.log(i);//1,2
-	//   }
-	//   console.log(i);//Uncaught ReferenceError: i is not defined
-	// }
+	{
+	  var a = void 0,
+	      b = void 0,
+	      rest = void 0;
+	  a = 1;
+	  b = 2;
 
-	// test();
-
-	// function test() {
-	//   let a = 1;
-	//   let a = 2;
-	// }
-
-	// test();
-
-	function last() {
-	  var PI = 3.1415926;
-	  var k = {
-	    a: 1
-	  };
-	  k.b = 3;
-	  console.log(PI, k);
+	  console.log(a, b);
 	}
 
-	last();
+	{
+	  var _a = void 0,
+	      _b = void 0,
+	      _rest = void 0;
+	  _a = 1;
+	  _b = 2;
+	  _rest = [3, 4, 5, 6];
+
+	  console.log(_a, _b, _rest);
+	}
+
+	{
+	  var _a2 = void 0,
+	      _b2 = void 0;
+	  var _a$b = { a: 1, b: 2 };
+	  _a2 = _a$b.a;
+	  _b2 = _a$b.b;
+
+	  console.log(_a2, _b2);
+	}
+
+	{
+	  var _a3 = void 0,
+	      _b3 = void 0,
+	      c = void 0,
+	      _rest2 = void 0;
+	  var _ref = [1, 2];
+	  _a3 = _ref[0];
+	  _b3 = _ref[1];
+	  var _ref$ = _ref[2];
+	  c = _ref$ === undefined ? 3 : _ref$;
+
+	  console.log(_a3, _b3, c); //1,2,3
+	}
+
+	{
+	  var _a4 = void 0,
+	      _b4 = void 0,
+	      _c = void 0,
+	      _rest3 = void 0;
+	  var _ref2 = [1, 2];
+	  _a4 = _ref2[0];
+	  _b4 = _ref2[1];
+	  _c = _ref2[2];
+
+	  console.log(_a4, _b4, _c); //1,2,undefined
+	}
 
 /***/ })
 /******/ ]);
