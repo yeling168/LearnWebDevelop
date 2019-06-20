@@ -85,6 +85,29 @@
 
 	  console.log('one', a1.exec(s), a2.exec(s));
 	  console.log('two', a1.exec(s), a2.exec(s));
+
+	  //判断ES6是否开启y修饰符
+	  console.log(a1.sticky, a2.sticky);
+	}
+
+	//u修饰符(unique)
+
+	{
+	  console.log('u-1', /^uD83D/.test("\uD83D\uDC2A"));
+	  console.log('u-2', /^uD83D/.test("\uD83D\uDC2A"));
+
+	  //a的unique编码是61
+	  console.log(/\u{61}/.test('a'));
+	  console.log(/a/.test('a'));
+
+	  console.log("\uD842\uDFB7");
+
+	  var _s = '𠮷';
+	  console.log('u', /^.$/.test(_s));
+	  console.log('u-2', /^(?:[\0-\t\x0B\f\x0E-\u2027\u202A-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])$/.test(_s));
+
+	  console.log('test', /𠮷{2}/.test('𠮷𠮷')); //false
+	  console.log('test-2', /(?:\uD842\uDFB7){2}/.test('𠮷𠮷')); //true
 	}
 
 /***/ })
