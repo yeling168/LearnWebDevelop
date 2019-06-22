@@ -13,4 +13,17 @@
 
 //import './class/lesson2';
 
-import './class/lesson3';
+//import './class/lesson3';
+
+//import 'babel-polyfill';
+// import './class/lesson4';
+
+
+//import './class/lesson5';
+
+
+//import './class/lesson6';
+
+//import './class/lesson7';
+
+import './class/lesson8';
