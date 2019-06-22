@@ -129,3 +129,46 @@ ES6中的this指向函数定义时的对象所在
 
 简洁表示法，属性表达式，扩展运算符(ES7提案)，Object新增方法
 
+
+3-10 Symbol
+
+Symbol的概念：这种数据类型提供一个独一无二的值
+
+Symbol()函数会返回symbol类型的值，该类型具有静态属性和静态方法。它的静态属性会暴露几个内建的成员对象；它的静态方法会暴露全局的symbol注册，且类似于内建对象类，但作为构造函数来说它并不完整，因为它不支持语法："new Symbol()"。
+
+每个从Symbol()返回的symbol值都是唯一的。一个symbol值能作为对象属性的标识符；这是该数据类型仅有的目的
+
+对象中有Symbol做key值，通过`for...in`和`let...of`都拿不到属性
+
+Symbol的作用
+
+3-11 数据结构
+
+Set的用法  WeakSet的用法
+
+Map的用法  WeakMap的用法
+
+Set集合中的元素是不能重复的
+
+Object中的key必须是字符串，Map中的key是任意类型，数组和对象都可以作为key，这是Map对Object的补充
+
+3-12 Map-Set与数组和对象比较
+
+Map与Array的对比
+
+Set与Array的对比
+
+Map与Object对比
+
+Set和Object对比
+
+能使用map不使用array，优先使用map
+
+对数据要求比较高，保证每个数据的唯一性，使用Set，放弃object和array
+
+3-13  Proxy和Reflect
+
+Proxy和Reflect的概念
+
+Proxy和Reflect的适用场景
+
