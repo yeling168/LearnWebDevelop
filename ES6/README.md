@@ -186,3 +186,38 @@ Promise的作用
 
 Promise的基本用法
 
+3-16 Iterator
+
+什么是Iterator接口
+
+Iterator的基本用法
+
+for...of
+
+3-17 Generator
+
+基本概念:用来解决异步编程
+
+next函数的用法
+
+yield*的语法
+
+3-18 Decorator 修饰
+
+需要安装babel-plugin-transform-decorators-legacy
+
+基本概念:修饰器是一个函数，用来修改类的行为
+
+基本用法
+
+一个有用的常规修饰器的js库:core-decorators
+
+3-19 模块化
+
+基本概念
+
+ES6的模块化语法
+
+模块导入import
+
+模块导出export

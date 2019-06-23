@@ -51,9 +51,71 @@
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
-	__webpack_require__(2);
+	var _lesson = __webpack_require__(2);
+
+	var _lesson2 = _interopRequireDefault(_lesson);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	console.log(_lesson2.default); // class Test{
+	//     constructor(){
+	//         this.a='hello world';
+	//     }
+	// }
+
+	// let test=new Test();
+	// console.log(test);
+
+	// document.body.innerHTML=test.a;
+
+	//import './class/lesson1';
+
+	//import './class/lesson2';
+
+	//import './class/lesson3';
+
+	//import 'babel-polyfill';
+	// import './class/lesson4';
+
+	//import './class/lesson5';
+
+	//import './class/lesson6';
+
+	//import './class/lesson7';
+
+	//import './class/lesson8';
+
+	//import './class/lesson9';
+
+	//import './class/lesson10';
+
+	//import './class/lesson11';
+
+	//import './class/lesson12';
+
+	//import './class/lesson13';
+
+	//import './class/lesson14';
+
+	//import './class/lesson15';
+
+	// import 'babel-polyfill';
+	// import './class/lesson16';
+
+	// import 'babel-polyfill';
+	// import './class/lesson17';
+
+	// import './class/lesson18';
+	// import { A,test,Hello} from './class/lesson18';
+	// console.log(A,test,Hello);
+
+	// import * as lesson from './class/lesson18';
+	// console.log(lesson);
+	// console.log(lesson.A);
+
+	console.log(_lesson2.default.A);
 
 /***/ }),
 /* 2 */
@@ -61,138 +123,54 @@
 
 	"use strict";
 
-	{
-	  var ajax = function ajax(callback) {
-	    //ajax执行完后执行callback，用定时器模拟中间通信的整个步骤
-	    //标记
-	    console.log("执行");
-	    setTimeout(function () {
-	      callback && callback.call();
-	    }, 1000);
-	  };
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
-	  //调用
-	  ajax(function () {
-	    console.log("timeout1");
-	  });
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	exports.test = test;
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	// export let A = 123;
+
+	// export function test() {
+	//   console.log("test");
+	// }
+
+	// export class Hello {
+	//   test() {
+	//     console.log("class");
+	//   }
+	// }
+
+	var A = exports.A = 123;
+
+	function test() {
+	  console.log("test");
 	}
 
-	{
-	  //promise写法,ajax函数运行完后返回一个对象，这个对象是promise实例
-	  //resolve要执行下一步操作，reject是中断当前执行的操作
-	  var _ajax = function _ajax() {
-	    console.log("执行2");
-	    return new Promise(function (resolve, reject) {
-	      setTimeout(function () {
-	        resolve();
-	      }, 1000);
-	    });
-	  };
-	  //then的函数体就是下一步
-	  _ajax().then(function () {
-	    console.log("promise", "timeout2");
-	  });
-	}
+	var Hello = exports.Hello = function () {
+	  function Hello() {
+	    _classCallCheck(this, Hello);
+	  }
 
-	{
-	  var _ajax2 = function _ajax2() {
-	    console.log("执行2");
-	    return new Promise(function (resolve, reject) {
-	      setTimeout(function () {
-	        resolve();
-	      }, 1000);
-	    });
-	  };
+	  _createClass(Hello, [{
+	    key: "test",
+	    value: function test() {
+	      console.log("class");
+	    }
+	  }]);
 
-	  _ajax2().then(function () {
-	    return new Promise(function (resolve, reject) {
-	      setTimeout(function () {
-	        resolve();
-	      }, 2000);
-	    });
-	  }).then(function () {
-	    console.log("timeout3");
-	  });
-	}
-
-	{
-	  //捕获异常
-	  var _ajax3 = function _ajax3(num) {
-	    console.log("执行4");
-	    return new Promise(function (resolve, reject) {
-	      if (num > 5) {
-	        resolve();
-	      } else {
-	        throw new Error("出错了");
-	      }
-	    });
-	  };
-
-	  _ajax3(6).then(function () {
-	    console.log("log", 6);
-	  }).catch(function (err) {
-	    console.log("catch", err);
-	  });
-	}
-
-	{
-	  //promise高级用法
-	  //所有图片加载完再添加到页面
-	  var loadImg = function loadImg(src) {
-	    return new Promise(function (resolve, reject) {
-	      var img = document.createElement("img");
-	      img.src = src;
-	      img.onload = function () {
-	        resolve(img);
-	      };
-	      img.onerror = function (err) {
-	        reject(err);
-	      };
-	    });
-	  };
-	  //把图片添加到页面
+	  return Hello;
+	}();
+	//default给导出对象不起名字，取名权利交给引入方
 
 
-	  var showImgs = function showImgs(imgs) {
-	    imgs.forEach(function (img) {
-	      document.body.appendChild(img);
-	    });
-	  };
-
-	  //Promise.all
-	  //把多个promise实例当做一个promise实例，所有的promise必须状态发生改变(不一定都成功)才能触发新的promise
-
-
-	  Promise.all([loadImg("http://i4.buimg.com/567571/df1ef0720bea6832.png"), loadImg("http://i4.buimg.com/567571/2b07ee25b08930ba.png"), loadImg("http://i2.buimg.com/567571/5eb8190d6b2a1c9c.png")]).then(showImgs);
-	}
-
-	{
-	  //Promise.race,race中有一个promise状态发生改变，那么promise就发生改变
-	  //有一个图片加载完就添加到页面
-	  var _loadImg = function _loadImg(src) {
-	    return new Promise(function (resolve, reject) {
-	      var img = document.createElement("img");
-	      img.src = src;
-	      img.onload = function () {
-	        resolve(img);
-	      };
-	      img.onerror = function (err) {
-	        reject(err);
-	      };
-	    });
-	  };
-
-	  //把图片添加到页面
-
-
-	  var _showImgs = function _showImgs(img) {
-	    var p = document.createElement("p");
-	    p.appendChild(img);
-	    document.body.appendChild(p);
-	  };
-
-	  Promise.race([_loadImg("http://i4.buimg.com/567571/df1ef0720bea6832.png"), _loadImg("http://i4.buimg.com/567571/2b07ee25b08930ba.png"), _loadImg("http://i2.buimg.com/567571/5eb8190d6b2a1c9c.png")]).then(_showImgs);
-	}
+	exports.default = {
+	  A: A, test: test, Hello: Hello
+	};
 
 /***/ })
 /******/ ]);
