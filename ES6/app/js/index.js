@@ -54,7 +54,10 @@
 // console.log(lesson);
 // console.log(lesson.A);
 
-import Lesson18 from "./class/lesson18";
+// import Lesson18 from "./class/lesson18";
 
-console.log(Lesson18);
-console.log(Lesson18.A);
+// console.log(Lesson18);
+// console.log(Lesson18.A);
+
+import 'babel-polyfill';
+import Lottery from './lottery';
