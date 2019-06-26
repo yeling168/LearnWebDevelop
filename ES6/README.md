@@ -221,3 +221,5 @@ ES6的模块化语法
 模块导入import
 
 模块导出export
+
+简历模板：[http://sc.chinaz.com/jianli/free.html](http://sc.chinaz.com/jianli/free.html)
