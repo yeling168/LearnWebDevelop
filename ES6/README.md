@@ -283,4 +283,3 @@ http://www.w3help.org/zh-cn/causes/SJ9044
 
 http://www.w3help.org/zh-cn/causes/SJ2047
 
-1.数据结构，常见的算法，组件封装，缓存，http，http安全，双向绑定原理，angular国际化原理，设计模式，js兼容，css兼容，组件之间的通信
