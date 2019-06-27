@@ -2,14 +2,51 @@
 <!--https://zhuanlan.zhihu.com/p/32126618-->
 <!DOCTYPE html>
 <html lang="en">
-    
+<!--以下两个是使用Code Mirror必须引入的-->
+<link rel="stylesheet" href="./css/codemirror.css">
+<script src="./js/codemirror.js"></script>
+<!--Java代码高亮必须引入-->
+<script src="./js/clike.js"></script>
+<!--groovy代码高亮-->
+<script src="./js/groovy.js"></script>
+<!--引入css文件，用以支持主题-->
+<link rel="stylesheet" href="./css/dracula.css">
+<!--支持代码折叠-->
+<link rel="stylesheet" href="./css/foldgutter.css">
+<script src="./js/foldcode.js"></script>
+<script src="./js/foldgutter.js"></script>
+<script src="./js/brace-fold.js"></script>
+<script src="./js/comment-fold.js"></script>
+<!--括号匹配-->
+<script src="./js/matchbrackets.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>codeMirror</title>
+    <title>代码框</title>
 </head>
+
 <body>
-    
+    <textarea class="form-control" id="code" name="code"></textarea>
+    <script>
+        //根据DOM元素的id构造出一个编辑器
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+            mode: "text/groovy", //实现groovy高亮
+            mode: "text/x-java", //实现Java代码高亮
+            lineNumbers: true, //显示行号
+            theme: "dracula", //设置主题
+            lineWrapping: true, //代码折叠
+            foldGutter: true,
+            gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+            matchBrackets: true, //括号匹配
+            readOnly: true, //只读
+        });
+        editor.setSize('800px', '950px'); //设置代码框的长宽
+        editor.setValue(""); //先代码框的值清空
+        editor.setValue(obj.scriptCode); //给代码框赋值
+        editor.setOption("readOnly", true);
+    </script>
 </body>
+
 </html>
