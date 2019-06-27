@@ -223,3 +223,64 @@ ES6的模块化语法
 模块导出export
 
 简历模板：[http://sc.chinaz.com/jianli/free.html](http://sc.chinaz.com/jianli/free.html)
+
+常见的兼容性:
+
+兼容案例集合:
+[http://www.w3help.org/zh-cn/causes/](http://www.w3help.org/zh-cn/causes/)
+
+各浏览器中 Date 对象的 toLocaleString 方法的返回值不一致:
+
+[http://www.w3help.org/zh-cn/causes/SJ2004](http://www.w3help.org/zh-cn/causes/SJ2004)
+
+在 IE6 IE7 IE8(Q) 中不能在 JSON 字符串或对象直接量的最后一个键值对后加 ',':[http://www.w3help.org/zh-cn/causes/SJ9006](http://www.w3help.org/zh-cn/causes/SJ9006)
+
+IE6 IE7 IE8 不会忽略数组直接量的末尾空元素:[http://www.w3help.org/zh-cn/causes/SJ2007](http://www.w3help.org/zh-cn/causes/SJ2007)
+
+元素的内联事件处理函数的特殊作用域链在各浏览器中存在差异:[http://www.w3help.org/zh-cn/causes/SJ9009](http://www.w3help.org/zh-cn/causes/SJ9009)
+
+http://www.w3help.org/zh-cn/causes/SJ9010
+
+Chrome Opera 中 for-in 语句遍历出对象属性的顺序与定义的不同:[http://www.w3help.org/zh-cn/causes/SJ9011](http://www.w3help.org/zh-cn/causes/SJ9011)
+
+IE6 IE7 IE8(Q) 不支持 JSON 对象:[http://www.w3help.org/zh-cn/causes/SJ9012](http://www.w3help.org/zh-cn/causes/SJ9012)
+
+http://www.w3help.org/zh-cn/causes/SJ9030
+
+http://www.w3help.org/zh-cn/causes/SJ2013
+
+http://www.w3help.org/zh-cn/causes/SJ9022
+
+http://www.w3help.org/zh-cn/causes/SJ9019
+
+http://www.w3help.org/zh-cn/causes/SJ9015
+
+各浏览器中 Date 对象的 getYear 方法的返回值不一致:[http://www.w3help.org/zh-cn/causes/SJ9010](http://www.w3help.org/zh-cn/causes/SJ9010)
+
+E6 IE7 IE8 的函数声明和函数表达式的实现与其他浏览器有差异:[http://www.w3help.org/zh-cn/causes/SJ9001](http://www.w3help.org/zh-cn/causes/SJ9001)
+
+http://www.w3help.org/zh-cn/causes/SJ3006
+
+浏览器中 Date 对象的 toLocaleString 方法的返回值不一致:[http://www.w3help.org/zh-cn/causes/SJ2004](http://www.w3help.org/zh-cn/causes/SJ2004)
+
+http://www.w3help.org/zh-cn/causes/SJ3006
+
+http://www.w3help.org/zh-cn/causes/SJ9007
+
+Array.prototype.sort当使用了 comparefn 后返回值不为 -1、0、1时，各引擎实现排序结果不一致:[http://www.w3help.org/zh-cn/causes/SJ9013](http://www.w3help.org/zh-cn/causes/SJ9013)
+
+http://www.w3help.org/zh-cn/causes/SJ9014
+
+http://www.w3help.org/zh-cn/causes/SJ9015
+
+http://www.w3help.org/zh-cn/causes/SJ9026
+
+http://www.w3help.org/zh-cn/causes/SJ9034
+
+http://www.w3help.org/zh-cn/causes/SJ9038
+
+http://www.w3help.org/zh-cn/causes/SJ9044
+
+http://www.w3help.org/zh-cn/causes/SJ2047
+
+1.数据结构，常见的算法，组件封装，缓存，http，http安全，双向绑定原理，angular国际化原理，设计模式，js兼容，css兼容，组件之间的通信
