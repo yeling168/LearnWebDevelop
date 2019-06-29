@@ -2,8 +2,8 @@ var myModule = angular.module("MyModule", []);
 
 myModule.directive("hello", function() {
   return {
-    restrict: "E",
-    template: "<div>Hi everyone!</div>",
-    replace: true
+    restrict: "AEMC",
+    template: "<div>Hi everyone!<div ng-transclude></div></div>",
+    transclude:true
   };
 });
