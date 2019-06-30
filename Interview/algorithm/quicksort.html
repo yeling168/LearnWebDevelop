@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //https://www.cnblogs.com/lvmylife/p/7208541.html
+        function quickSort(arr) {
+
+            if (arr.length <= 1) {
+                return arr;
+            }
+
+            let leftArr = [];
+            let rightArr = [];
+            let q = arr[0];
+            for (let i = 1, l = arr.length; i < l; i++) {
+                if (arr[i] > q) {
+                    rightArr.push(arr[i]);
+                } else {
+                    leftArr.push(arr[i]);
+                }      
+            }
+            var newArray = [].concat(quickSort(leftArr), [q], quickSort(rightArr));
+            return newArray; 
+            console.log(newArray);  
+        }
+        var w =quickSort([6,4,5,3,7,8]);
+        console.log(w);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

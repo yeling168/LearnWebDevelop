@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //https://www.cnblogs.com/createGod/p/6843350.html
+        var str = "abbcccddddfffffgggggg";
+
+        function MaxNum(str) {
+            if (str.length < 1) {
+                return str;
+            }
+            //split() 方法用于把一个字符串分割成字符串数组
+            var a1 = str.split(
+                ''
+            ); // ["a", "b", "b", "c", "c", "c", "d", "d", "d", "d", "f", "f", "f", "f", "f", "g", "g", "g", "g", "g", "g"]
+            var obj = {};
+            var result = [];
+            //利用上面一个数组去重的思想
+            for (var k = 0, l = a1.length; k < l; k++) {
+                //先计算a1[k]的值，a1[k]的值才是obj的属性
+                if (!obj[a1[k]]) {
+                    obj[a1[k]] = 1;
+                } else {
+                    obj[a1[k]] += 1;
+                };
+            }
+
+            console.log(obj); //{a: 1, b: 2, c: 3, d: 4, f: 5, g:6}
+
+            var num = 0;
+            word = "";
+            for (var item in obj) {
+                if (obj[item] > num) {
+                    num = obj[item];
+                    word = item;
+                }
+            }
+
+            return word;
+        }
+
+        var w = MaxNum(str);
+        console.log(w);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

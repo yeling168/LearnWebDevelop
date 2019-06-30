@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    //https://www.cnblogs.com/createGod/p/6843350.html
+    //选择排序
+    var a3 = [1, 4, 2, 90, 3, 4];
+    //l=6
+    function sort(a3) {
+      for (var j = 0, l = a3.length; j < l; j++) {
+        for (k = l; k > j; k--) {
+          if (a3[j] > a3[k]) {
+            var temp = a3[j];
+            a3[j] = a3[k];
+            a3[k] = temp;
+          }
+        }
+        console.log(a3);
+      }
+    }
+    sort(a3);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

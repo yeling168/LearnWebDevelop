@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    //https://www.cnblogs.com/createGod/p/6843350.html
+    //冒泡排序
+    //var a3 = [100, 99, 98, 97, 96, 95];
+    //第一轮结束[95, 100, 99, 98, 97, 96]
+    //第二轮结束[95, 96, 100, 99, 98, 97]
+    //第三轮结束[95, 96, 97, 100, 99, 98]
+    //第四轮结束[95, 96, 97, 98, 100, 99]
+    //第五轮结束[95, 96, 97, 98, 99, 100]
+    var a3 = [1, 4, 2, 90, 3, 5];
+    //每一轮都是把第i小的排到最前面
+    function sort(a3) {
+      //l=6
+      for (var i = 0, l = a3.length; i < l - 1; i++) {
+        //每一轮都是把第i小的排到最前面
+        for (var j = i + 1; j < l; j++) {
+          if (a3[i] > a3[j]) {
+            //交换位置，小的在前，大的在后
+            var temp = a3[i];
+            a3[i] = a3[j];
+            a3[j] = temp;
+          }
+          //console.log('第' + i + '轮第' + j + '次结果', a3);
+        }
+        //每一轮都是把第i小的排到最前面
+        console.log('最终第' + i + '轮循环结果', a3);
+      }
+    }
+    //第一轮循环，1和剩下的所有的比，1比所有的都小，数组不变，第一轮下来a3为[1, 4, 2, 90, 3, 4];
+    //第二轮循环，先找到一个2比4小，交换顺序后数组变为[1, 2, 4, 90, 3, 4]，此时外层i没变那么a3[1]值由4变为2，2比后面所有的都小，数组始终为[1, 2, 4, 90, 3, 4]
+
+    sort(a3);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
