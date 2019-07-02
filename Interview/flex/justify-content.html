@@ -1,0 +1,39 @@
+<!--参考资料-->
+<!--https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-->
+<!--https://www.runoob.com/cssref/css3-pr-flex.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <style>
+        #main{
+            width: 400px;
+            height: 150px;
+            border: 1px solid #cc33cc;
+            display: flex;
+            justify-content: space-around;
+        }
+        #main div{
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div style="background-color:coral;"></div>
+        <div style="background-color:lightblue;"></div>
+        <div style="background-color:khaki;"></div>
+        <div style="background-color:pink;"></div>
+    </div>
+    <p><b>注意:</b> Internet Explorer 10 及更早版本浏览器不支持 justify-content 属性。</p>
+    <p><b>注意:</b> Safari 6.1 及更新版本通过 -webkit-justify-content 属性支持该属性。</p>
+
+</body>
+
+</html>

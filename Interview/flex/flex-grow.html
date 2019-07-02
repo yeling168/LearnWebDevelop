@@ -1,0 +1,44 @@
+<!--参考资料-->
+<!--https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-->
+<!--https://www.runoob.com/cssref/css3-pr-flex.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #content {
+            display: flex;
+        }
+
+        .box {
+            flex-grow: 1;
+        }
+
+        .box1 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>This is a Flex-Grow</h4>
+    <h5>A,B,C and F are flex-grow:1 . D and E are flex-grow:2 .</h5>
+    <div id="content">
+        <div class="box" style="background-color:red;">A</div>
+        <div class="box" style="background-color:lightblue;">B</div>
+        <div class="box" style="background-color:yellow;">C</div>
+        <div class="box1" style="background-color:brown;">D</div>
+        <div class="box1" style="background-color:lightgreen;">E</div>
+        <div class="box" style="background-color:brown;">F</div>
+    </div>
+</body>
+
+</html>

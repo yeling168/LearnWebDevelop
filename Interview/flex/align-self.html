@@ -1,0 +1,43 @@
+<!--参考资料-->
+<!--https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-->
+<!--https://www.runoob.com/cssref/css3-pr-flex.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <style>
+        #main {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #main div {
+            flex: 1
+        }
+
+        #myBlueDiv {
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div style="background-color:coral;">红色</div>
+        <div style="background-color:lightblue;" id="myBlueDiv">蓝色</div>
+        <div style="background-color:lightgreen;">带有更多内容的绿色 div</div>
+    </div>
+
+    <p><b>注意:</b> align-self 属性重写了容器的 align-items 属性。</p>
+    <p><b>注意:</b> Internet Explorer 10 及更早版本浏览器不支持 align-items 属性。</p>
+    <p><b>注意:</b> Safari 7.0 及更新版本通过 -webkit-align-items 属性支持该属性。
+</body>
+
+</html>

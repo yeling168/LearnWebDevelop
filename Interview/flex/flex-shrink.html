@@ -1,0 +1,49 @@
+<!--参考资料-->
+<!--https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-->
+<!--https://www.runoob.com/cssref/css3-pr-flex.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #content {
+            display: flex;
+            width: 500px
+        }
+
+        #content div {
+            flex-basis: 120px;
+        }
+
+        .box {
+            flex-shrink: 1;
+        }
+
+        .box1 {
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <p>the width of content is 500px, flex-basic of flex item is 120px.</p>
+    <p>A, B, C are flex-shrink:1. D and E are flex-shrink:2</p>
+    <p>the width of D is not the same as A's</p>
+    <div id="content">
+        <div class="box" style="background-color:red;">A</div>
+        <div class="box" style="background-color:lightblue;">B</div>
+        <div class="box" style="background-color:yellow;">C</div>
+        <div class="box1" style="background-color:brown;">D</div>
+        <div class="box1" style="background-color:lightgreen;">E</div>
+    </div>
+</body>
+
+</html>

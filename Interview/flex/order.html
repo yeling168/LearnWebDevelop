@@ -1,0 +1,55 @@
+<!--参考资料-->
+<!--https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex-->
+<!--https://www.runoob.com/cssref/css3-pr-flex.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+    <style>
+        #main {
+            width: 400px;
+            height: 150px;
+            border: 1px solid #c3c3c3;
+            display: flex
+        }
+
+        #main div {
+            width: 70px;
+            height: 70px;
+        }
+
+        div#myRedDIV {
+            order: 2;
+        }
+
+        div#myBlueDIV {
+            order: 4;
+        }
+
+        div#myGreenDIV {
+            order: 3;
+        }
+
+        div#myPinkDIV {
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div style="background-color:coral;" id="myRedDIV"></div>
+        <div style="background-color:lightblue;" id="myBlueDIV"></div>
+        <div style="background-color:lightgreen;" id="myGreenDIV"></div>
+        <div style="background-color:pink;" id="myPinkDIV"></div>
+    </div>
+
+    <p><b>注意:</b> Internet Explorer 10 及更早版本浏览器不支持 order 属性。</p>
+    <p><b>注意:</b> Safari 6.1 及更新版本通过 -webkit-order 属性支持该属性。</p>
+</body>
+
+</html>
