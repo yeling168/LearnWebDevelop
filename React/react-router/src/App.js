@@ -18,7 +18,7 @@ class App extends Component {
           <Jumbotron title="Welcome" subtitle="Put something witty here!"/>
           <Route exact path="/" component={Home}/>
           <Route path="/contact" component={Contact}/>
-          <Route path="/about" component={About}/>
+          <Route path="/about/:id" component={About}/>
           <Footer/>
         </div>
       </Router>
