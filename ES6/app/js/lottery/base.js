@@ -180,7 +180,7 @@ class Base {
     let count = self.computeCount(active, self.cur_play);
     if (count) {
       self.addCodeItem(
-        $active.join(""),
+        $active.join(" "),
         self.cur_play,
         self.play_list.get(self.cur_play).name,
         count
@@ -212,7 +212,7 @@ class Base {
   getCount() {
     let self = this;
     let active = $(".boll-list .btn-boll-active").length;
-    let count = self.computeCount(active, self, cur_play);
+    let count = self.computeCount(active, self.cur_play);
     let range = self.computeCount(active, self.cur_play);
     let money = count * 2;
     let win1 = range[0] - money;
@@ -220,7 +220,81 @@ class Base {
     let tpl;
     let c1 = win1 < 0 && win2 < 0 ? Math.abs(win1) : win1;
     let c2 = win1 < 0 && win2 < 0 ? Math.abs(win2) : win2;
-    
+    if (count === 0) {
+      tpl = `您选了<b class="red">${count}</b>注，共<b class="red">${count *
+        2}</b>元`;
+    } else if (range[0] === range[1]) {
+      tpl = `您选了<b>${count}</b>注，共<b>${count * 2}</b>元  <em>若中奖，奖金:
+      <strong class="red">${range[0]}</strong>元,
+      您将${win1 >= 0 ? "赢利" : "亏损"}
+      <strong class="${win1 >= 0 ? "red" : "green"}">${Math.abs(win1)}<strong>元
+      </em>`;
+    } else {
+      tpl = `您选了<b>${count}</b>注，共<b>${count * 2}</b>元  <em>若中奖，奖金:
+      <strong class="red">${range[0]}</strong>至<strong class="red">${
+        range[1]
+      }</strong>元,
+      您将${win1 <= 0 && win2 < 0 ? "亏损" : "盈利"}
+      <strong class="${win1 >= 0 ? "red" : "green"}">${c1}<strong>至
+      <strong class="${win2 >= 0 ? "red" : "green"}">${c1}</strong>元
+      </em>`;
+    }
+    $(".self_info").html(tpl);
+  }
+
+  /**
+   * 计算所有金额
+   */
+  getTotal() {
+    let count = 0;
+    $(".codelist li").each(function(index, item) {
+      count += $(item).attr("count") * 1;
+    });
+    $("#count").text(count);
+    $("#money").text(count * 2);
+  }
+
+  //生成随机号码
+  /**
+   * 生成随机数
+   * @param {*} num
+   */
+  getRandom(num) {
+    let arr = [],
+      index;
+    let number = Array.from(this.number);
+    while (num--) {
+      index = Number.parseInt(Math.random() * number.length);
+      arr.push(number[index]);
+      number.splice(index, 1);
+    }
+    return arr.join(" ");
+  }
+
+  /**
+   * 添加随机号码
+   * @param {*} e
+   */
+  getRandomCode(e) {
+    e.preventDefault();
+    //获取随机生成数量
+    let num = e.currentTarget.getAttribute("count");
+    //获取当前玩法
+    let play = this.cur_play.match(/\d+/g)[0];
+    let self = this;
+    //如果num=0，直接清空购物车
+    if (num === "0") {
+      $(self.cart_el).html("");
+    } else {
+      for (let i = 0; i < num; i++) {
+        self.addCodeItem(
+          self.getRandom(play),
+          self.cur_play,
+          self.play_list.get(self.cur_play).name,
+          1
+        );
+      }
+    }
   }
 }
 

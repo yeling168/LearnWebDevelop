@@ -283,3 +283,14 @@ http://www.w3help.org/zh-cn/causes/SJ9044
 
 http://www.w3help.org/zh-cn/causes/SJ2047
 
+注意事项:
+
+使用严格模式，注意作用域
+
+使用类与对象，结合模块化构建中大型项目
+
+使用Promise替换传统的回调函数
+
+使用箭头函数要注意this的指向
+
+学会使用Generator完成异步操作应用

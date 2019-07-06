@@ -8,7 +8,7 @@ class Timer {
     //获取当前对象指针
     const self = this;
     //如果当前时间大于截止时间，倒计时结束
-    if (now - end) {
+    if (now - end > 0) {
       //倒计时结束的回调函数
       handle.call(self);
     } else {
