@@ -1,0 +1,28 @@
+{
+    "records": [{
+        "id": "1",
+        "date": "2019-06-04123",
+        "title": "你们传的数据怎么这么不规范",
+        "amount": 12
+    }, {
+        "id": "2",
+        "date": "2019-01-31",
+        "title": "modify 转单增加exceptionReport",
+        "amount": 12
+    }, {
+        "id": "3",
+        "date": "2019-01-31",
+        "title": "11",
+        "amount": 1
+    }, {
+        "id": "4",
+        "date": "滴答滴答",
+        "title": "借了很多",
+        "amount": -100
+    }, {
+        "id": "5",
+        "date": "568",
+        "title": "32432",
+        "amount": 888
+    }]
+}

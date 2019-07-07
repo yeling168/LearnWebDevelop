@@ -66,3 +66,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### mock-api
+
+2836485346@qq.com  study0918
+
+### mock 
+
+[https://github.com/typicode/json-server](https://github.com/typicode/json-server)
+
+json-server --watch db.json --port 3004
+
+### Fetch
+
+[https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
+
+[https://github.com/github/fetch](https://github.com/github/fetch)
