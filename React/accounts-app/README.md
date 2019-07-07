@@ -82,3 +82,14 @@ json-server --watch db.json --port 3004
 [https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
 
 [https://github.com/github/fetch](https://github.com/github/fetch)
+
+### adding-custom-environment-variables
+[https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables)
+
+yarn add axios
+
+yarn add jquery
+
+### 更新数组
+
+[https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns](https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns)
