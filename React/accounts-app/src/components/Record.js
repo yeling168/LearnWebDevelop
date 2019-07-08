@@ -54,7 +54,7 @@ class Record extends Component {
           </button>
           <button
             className="btn btn-danger"
-            onCLick={this.handleDelete.bind(this)}
+            onClick={this.handleDelete.bind(this)}
           >
             Delete
           </button>

@@ -77,7 +77,7 @@ class Records extends Component {
       (item, index) => index !== recordIndex
     );
     this.setState({
-      record: newRecords
+      records: newRecords
     });
   }
 
