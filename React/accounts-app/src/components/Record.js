@@ -32,6 +32,13 @@ class Record extends Component {
       .catch(error => console.log(error.message));
   }
 
+  handleDelete(event) {
+    event.preventDefault();
+    RecordsAPI.remove(this.props.record.id)
+      .then(response => this.props.handleDeleteRecord(this.props.record))
+      .catch(error => console.log(error.message));
+  }
+
   recordRow() {
     return (
       <tr>
@@ -45,7 +52,12 @@ class Record extends Component {
           >
             Edit
           </button>
-          <button className="btn btn-danger">Delete</button>
+          <button
+            className="btn btn-danger"
+            onCLick={this.deleteRecord.bind(this)}
+          >
+            Delete
+          </button>
         </td>
       </tr>
     );

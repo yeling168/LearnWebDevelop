@@ -68,6 +68,17 @@ class Records extends Component {
     });
   }
 
+  deleteRecord(record) {
+    //console.log(record);
+    const recordIndex = this.state.records.indexOf(record);
+    const newRecords = this.state.records.filter(
+      (item, index) => index !== recordIndex
+    );
+    this.setState({
+      record: newRecords
+    });
+  }
+
   render() {
     const { error, isLoaded, records } = this.state;
     let recordsComponent;
@@ -92,6 +103,7 @@ class Records extends Component {
                 key={record.id}
                 record={record}
                 handleEditRecord={this.updateRecord.bind(this)}
+                handleDeleteRecord={this.deleteRecord.bind(this)}
               />
             ))}
           </tbody>
