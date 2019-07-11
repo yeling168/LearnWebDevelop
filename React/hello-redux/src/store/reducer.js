@@ -14,6 +14,15 @@ export default (state = defaultState, action) => {
     newState.inputValue = action.value;
     return newState;
   }
-  console.log(state, action);
+  if (action.type === "add_todo_item") {
+    //state的数据不可改变
+    const newState = JSON.parse(JSON.stringify(state));
+    newState.list.push(newState.inputValue);
+    newState.inputValue = "";
+    console.log("clickButton", newState);
+    //返回新的state给store
+    return newState;
+  }
+  //console.log(state, action);
   return state;
 };

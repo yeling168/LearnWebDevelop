@@ -24,6 +24,8 @@ class TodoList extends Component {
     //只要store发生了改变，handleStoreChange事件就会被自动执行一次
     this.handleStoreChange = this.handleStoreChange.bind(this);
     store.subscribe(this.handleStoreChange);
+    //button的点击事件
+    this.handleBtnClick = this.handleBtnClick.bind(this);
   }
 
   handleInputChange(e) {
@@ -39,6 +41,13 @@ class TodoList extends Component {
     console.log("store changed");
     this.setState(store.getState());
   }
+
+  handleBtnClick() {
+    const action = {
+      type: "add_todo_item"
+    };
+    store.dispatch(action);
+  }
   render() {
     return (
       <div style={{ marginTop: "10px", marginRight: "10px" }}>
@@ -48,7 +57,9 @@ class TodoList extends Component {
           style={{ width: "300px", marginRight: "10px" }}
           onChange={this.handleInputChange}
         />
-        <Button type="primary">提交</Button>
+        <Button type="primary" onClick={this.handleBtnClick}>
+          提交
+        </Button>
         <List
           style={{ marginTop: "10px", width: "300px" }}
           bordered
