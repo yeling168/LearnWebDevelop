@@ -19,6 +19,25 @@ class TodoList extends Component {
     super(props);
     this.state = store.getState();
     console.log(this.state);
+    this.handleInputChange = this.handleInputChange.bind(this);
+    //组件去订阅store，store的数据只要发生改变，subscribe里面的函数就可以自动被执行
+    //只要store发生了改变，handleStoreChange事件就会被自动执行一次
+    this.handleStoreChange = this.handleStoreChange.bind(this);
+    store.subscribe(this.handleStoreChange);
+  }
+
+  handleInputChange(e) {
+    const action = {
+      type: "change_input_value",
+      value: e.target.value
+    };
+    store.dispatch(action);
+    console.log(e.target.value);
+  }
+
+  handleStoreChange() {
+    console.log("store changed");
+    this.setState(store.getState());
   }
   render() {
     return (
@@ -27,6 +46,7 @@ class TodoList extends Component {
           value={this.state.inputValue}
           placeholder="todo info"
           style={{ width: "300px", marginRight: "10px" }}
+          onChange={this.handleInputChange}
         />
         <Button type="primary">提交</Button>
         <List

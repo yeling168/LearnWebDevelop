@@ -75,3 +75,11 @@ yarn add antd
 ### 安装redux
 
 yarn add redux
+
+### 解决No store found. Make sure to follow the instructions.
+
+[https://github.com/zalmoxisus/redux-devtools-extension#usage](https://github.com/zalmoxisus/redux-devtools-extension#usage)
+
+### 深拷贝
+
+[https://blog.csdn.net/ljw1412/article/details/79651725](https://blog.csdn.net/ljw1412/article/details/79651725)
