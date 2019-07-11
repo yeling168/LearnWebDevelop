@@ -1,7 +1,7 @@
 //reducer是一个纯函数，接收state和action
 const defaultState = {
-  inputValue: "123",
-  list: [1, 2]
+  inputValue: "",
+  list: []
 };
 
 //state指的是store上一次存储的数据
@@ -20,6 +20,14 @@ export default (state = defaultState, action) => {
     newState.list.push(newState.inputValue);
     newState.inputValue = "";
     console.log("clickButton", newState);
+    //返回新的state给store
+    return newState;
+  }
+
+  if (action.type === "delete_todo_item") {
+    //state的数据不可改变
+    const newState = JSON.parse(JSON.stringify(state));
+    newState.list.splice(action.index, 1);
     //返回新的state给store
     return newState;
   }

@@ -48,6 +48,16 @@ class TodoList extends Component {
     };
     store.dispatch(action);
   }
+
+  handleItemDelete(index) {
+    //alert(index);
+    const action = {
+      type: "delete_todo_item",
+      index
+    };
+    //把当前store的内容和action一起发送给reducer，reducer就可以接收到之前的数据和action
+    store.dispatch(action);
+  }
   render() {
     return (
       <div style={{ marginTop: "10px", marginRight: "10px" }}>
@@ -64,7 +74,11 @@ class TodoList extends Component {
           style={{ marginTop: "10px", width: "300px" }}
           bordered
           dataSource={this.state.list}
-          renderItem={item => <List.Item>{item}</List.Item>}
+          renderItem={(item, index) => (
+            <List.Item onClick={this.handleItemDelete.bind(this, index)}>
+              {item}
+            </List.Item>
+          )}
         />
       </div>
     );
