@@ -1,3 +1,5 @@
+//所有的处理都在reducers
+
 export default (state = 0, action) => {
   state = state || { counter: 0 };
   switch (action.type) {

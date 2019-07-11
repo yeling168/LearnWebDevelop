@@ -1,7 +1,7 @@
-import {createStore} from 'redux';
+import { createStore } from "redux";
+import reducer from "./reducer";
+//创建一个store,一个数据公共存储仓库
 
-//创建一个store
+const store = createStore(reducer);
 
-const store=createStore();
-
-export store;
+export default store;
