@@ -5,6 +5,12 @@ import { Input, Button, List } from "antd";
 //也可以写成
 import store from "./store";
 
+import {
+  CHANGE_INPUT_VALUE,
+  ADD_TODO_ITEM,
+  DELETE_TODO_ITEM
+} from "./store/actionTypes";
+
 //全局的数据
 // const data = [
 //   "Racing car sprays burning fuel into crowd.",
@@ -30,7 +36,7 @@ class TodoList extends Component {
 
   handleInputChange(e) {
     const action = {
-      type: "change_input_value",
+      type: CHANGE_INPUT_VALUE,
       value: e.target.value
     };
     store.dispatch(action);
@@ -44,7 +50,7 @@ class TodoList extends Component {
 
   handleBtnClick() {
     const action = {
-      type: "add_todo_item"
+      type: ADD_TODO_ITEM
     };
     store.dispatch(action);
   }
@@ -52,7 +58,7 @@ class TodoList extends Component {
   handleItemDelete(index) {
     //alert(index);
     const action = {
-      type: "delete_todo_item",
+      type: DELETE_TODO_ITEM,
       index
     };
     //把当前store的内容和action一起发送给reducer，reducer就可以接收到之前的数据和action
