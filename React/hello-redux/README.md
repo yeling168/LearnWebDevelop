@@ -83,3 +83,25 @@ yarn add redux
 ### 深拷贝
 
 [https://blog.csdn.net/ljw1412/article/details/79651725](https://blog.csdn.net/ljw1412/article/details/79651725)
+
+### 总结
+
+运行项目：yarn add
+
+关于store
+
+1.store是唯一的
+
+2.只有store能够改变自己的内容
+
+3.Reducer必须是纯函数
+
+### 核心API
+
+createStore
+
+store.dispatch
+
+store.getState
+
+store.subscribe

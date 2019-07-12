@@ -12,6 +12,9 @@ const defaultState = {
 
 //state指的是store上一次存储的数据
 //reducer可以接受state，但是绝不能修改state，所以才需要拷贝新的
+//state指的就是store的数据
+//纯函数指的是，给定固定的输入，就一定会有固定的输出，而且不会有任何副作用
+//state固定，action固定，那么返回值是固定的
 export default (state = defaultState, action) => {
   if (action.type === CHANGE_INPUT_VALUE) {
     //改变以前store里面的inputValue
