@@ -10,6 +10,7 @@ import {
 } from "./store/actionCreators";
 
 import TodoListUI from "./TodoListUI";
+import axios from 'axios';
 
 class TodoList extends Component {
   constructor(props) {
@@ -59,6 +60,10 @@ class TodoList extends Component {
     //把当前store的内容和action一起发送给reducer，reducer就可以接收到之前的数据和action
     store.dispatch(action);
   }
+
+  componentDidMount(){
+
+  }
   render() {
     //TodoListUI是TodoList的子组件，可以通过属性的方式拿数据
     return (
@@ -74,3 +79,4 @@ class TodoList extends Component {
 }
 
 export default TodoList;
+;
