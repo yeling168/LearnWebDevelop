@@ -150,6 +150,16 @@ redux-logger可以记录dispatch的传递日志，可以将日志打印在控制
 
 redux-thunk将异步操作放到action，redux-saga将异步逻辑拆分出来，放到另一个文件进行管理
 
+### redux-saga
+
+[https://github.com/redux-saga/redux-saga](https://github.com/redux-saga/redux-saga)
+
+redux-saga将异步逻辑拆分出来，放到另一个文件进行管理
+
+saga的文件必须要要求一个文件是generator函数
+
+使用saga，在reducer可以接收action，在sagas.js中也能接收action
+
 ### 运行项目
 
 json-server --watch list.json --port 3004

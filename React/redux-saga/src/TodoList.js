@@ -4,14 +4,13 @@ import "antd/dist/antd.css";
 //也可以写成
 import store from "./store";
 import {
-  initListAction,
+  getInitList,
   getInputChangeAction,
   getAddItemAction,
   getDeleteItemAction
 } from "./store/actionCreators";
 
 import TodoListUI from "./TodoListUI";
-import axios from "axios";
 
 
 class TodoList extends Component {
@@ -64,11 +63,9 @@ class TodoList extends Component {
   }
 
   componentDidMount() {
-    axios.get("http://localhost:3004/posts").then(res => {
-      const data = res.data;
-      const action = initListAction(data);
-      store.dispatch(action);
-    });
+    const action=getInitList();
+    store.dispatch(action);
+    console.log(action);
   }
   render() {
     //TodoListUI是TodoList的子组件，可以通过属性的方式拿数据
