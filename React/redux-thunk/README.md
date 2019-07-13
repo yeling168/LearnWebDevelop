@@ -136,6 +136,20 @@ yarn安装：yarn add redux-thunk
 
 解决工具不能使用（查看高级设置）：[https://github.com/zalmoxisus/redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
 
+### dispatch方法
+
+根据参数的不同做不同的事情
+
+如果参数是对象，直接传递给store
+
+如果参数是函数，那在dispatch中将函数执行结束
+
+redux-thunk将dispatch方法升级，原始的redux中dispatch方法只能是一个对象，升级后dispatch既可以接收对象，也可以接受函数
+
+redux-logger可以记录dispatch的传递日志，可以将日志打印在控制台上
+
+redux-thunk将异步操作放到action，redux-saga将异步逻辑拆分出来，放到另一个文件进行管理
+
 ### 运行项目
 
 json-server --watch list.json --port 3004
