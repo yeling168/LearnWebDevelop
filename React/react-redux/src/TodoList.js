@@ -1,23 +1,41 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-class TodoList extends Component {
-  render() {
-    const {inputValue,list,changeInputValue,handleClick}=this.props;
-    return (
+
+const TodoList = props => {
+  const { inputValue, list, changeInputValue, handleClick } = props;
+  return (
+    <div>
       <div>
-        <div>
-          <input value={inputValue} onChange={changeInputValue} />
-          <button onClick={handleClick}>提交</button>
-        </div>
-        <ul>
-          {list.map((item, index) => {
-            return <li key={index}>{item}</li>;
-          })}
-        </ul>
+        <input value={inputValue} onChange={changeInputValue} />
+        <button onClick={handleClick}>提交</button>
       </div>
-    );
-  }
-}
+      <ul>
+        {list.map((item, index) => {
+          return <li key={index}>{item}</li>;
+        })}
+      </ul>
+    </div>
+  );
+};
+
+// class TodoList extends Component {
+//   render() {
+//     const {inputValue,list,changeInputValue,handleClick}=this.props;
+//     return (
+//       <div>
+//         <div>
+//           <input value={inputValue} onChange={changeInputValue} />
+//           <button onClick={handleClick}>提交</button>
+//         </div>
+//         <ul>
+//           {list.map((item, index) => {
+//             return <li key={index}>{item}</li>;
+//           })}
+//         </ul>
+//       </div>
+//     );
+//   }
+// }
 
 //和store连接的方式
 //state来自store
