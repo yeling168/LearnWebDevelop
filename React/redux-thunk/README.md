@@ -127,6 +127,15 @@ UI组件负责渲染，容器组件负责逻辑
 在D:\LearnWebDevelop\LearnWebDevelop\React\redux-saga\src新建一个list.json文件，进入到该目录，在cmd命令行输入json-server --watch list.json --port 3004在3004端口监听
 
 
+### redux-thunk
+github地址：[https://github.com/reduxjs/redux-thunk](https://github.com/reduxjs/redux-thunk)
+
+yarn安装：yarn add redux-thunk
+
+可以把复杂请求和逻辑放到action处理
+
+解决工具不能使用（查看高级设置）：[https://github.com/zalmoxisus/redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
+
 ### 运行项目
 
 json-server --watch list.json --port 3004
