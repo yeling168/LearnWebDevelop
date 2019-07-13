@@ -6,7 +6,8 @@ import store from "./store";
 import {
   getInputChangeAction,
   getAddItemAction,
-  getDeleteItemAction
+  getDeleteItemAction,
+  initListAction
 } from "./store/actionCreators";
 
 import TodoListUI from "./TodoListUI";
@@ -62,7 +63,12 @@ class TodoList extends Component {
   }
 
   componentDidMount(){
-
+    axios.get('http://localhost:3004/posts').then((res)=>{
+      const data=res.data;
+      const action=initListAction(data);
+      store.dispatch(action);
+      //console.log(res);
+    })
   }
   render() {
     //TodoListUI是TodoList的子组件，可以通过属性的方式拿数据
@@ -79,4 +85,3 @@ class TodoList extends Component {
 }
 
 export default TodoList;
-;

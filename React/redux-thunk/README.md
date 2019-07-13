@@ -117,3 +117,18 @@ UI组件负责渲染，容器组件负责逻辑
 优势:无状态组件性能比普通组件的性能更高，因为它就是一个函数
 
 普通组件是JS里面的类，这个类生成的对象包含了一些生命周期函数还有render，执行的东西远比无状态函数多很多
+
+### 本地模拟服务器
+
+[https://github.com/typicode/json-server](https://github.com/typicode/json-server)
+
+全局安装json-server：npm install -g json-server
+
+在D:\LearnWebDevelop\LearnWebDevelop\React\redux-saga\src新建一个list.json文件，进入到该目录，在cmd命令行输入json-server --watch list.json --port 3004在3004端口监听
+
+
+### 运行项目
+
+json-server --watch list.json --port 3004
+
+yarn start
