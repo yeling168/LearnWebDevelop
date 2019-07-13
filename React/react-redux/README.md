@@ -162,6 +162,9 @@ saga的文件必须要要求一个文件是generator函数
 
 ### react-redux
 
+github地址:[https://github.com/reduxjs/react-redux](https://github.com/reduxjs/react-redux)
+Provider的意思是提供器连接了store，那么Provider里面的所有组件都能获取到store的内容，是通过connect方法获取的
+
 ### 运行项目
 
 json-server --watch list.json --port 3004
