@@ -1,5 +1,4 @@
-import { createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
+import { createStore, compose } from "redux";
 import reducer from "./reducer";
 
 const composeEnhancers =
@@ -9,10 +8,7 @@ const composeEnhancers =
       })
     : compose;
 
-const enhancer = composeEnhancers(
-  applyMiddleware(thunk)
-  // other store enhancers if any
-);
+const enhancer = composeEnhancers();
 //创建一个store,一个数据公共存储仓库
 const store = createStore(reducer, enhancer);
 
