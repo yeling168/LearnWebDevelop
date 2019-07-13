@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 class TodoList extends Component {
   render() {
+    const {inputValue,list,changeInputValue,handleClick}=this.props;
     return (
       <div>
         <div>
-          <input
-            value={this.props.inputValue}
-            onChange={this.props.changeInputValue}
-          />
-          <button>提交</button>
+          <input value={inputValue} onChange={changeInputValue} />
+          <button onClick={handleClick}>提交</button>
         </div>
         <ul>
-          <li>Deil</li>
+          {list.map((item, index) => {
+            return <li key={index}>{item}</li>;
+          })}
         </ul>
       </div>
     );
@@ -25,7 +25,8 @@ class TodoList extends Component {
 const mapStateToProps = state => {
   console.log(state);
   return {
-    inputValue: state.inputValue
+    inputValue: state.inputValue,
+    list: state.list
   };
 };
 
@@ -40,7 +41,15 @@ const mapDispatchToProps = dispatch => {
         value: e.target.value
       };
       dispatch(action);
-    }
+    },
+    handleClick() {
+      //console.log('123');
+      const action = {
+        type: "add_item"
+      };
+      dispatch(action);
+    },
+    handleDelete() {}
   };
 };
 
