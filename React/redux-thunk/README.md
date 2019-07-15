@@ -152,6 +152,12 @@ redux-thunk将异步操作放到action，redux-saga将异步逻辑拆分出来�
 
 ### 运行项目
 
+模拟后台
+
+阿里:[http://mock-api.com/](http://mock-api.com/)
+
+Charles工具
+
 json-server --watch list.json --port 3004
 
 yarn start
