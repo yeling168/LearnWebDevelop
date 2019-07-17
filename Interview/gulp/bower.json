@@ -1,0 +1,24 @@
+{
+  "name": "webapp",
+  "homepage": "https://github.com/study0918/LearnWebDevelop",
+  "authors": [
+    "study0918 <beyondthestars@yeah.net>"
+  ],
+  "description": "angular js webapp",
+  "main": "",
+  "keywords": [
+    "angular.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.8",
+    "requirejs": "^2.3.6"
+  }
+}
