@@ -1,7 +1,7 @@
 {
-  "name": "gulp",
+  "name": "webapp",
   "version": "1.0.0",
-  "description": "安装cnpm  npm i -g cnpm",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
