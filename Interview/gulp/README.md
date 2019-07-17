@@ -15,3 +15,9 @@ null>.bowerrc
 安装require.js:bower install --save requirejs
 
 卸载bower uninstall --save requirejs
+
+全局安装gulp:cnpm i -g gulp
+
+初始化文件:npm init
+
+本地安装gulp:cnpm i --save-dev gulp
