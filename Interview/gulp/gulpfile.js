@@ -20,14 +20,16 @@ gulp.task("lib", function() {
     .src("bower_components/**/*.js")
     //读了文件就拷贝,dest是写文件的API
     .pipe(gulp.dest(app.devPath + "vendor"))
-    .pipe(gulp.dest(app.prdPath + "vendor"));
+    .pipe(gulp.dest(app.prdPath + "vendor"))
+    .pipe($.connect.reload());
 });
 
 gulp.task("html", function() {
   gulp
     .src(app.srcPath + "/**/*.html")
     .pipe(gulp.dest(app.devPath))
-    .pipe(gulp.dest(app.prdPath));
+    .pipe(gulp.dest(app.prdPath))
+    .pipe($.connect.reload());
 });
 
 //json用来mock数据
@@ -35,7 +37,8 @@ gulp.task("json", function() {
   gulp
     .src(app.srcPath + "data/**/*.json")
     .pipe(gulp.dest(app.devPath + "data"))
-    .pipe(gulp.dest(app.prdPath + "data"));
+    .pipe(gulp.dest(app.prdPath + "data"))
+    .pipe($.connect.reload());
 });
 
 //less
@@ -46,7 +49,8 @@ gulp.task("less", function() {
     .pipe($.less())
     .pipe(gulp.dest(app.devPath + "css"))
     .pipe($.cssmin())
-    .pipe(gulp.dest(app.prdPath + "css"));
+    .pipe(gulp.dest(app.prdPath + "css"))
+    .pipe($.connect.reload());
 });
 
 gulp.task("js", function() {
@@ -57,7 +61,8 @@ gulp.task("js", function() {
     .pipe(gulp.dest(app.devPath + "js"))
     //压缩js
     .pipe($.uglify())
-    .pipe(gulp.dest(app.prdPath + "js"));
+    .pipe(gulp.dest(app.prdPath + "js"))
+    .pipe($.connect.reload());
 });
 
 gulp.task("image", function() {
@@ -66,7 +71,8 @@ gulp.task("image", function() {
     .pipe(gulp.dest(app.devPath + "image"))
     //压缩
     .pipe($.imagemin())
-    .pipe(gulp.dest(app.prdPath + "image"));
+    .pipe(gulp.dest(app.prdPath + "image"))
+    .pipe($.connect.reload());
 });
 
 //清除之前文件
@@ -75,27 +81,26 @@ gulp.task("clean", function() {
   gulp.src([app.devPath, app.prdPath]).pipe($.clean());
 });
 
-
 //任务合并
-gulp.task('build', ['image', 'js', 'less', 'lib', 'html', 'json']);
+gulp.task("build", ["image", "js", "less", "lib", "html", "json"]);
 
-gulp.task('serve', ['build'], function() {
-    $.connect.server({
+gulp.task("serve", ["build"], function() {
+  $.connect.server({
     //读取文件路径
-      root: [app.devPath],
-      //热更新
-      livereload: true,
-      port: 3000
-    });
-    //自动打开浏览器
-    open('http://localhost:3000');
-  
-    gulp.watch('bower_components/**/*', ['lib']);
-    gulp.watch(app.srcPath + '**/*.html', ['html']);
-    gulp.watch(app.srcPath + 'data/**/*.json', ['json']);
-    gulp.watch(app.srcPath + 'style/**/*.less', ['less']);
-    gulp.watch(app.srcPath + 'script/**/*.js', ['js']);
-    gulp.watch(app.srcPath + 'image/**/*', ['image']);
+    root: [app.devPath],
+    //热更新
+    livereload: true,
+    port: 3000
   });
-  
-  gulp.task('default', ['serve']);
+  //自动打开浏览器
+  open("http://localhost:3000");
+
+  gulp.watch("bower_components/**/*", ["lib"]);
+  gulp.watch(app.srcPath + "**/*.html", ["html"]);
+  gulp.watch(app.srcPath + "data/**/*.json", ["json"]);
+  gulp.watch(app.srcPath + "style/**/*.less", ["less"]);
+  gulp.watch(app.srcPath + "script/**/*.js", ["js"]);
+  gulp.watch(app.srcPath + "image/**/*", ["image"]);
+});
+
+gulp.task("default", ["serve"]);
