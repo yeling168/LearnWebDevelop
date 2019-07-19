@@ -275,3 +275,14 @@ push(),pop(),shift(),unshift(),splice(),sort(),reverse()
 修饰符:.stop,.pevent,.capture,.self,.once
 
 按键修饰符:.enter,.tab,.delete,.esc,.space,.up,.down,.left,.right,.ctrl,.alt,.shift,.meta,.键值
+
+##条件渲染
+
+###v-show
+
+根据表达式的值，用来显示/隐藏元素
+
+语法:v-show="表达式"
+
+元素会被渲染在页面中，只根据表达式的值进行css切换
+
