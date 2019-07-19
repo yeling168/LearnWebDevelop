@@ -286,3 +286,18 @@ push(),pop(),shift(),unshift(),splice(),sort(),reverse()
 
 元素会被渲染在页面中，只根据表达式的值进行css切换
 
+##动态class
+
+###动态绑定class
+
+class也为元素的属性，可以使用v-bind:class
+
+语法:
+
+：clsss="{className:表达式}"
+
+表达式为true，添加className
+
+表达式为false不添加className
+
+:class="[className,classname]"

@@ -31,11 +31,11 @@
         <div class="tasks">
             <span class="no-task-tip" v-show="!list.length">还没有添加任何任务</span>
             <ul class="todo-list">
-                <li class="todo" v-for="item in list">
+                <li class="todo"  :class="{completed:item.isChecked}" v-for="item in list">
                     <div class="view">
-                        <input class="toggle" type="checkbox">
+                        <input class="toggle" type="checkbox" v-model="item.isChecked"/>
                         <label>{{item.title}}</label>
-                        <button class="destory"></button>
+                        <button class="destory" @click="deleteTodo(item)"></button>
                     </div>
                     <input type="text" class="edit">
                 </li>
