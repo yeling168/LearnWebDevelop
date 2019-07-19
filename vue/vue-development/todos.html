@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>vue</title>
-    <script src="/vue.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="./vue.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     </div>
     <div class="main">
         <h3 class="big-title">添加任务:</h3>
-        <input placeholder="例如:吃饭睡觉打豆豆:提示：+回车可以添加任务" class="task-input" type="text">
+        <input placeholder="例如:吃饭睡觉打豆豆:提示：+回车可以添加任务" class="task-input" type="text" v-model="todo" v-on:keyup.13="addTodo">
         <ul class="task-count">
             <li>1个任务未完成</li>
             <li class="action">
@@ -30,18 +31,10 @@
         <div class="tasks">
             <span class="no-task-tip">还没有添加任何任务</span>
             <ul class="todo-list">
-                <li class="todo completed">
-                    <div class="view">
-                        <input checked class="toggle" type="checkbox">
-                        <label>吃饭睡觉打豆豆</label>
-                        <button class="destory"></button>
-                    </div>
-                    <input type="text" class="edit">
-                </li>
-                <li class="todo">
+                <li class="todo" v-for="item in list">
                     <div class="view">
                         <input class="toggle" type="checkbox">
-                        <label>吃饭睡觉打豆豆</label>
+                        <label>{{item.title}}</label>
                         <button class="destory"></button>
                     </div>
                     <input type="text" class="edit">

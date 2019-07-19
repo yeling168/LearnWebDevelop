@@ -229,3 +229,49 @@ key:"key"，给元素添加唯一标示
 
 ref:"ref" 引用信息
 
+##列表渲染
+
+###v-for指令
+
+根据一组数组的选项列表进行渲染
+
+语法:
+
+value,key in items
+
+value,key of items
+
+###变异方法
+
+vue提供一组方法，对数组进行操作的时候，会触发视图更新
+
+push(),pop(),shift(),unshift(),splice(),sort(),reverse()
+
+##事件处理器
+
+###v-on指令
+
+用来监听DOM事件触发代码
+
+语法:v-on:eventName="eventHandle"
+
+指令简写:@
+
+事件处理函数:写在methods中统一管理
+
+事件对象:在事件处理函数中获取，内联事件处理函数执行，传入事件对象$event
+
+事件修饰符:事件处理函数只有纯粹的逻辑判断，不处理DOM事件的细节，例如:阻止冒泡，取消默认行为，判断按键
+
+
+##事件修饰符
+
+###事件修饰符
+
+事件处理函数只有纯粹的逻辑判断，不处理DOM事件的细节，例如:阻止冒泡，取消默认行为，判断按键
+
+修饰符的位置:v-on:eventName.修饰符
+
+修饰符:.stop,.pevent,.capture,.self,.once
+
+按键修饰符:.enter,.tab,.delete,.esc,.space,.up,.down,.left,.right,.ctrl,.alt,.shift,.meta,.键值
