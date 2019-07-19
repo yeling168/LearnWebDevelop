@@ -12,19 +12,28 @@
 <body>
     <!--模板-->
     <div id="demo">
-        {{message}}
+        <span v-on:click='clickHandle'>{{message}}</span>
     </div>
     <script>
         //数据
-        let data = {
+        let obj = {
             message: 'hello,vue!'
         }
 
-        var vm = new Vue({
-            el: '#demo', //挂载元素
-            data: data
+        var vm=new Vue({
+            //选择器
+            el: "#demo",
+            //data是对象
+            data: obj,
+            //方法
+            methods: {
+                //ES6语法
+                clickHandle() {
+                    alert('click');
+                }
+            }
         });
-        console.dir(document);
+        console.log(vm);
     </script>
 </body>
 
