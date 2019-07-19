@@ -18,7 +18,7 @@
     </div>
     <div class="main">
         <h3 class="big-title">添加任务:</h3>
-        <input placeholder="例如:吃饭睡觉打豆豆:提示：+回车可以添加任务" class="task-input" type="text" v-model="todo" v-on:keyup.13="addTodo">
+        <input placeholder="例如:吃饭睡觉打豆豆:提示：+回车可以添加任务" class="task-input" type="text" v-model="todo" v-on:keyup.13="addTodo(123,$event)">
         <ul class="task-count">
             <li>1个任务未完成</li>
             <li class="action">
