@@ -30,7 +30,25 @@
             el: '#demo', //挂载元素
             data: obj,
             render(createElement) {
-                return createElement(
+                // return createElement(
+                //     'ul', {
+                //         class: {
+                //             bg: true
+                //         },
+                //         style: {
+                //             fontSize: '50px'
+                //         },
+                //         attrs:{
+                //             abc:'miaov'
+                //         },
+                //         domProps:{
+                //             innerHTML:"<li>我是html</li>"
+                //         }
+                //     },
+                //     [createElement("li", 1), createElement("li", 2), createElement("li", 3)]
+                // )
+
+                var obj= createElement(
                     'ul', {
                         class: {
                             bg: true
@@ -47,6 +65,8 @@
                     },
                     [createElement("li", 1), createElement("li", 2), createElement("li", 3)]
                 )
+                console.log(obj);
+                return obj;
             }
         });
         console.dir(vm.$data);
