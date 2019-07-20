@@ -1,4 +1,16 @@
-var list = [
+//存取localstorage中的数据
+
+var store = {
+  save(key, value) {
+    //list是数组，需要转成JSON字符串
+    localStorage.setItem(key, JSON.stringify(value));
+  },
+  fetch(key) {
+    //localStorage.getItem(key)返回的是字符串
+    return JSON.parse(localStorage.getItem(key)) || [];
+  }
+};
+/* var list = [
   {
     title: "吃饭打豆豆",
     isChecked: false //状态为false，为不选中
@@ -7,7 +19,9 @@ var list = [
     title: "妙味课堂",
     isChecked: true //状态为true为选中
   }
-];
+]; */
+
+var list = store.fetch("miaov-new-class");
 
 new Vue({
   el: ".main",
@@ -16,6 +30,21 @@ new Vue({
     todo: "",
     edtorTodos: "", //记录正在编辑的数据
     beforeTitle: "" //记录正在编辑的数据的title
+  },
+  watch: {
+    //监控list,list发生变化时，就会执行函数
+    // list: function() {
+    //   store.save("miaov-new-class",this.list);
+    // },
+
+    //对list深度监控
+    list: {
+      //list发生变化时，执行以下函数
+      handler: function() {
+        store.save("miaov-new-class", this.list);
+      },
+      deep: true
+    }
   },
   computed: {
     noCheckeLength: function() {
