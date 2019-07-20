@@ -301,3 +301,47 @@ class也为元素的属性，可以使用v-bind:class
 表达式为false不添加className
 
 :class="[className,classname]"
+
+##自定义指令
+
+###自定义指令
+
+除了vue内置的指令，可以自己设置指令
+
+选项对象的directives属性
+
+{
+   directives:{}
+}
+
+钩子函数:
+
+update被绑定元素所在的模板更新时调用
+
+钩子函数中的参数:
+
+el:指令所绑定的元素，可以用来直接操作DOM
+
+binding:一个对象
+
+value:指令的绑定值
+
+自定义指令官方地址:[https://cn.vuejs.org/v2/guide/custom-directive.html](https://cn.vuejs.org/v2/guide/custom-directive.html)
+
+
+##计算数据
+
+###为什么要使用计算属性
+
+模板是为了描述视图的结构，模板中放入太多逻辑，导致模板过重且难以维护。
+
+在计算一个计算属性时，Vue.js更新它的依赖列表并缓存结果，只有当其中一个依赖发生了变化，缓存的结果才无效。
+
+语法:
+
+在选项对象中
+
+{
+  ...
+  computed:{}
+}
