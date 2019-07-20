@@ -20,16 +20,38 @@ var store = {
     isChecked: true //状态为true为选中
   }
 ]; */
-
+store.save("miaov-new-class", [
+  { title: "tty", isChecked: true },
+  { title: "tty", isChecked: false }
+]);
 var list = store.fetch("miaov-new-class");
 
-new Vue({
+//过滤的时候有三种情况 all finished undefined
+
+var filter = {
+  all: function(list) {
+    return list;
+  },
+  finished: function(list) {
+    return list.filter(function(item) {
+      return item.isChecked;
+    });
+  },
+  unfinished: function() {
+    return list.filter(function(item) {
+      return !item.isChecked;
+    });
+  }
+};
+
+var vm = new Vue({
   el: ".main",
   data: {
     list: list,
     todo: "",
     edtorTodos: "", //记录正在编辑的数据
-    beforeTitle: "" //记录正在编辑的数据的title
+    beforeTitle: "", //记录正在编辑的数据的title
+    visibility: "all" //通过这个属性值的变化对数据进行筛选
   },
   watch: {
     //监控list,list发生变化时，就会执行函数
@@ -51,6 +73,10 @@ new Vue({
       return this.list.filter(function(item) {
         return !item.isChecked;
       }).length;
+    },
+    filteredList: function() {
+      //找到了过滤函数，就返回过滤后的数据:如果没有返回所有数据
+      return filter[this.visibility] ? filter[this.visibility](list) : list;
     }
   },
   methods: {
@@ -100,3 +126,13 @@ new Vue({
     }
   }
 });
+
+function watchHashChange() {
+  var hash = window.location.hash.slice(1);
+
+  vm.visibility = hash;
+}
+
+watchHashChange();
+
+window.addEventListener("hashchange", watchHashChange);
