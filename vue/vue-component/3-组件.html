@@ -11,7 +11,7 @@
 <body>
 	<div id="app">
 		<h2>自定义的下拉框</h2>
-		<custom-select btn="搜索"></custom-select>
+		<custom-select btn="查询"></custom-select>
 		<h2>自定义的下拉框2</h2>
 		<custom-select btn="查询"></custom-select>
 	</div>
@@ -26,7 +26,7 @@
 		Vue.component("custom-select", {
 			data: function () {
 				return {
-					selectShow:false
+					selectShow: false
 				}
 			},
 			props: ["btn"],
@@ -37,7 +37,12 @@
 							<input type="button" :value="btn">
 							<span></span>
 						</div>
-						<ul class="list" v-show="selectShow">
+						<custom-list v-show="selectShow"></custom-list>
+					</div>	
+				</section>`
+		})
+		Vue.component('custom-list', {
+			template: `<ul class="list">
 							<li>html+css</li>
 							<li>html5+css3</li>
 							<li>javascript</li>
@@ -46,20 +51,13 @@
 							<li>vue</li>
 							<li>jquery</li>
 							<li>nodejs</li>
-						</ul>
-					</div>
-				</section>`
+						</ul>`
 		})
-
 		new Vue({
 			el: "#app",
 			components: {
 
 			}
-		})
-
-		new Vue({
-			el: "#app1"
 		})
 	</script>
 </body>

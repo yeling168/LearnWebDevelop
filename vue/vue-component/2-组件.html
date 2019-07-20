@@ -11,7 +11,12 @@
 <body>
 	<div id="app">
 		<h2>自定义的下拉框</h2>
-		<custom-select btn="搜索"></custom-select>
+		<!-- <table>
+			<tr is="custom-select">
+
+			</tr>
+		</table> -->
+		<custom-select btn="查询"></custom-select>
 		<h2>自定义的下拉框2</h2>
 		<custom-select btn="查询"></custom-select>
 	</div>
@@ -26,7 +31,7 @@
 		Vue.component("custom-select", {
 			data: function () {
 				return {
-					selectShow:false
+					selectShow: false
 				}
 			},
 			props: ["btn"],
