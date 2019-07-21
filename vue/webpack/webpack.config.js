@@ -1,4 +1,5 @@
 var webpack=require('webpack');
+//var Vue=require('vue');
 var ExtractTextPlugin=require("extract-text-webpack-plugin");
 var extractCSS=new ExtractTextPlugin('css/index.css');
 var HtmlWebpackPlugin=require('html-webpack-plugin');
@@ -41,16 +42,16 @@ module.exports={
             inject:'body',
             info:'Hello World'
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress:{
-                warnings:false
-            }
-        }),
-        new webpack.ProvidePlugin({
-            $:'jquery'
-        }),
-        new webpack.optimize.CommonsChunkPlugin({
-            names:['a','b']
-        })
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress:{
+        //         warnings:false
+        //     }
+        // }),
+        // new webpack.ProvidePlugin({
+        //     $:'jquery'
+        // }),
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     names:['a','b']
+        // })
     ]
 }
