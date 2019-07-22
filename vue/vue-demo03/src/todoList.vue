@@ -5,8 +5,9 @@
      <br>
      <hr/>
      <hr/>
-     <ul v-for="item in list">
+     <ul v-for="(item,key) in list">
          <li>{{item}}</li>
+         <button @click="removeData()">删除</button>
      </ul>
   </div>
 </template>
@@ -24,6 +25,9 @@
                //把文本框的值push到list
                this.list.push(this.todo);
                this.todo='';
+           },
+           removeData(key){
+               this.list.splice(key,1);
            }
        }
    }
