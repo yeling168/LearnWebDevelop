@@ -29,3 +29,4 @@ cnpm install  npm install
 
 npm run dev
 
+双向数据绑定必须在表单元素中使用
