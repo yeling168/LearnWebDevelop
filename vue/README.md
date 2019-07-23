@@ -1,4 +1,4 @@
-搭建vue的开发环境
+##搭建vue的开发环境
 
 https://cn.vuejs.org/v2/guide/installation.html
 
@@ -33,7 +33,7 @@ npm run dev
 
 [https://github.com/pagekit/vue-resource](https://github.com/pagekit/vue-resource)
 
-使用vue-resource请求数据的步骤
+##使用vue-resource请求数据的步骤
 
 1.需要安装vue-resource模块，注意加上--save
 
@@ -52,7 +52,7 @@ import VueResource from 'vue-resource'
 this.$http.get(地址).then(function(){})
 
 
-axios的使用：
+##axios的使用：
 
 1.安装cnpm install axios --save
 
@@ -79,3 +79,41 @@ axios的使用：
     this.$refs.header.属性
 
     this.$refs.header.方法
+
+
+##配置路由
+1.安装
+
+npm install vue-router --save
+
+cnpm install vue-router --save
+
+2.引入并Vue.use(VueRouter) (main.js)
+
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+3.配置路由
+
+1.创建组件，引入组件
+
+2.定义路由
+
+	const routes = [
+	  { path: '/foo', component: Foo },
+	  { path: '/bar', component: Bar }
+	]
+
+3.实例化VueRouter
+
+	const router = new VueRouter({
+	  routes // (缩写) 相当于 routes: routes
+	})
+
+4.挂载
+
+	const app = new Vue({
+	  router
+	}).$mount('#app')
+
