@@ -66,3 +66,16 @@ axios的使用：
     <v-header :title="title"></v-header>
 
 2.在子组件里面通过props接收父组件传过来的数据
+
+
+父组件主动获取子组件的数据和方法
+
+1.调用子组件的时候定义一个ref
+
+    <v-header ref="header"></v-header>
+
+2.在父组件里面通过
+
+    this.$refs.header.属性
+
+    this.$refs.header.方法
