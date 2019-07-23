@@ -1,6 +1,7 @@
 import Vue from 'vue'
 //import App from './App.vue'
-import todoList from './todoList.vue';
+//import todoList from './todoList.vue';
+import storage from './storage.vue';
 
 // new Vue({
 //   el: '#app',
@@ -8,7 +9,12 @@ import todoList from './todoList.vue';
 // })
 
 
+// new Vue({
+//   el: '#app',
+//   render: h => h(todoList)
+// })
+
 new Vue({
   el: '#app',
-  render: h => h(todoList)
+  render: h => h(storage)
 })
