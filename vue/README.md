@@ -50,3 +50,10 @@ import VueResource from 'vue-resource'
 4.在组件里面直接使用
 
 this.$http.get(地址).then(function(){})
+
+
+axios的使用：
+
+1.安装cnpm install axios --save
+
+2.哪里用哪里引入axios
