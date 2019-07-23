@@ -4,6 +4,8 @@ import Vue from "vue";
 //import storage from './storage.vue';
 //import component from './component.vue';
 import Resource from "./components/resource.vue";
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
 
 // new Vue({
 //   el: '#app',
