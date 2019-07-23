@@ -3,7 +3,7 @@
         <v-home></v-home>
         <hr>
         <br>
-        <v-news></v-news>
+        <!-- <v-news></v-news> -->
     </div>
 </template>
 
