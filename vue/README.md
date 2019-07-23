@@ -57,3 +57,12 @@ axios的使用：
 1.安装cnpm install axios --save
 
 2.哪里用哪里引入axios
+
+
+父组件给子组件传值
+
+1.父组件调用子组件的时候，绑定动态属性
+
+    <v-header :title="title"></v-header>
+
+2.在子组件里面通过props接收父组件传过来的数据

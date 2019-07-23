@@ -1,32 +1,24 @@
 <template>
   <div>
-    <v-header></v-header>
-    <hr>
-    <!-- <h2>这是一个首页组件</h2>
-    <button @click="run()">执行run方法</button> -->
-    <v-life v-if='flag'></v-life>
-    <br>
-    <button @click='flag=!flag'>挂载/卸载组件</button>
+    <v-header :title="title" :homemsg="msg" :run="run" :home="this"></v-header>首页组件
   </div>
 </template>
 <script>
-import Header from './Header.vue';
-import Life from './Lify';
+import Header from "./Header";
 export default {
   data() {
     return {
-      msg: "我是一个首页组件",
-      flag:true
+      msg: "我是home组件",
+      title: "首页111"
     };
   },
-  methods: {
-    run() {
-      alert(this.msg);
-    }
+  components: {
+    "v-header": Header
   },
-  components:{
-    'v-header':Header,
-    'v-life':Life
+  methods: {
+    run(data) {
+      alert("我是父组件的run方法"+data);
+    }
   }
 };
 </script>
