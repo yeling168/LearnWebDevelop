@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>我是头部组件</h2>
+    <button @click="getParentData()">获取父组件的数据和方法</button>
   </div>
 </template>
 
@@ -14,6 +15,10 @@ export default {
   methods: {
     run(){
       alert('我是子组件的run方法')
+    },
+    getParentData(){
+      alert(this.$parent.msg);
+      this.$parent.run();
     }
   },
  

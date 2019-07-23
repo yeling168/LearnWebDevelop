@@ -17,8 +17,8 @@ export default {
     "v-header": Header
   },
   methods: {
-    run(data) {
-      alert("我是父组件的run方法"+data);
+    run() {
+      alert("我是父组件的run方法");
     },
     getChildData(){
       //alert(this.$refs.header.msg);
