@@ -1,29 +1,30 @@
 <template>
   <div>
-    <v-header ref="header"></v-header>首页组件
-    <button @click="getChildData">获取子组件的数据和方法</button>
+    <div id="news">我是新闻组件</div>
+    <br />
+    <button @click="emitHome()">给Home组件广播数据</button>
+    <br />
   </div>
 </template>
 <script>
-import Header from "./Header";
+//引入vue实例
+import VueEvent from "../model/VueEvent";
 export default {
   data() {
     return {
-      msg: "我是home组件",
-      title: "首页111"
+      msg: "我是新闻组件"
     };
   },
-  components: {
-    "v-header": Header
-  },
   methods: {
-    run() {
-      alert("我是父组件的run方法");
-    },
-    getChildData(){
-      //alert(this.$refs.header.msg);
-      this.$refs.header.run();
+    emitHome() {
+      //广播
+      VueEvent.$emit("to-home", this.msg);
     }
+  },
+  mounted() {
+    VueEvent.$on("to-news", function(data) {
+      console.log(data);
+    });
   }
 };
 </script>

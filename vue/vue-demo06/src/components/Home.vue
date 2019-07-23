@@ -1,11 +1,14 @@
 <template>
   <div>
-    <v-header ref="header"></v-header>首页组件
-    <button @click="getChildData">获取子组件的数据和方法</button>
+    <h2>我是首页组件</h2>
+    <br />
+    <button @click="emitNews()">给News组件广播数据</button>
+    <br />
   </div>
 </template>
 <script>
-import Header from "./Header";
+//引入vue实例
+import VueEvent from "../model/VueEvent";
 export default {
   data() {
     return {
@@ -13,17 +16,17 @@ export default {
       title: "首页111"
     };
   },
-  components: {
-    "v-header": Header
-  },
   methods: {
-    run() {
-      alert("我是父组件的run方法");
-    },
-    getChildData(){
-      //alert(this.$refs.header.msg);
-      this.$refs.header.run();
+    emitNews() {
+      //广播数据
+      VueEvent.$emit("to-news", this.msg);
     }
+  },
+  mounted() {
+    //监听news广播的数据
+    VueEvent.$on("to-home", function(data) {
+      console.log(data);
+    });
   }
 };
 </script>
