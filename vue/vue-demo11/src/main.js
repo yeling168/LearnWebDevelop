@@ -1,7 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
-import VueRouter from "vue-router";
+//引入公共的css  注意:创建项目的时候必须用scss
+import './assets/css/basic.scss'
 
+//请求数据
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
+
+import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 //1.创建组件

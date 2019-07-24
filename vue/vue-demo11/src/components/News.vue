@@ -2,9 +2,9 @@
   <div>
     <div id="news">
       我是新闻组件
-      <ul>
+      <ul class="list">
         <li v-for="(item,key) in list">
-          <router-link :to="'/content/'+key">{{key}}---{{item}}</router-link>
+          <router-link :to="'/content/'+item.aid">{{key}}---{{item.title}}</router-link>
         </li>
       </ul>
     </div>
@@ -15,10 +15,42 @@ export default {
   data() {
     return {
       msg: "我是新闻组件",
-      list: ["111", "222", "333"]
+      list: []
     };
+  },
+  methods: {
+    requestData() {
+      //jsonp请求的话，后台api接口要支持jsonp
+      var api =
+        "http://www.phonegap100.com/appapi.php?a=getPortalList&catid=20&page=1";
+      this.$http.jsonp(api).then(
+        response => {
+          console.log(response);
+          console.log(this);
+          this.list = response.body.result;
+        },
+        function(err) {
+          console.log(err);
+        }
+      );
+    }
+  },
+  mounted() {
+    this.requestData();
   }
 };
 </script>
 <style lang="scss" scoped>
+.list {
+  li {
+    height: 3.4rem;
+    line-height: 3.4em;
+    border-bottom: 1px solid #eee;
+    font-size: 1.6rem;
+    a{
+      color:#666;
+      text-decoration: none;
+    }
+  }
+}
 </style>
