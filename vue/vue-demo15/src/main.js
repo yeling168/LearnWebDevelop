@@ -1,11 +1,13 @@
-import Vue from 'vue';
-import App from './App.vue';
+import Vue from "vue";
+import App from "./App.vue";
 
-
+//mintUI的使用
+import MintUI from "mint-ui";
+import 'mint-ui/lib/style.css';
+Vue.use(MintUI);
 //引入公共的scss   注意：创建项目的时候必须用scss
 
-import './assets/css/basic.scss';   
-
+import "./assets/css/basic.scss";
 
 /*路由的嵌套
 
@@ -27,82 +29,63 @@ import './assets/css/basic.scss';
   2.父路由里面配置子路由显示的地方   <router-view></router-view>
 */
 
-
-
 //请求数据
 
-
-import VueResource from 'vue-resource';
+import VueResource from "vue-resource";
 Vue.use(VueResource);
 
-
-
-
-import VueRouter from 'vue-router';
+import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
 //1.创建组件
 
+import Home from "./components/Home.vue";
 
-import Home from './components/Home.vue';
+import News from "./components/News.vue";
 
-import News from './components/News.vue';
+import Content from "./components/Content.vue";
 
-import Content from './components/Content.vue';
+import User from "./components/User.vue";
 
-
-import User from './components/User.vue';
-
-  import UserAdd from './components/User/UserAdd.vue';
-  import Userlist from './components/User/Userlist.vue';
-
-
+import UserAdd from "./components/User/UserAdd.vue";
+import Userlist from "./components/User/Userlist.vue";
 
 //2.配置路由   注意：名字
 
 const routes = [
-  { path: '/home', component: Home },
-  { path: '/news', component: News,name:'news' },
+  { path: "/home", component: Home },
+  { path: "/news", component: News, name: "news" },
 
-  {   
-    
-    path: '/user',
-    
+  {
+    path: "/user",
+
     component: User,
-    children:[
-      { path: 'useradd', component: UserAdd },
+    children: [
+      { path: "useradd", component: UserAdd },
 
-      { path: 'userlist', component: Userlist }
-
+      { path: "userlist", component: Userlist }
     ]
-
   },
 
+  { path: "/content/:aid", component: Content } /*动态路由*/,
 
-  { path: '/content/:aid', component: Content },   /*动态路由*/
-
-  { path: '*', redirect: '/home' }   /*默认跳转路由*/
-]
-
+  { path: "*", redirect: "/home" } /*默认跳转路由*/
+];
 
 //3.实例化VueRouter  注意：名字
 
 const router = new VueRouter({
-  mode: 'history',   /*hash模式改为history*/
+  mode: "history" /*hash模式改为history*/,
   routes // （缩写）相当于 routes: routes
-})
-
-
-
+});
 
 //4、挂载路由
 
 new Vue({
-  el: '#app',
+  el: "#app",
   router,
   render: h => h(App)
-})
-
+});
 
 //5 <router-view></router-view> 放在 App.vue

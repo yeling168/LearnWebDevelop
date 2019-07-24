@@ -129,3 +129,15 @@ routes:[
 2.在对应的页面
 
 this.$route.params
+
+##mint-ui
+
+1.安装 cnpm install mint-ui -save
+
+2.引入mint UI的css和插件
+
+	import Mint from 'mint-ui';
+	
+	Vue.use(Mint);
+	
+	import 'mint-ui/lib/style.css'
