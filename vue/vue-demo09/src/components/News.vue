@@ -1,30 +1,22 @@
 <template>
   <div>
-    <div id="news">我是新闻组件</div>
-    <br />
-    <button @click="emitHome()">给Home组件广播数据</button>
-    <br />
+    <div id="news">
+      我是新闻组件
+      <ul>
+        <li v-for="(item,key) in list">
+          <router-link :to="'/content/'+key">{{key}}---{{item}}</router-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
-//引入vue实例
-import VueEvent from "../model/VueEvent";
 export default {
   data() {
     return {
-      msg: "我是新闻组件"
+      msg: "我是新闻组件",
+      list: ["111", "222", "333"]
     };
-  },
-  methods: {
-    emitHome() {
-      //广播
-      VueEvent.$emit("to-home", this.msg);
-    }
-  },
-  mounted() {
-    VueEvent.$on("to-news", function(data) {
-      console.log(data);
-    });
   }
 };
 </script>

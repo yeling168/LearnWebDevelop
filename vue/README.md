@@ -117,3 +117,15 @@ Vue.use(VueRouter)
 	  router
 	}).$mount('#app')
 
+##动态路由
+
+1.配置动态路由
+
+routes:[
+    //动态路径参数以冒号开头
+    {path:'/user/:id',component:User}
+]
+
+2.在对应的页面
+
+this.$route.params
