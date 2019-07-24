@@ -6,6 +6,7 @@ import { Button,Select,Input } from 'element-ui';
 Vue.use(Button);
 Vue.use(Select);
 Vue.use(Input);
+import 'element-ui/lib/theme-chalk/index.css';
 //mintUI的使用
 import MintUI from "mint-ui";
 import "mint-ui/lib/style.css";

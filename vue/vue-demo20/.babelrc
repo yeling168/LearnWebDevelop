@@ -1,20 +1,6 @@
-// {
-//   "presets": [
-//     ["env", { "modules": false }],
-//     "stage-3"
-//   ]
-// }
-
-
 {
-  "presets": [["env", { "modules": false }]],
-  "plugins": [
-    [
-      "component",
-      {
-        "libraryName": "element-ui",
-        "styleLibraryName": "theme-chalk"
-      }
-    ]
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-3"
   ]
 }
