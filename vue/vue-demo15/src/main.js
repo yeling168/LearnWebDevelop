@@ -3,7 +3,7 @@ import App from "./App.vue";
 
 //mintUI的使用
 import MintUI from "mint-ui";
-import 'mint-ui/lib/style.css';
+import "mint-ui/lib/style.css";
 Vue.use(MintUI);
 //引入公共的scss   注意：创建项目的时候必须用scss
 
@@ -59,13 +59,7 @@ const routes = [
 
   {
     path: "/user",
-
-    component: User,
-    children: [
-      { path: "useradd", component: UserAdd },
-
-      { path: "userlist", component: Userlist }
-    ]
+    component: User
   },
 
   { path: "/content/:aid", component: Content } /*动态路由*/,
