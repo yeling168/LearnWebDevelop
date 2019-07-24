@@ -7,7 +7,7 @@
 </template>
 
 <script>
-//1.引入store
+//1.引入store,建议store的名字不要变
 import store from "../vuex/store";
 //注册store
 export default {
