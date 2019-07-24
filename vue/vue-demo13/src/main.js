@@ -14,15 +14,32 @@ Vue.use(VueRouter);
 import Home from "./components/Home.vue";
 import News from "./components/News.vue";
 import Content from "./components/Content.vue";
-import Pcontent from "./components/Pcontent.vue";
+//import Pcontent from "./components/Pcontent.vue";
+import User from "./components/User.vue";
+
+import UserAdd from "./components/User/UserAdd.vue";
+import Userlist from "./components/User/UserList.vue";
 
 //2.配置路由
 
 const routes = [
   { path: "/home", component: Home },
   { path: "/news", component: News, name: "news" },
+  {
+    path: "/user",
+    component: User,
+    childen: [
+      {
+        path: "useradd",
+        component: UserAdd
+      },
+      {
+        path: "userlist",
+        component: Userlist
+      }
+    ]
+  },
   { path: "/content/:aid", component: Content } /**动态路由 */,
-  { path: "/pcontent", component: Pcontent },
   { path: "*", redirect: "/home" } /**默认跳转路由 */
 ];
 
