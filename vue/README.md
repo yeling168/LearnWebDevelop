@@ -141,3 +141,53 @@ this.$route.params
 	Vue.use(Mint);
 	
 	import 'mint-ui/lib/style.css'
+
+
+##element UI的使用
+
+1.安装 npm i element-ui -S 
+
+2.引入element UI和插件
+
+import ElementUI from 'element-ui';
+
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI);
+
+3.配置file_loader
+
+	{
+	   test:/\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+	   loader:'file-loader'
+	}
+
+##elementUI按需引入
+
+1.安装 babel-plugin-component
+
+cnpm install babel-plugin-component -D
+
+2.把
+
+	{
+	  "presets": [
+	    ["env", { "modules": false }],
+	    "stage-3"
+	  ]
+	}
+
+改为
+
+	{
+	  "presets": [["env", { "modules": false }]],
+	  "plugins": [
+	    [
+	      "component",
+	      {
+	        "libraryName": "element-ui",
+	        "styleLibraryName": "theme-chalk"
+	      }
+	    ]
+	  ]
+	}

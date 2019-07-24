@@ -1,11 +1,11 @@
 import Vue from "vue";
 import App from "./App.vue";
 
-
-//elementUI的使用
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(ElementUI);
+//elementUI按需引入
+import { Button,Select,Input } from 'element-ui';
+Vue.use(Button);
+Vue.use(Select);
+Vue.use(Input);
 //mintUI的使用
 import MintUI from "mint-ui";
 import "mint-ui/lib/style.css";
