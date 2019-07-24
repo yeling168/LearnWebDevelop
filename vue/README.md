@@ -191,3 +191,15 @@ cnpm install babel-plugin-component -D
 	    ]
 	  ]
 	}
+
+
+##vuex
+
+vuex是专为Vue.js应用程序开发的状态管理模式
+
+1.vuex解决了组件之间同一状态的共享问题(解决了不同组件之间的数据共享)
+
+2.组件里面数据的持久化
+
+小项目不建议使用vuex
+
