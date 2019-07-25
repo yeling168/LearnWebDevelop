@@ -3,6 +3,12 @@ import App from "./App.vue";
 
 //引入公共的scss   注意：创建项目的时候必须用scss
 import "./assets/css/basic.scss";
+//请求数据
+import VueResource from 'vue-resource';
+
+Vue.use(VueResource);
+
+
 import router from './router/router';
 //4、挂载路由
 
