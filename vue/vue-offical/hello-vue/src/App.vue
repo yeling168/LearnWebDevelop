@@ -1,60 +1,49 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    {{ message }}
+    <span v-bind:title="title">鼠标悬停几秒钟查看此处动态绑定的提示信息！</span>
+    <p v-if="seen">现在你看到我了</p>
+    <ol>
+      <li v-for="todo in todos">{{ todo.text }}</li>
+    </ol>
+    <button v-on:click="reverseMessage">反转消息</button>
+    <input v-model="message" />
+    <ol>
+      <!-- 创建一个 todo-item 组件的实例 -->
+      <todo-item></todo-item>
+    </ol>
   </div>
 </template>
 
 <script>
+import Vue from "vue";
+Vue.component("todo-item", {
+  template: "<li>这是个待办项</li>"
+});
 export default {
-  name: 'app',
-  data () {
+  el: "#app",
+  data: function() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      message: "Hello Vue",
+      title: "页面加载于 " + new Date().toLocaleString(),
+      seen: true,
+      todos: [
+        { text: "学习 JavaScript" },
+        { text: "学习 Vue" },
+        { text: "整个牛项目" }
+      ]
+    };
+  },
+  methods: {
+    reverseMessage: function() {
+      this.message = this.message
+        .split("")
+        .reverse()
+        .join("");
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
