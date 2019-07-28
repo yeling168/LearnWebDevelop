@@ -32,25 +32,15 @@ const actions = {
   jiaplus(context) {
     console.log(context);
     context.commit("jia", { a: 1 });
-    setTimeout(() => {
-      context.commit("jian");
-    }, 3000);
-    console.log("我先被执行了");
   },
   jianplus({ commit }) {
     console.log(commit);
     commit("jian");
   }
 };
-
-const moduleA = {
+export default new Vuex.Store({
   state,
   mutations,
   getters,
   actions
-};
-export default new Vuex.Store({
-  modules:{
-    a:moduleA
-  }
 });

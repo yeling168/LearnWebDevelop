@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Hello</h1>
-    <p>{{$store.state.a.count}}--{{count}}</p>
+    <p>{{count}}</p>
     <p>
       <button @click="$store.commit('jia',{a:10})">+</button>
       <button @click="jian">-</button>
@@ -25,10 +25,8 @@ export default {
   },
   //computed只允许一个
   //在组件未加载之前计算count的值
-  computed: {
-    count() {
-      return this.$store.state.a.count;
-    }
+  computed:{
+    ...mapState(["count"]),
   },
   /* computed:{
     ...mapState(["countmore"]),
@@ -43,7 +41,7 @@ export default {
     ...mapMutations(["jia", "jian"]),
     ...mapActions(["jiaplus"]),
     ...mapActions({
-      jianplus: "jianplus"
+      jianplus:'jianplus'
     })
   }
 };
