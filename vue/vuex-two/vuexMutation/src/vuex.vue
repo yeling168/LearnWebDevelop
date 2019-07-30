@@ -4,7 +4,7 @@
     <p>{{count}}</p>
     <p>
       <button @click='$store.commit("jia",{a:10})'>+</button>
-      <button @click="jian">-</button>
+      <button @click="jian(10)">-</button>
     </p>
   </div>
 </template>
