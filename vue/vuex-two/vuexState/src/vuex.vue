@@ -11,6 +11,7 @@
 
 <script>
 import {mapState} from 'vuex';
+console.log("mapState",mapState);
 export default {
     name:'app',
     data(){
@@ -41,6 +42,7 @@ export default {
     }) */
 
     //更加简化computed
+    //也不能和data中的count变量重复
    computed:mapState([
        'countit'
    ])
