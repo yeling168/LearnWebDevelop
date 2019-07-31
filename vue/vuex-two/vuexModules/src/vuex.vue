@@ -3,7 +3,7 @@
     <h1>Hello Vue</h1>
     <p>{{$store.state.a.count}}-{{count}}-{{$store.state.b.countB}}</p>
     <p>
-      <button @click="$store.commit("jia",{a:10})">+</button>
+      <button @click='$store.commit("jia",{a:10})'>+</button>
       <button @click="jian(10)">-</button>
     </p>
     <p>
