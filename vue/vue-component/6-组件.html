@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="./vue.js"></script>
+</head>
+
+<body>
+	<div id="demo">
+		<span v-on:click="clickHandle">{{message}}</span>
+	</div>
+	<script>
+		let obj={
+            message:"hello,vue"
+        }
+
+        //声明式渲染
+        var vm=new Vue({
+            el:'#demo',
+            data:obj,
+            methods:{
+                clickHandle(){
+                    alert('click')
+                }
+            }
+        })
+	</script>
+</body>
+
+</html>

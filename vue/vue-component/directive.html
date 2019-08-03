@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="demo">
+        <span v-bind:customId="id">{{message}}</span>
+    </div>
+    <script>
+        let obj = {
+            message: "hello,vue",
+            id: '123'
+        }
+
+        //声明式渲染
+        var vm = new Vue({
+            el: '#demo',
+            data: obj,
+        })
+        console.log(vm.$data);
+    </script>
+</body>
+
+</html>

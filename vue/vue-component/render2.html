@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .red {
+            color: red
+        }
+        .fontSize{
+            font-size: 50px
+        }
+    </style>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="demo">
+        <span v-bind:class="{red:addClass}" class="fontSize">hello,miaov</span>
+    </div>
+    <script>
+        let obj = {
+            addClass: true
+        }
+
+        //声明式渲染
+        var vm = new Vue({
+            el: '#demo',
+            data: obj,
+            //render函数自带createElement参数
+            // render: function (createElement) {
+            //     return createElement('ul', {
+            //         class: 'a b'
+            //     }, [
+            //         createElement("li", 1),
+            //         createElement("li", 2),
+            //         createElement("li", 3)
+            //     ])
+            // }
+        })
+        console.log(vm.$data);
+    </script>
+</body>
+
+</html>
