@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .bg {
+            background: yellow
+        }
+    </style>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="demo">
+
+    </div>
+    <script>
+        let obj = {
+            addClass: true
+        }
+
+        //声明式渲染
+        var vm = new Vue({
+            el: '#demo',
+            //data: obj,
+            //render函数自带createElement参数
+            render: function (createElement) {
+                var obj = createElement('ul', {
+                    class: {
+                        bg: true
+                    },
+                    style: {
+                        fontSize: "50px"
+                    },
+                    attrs: {
+                        abc: 'miaov'
+                    },
+                    domProps: {
+                        innerHTML: "<li>我是html</li>"
+                    }
+                }, [
+                    createElement("li", 1),
+                    createElement("li", 2),
+                    createElement("li", 3)
+                ])
+                console.log(obj);
+                return obj;
+            }
+        })
+        console.log(vm.$data);
+    </script>
+</body>
+
+</html>

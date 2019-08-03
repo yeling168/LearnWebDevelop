@@ -328,6 +328,7 @@ value:指令的绑定值
 
 自定义指令官方地址:[https://cn.vuejs.org/v2/guide/custom-directive.html](https://cn.vuejs.org/v2/guide/custom-directive.html)
 
+v-model可以用于能和用户进行交互的表单控件，比如input,checkbox,select
 
 ##计算数据
 
