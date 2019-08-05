@@ -2,10 +2,11 @@ import Vue from 'vue';
 import App from './App.vue';
 
 //elementUi的使用
-import { Button, Select, Input} from 'element-ui';
+import { Button, Select, Input,Tree} from 'element-ui';
 Vue.use(Button);
 Vue.use(Select);
 Vue.use(Input);
+Vue.use(Tree);
 import 'element-ui/lib/theme-chalk/index.css';
 
 //引入公共的scss   注意：创建项目的时候必须用scss
@@ -24,12 +25,14 @@ Vue.use(VueRouter);
 import Home from './components/Home.vue';
 import News from './components/News.vue';
 import User from './components/User.vue';
+import MyTree from './components/Tree.vue';
 
 //2.配置路由   注意：名字
 const routes = [
   { path: '/home', component: Home },
   { path: '/news', component: News,name:'news' },
   { path: '/user', component: User},
+  { path: '/mytree', component: MyTree},
   { path: '*', redirect: '/home' }   /*默认跳转路由*/
 ]
 
