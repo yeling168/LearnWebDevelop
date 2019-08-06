@@ -1,14 +1,19 @@
 import Vue from 'vue';
 import App from './App.vue';
 
-//elementUi的使用
-import { Button, Select, Input,Tree} from 'element-ui';
-Vue.use(Button);
-Vue.use(Select);
-Vue.use(Input);
-Vue.use(Tree);
-import 'element-ui/lib/theme-chalk/index.css';
+//elementUi的局部使用
+// import { Button, Select, Input,Tree,Menu} from 'element-ui';
+// Vue.use(Button);
+// Vue.use(Select);
+// Vue.use(Input);
+// Vue.use(Tree);
+// Vue.use(Menu);
+// import 'element-ui/lib/theme-chalk/index.css';
 
+//elementUi的全局使用
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
 //引入公共的scss   注意：创建项目的时候必须用scss
 import './assets/css/basic.scss';   
 
@@ -26,6 +31,7 @@ import Home from './components/Home.vue';
 import News from './components/News.vue';
 import User from './components/User.vue';
 import MyTree from './components/Tree.vue';
+import MyNavMenu from './components/NavMenu.vue';
 
 //2.配置路由   注意：名字
 const routes = [
@@ -33,6 +39,7 @@ const routes = [
   { path: '/news', component: News,name:'news' },
   { path: '/user', component: User},
   { path: '/mytree', component: MyTree},
+  { path: '/navmenu', component: MyNavMenu},
   { path: '*', redirect: '/home' }   /*默认跳转路由*/
 ]
 

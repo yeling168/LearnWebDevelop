@@ -5,6 +5,7 @@
       <router-link to="/news">新闻</router-link>
       <router-link to="/user">用户</router-link>
       <router-link to="/tree">用户</router-link>
+      <router-link to="/navmenu">用户</router-link>
     </header>
     <hr>
       <router-view></router-view>
