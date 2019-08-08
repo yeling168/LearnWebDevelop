@@ -32,6 +32,7 @@ import News from './components/News.vue';
 import User from './components/User.vue';
 import MyTree from './components/Tree.vue';
 import MyNavMenu from './components/NavMenu.vue';
+import MyDialog from './components/Dialog.vue';
 
 //2.配置路由   注意：名字
 const routes = [
@@ -40,6 +41,7 @@ const routes = [
   { path: '/user', component: User},
   { path: '/mytree', component: MyTree},
   { path: '/navmenu', component: MyNavMenu},
+  { path: '/Dialog', component: MyDialog},
   { path: '*', redirect: '/home' }   /*默认跳转路由*/
 ]
 
