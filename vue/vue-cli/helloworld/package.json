@@ -1,7 +1,7 @@
 {
   "name": "helloworld",
   "version": "1.0.0",
-  "description": "hello world",
+  "description": "helloworld",
   "author": "study0918 <beyondthestars@yeah.net>",
   "private": true,
   "scripts": {

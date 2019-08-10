@@ -1,6 +1,6 @@
 # helloworld
 
-> hello world
+> helloworld
 
 ## Build Setup
 

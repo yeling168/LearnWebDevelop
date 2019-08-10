@@ -1,0 +1,30 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "",
+  "main":"index.js",
+  "scripts": {
+    "start": "webpack-dev-server --iFrame --hot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader":"^0.25.0",
+    "extract-text-webpack-plugin":"^1.0.1",
+    "html-webpack-plugin":"^2.22.0",
+    "json-loader":"^0.5.4",
+    "less":"^2.7.1",
+    "less-loader":"^2.2.3",
+    "style-loader":"^0.13.1",
+    "uglify-js":"^2.7.3",
+    "vue":"^2.0.3",
+    "vue-loader":"^9.4.0",
+    "vue-style-loader":"^1.0.0",
+    "webpack":"^1.13.2",
+    "webpack-dev-server":"^1.16.1"
+  },
+  "dependencies": {
+    "jquery":"^3.1.0"
+  }
+}

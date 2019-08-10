@@ -19,7 +19,7 @@ module.exports={
         color:true
     },
     module:{
-        loaders:[
+        rules:[
             {
                 test:/\.vue$/,
                 loader:'vue'
