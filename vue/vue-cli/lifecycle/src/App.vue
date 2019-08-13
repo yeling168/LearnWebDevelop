@@ -3,7 +3,7 @@
     This Vue2.0生命周期
     <p>TestDate:aaa={{aaa}}</p>
     <p>
-      <button @click="add"></button>
+      <button @click="add">add</button>
     </p>
   </div>
 </template>
@@ -12,7 +12,7 @@
 import Hello from "./hello.vue";
 export default {
   name: "app",
-  components: { hello },
+  components: { Hello },
   data() {
     return {
       aaa: 2
