@@ -8,6 +8,14 @@ import Vue from 'vue'
 //   render: h => h(App)
 // })
 
-import Router from './Router';
+//import Router from './Router';
 
 //ssr:https://github.com/youngwind/vue-ssr-demo
+
+
+import props from './props.vue'
+
+new Vue({
+  el: '#app',
+  render: h => h(props)
+})
