@@ -1,4 +1,6 @@
-	new Promise(
+##简介	
+
+new Promise(
 	  /**执行器executor */
 	  function(resolve, reject) {
 	    //一段耗时很长的异步操作
@@ -57,3 +59,35 @@ https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html
 ##error
 
 强烈建议在所有队列最后都加上.catch()，以避免漏掉错误处理造成意想不到的问题
+
+##promise.resolve()
+
+返回一个fulfilled的Promise实例，或原始Promise实例。
+
+参数为空，返回一个状态为fulfilled的Promise实例
+
+参数是一个跟Promise无关的值，同上，不过fulfulled响应函数会得到这个参数
+
+参数为Promise实例，则返回该实例，不做任何修改
+
+参数为thenable(参数是对象，里面有then方法)，立刻执行它的.then()
+
+##promise.reject()
+
+Promise.reject()不认thenable，其他类似Promise.resolve()
+
+##Promise.race()
+
+类似Promise.all()，区别在于它有任意一个完成就算完成
+
+常见用法：
+
+1）把异步操作和定时器放在一起
+
+2）如果定时器先触发，就认为超时，告知用户
+
+##把回调包装成Promise最为常见。它有两个显而易见的好处
+
+可读性更好
+
+返回的结果可以加入任何Promise队列
