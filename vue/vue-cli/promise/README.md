@@ -91,3 +91,47 @@ Promise.reject()不认thenable，其他类似Promise.resolve()
 可读性更好
 
 返回的结果可以加入任何Promise队列
+
+##把任何异步操作包装成Promise
+
+假设需求:
+
+用户点击按钮，弹出确认窗体
+
+用户确认和取消有不同的处理
+
+样式问题不能使用window.confirm()
+
+##jQuery
+
+jQuery已经实现了Promise
+
+参见jqXHR
+
+如果你需要在IE中使用Promise，有两个选择
+
+1）只想实现异步队列:jQuery.defered
+
+2) 需要兼容所有平台:BlueBird Promise polyfill
+
+##Fetch API
+
+Fetch API是XMLHttpRequest的现代化替代方案
+
+更强大，也更友好。
+
+直接返回一个Promise实例
+
+##async/await
+
+ES2017新增运算符，新的语言元素
+
+赋予JavaScript以顺序手法编写异步脚本的能力
+
+既保留异步运算的无阻塞特性，还继续使用同步写法
+
+还能正常使用return/try/catch
+
+那为什么还要学Promise？
+
+按async/await仍然需要Promise
