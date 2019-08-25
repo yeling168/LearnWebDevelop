@@ -34,9 +34,16 @@ import Vue from 'vue'
 //   render: h => h(beforeUpdate)
 // })
 
-import beforeDestroy from './lifecycle/beforeDestroy.vue'
+// import beforeDestroy from './lifecycle/beforeDestroy.vue'
+
+// new Vue({
+//   el: '#app',
+//   render: h => h(beforeDestroy)
+// })
+
+import nextclick from './lifecycle/nextclick.vue'
 
 new Vue({
   el: '#app',
-  render: h => h(beforeDestroy)
+  render: h => h(nextclick)
 })

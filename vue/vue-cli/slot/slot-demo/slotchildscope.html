@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>vue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <style>
+
+  </style>
+  <script src="vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!--使用包含slot标签属性的子组件-->
+    <my-scope-slot>
+      <p slot="title">{{childData}}</p>
+    </my-scope-slot>
+  </div>
+  <script>
+    Vue.component('my-scope-slot', {
+      template: '<div>\
+                    <p>{{ "child: " + childData }}</p> \
+                    <slot name="title"></slot> \
+                </div>',
+      data(){
+          return {
+              childData : 'child scope'
+          }
+      }          
+    });
+    var vm = new Vue({
+      el: '#app',
+    });
+  </script>
+</body>
+
+</html>
