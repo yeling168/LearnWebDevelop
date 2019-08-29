@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>智能社——http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        zns-red {
+            width: 100px;
+            background: gray;
+            height: 100px;
+            display: block;
+        }
+    </style>
+    <script src="vue.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <zns-red></zns-red>
+    </div>
+    <script>
+        Vue.elementDirective('zns-red', {
+            bind: function () {
+                this.el.style.background = 'red';
+            }
+        })
+        
+        var vm = new Vue({
+            data: {
+                a: 'blue'
+            },
+            methods: {
+                show: function () {
+                    alert(1);
+                }
+            }
+        }).$mount('#box');
+    </script>
+</body>
+
+</html>
