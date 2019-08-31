@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>智能社——http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+    </style>
+    <script src="vue.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <aaa>
+        <ul slot="ul-slot">
+            <li>1111</li>
+            <li>2222</li>
+            <li>3333</li>
+        </ul>
+        <ol slot="ol-slot">
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+        </ol>
+    </aaa>
+    <hr>
+    <aaa>
+    </aaa>
+    <template id="aaa">
+        <h1>xxxx</h1>
+        <slot name="ol-slot">这是默认的情况</slot>
+        <p>welcome vue</p>
+        <slot name="ul-slot">这是默认的情况2</slot>
+    </template>
+    <script>
+        var vm = new Vue({
+            el: '#box',
+            data: {
+                a: 'aaa'
+            },
+            components: {
+                'aaa': {
+                    template: '#aaa'
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
