@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>智能社——http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        #box {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+    <script src="vue.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <input type="button" value="按钮" @click="toggle">
+        <div id="div1" class="animated" v-show="bSign" transition="bounce"></div>
+    </div>
+    <script>
+        window.onload = function () {
+            var vm = new Vue({
+                el: '#box',
+                data: {
+                    bSign: true
+                },
+                methods: {
+                    toggle() {
+                        this.bSign = !this.bSign;
+                    }
+                },
+                transitions: { //定义所有动画名称
+                    bounce: {
+                        enterClass: 'zoomInLeft',
+                        leaveClass:'zoomOutRight'
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

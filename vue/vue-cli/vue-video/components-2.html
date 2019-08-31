@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>智能社——http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="animate.css">
+    <style>
+    </style>
+    <script src="vue.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <aaa></aaa>
+    </div>
+    <script>
+        //全局组件
+        var Aaa = Vue.extend({
+            template: '<h3>我是标题3</h3>'
+        })
+        Vue.component('aaa', Aaa)
+        var vm = new Vue({
+            el: '#box',
+            data: {
+                bSign: true
+            }
+        })
+    </script>
+</body>
+
+</html>
