@@ -1,0 +1,2 @@
+
+import { INCREMENT } from './types';
