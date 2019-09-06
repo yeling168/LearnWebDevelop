@@ -15,3 +15,9 @@ https://github.com/webpack/webpack/issues/5630
 https://github.com/webpack/webpack/issues/5244
 
 https://www.bilibili.com/video/av22867579
+
+解决方案：https://stackoverflow.com/questions/44074086/vue-router-failed-to-resolve-async-component-after-reloading-page
+
+webpack中文文档：https://www.jqhtml.com/7454.html
+
+前端：https://juejin.im/post/5bdfb387e51d452c8e0aa902
