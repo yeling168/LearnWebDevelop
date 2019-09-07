@@ -1,18 +1,23 @@
-# less
+1.如何使用LESS
 
-> A Vue.js project
+LESS文件之后在被编译后才能够被浏览器识别使用
 
-## Build Setup
+2.LESS编译工具
 
-``` bash
-# install dependencies
-npm install
+1)Koala,国人开发的全平台的LESS编译工具
 
-# serve with hot reload at localhost:8080
-npm run dev
+http://koala-app.com
 
-# build for production with minification
-npm run build
-```
+2)Winless,windows下的LESS编译软件 
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+http://winless.org
+
+3)CodeKit MAC平台下的LESS编译软件 
+
+https://codekitapp.com/
+
+3.客户端调用方式
+
+首先引用.less文件  注意引用时link引入，然后将rel属性设置为rel="stylesheet/less"
+
+然后引用less.js 注意：引入普通js引入方式一致，但是一定要放置在less文件之后
