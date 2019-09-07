@@ -12,8 +12,31 @@ footer {
 }
 
 //作为选择器和属性名的变量
+//使用时将变量以@{变量名}的方式使用
 @kuandu: width;
 
 .@{kuandu} {
   @{kuandu}: 150px;
+}
+
+//作为URL的变量
+@imgurl: "https://www.baidu.com/img/";
+header {
+  background: @green url("@{imgurl}bdlogo.png");
+  height: 200px;
+}
+
+//定义多个相同名称的变量时
+//在定义一个变量两次时，只会使用最后定义的变量，Less会从当前作用域中向上搜索，这个行为类似于CSS的定义中始终使用最后定义的属性值
+
+@var: 0;
+
+.class {
+  @var: 1;
+  .brass {
+    @var: 2;
+    three: @var; //这是的值是3
+    @var: 3;
+  }
+  one: @var; //这是的值是1
 }

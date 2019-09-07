@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import variable from './less/variable/variable.vue'
+import variable from './components/variable/variable.vue'
 export default {
   name: 'app',
   data () {
