@@ -23,3 +23,19 @@ webpack中文文档：https://www.jqhtml.com/7454.html
 前端：https://juejin.im/post/5bdfb387e51d452c8e0aa902
 
 原因：https://segmentfault.com/q/1010000011592623
+
+一些方案：
+
+https://stackoverflow.com/questions/54889720/handle-loading-chunk-failed-errors-with-lazy-loading-code-splitting
+
+https://echocow.cn/articles/2019/05/15/1557888472117.html
+
+https://github.com/vuejs/vue-router/issues?utf8=%E2%9C%93&q=Loading+chunk+0+failed.+
+
+https://github.com/vuejs/vue-router/issues/215
+
+https://github.com/nuxt/nuxt.js/issues/742
+
+https://github.com/nuxt/nuxt.js/issues/3389
+
+https://forum.ionicframework.com/t/uncaught-in-promise-error-loading-chunk-20-failed/126937/53
