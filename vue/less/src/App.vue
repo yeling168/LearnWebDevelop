@@ -15,6 +15,11 @@
       <p>嵌套</p>
       <nestedRules></nestedRules>
     </div>
+    <div id="namespace" v-show="isNameSpaceShow">
+      <hr />
+      <p>命名空间</p>
+      <namespace></namespace>
+    </div>
   </div>
 </template>
 
@@ -22,19 +27,22 @@
 import variable from "./components/variable.vue";
 import mixins from "./components/mixins.vue";
 import nestedRules from "./components/nested-rules.vue";
+import namespace from './components/namespace.vue'
 export default {
   name: "app",
   data() {
     return {
       isVariableShow: false,
       isMixinsShow: false,
-      isNestedRulesShow: true
+      isNestedRulesShow: false,
+      isNameSpaceShow:true
     };
   },
   components: {
     variable,
     mixins,
-    nestedRules
+    nestedRules,
+    namespace
   }
 };
 </script>
