@@ -13,5 +13,5 @@ export default {};
 </script>
 
 <style lang="less" scoped>
-@import "../../assets/variable.less";
+@import "../assets/variable.less";
 </style>
