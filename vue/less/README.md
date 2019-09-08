@@ -21,3 +21,8 @@ https://codekitapp.com/
 首先引用.less文件  注意引用时link引入，然后将rel属性设置为rel="stylesheet/less"
 
 然后引用less.js 注意：引入普通js引入方式一致，但是一定要放置在less文件之后
+
+##混合
+
+定义：混合就是一种将一系列属性从一个规则集引入("混合")到另一个规则集的方式
+
