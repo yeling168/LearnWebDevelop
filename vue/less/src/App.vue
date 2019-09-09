@@ -29,6 +29,11 @@
       <p>循环</p>
       <loop></loop>
     </div>
+    <div id="merge" v-show="isMergeShow">
+      <hr />
+      <p>合并</p>
+      <merge></merge>
+    </div>
   </div>
 </template>
 
@@ -36,9 +41,10 @@
 import variable from "./components/variable.vue";
 import mixins from "./components/mixins.vue";
 import nestedRules from "./components/nested-rules.vue";
-import namespace from './components/namespace.vue';
-import expression from './components/expression.vue';
-import loop from './components/loop.vue'
+import namespace from "./components/namespace.vue";
+import expression from "./components/expression.vue";
+import loop from "./components/loop.vue";
+import merge from "./components/merge.vue";
 export default {
   name: "app",
   data() {
@@ -46,9 +52,10 @@ export default {
       isVariableShow: false,
       isMixinsShow: false,
       isNestedRulesShow: false,
-      isNameSpaceShow:false,
-      isExpressionShow:false,
-      isLoopShow:true
+      isNameSpaceShow: false,
+      isExpressionShow: false,
+      isLoopShow: false,
+      isMergeShow: true
     };
   },
   components: {
@@ -57,7 +64,8 @@ export default {
     nestedRules,
     namespace,
     expression,
-    loop
+    loop,
+    merge
   }
 };
 </script>
