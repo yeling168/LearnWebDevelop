@@ -1,4 +1,4 @@
-https://gitee.com/alienzhou/codes/o431yhewq8kimbtdnjpcl12
+﻿https://gitee.com/alienzhou/codes/o431yhewq8kimbtdnjpcl12
 
 https://www.jianshu.com/p/726461adcba6
 
@@ -81,3 +81,12 @@ https://www.cnblogs.com/giggle/p/9583940.html
 https://www.imooc.com/qadetail/240012
 
 https://blog.csdn.net/weixin_34279061/article/details/88038215
+
+
+Nginx缓存：
+https://juejin.im/post/5c09cbb1f265da617006ee83
+
+https://segmentfault.com/q/1010000016494540?utm_source=tag-newest
+
+webpack解读：
+https://www.codercto.com/a/71597.html
