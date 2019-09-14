@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index',{title:"PCAT",name:"marico"});
+  res.render('index',{title:"PCAT",name:"marico",_layoutFile: 'layout'});
 };
 exports.pcat=function(req,res){
 	res.render('pcat',{title:'PCAT',name:"marico",_layoutFile: 'pcatlayout'})
