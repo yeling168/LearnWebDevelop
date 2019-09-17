@@ -192,3 +192,31 @@ SHOW COLUMNS FROM tbl_name
 
 如:show columns from tbl;
 
+##2-9MySQL记录的插入与查找
+
+###INSERT
+
+- 插入记录
+- INSERT [INTO] tbl_name [(col_name,...)] VALUES (val,...)
+
+如果没有指定列明，则必须给每一列赋值
+
+如:INSERT tb1 VALUES('Tom',25,7863.25);
+
+如果给指定列赋值
+
+INSERT tb1(username,salary) VALUES('John',4500.69);
+
+###SELECT
+
+- 记录查找
+- SELECT expr,...FROM tbl_name
+
+如:SELECT * FROM tb1;  (*表示字段的过滤)
+
+##2-10空值与非空
+
+- NULL,字段值可以为空
+- NOT NULL,字段值禁止为空
+
+CREATE TABLE tb2(username VARCHAR(20) NOT NULL,age TINYINT UNSIGNED NULL);
