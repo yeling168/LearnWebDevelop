@@ -160,3 +160,35 @@ SHOW {DATABASE | SCHEMAS} [LIKE 'pattern | WHERE expr]
 | LONGTEXT | L+4个字节，其中L<2^32 |
 | ENUM('value1','value2',...) | 1或2个字节，取决于枚举值的个数(最多65535个值) |
 | SET('value1','value2',...) | 1、2、3、4或者8个字节，取决于set成员的数目(最多64个成员) |
+
+
+##MySQL创建数据表
+
+###概述
+
+数据表(或称表)是数据库最重要的组成部分之一，是其他对象的基础
+
+###USE
+
+打开数据库
+
+USE数据库名称
+
+###创建数据表
+
+CREATE TABLE[IF NOT EXISTS] table_name (column_name data_type,...)
+
+如:create table tb1(username VARCHAR(20),age TINYINT UNSIGNED,salary FLOAT(8,2) UNSIGNED);
+
+##查看数据表
+
+SHOW TABLES[FROM db_name] [LIKE 'pattern'|WHERE expr]
+
+如:show tables from mysql;
+
+##查看数据表结构
+
+SHOW COLUMNS FROM tbl_name
+
+如:show columns from tbl;
+
