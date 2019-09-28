@@ -2,7 +2,7 @@ d3.csv("data.csv", type, function(data) {
   console.log(data);
 
 
-//var data = [1, 4, 7, 2, 9, 13, 5, 8, 2, 9],
+
  var bar_width = 50,
   bar_padding = 10,
   svg_width = (bar_width + bar_padding) * data.length,
