@@ -11,19 +11,24 @@ var svg = d3
   .attr("width", width)
   .attr("height", height);
 
+  //d3.select("svg").append("g");
 var g = d3
   .select("svg")
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
 var data = [1, 3, 5, 7, 8, 4, 3, 7];
 var scale_x = d3.scale
   .linear()
   .domain([0, data.length - 1])
   .range([0, g_width]);
+
+
 var scale_y = d3.scale
   .linear()
   .domain([0, d3.max(data)])
-  .range([0, g_height]);
+  .range([g_height,0]);
 
 var line_generator = d3.svg
   .line()
@@ -34,6 +39,18 @@ var line_generator = d3.svg
     return scale_y(d);
   }) //1,3,5...
   .interpolate("cardinal");
-d3.select("g")
+
+
+g
   .append("path")
   .attr("d", line_generator(data)); //d="M1,0L20,40L40,50L100,100L0,200"  d-path data
+
+
+  //添加坐标轴
+
+var x_axis=d3.svg.axis().scale(scale_x),
+y_axis=d3.svg.axis().scale(scale_y).orient("left");
+
+g.append("g").call(x_axis).attr("transform","translate(0,"+g_height+")")
+
+g.append("g").call(y_axis).append("text").text("Price($)").attr("transform","rotate(-90)").attr("text-anchor","end").attr("dy","1em")
