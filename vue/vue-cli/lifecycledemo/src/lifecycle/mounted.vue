@@ -67,17 +67,17 @@ export default {
   //mounted钩子
   mounted: function() {
     console.group("mounted状态");
-    console.log("beforeMounted", this.message);
+    console.log("mounted", this.message);
     this.foo();
     console.log(
-      "beforeMounted-li数量",
+      "mounted-li数量",
       document.getElementsByTagName("li").length
     );
     console.log(
-      "beforeMounted-p个数",
+      "mounted-p个数",
       document.getElementsByTagName("p").length
     );
-    console.log("beforeMount", this.$el);
+    console.log("mounted", this.$el);
   }
 };
 </script>
