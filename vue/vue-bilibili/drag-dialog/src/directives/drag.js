@@ -1,5 +1,8 @@
 import Vue from 'vue';
   
+//https://www.cnblogs.com/cangqinglang/p/11115365.html
+
+//https://www.cnblogs.com/Lu-Lu/p/11168904.html
 // v-dialogDrag: 弹窗拖拽属性
 Vue.directive('dialogDrag', {
   bind(el, binding, vnode, oldVnode) {
