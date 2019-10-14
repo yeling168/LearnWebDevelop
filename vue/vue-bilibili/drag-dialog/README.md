@@ -28,6 +28,12 @@ https://www.jianshu.com/p/1ca41cff4ab6
 
 https://github.com/liulinqiang121/vue-tab
 
+https://www.runoob.com/try/try.php?filename=bootstrap-tab-plugin1
+
+https://www.lanrenzhijia.com/
+
+https://segmentfault.com/a/1190000013305948#articleHeader0
+
 dialog:
 
 https://www.cnblogs.com/coco1s/p/5210667.html
