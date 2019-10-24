@@ -16,9 +16,9 @@ body{
     height: 100%;
     background: #47c9af;
     color: #74777b;
-    font-weight: 300;
-    font-size: 1.5em;
-    font-family: "Raleway","Arail";
+    font-weight: 500;
+    font-size: 1em;
+    font-family:'Raleway', Arial, sans-serif;
 }
 
 ul{
@@ -91,4 +91,13 @@ a:link,a:visited,a:focus{
     top:100%;
     left: 50%;
     margin: -7px 0 0 -15px;
+}
+
+.tooltip-effect-1 .tooltip-content{
+    -webkit-transform: translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	transform: translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	-webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
 }
