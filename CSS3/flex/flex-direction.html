@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex</title>
+</head>
+<body>
+    <style>
+        .box {
+            width:100%;
+            height: 50px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+            display: -webkit-flex;
+            display: flex;
+        }
+        .box div {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #ccc;
+        }
+        .row {
+            flex-direction: row;
+        }
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+        .column {
+            flex-direction: column;
+            margin-bottom:100px;
+        }
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+    </style>
+    <div class="box row">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <div class="box row-reverse">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <div class="box column">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <div class="box column-reverse">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>
