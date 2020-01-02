@@ -1,0 +1,16 @@
+https://stackoverflow.com/questions/46673756/date-picker-with-querybuilder
+
+
+https://stackoverflow.com/questions/55708274/problem-with-the-datepicker-plugin-in-querybuilder
+
+https://stackoverflow.com/questions/45673686/hide-future-date-in-query-builder-datepicker
+
+https://stackoverflow.com/questions/44807920/how-to-display-the-selected-date-value-in-datepicker-on-jquery-querybuilder
+
+https://querybuilder.js.org/demo.html#widgets
+
+https://github.com/mistic100/jQuery-QueryBuilder/issues/176
+
+https://github.com/mistic100/jQuery-QueryBuilder/issues/479
+
+jQuery-QueryBuilder plugins datepicker
