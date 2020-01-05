@@ -1,5 +1,8 @@
 //refer to https://github.com/mistic100/jQuery-QueryBuilder/issues/500
+//https://www.devexpress.com/Support/Center/Question/Details/T271981/how-to-provide-jquery-querybuilder-with-data-from-odatastore
 //https://embed.plnkr.co/npadZQ/
+//https://dabernathy89.github.io/vue-query-builder/
+//https://getbootstrap.com/docs/3.3/javascript/#tooltips
 var rules_basic = {
     condition: "AND",
     rules: [
