@@ -3,6 +3,13 @@
 //https://embed.plnkr.co/npadZQ/
 //https://dabernathy89.github.io/vue-query-builder/
 //https://getbootstrap.com/docs/3.3/javascript/#tooltips
+//https://jsfiddle.net/pbauzhmw/2/
+//https://getbootstrap.com/
+//https://stackoverflow.com/questions/52895825/jquery-query-builder-cannot-get-it-to-work-uncaught-typeerror-cannot-set-pr
+//http://nathan_backoffice.yirdis.com/public/templates/portal/js/querybuilder/src/plugins/bt-tooltip-errors/
+//https://embed.plnkr.co/plunk/OAdBjz
+//https://git.canopsis.net/canopsis-ui-bricks/brick-rrule-editor/blob/200f7d30edf5ddb7b4f0c12b73828ad1101073df/externals/jQuery-QueryBuilder/examples/index.html
+//https://issue.life/questions/52895825/
 var rules_basic = {
     condition: "AND",
     rules: [
