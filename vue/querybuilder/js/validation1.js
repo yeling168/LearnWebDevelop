@@ -31,6 +31,7 @@ var rules_basic = {
   
   $("#builder").queryBuilder({
     plugins: ["bt-tooltip-errors"],
+    display_errors:true,
     filters: [
       {
         id: "name",
