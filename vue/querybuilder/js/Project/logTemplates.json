@@ -1,0 +1,802 @@
+{
+  "_embedded" : {
+    "templates" : [ {
+      "numViews" : 1,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : true,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 216,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : {
+          "TURNOVER" : true,
+          "SECTIONAL" : true,
+          "TABULAR" : true,
+          "ALLOW_SUBMIT_INCOMPLETE" : true
+        },
+        "description" : "Inspection",
+        "sortOrder" : null,
+        "name" : "Inspection",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Online Inspection",
+      "updated" : "2017-12-13T15:24:46.956+0000",
+      "createdBy" : {
+        "id" : 2,
+        "firstName" : "Sandy",
+        "lastName" : "Syx",
+        "updated" : "2016-09-16T14:33:01.897+0000"
+      },
+      "created" : "2017-07-06T13:56:25.499+0000",
+      "updatedBy" : {
+        "id" : 2,
+        "firstName" : "Sandy",
+        "lastName" : "Syx",
+        "updated" : "2016-09-16T14:33:01.897+0000"
+      },
+      "id" : 68,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/68/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : true,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 158,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : { },
+        "description" : "Operational",
+        "sortOrder" : null,
+        "name" : "Operational",
+        "id" : 1,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/1{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Monthly Plant Evaluation",
+      "updated" : "2018-02-27T21:54:18.063+0000",
+      "createdBy" : {
+        "id" : 25,
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2017-07-13T16:59:22.514+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 73,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/73/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 4,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : false,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 231,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : { },
+        "description" : "Operational",
+        "sortOrder" : null,
+        "name" : "Operational",
+        "id" : 1,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/1{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Mid Day System Status",
+      "updated" : "2018-02-27T15:50:05.493+0000",
+      "createdBy" : {
+        "id" : 25,
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2017-07-13T20:29:16.960+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 74,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/74/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : false,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 193,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : { },
+        "description" : "Operational",
+        "sortOrder" : null,
+        "name" : "Operational",
+        "id" : 1,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/1{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Weekly Outside Logs",
+      "updated" : "2018-08-10T12:31:14.059+0000",
+      "createdBy" : {
+        "id" : 25,
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2017-07-15T00:28:07.209+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 75,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/75/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : true,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 15,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : { },
+        "description" : "Operational",
+        "sortOrder" : null,
+        "name" : "Operational",
+        "id" : 1,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/1{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Daily Overview",
+      "updated" : "2018-02-27T15:54:24.731+0000",
+      "createdBy" : {
+        "id" : 68,
+        "firstName" : "Nathan",
+        "lastName" : "Crocker",
+        "updated" : "2017-04-18T14:59:45.417+0000"
+      },
+      "created" : "2017-09-26T15:11:34.388+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 95,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/95/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : true,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : true,
+      "numSegments" : 35,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : {
+          "TURNOVER" : true,
+          "SECTIONAL" : true,
+          "TABULAR" : true,
+          "ALLOW_SUBMIT_INCOMPLETE" : true
+        },
+        "description" : "Inspection",
+        "sortOrder" : null,
+        "name" : "Inspection",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Bridge Check",
+      "updated" : "2018-07-23T15:23:34.935+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-01-23T15:11:12.927+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 123,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/123/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : false,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 14,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : {
+          "TURNOVER" : true,
+          "SECTIONAL" : true,
+          "TABULAR" : true,
+          "ALLOW_SUBMIT_INCOMPLETE" : true
+        },
+        "description" : "Inspection",
+        "sortOrder" : null,
+        "name" : "Inspection",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Testing Delete Segment",
+      "updated" : "2018-07-30T17:55:54.963+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-07-30T14:51:27.925+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 185,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/185/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : false,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 12,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : {
+          "TURNOVER" : true,
+          "SECTIONAL" : true,
+          "TABULAR" : true,
+          "ALLOW_SUBMIT_INCOMPLETE" : true
+        },
+        "description" : "Inspection",
+        "sortOrder" : null,
+        "name" : "Inspection",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Calculation Test",
+      "updated" : "2018-08-10T12:31:28.906+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-10T12:31:10.217+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 187,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/187/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : false,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 21,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : {
+          "TURNOVER" : true,
+          "SECTIONAL" : true,
+          "TABULAR" : true,
+          "ALLOW_SUBMIT_INCOMPLETE" : true
+        },
+        "description" : "Inspection",
+        "sortOrder" : null,
+        "name" : "Inspection",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Location Test Google Play Services",
+      "updated" : "2018-08-16T17:37:43.394+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-16T17:37:23.352+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 189,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/189/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : false,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 22,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : {
+          "TURNOVER" : true,
+          "SECTIONAL" : true,
+          "TABULAR" : true,
+          "ALLOW_SUBMIT_INCOMPLETE" : true
+        },
+        "description" : "Inspection",
+        "sortOrder" : null,
+        "name" : "Inspection",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Location Test Current Implementation",
+      "updated" : "2018-08-16T17:48:28.044+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-16T17:48:18.363+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 190,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/190/allowedUsers"
+        }
+      }
+    }, {
+      "numViews" : 0,
+      "allowAllUsers" : true,
+      "isDefaultTemplate" : false,
+      "walkdown" : true,
+      "evident" : true,
+      "enterNotes" : true,
+      "allowSubmitIncomplete" : false,
+      "turnover" : false,
+      "requireCommentOnAbnormal" : null,
+      "numSegments" : 36,
+      "logId" : 49,
+      "templateType" : {
+        "attributes" : {
+          "TURNOVER" : true,
+          "SECTIONAL" : true,
+          "TABULAR" : true,
+          "ALLOW_SUBMIT_INCOMPLETE" : true
+        },
+        "description" : "Inspection",
+        "sortOrder" : null,
+        "name" : "Inspection",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "name" : "Rail Car Unloading Checklist",
+      "updated" : "2018-08-22T13:14:40.268+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:14:28.504+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 193,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193{?projection}",
+          "templated" : true
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193/log"
+        },
+        "segments" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193/segments"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193/createdBy"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193/updatedBy"
+        },
+        "templateType" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193/templateType"
+        },
+        "allowedUsers" : {
+          "href" : "https://logbook-test.doozer.com/api/templates/193/allowedUsers"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://logbook-test.doozer.com/api/templates"
+    },
+    "profile" : {
+      "href" : "https://logbook-test.doozer.com/api/profile/templates"
+    }
+  },
+  "page" : {
+    "size" : 10000,
+    "totalElements" : 11,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}

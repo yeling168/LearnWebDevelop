@@ -1,0 +1,3939 @@
+{
+  "_embedded" : {
+    "templateSegments" : [ {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Date/Time",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : true,
+      "includeTime" : true,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 0,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Date/Time",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a date / time value",
+        "sortOrder" : null,
+        "name" : "Date/Time",
+        "id" : 10,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/10{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2018-08-22T13:14:56.791+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:14:56.791+0000",
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "id" : 2090,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2090/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : {
+        "styles" : [ ],
+        "parents" : [ ],
+        "longValue" : null,
+        "description" : null,
+        "dollarValue" : null,
+        "viewString" : "Weekdays",
+        "dateValue" : null,
+        "inUse" : true,
+        "stringValue" : "Weekdays",
+        "priority" : null,
+        "id" : 334884,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/tagValues/334884{?projection}",
+            "templated" : true
+          },
+          "styles" : {
+            "href" : "https://logbook-test.doozer.com/api/tagValues/334884/styles"
+          },
+          "createdBy" : {
+            "href" : "https://logbook-test.doozer.com/api/tagValues/334884/createdBy"
+          },
+          "updatedBy" : {
+            "href" : "https://logbook-test.doozer.com/api/tagValues/334884/updatedBy"
+          },
+          "log" : {
+            "href" : "https://logbook-test.doozer.com/api/tagValues/334884/log"
+          },
+          "parents" : {
+            "href" : "https://logbook-test.doozer.com/api/tagValues/334884/parents"
+          }
+        }
+      },
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 10,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : null,
+      "key" : null,
+      "type" : {
+        "properties" : { },
+        "description" : "Insert the selected tag",
+        "sortOrder" : null,
+        "name" : "Tag",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.976+0000",
+      "createdBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "created" : "2019-01-28T15:49:12.800+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 4070,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/4070/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car number",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 20,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Rail Car number",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.972+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:15:55.711+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2092,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2092/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Vendor/Product",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : 20,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 30,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Vendor/Product",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter text",
+        "sortOrder" : null,
+        "name" : "Text Input",
+        "id" : 4,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/4{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.972+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:16:25.665+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2093,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2093/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Gauged Gallons (Before)",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 40,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Gauged Gallons (Before)",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.972+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:16:44.296+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2094,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2094/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Gauged Gallons (After)",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 50,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Gauged Gallons (After)",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.972+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:17:14.605+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2095,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2095/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Wheels Chocks",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 60,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Wheels Chocks",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.972+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:17:32.298+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2096,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2096/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Signage",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 70,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Signage",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.972+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:17:52.524+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2097,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2097/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Grounding/Bonding",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 80,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Grounding/Bonding",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.972+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:18:05.707+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2098,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2098/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Seals/Locks",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 90,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Seals/Locks",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:18:16.351+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2099,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2099/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Containment System Opned and Ready (Verified By)",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 100,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Containment System Opned and Ready (Verified By)",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:18:35.173+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2100,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2100/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Lines Cleaned",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 110,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Lines Cleaned",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:18:44.395+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2101,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2101/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Line-Pump-Track Connections",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 120,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Line-Pump-Track Connections",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:18:58.696+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2102,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2102/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Switch #2 Locked",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 130,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Switch #2 Locked",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:19:11.046+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2103,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2103/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : 1,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : true,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 140,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Unloading Procedure",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "NAME" : true
+        },
+        "description" : "Add note from current input and continue",
+        "sortOrder" : null,
+        "name" : "Sub Template",
+        "id" : 5,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/5{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:19:32.755+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2104,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2104/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Truck/Tanker Number",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 150,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Truck/Tanker Number",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:19:58.626+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2105,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2105/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Capacity",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 160,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Capacity",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:21:08.392+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2106,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2106/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; BOL#",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 170,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "BOL#",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.973+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:21:39.517+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2107,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2107/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Arrival Time",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : true,
+      "includeTime" : false,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 180,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Arrival Time",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a date / time value",
+        "sortOrder" : null,
+        "name" : "Date/Time",
+        "id" : 10,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/10{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:22:00.373+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2108,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2108/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Departure Time",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : false,
+      "includeTime" : true,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 190,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Departure Time",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a date / time value",
+        "sortOrder" : null,
+        "name" : "Date/Time",
+        "id" : 10,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/10{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:22:24.158+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2109,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2109/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Truck Light Weight (NA if weighed at RS)",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 200,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Truck Light Weight (NA if weighed at RS)",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:22:53.874+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2110,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2110/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Truck Heavy Weight (NA if weighed at RS)",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 210,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Truck Heavy Weight (NA if weighed at RS)",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter a numeric value",
+        "sortOrder" : null,
+        "name" : "Numeric Input",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:23:17.537+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2111,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2111/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Outbound Seals",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : 20,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 220,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Outbound Seals",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter text",
+        "sortOrder" : null,
+        "name" : "Text Input",
+        "id" : 4,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/4{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:23:38.933+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2112,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2112/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Unloading Procedure; Retain Sample Pulled By",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : 20,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 230,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Retain Sample Pulled By",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter text",
+        "sortOrder" : null,
+        "name" : "Text Input",
+        "id" : 4,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/4{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:23:55.832+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2113,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2113/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : 1,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Shut Down Requirements",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : true,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 240,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Shut Down Requirements",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "NAME" : true
+        },
+        "description" : "Add note from current input and continue",
+        "sortOrder" : null,
+        "name" : "Sub Template",
+        "id" : 5,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/5{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:24:15.951+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2114,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2114/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : 1,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : true,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 250,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Rail Car Closing Checklist",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "NAME" : true
+        },
+        "description" : "Add note from current input and continue",
+        "sortOrder" : null,
+        "name" : "Sub Template",
+        "id" : 5,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/5{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:24:26.930+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2115,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2115/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Dome Lid Secure/All Bolts Tool Tight",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 260,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Dome Lid Secure/All Bolts Tool Tight",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.974+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:24:51.503+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2116,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2116/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Outlet Valves Closed and Secured",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 270,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Outlet Valves Closed and Secured",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:25:02.004+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2117,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2117/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Bottom Caps and Fitting Closed/Tool Tight",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 280,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Bottom Caps and Fitting Closed/Tool Tight",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:25:19.720+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2118,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2118/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Top Vent Cover, Valves, Plugs Closed/Tool Tight",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 290,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Top Vent Cover, Valves, Plugs Closed/Tool Tight",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:25:52.547+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2119,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2119/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Placard Number",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : 20,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 300,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Placard Number",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter text",
+        "sortOrder" : null,
+        "name" : "Text Input",
+        "id" : 4,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/4{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:26:34.804+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2120,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2120/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Placard in place and in good condition",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 310,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Placard in place and in good condition",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:27:36.457+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2121,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2121/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Containment System Closed and Locked (Verified)",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 320,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Containment System Closed and Locked (Verified)",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to check a box",
+        "sortOrder" : null,
+        "name" : "Checkbox",
+        "id" : 6,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/6{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:27:56.348+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2122,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2122/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : true,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Additional Comments",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : 20,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 330,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Additional Comments",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "CALCULATE" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to enter text",
+        "sortOrder" : null,
+        "name" : "Text Input",
+        "id" : 4,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/4{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:28:29.617+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2124,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2124/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Research Operation Employee #1",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 340,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Research Operation Employee #1",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to select from the list of log users",
+        "sortOrder" : null,
+        "name" : "User Chooser",
+        "id" : 11,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/11{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:28:50.277+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2125,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2125/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : null,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Research Operation Employee #2",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 350,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Research Operation Employee #2",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "KEY" : true,
+          "NAME" : true
+        },
+        "description" : "Allow user to select from the list of log users",
+        "sortOrder" : null,
+        "name" : "User Chooser",
+        "id" : 11,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/11{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:29:05.888+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2126,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2126/createdBy"
+        }
+      }
+    }, {
+      "text" : null,
+      "level" : null,
+      "choiceList" : null,
+      "defaultChoice" : null,
+      "textArea" : null,
+      "textList" : [ ],
+      "barcode" : null,
+      "maxAllowed" : null,
+      "minRequired" : null,
+      "required" : true,
+      "variable" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "belowMinAlertMessage" : null,
+      "aboveMaxAlertMessage" : null,
+      "clearTime" : null,
+      "depth" : null,
+      "obsolete" : false,
+      "longName" : "Rail Car Closing Checklist; Driver Signature",
+      "templateId" : 193,
+      "turnover" : null,
+      "requireCommentOnAbnormal" : null,
+      "print" : null,
+      "units" : null,
+      "width" : null,
+      "height" : null,
+      "tagValue" : null,
+      "includeDate" : null,
+      "includeTime" : null,
+      "formula" : null,
+      "calculate" : null,
+      "decimalPlaces" : null,
+      "sortOrder" : 360,
+      "allowAnyUser" : null,
+      "users" : [ ],
+      "allowUndo" : null,
+      "allowReject" : null,
+      "name" : "Driver Signature",
+      "key" : null,
+      "type" : {
+        "properties" : {
+          "SIMPLE_REQUIRED_INPUT" : true,
+          "NAME" : true
+        },
+        "description" : "Capture one or more physical signatures",
+        "sortOrder" : null,
+        "name" : "Signature",
+        "id" : 13,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/templateSegmentTypes/13{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updated" : "2019-01-28T15:49:12.975+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-22T13:29:16.368+0000",
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "id" : 2127,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127"
+        },
+        "templateSegment" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127{?projection}",
+          "templated" : true
+        },
+        "users" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/users"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/updatedBy"
+        },
+        "template" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/template"
+        },
+        "choiceList" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/choiceList"
+        },
+        "tagValue" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/tagValue"
+        },
+        "defaultChoice" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/defaultChoice"
+        },
+        "type" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/type"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/templateSegments/2127/createdBy"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://logbook-test.doozer.com/api/templateSegments"
+    },
+    "profile" : {
+      "href" : "https://logbook-test.doozer.com/api/profile/templateSegments"
+    }
+  },
+  "page" : {
+    "size" : 1000,
+    "totalElements" : 37,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}

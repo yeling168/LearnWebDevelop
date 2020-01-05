@@ -1,3 +1,4 @@
+//refer to https://codepen.io/mramart/pen/oLwrJN
 var rules_basic = {
   condition: "AND",
   rules: [

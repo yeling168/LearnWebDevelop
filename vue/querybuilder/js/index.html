@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link data-require="bootstrap@3.3.5" data-semver="3.3.5" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="selectize.bootstrap3.css" />
+  <link rel="stylesheet" href="query-builder.default.css" />
+  <!--<script src="template-tag-polyfill.js"></script>-->
+  <script data-require="jquery@2.2.0" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script data-require="bootstrap@3.3.5" data-semver="3.3.5" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script data-require="moment.js@*" data-semver="2.14.1" src="https://npmcdn.com/moment@2.14.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="selectize.js"></script>
+  <script src="query-builder.standalone.min.js"></script>
+  <script src="script.js"></script>
+  
+  <style>
+    .input-sm {
+      height: 25px !important;
+    }
+    .inline-block {
+      display: inline-block !important;
+    }
+    .disable-text, 
+    .disable-text input.form-control {
+      color: #ccc;
+    }
+    
+    #report-templates {
+      padding: 6px;
+      background: lightgrey;
+      border: 1px solid darkgrey;
+      margin: 0 10px 8px;
+    }
+      #report-templates hr { 
+        margin: 7px 0;
+      }
+      #report-templates input[type=checkbox] {
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+      #report-templates label:first-child {
+        display: inline;
+        font-weight: normal;
+      }
+        #report-templates select {
+          display: inline;
+          width: auto;
+        }
+      /*Возможно, удалите это позже, так как видимость элемента управления шаблона отчета будет основана на фактическом шаблоне отчета, возвращенном из LogBook*/
+      #report-templates > label ~ * {
+        display: none;
+      }
+        
+    /*** Базовые стили ***/
+    
+    .rule-header button:first-child {
+      margin-right: 3px;
+    }
+    .rule-header i {
+      top: 2px;
+    }
+    
+    .filter-operator-wrapper {
+      display: inline-block; 
+      vertical-align: middle;
+    }
+      .filter-operator-wrapper > label {
+        display: block; 
+        margin-bottom: 0; 
+        text-align: center; 
+        font-weight: normal; 
+        font-size: x-small;
+      }
+        .filter-operator-wrapper > label > input {
+          vertical-align: text-bottom;
+        }
+        
+    .rule-filter-container select {
+      max-width: 250px;
+    }
+    
+    .query-builder .rule-value-container {
+      padding-left: 16px;
+      margin-bottom: -4px !important;
+    }
+      .rule-value-container > div > div > div,
+      .rule-value-container div.inline-block > label,
+      .rule-value-container > div > div > label,
+      .inspection-template-common-field {
+        display: block;
+        margin-bottom: 4px !important;
+      }
+      .rule-value-container input[type=radio], 
+      .rule-value-container input[type=checkbox] {
+        margin-right: 10px;
+      }
+      .rule-value-container .form-control {
+        display: inline-block;
+      }
+      .rule-value-container input {
+        text-align: center;
+      }
+      .rule-value-container input[type=number] {
+        width: 60px;
+      }
+      .rule-value-container em {
+        line-height: 3.7;
+      }
+      .rule-value-container select {
+        width: auto;
+      }
+    
+    /*** Плагины ***/
+    
+    .date-time-picker {
+      width: 115px;
+      display: inline-block !important;
+      vertical-align: middle;
+    }
+      .date-time-picker.time-only {
+        margin-bottom: 0 !important;
+      }
+      .glyphicon {
+        font-size: 12px;
+      }
+      .glyphicon-time {
+        margin-top: 1px;
+      }
+      .date-time-picker.has-time {
+        width: 148px;
+      }
+      .date-time-picker.time-only {
+        width: 100px;
+      }
+      /* Ниже 3 селектора препятствуют тому, чтобы текстовое поле выбора и глифик имели случайные неровные высоты из-за переопределения высоты загрузчика .input-sm */
+      .date-time-picker > div {
+        height: 25px;
+      }
+        .date-time-picker > div > .input-sm {
+          height: 100% !important;
+        }
+        .date-time-picker > div > .input-group-addon {
+          height: 100%;
+          padding-top: 2px;
+          padding-bottom: 0;
+        }
+        
+    .tag-picker, .user-picker, .text-picker {
+      max-width: 400px;
+      margin-top: 2px;
+      vertical-align: middle;
+    }
+      .selectize-dropdown {
+        min-width: 200px;
+      }
+      
+    /*** Переопределение шаблона ***/
+    
+    .note-date-time select {
+      width: 90px;
+    }
+    
+    .note-contents input[type=text],
+    .lb-text-input-template-segment input[type=text]{
+      width: 45vw;
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+      margin-bottom: 6px;
+    }
+      @media (max-width: 450px) {
+        .note-contents input[type=text],
+        .lb-text-input-template-segment input[type=text]{
+          width: 100%;
+        }
+      }
+      
+    .attachments input[type=text] {
+      max-width: 150px;
+    }
+    
+    .comments .user-picker {
+      display: inline-block;
+    }
+    .comments > div > label > input[type=text] {
+      /*width: 82%*/
+      width: 73%
+    }
+    
+    .lb-text-input-template-segment > div,
+    .lb-dt-time-only-template-segment > div {
+      line-height: 3.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="modal fade" id="fields-in-use-warning" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+          <h4 class="modal-title">Template Fields in Use</h4>
+        </div>
+        
+        <div class="modal-body">
+          <p>
+            В этом отчете используются поля из шаблона <span></span>. Переключение на другой шаблон приведет к удалению этих полей из отчета.
+          </p>
+          <p>
+            Пожалуйста, подтвердите, что вы хотите сделать это.
+          </p>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="confirm">Изменить шаблон</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Создание прототипов Report Builder</h1>
+  
+  <div id="report-templates">
+    <label>Шаблон отчета:
+      <select id="report-template" class="form-control">
+      </select>
+    </label>
+    
+    <hr>
+    
+    <div>
+      <label>
+        <input type="checkbox" value="Abnormal Choices" />
+        
+        <select class="form-control input-sm">
+          <option>Есть ли</option>
+          <option>Does Not</option>
+        </select>
+        включить ненормальный выбор
+      </label>
+    </div>
+    
+    <div>
+      <label>
+        <input type="checkbox" value="Вне диапазона значений" />
+        
+        <select class="form-control input-sm">
+          <option>Есть ли</option>
+          <option>Does Not</option>
+        </select>
+        включить вне диапазона значений
+      </label>
+    </div>
+    
+    <div>
+      <label>
+        <input type="checkbox" value="Pending Signoffs" />
+        
+        <select class="form-control input-sm">
+          <option>Есть ли</option>
+          <option>Does Not</option>
+        </select>
+        есть ожидающие подписи
+      </label>
+    </div>
+  </div>
+  
+  <div id="builder"></div>
+  
+  <template id="note-date-time">
+    <div class="specific-date">
+      <div>
+        <label>
+          <input type="radio" value="Today" checked="" /> Сегодня
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Yesterday" /> Вчера
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Number of Days Ago" />
+          <input class="form-control input-sm" type="number" min="2"/> дней назад
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Previous Weekday" /> Предыдущий
+        </label>
+        
+        <select class="form-control input-sm">
+          <option>понедельник</option>
+          <option>вторник</option>
+          <option>среда</option>
+          <option>четверг</option>
+          <option>пятница</option>
+          <option>суббота</option>
+          <option>воскресенье</option>
+        </select>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Specific Date" /> Конкретная дата:
+        </label>
+        
+        <div class="date-time-picker">
+          <div class="input-group date" data-format="L">
+            <input type="text" class="form-control input-sm" />
+            
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="date-range">
+      <div class="inline-block">
+        <label>
+          <input type="radio" value="This Week" /> На этой неделе (M - Su)
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Week" /> Прошлая неделя (M - Su)
+        </label>
+        
+        <label>
+          <input type="radio" value="This Quarter" /> Этот квартал
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Quarter" /> Последняя четверть
+        </label>
+      </div>
+      
+      <div class="inline-block pull-right">
+        <label>
+          <input type="radio" value="This Month" /> Этот месяц
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Month" /> Прошлый месяц
+        </label>
+        
+        <label>
+          <input type="radio" value="This Year" /> В этом году
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Year" /> Прошлый год
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Between Days Ago" />
+          <input class="form-control input-sm" type="number" min="0" /> дней назад to
+          <input class="form-control input-sm" type="number" min="0" /> дней назад
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Between Dates" /> Даты
+        </label>
+        
+        <div class="date-time-picker">
+          <div class="input-group date" data-format="L">
+            <input type="text" class="form-control input-sm" />
+            
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+          </div>
+        </div>
+        
+        to
+        
+        <div class="date-time-picker">
+          <div class="input-group date" data-format="L">
+            <input type="text" class="form-control input-sm" />
+            
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="time-range">
+      <div class="inline-block">
+        <label>
+          <input type="radio" value="This Week" /> На этой неделе (M - Su)
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Week" /> Прошлая неделя (M - Su)
+        </label>
+        
+        <label>
+          <input type="radio" value="This Quarter" /> Этот квартал
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Quarter" /> Последняя четверть
+        </label>
+      </div>
+      
+      <div class="inline-block pull-right">
+        <label>
+          <input type="radio" value="This Month" /> Этот месяц
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Month" /> Прошлый месяц
+        </label>
+        
+        <label>
+          <input type="radio" value="This Year" /> В этом году
+        </label>
+        
+        <label>
+          <input type="radio" value="Last Year" /> Прошлый год
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Between Days Ago" />
+          <input class="form-control input-sm" type="number" min="0" /> days ago to
+          <input class="form-control input-sm" type="number" min="0" /> days ago
+        </label>
+      </div>
+      
+      <div>
+        <label>
+          <input type="radio" value="Between Dates/Times" /> Dates/Times
+        </label>
+        
+        <div class="date-time-picker has-time">
+          <div class="input-group date" data-format="L HH:mm">
+            <input type="text" class="form-control input-sm" />
+            
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+          </div>
+        </div>
+
+        to
+
+        <div class="date-time-picker has-time">
+          <div class="input-group date" data-format="L HH:mm">
+            <input type="text" class="form-control input-sm" />
+            
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <template id="tags">
+    <div class="any">
+      <em>* Заметки с одним или несколькими тегами</em>
+    </div>
+    
+    <div class="none">
+      <em>* Заметки без каких-либо тегов</em>
+    </div>
+    
+    <div class="include-all-of tag-picker">
+      <input type="text" placeholder="Filter tag names" />
+    </div>
+    
+    <div class="include-any-of tag-picker">
+      <input type="text" placeholder="Filter tag names" />
+    </div>
+    
+    <div class="missing-all-of tag-picker">
+      <input type="text" placeholder="Filter tag names" />
+    </div>
+    
+    <div class="missing-any-of tag-picker">
+      <input type="text" placeholder="Filter tag names" />
+    </div>
+    
+    <div class="any include-all-of include-any-of missing-all-of missing-any-of">
+      <label>
+        <input type="checkbox" value="Number of Tags Selected" />и имеют
+        
+        <select class="form-control input-sm">
+          <option>Больше, чем</option>
+          <option>Меньше, чем</option>
+          <option>Именно так</option>
+        </select>
+        
+        <input class="form-control input-sm" type="number" min="0" /> выбранные теги
+      </label>
+    </div>
+  </template>
+  
+  <template id="note-contents">
+    <div class="includes">
+      <input type="text" class="form-control input-sm" placeholder="Enter text to filter by" />
+        
+      <label>
+        <input type="checkbox" value="Case Sensitive" /> С учетом регистра?
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Whole Word" /> Целый мир?
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Wildcards" /> Wildcards?
+      </label>
+    </div>
+    
+    <div class="excludes">
+      <input type="text" class="form-control input-sm" placeholder="Enter text to filter by" />
+      
+      <label>
+        <input type="checkbox" value="Case Sensitive" /> С учетом регистра?
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Whole Word" /> Целый мир?
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Wildcards" /> Wildcards?
+      </label>
+    </div>
+  </template>
+  
+  <template id="users">
+    <div class="any">
+      <em>* Any user was chosen</em>
+    </div>
+    
+    <div class="none">
+      <em>* No user was chosen</em>
+    </div>
+    
+    <div class="includes-any-of user-picker">
+      <input type="text" placeholder="Filter users" />
+    </div>
+    
+    <div class="excludes-all-of user-picker">
+      <input type="text" placeholder="Filter users" />
+    </div>
+  </template>
+  
+  <template id="turnover">
+    <div class="yes">
+      <em>* Включает только оборотные ноты</em>
+    </div>
+    
+    <div class="no">
+      <em>* Исключает обороты</em>
+    </div>
+  </template>
+  
+  <template id="attachments">
+    <div class="any">
+      <em>* Заметки с одним или несколькими вложениями</em>
+    </div>
+    
+    <div class="none">
+      <em>* Заметки без каких-либо вложений</em>
+    </div>
+    
+    <div class="have">
+      <label>
+        <input type="checkbox" value="Filename" /> Файл(ы) с именем, содержащим
+        <input class="form-control input-sm" type="text" />
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Extension" /> Файл(ы) с расширением
+        <input class="form-control input-sm" type="text" />
+      </label>
+      
+      <label>
+        <input type="checkbox" name="range" value="More Than" /> Больше, чем
+        <input class="form-control input-sm" type="number" min="0" /> attachment(s)
+      </label>
+      
+      <label>
+        <input type="checkbox" name="range" value="Less Than" /> Меньше, чем
+        <input class="form-control input-sm" type="number" min="1" /> attachment(s)
+      </label>
+      
+      <label>
+        <input type="checkbox" name="exact" value="Exactly" /> Именно так
+        <input class="form-control input-sm" type="number" min="0" /> attachment(s)
+      </label>
+    </div>
+    
+    <div class="dont-have">
+      <label>
+        <input type="checkbox" value="Filename" /> File(s) с именем, содержащим
+        <input class="form-control input-sm" type="text" />
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Extension" /> File(s) с расширением
+        <input class="form-control input-sm" type="text" />
+      </label>
+      
+      <label>
+        <input type="checkbox" name="range" value="More Than" /> Больше, чем
+        <input class="form-control input-sm" type="number" min="0" /> attachment(s)
+      </label>
+      
+      <label>
+        <input type="checkbox" name="range" value="Less Than" /> Меньше, чем
+        <input class="form-control input-sm" type="number" min="1" /> attachment(s)
+      </label>
+      
+      <label>
+        <input type="checkbox" name="exact" value="Exactly" /> Именно так
+        <input class="form-control input-sm" type="number" min="0" /> крепления
+      </label>
+    </div>
+  </template>
+  
+  <template id="comments">
+    <div class="any">
+      <em>* Заметки с одним или несколькими комментариями</em>
+    </div>
+    
+    <div class="none">
+      <em>* Примечания без каких-либо комментариев</em>
+    </div>
+    
+    <div class="must">
+      <label>
+        <input type="checkbox" value="Text" />Есть текст
+        <input class="form-control input-sm" type="text"/>
+      </label>
+      
+      <div>
+        <label>
+          <input type="checkbox" value="From User" />Быть от любого из пользователей
+        </label>
+        
+        <div class="user-picker">
+          <input type="text" placeholder="Filter users">
+        </div>
+      </div>
+      
+      <div>
+        <label>
+          <input type="checkbox" value="Between Dates" />Быть между времён
+        </label>
+        
+        <div class="date-time-picker has-time">
+          <div class="input-group date" data-format="L HH:mm">
+            <input type="text" class="form-control input-sm" />
+            
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+          </div>
+        </div>
+
+        to
+
+        <div class="date-time-picker has-time">
+          <div class="input-group date" data-format="L HH:mm">
+            <input type="text" class="form-control input-sm" />
+            
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="must-not">
+      <label>
+        <input type="checkbox" value="Text" />Есть текст 
+        <input class="form-control input-sm" type="text"/>
+      </label>
+      
+      <div>
+        <label>
+          <input type="checkbox" value="From User" />Быть от любого из пользователей
+        </label>
+        
+        <div class="user-picker">
+          <input type="text" placeholder="Filter users">
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <template id="lb-checkbox-template-segment">
+    <div class="can-be">
+      <label>
+        <input type="checkbox" value="Checked" /> Проверено
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Un-checked" /> Не-проверено
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Indeterminate" /> Ни проверено, ни не проверено
+      </label>
+    </div>
+  </template>
+  
+  <template id="lb-numeric-template-segment">
+    <div class="any">
+      <em>* Имеет значение</em>
+    </div>
+    
+    <div class="none">
+      <em>* Не имеет значения</em>
+    </div>
+    
+    <div class="is">
+      <label>
+        <input type="checkbox" name="range" value="More Than" /> Больше, чем
+        <input class="form-control input-sm" type="number" />
+      </label>
+      
+      <label>
+        <input type="checkbox" name="range" value="Less Than" /> Меньше, чем
+        <input class="form-control input-sm" type="number" />
+      </label>
+      
+      <label>
+        <input type="checkbox" name="exact" value="Exactly" /> Именно так
+        <input class="form-control input-sm" type="number" />
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Out of Range"/> Значение вне диапазона
+      </label>
+    </div>
+    
+    <div class="is-not">
+      <label>
+        <input type="checkbox" name="range" value="More Than" /> Больше, чем
+        <input class="form-control input-sm" type="number" />
+      </label>
+      
+      <label>
+        <input type="checkbox" name="range" value="Less Than" /> Меньше, чем
+        <input class="form-control input-sm" type="number" />
+      </label>
+      
+      <label>
+        <input type="checkbox" name="exact" value="Exactly" /> Именно так
+        <input class="form-control input-sm" type="number" />
+      </label>
+      
+      <label>
+        <input type="checkbox" value="Out of Range"/> Значение вне диапазона
+      </label>
+    </div>
+  </template>
+  
+  <template id="lb-signoff-by-template-segment">
+    <div class="signed-off">
+      <em>* Подписано кем-либо</em>
+    </div>
+    
+    <div class="not-signed-off">
+      <em>* Никем не подписано</em>
+    </div>
+    
+    <div class="includes-any-of user-picker">
+      <input type="text" placeholder="Filter users" />
+    </div>
+    
+    <div class="excludes-all-of user-picker">
+      <input type="text" placeholder="Filter users" />
+    </div>
+  </template>
+  
+  <template id="lb-text-choice-template-segment">
+    <div class="any">
+      <em>* Выбран хотя бы один вариант</em>
+    </div>
+    
+    <div class="none">
+      <em>* Не выбрано ни одного варианта</em>
+    </div>
+    
+    <div class="include-all-of text-picker">
+      <input type="text" placeholder="Filter text choices" />
+    </div>
+    
+    <div class="include-any-of text-picker">
+      <input type="text" placeholder="Filter text choices" />
+    </div>
+    
+    <div class="missing-all-of text-picker">
+      <input type="text" placeholder="Filter text choices" />
+    </div>
+    
+    <div class="missing-any-of text-picker">
+      <input type="text" placeholder="Filter text choices" />
+    </div>
+    
+    <div class="any include-all-of include-any-of missing-all-of missing-any-of">
+      <label>
+        <input type="checkbox" value="Includes Abnormal Choice" />and
+        
+        <select class="form-control input-sm">
+          <option>Is</option>
+          <option>Is Not</option>
+        </select>
+        ненормальный выбор
+      </label>
+    </div>
+  </template>
+  
+  <template id="lb-text-input-template-segment">
+    <div class="any">
+      <em>* Есть какой-либо текст</em>
+    </div>
+    
+    <div class="none">
+      <em>* Не имеет текста</em>
+    </div>
+    
+    <div class="includes">
+      <input type="text" class="form-control input-sm" placeholder="Введите текст, который должен быть включен" />
+    </div>
+    
+    <div class="excludes">
+      <input type="text" class="form-control input-sm" placeholder="Введите текст, который должен быть исключен" />
+    </div>
+  </template>
+  
+  <template id="lb-dt-time-only-template-segment">
+    <div class="time-range">
+      From
+      
+      <div class="date-time-picker time-only">
+        <div class="input-group date" data-format="H:mm">
+          <input type="text" class="form-control input-sm" />
+          
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-time"></span>
+          </div>
+        </div>
+      </div>
+      
+      to
+      
+      <div class="date-time-picker time-only">
+        <div class="input-group date" data-format="H:mm">
+          <input type="text" class="form-control input-sm" />
+          
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-time"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <template id="inspection-template-common-fields">
+    <div class="inspection-template-common-field">
+      <label>
+        <input type="checkbox" value="Includes Segment Comment" />and
+        
+        <select class="form-control input-sm">
+          <option>Does</option>
+          <option>Does Not</option>
+        </select>
+        включить комментарий сегмента
+      </label>
+    </div>
+    
+    <div class="inspection-template-common-field">
+      <label>
+        <input type="checkbox" value="Includes Segment Attachment" />and
+        
+        <select class="form-control input-sm">
+          <option>Does</option>
+          <option>Does Not</option>
+        </select>
+        включить вложение сегмента
+      </label>
+    </div>
+  </template>
+  
+  <div>
+    <button class="btn btn-primary" onclick="printRules()">Тест</button>
+    <button class="btn btn-primary" onclick="saveReportToLocalstorage()">Сохранить локально</button>
+    <button class="btn btn-primary" onclick="loadReportFromLocalstorage()">Загрузка из локали</button>
+    <button class="btn btn-primary" onclick="saveReport()">Сохранить в формате LB</button>
+    <button class="btn btn-primary" onclick="loadReport()">Загрузить из формата LB</button>
+  </div>
+  <pre id="rules"></pre>
+</body>
+
+</html>

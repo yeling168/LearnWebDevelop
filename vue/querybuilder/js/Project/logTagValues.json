@@ -1,0 +1,2620 @@
+{
+  "_embedded": {
+    "tagValues": [
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Weekdays",
+        "inUse": true,
+        "viewString": "Weekdays",
+        "priority": null,
+        "id": 334884
+      },
+      {
+        "styles": [],
+        "parents": [
+          334884
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Monday",
+        "inUse": true,
+        "viewString": "Monday",
+        "priority": null,
+        "id": 334885
+      },
+      {
+        "styles": [],
+        "parents": [
+          334884
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Tuesday",
+        "inUse": true,
+        "viewString": "Tuesday",
+        "priority": null,
+        "id": 334886
+      },
+      {
+        "styles": [],
+        "parents": [
+          334884
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Wednesday",
+        "inUse": true,
+        "viewString": "Wednesday",
+        "priority": null,
+        "id": 334887
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Thursday",
+        "inUse": true,
+        "viewString": "Thursday",
+        "priority": null,
+        "id": 334888
+      },
+      {
+        "styles": [],
+        "parents": [
+          334884
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Friday",
+        "inUse": true,
+        "viewString": "Friday",
+        "priority": null,
+        "id": 334889
+      },
+      {
+        "styles": [],
+        "parents": [
+          334884
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Saturday",
+        "inUse": true,
+        "viewString": "Saturday",
+        "priority": null,
+        "id": 334890
+      },
+      {
+        "styles": [],
+        "parents": [
+          334884
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Sunday",
+        "inUse": true,
+        "viewString": "Sunday",
+        "priority": null,
+        "id": 334891
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Shifts",
+        "inUse": true,
+        "viewString": "Shifts",
+        "priority": null,
+        "id": 334895
+      },
+      {
+        "styles": [],
+        "parents": [
+          334895
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Noon",
+        "inUse": true,
+        "viewString": "Noon",
+        "priority": null,
+        "id": 334896
+      },
+      {
+        "styles": [],
+        "parents": [
+          334895
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Day",
+        "inUse": true,
+        "viewString": "Day",
+        "priority": null,
+        "id": 334897
+      },
+      {
+        "styles": [],
+        "parents": [
+          334895
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Afternoon",
+        "inUse": true,
+        "viewString": "Afternoon",
+        "priority": null,
+        "id": 334898
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Example",
+        "inUse": true,
+        "viewString": "Example",
+        "priority": null,
+        "id": 339310
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "level1",
+        "inUse": true,
+        "viewString": "level1",
+        "priority": null,
+        "id": 548965
+      },
+      {
+        "styles": [],
+        "parents": [
+          548965
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "level2",
+        "inUse": true,
+        "viewString": "level2",
+        "priority": null,
+        "id": 548966
+      },
+      {
+        "styles": [],
+        "parents": [
+          548966
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "level3",
+        "inUse": true,
+        "viewString": "level3",
+        "priority": null,
+        "id": 548967
+      },
+      {
+        "styles": [],
+        "parents": [
+          548967
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "level4",
+        "inUse": true,
+        "viewString": "level4",
+        "priority": null,
+        "id": 549013
+      },
+      {
+        "styles": [],
+        "parents": [
+          548967
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "level3.1",
+        "inUse": true,
+        "viewString": "level3.1",
+        "priority": null,
+        "id": 549014
+      },
+      {
+        "styles": [],
+        "parents": [
+          549013
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "level5",
+        "inUse": false,
+        "viewString": "level5",
+        "priority": null,
+        "id": 549015
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQ",
+        "inUse": true,
+        "viewString": "Doozer HQ (#DoozerHQ)",
+        "priority": null,
+        "id": 665924
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Sentinel Visit",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "SentinelVisit",
+        "inUse": true,
+        "viewString": "Sentinel Visit (#SentinelVisit)",
+        "priority": null,
+        "id": 665925
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Robert's Phone",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Robert'sPhone",
+        "inUse": false,
+        "viewString": "Robert's Phone (#Robert'sPhone)",
+        "priority": null,
+        "id": 665926
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ edit",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQedit",
+        "inUse": false,
+        "viewString": "Doozer HQ edit (#DoozerHQedit)",
+        "priority": null,
+        "id": 668426
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Robert's iPad",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Robert'siPad",
+        "inUse": false,
+        "viewString": "Robert's iPad (#Robert'siPad)",
+        "priority": null,
+        "id": 668428
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Eng Door - Fire 8 tab",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "EngDoor-Fire8tab",
+        "inUse": false,
+        "viewString": "Eng Door - Fire 8 tab (#EngDoor-Fire8tab)",
+        "priority": null,
+        "id": 671340
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Emulators",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Emulators",
+        "inUse": false,
+        "viewString": "Emulators",
+        "priority": null,
+        "id": 672040
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Android Emulator",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "AndroidEmulator",
+        "inUse": true,
+        "viewString": "Android Emulator (#AndroidEmulator)",
+        "priority": null,
+        "id": 672041
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Front Door -Fire 10 tab",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "FrontDoor-Fire10tab",
+        "inUse": false,
+        "viewString": "Front Door -Fire 10 tab (#FrontDoor-Fire10tab)",
+        "priority": null,
+        "id": 672269
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer Testing",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerTestingedit",
+        "inUse": false,
+        "viewString": "Doozer Testing (#DoozerTestingedit)",
+        "priority": null,
+        "id": 673633
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Fire 8",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Fire8",
+        "inUse": true,
+        "viewString": "Fire 8 (#Fire8)",
+        "priority": null,
+        "id": 673634
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer Testing 2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerTesting2",
+        "inUse": false,
+        "viewString": "Doozer Testing 2 (#DoozerTesting2)",
+        "priority": null,
+        "id": 674371
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ Demo",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQDemo",
+        "inUse": false,
+        "viewString": "Doozer HQ Demo (#DoozerHQDemo)",
+        "priority": null,
+        "id": 674452
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Fire 8 Tab",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Fire8Tab",
+        "inUse": false,
+        "viewString": "Fire 8 Tab (#Fire8Tab)",
+        "priority": null,
+        "id": 674453
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "test facility name",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "testfacilityname",
+        "inUse": false,
+        "viewString": "test facility name (#testfacilityname)",
+        "priority": null,
+        "id": 677587
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Front Door",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "FrontDoor",
+        "inUse": true,
+        "viewString": "Front Door (#FrontDoor)",
+        "priority": null,
+        "id": 677590,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677590"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677590{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677590/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677590/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677590/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677590/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677590/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ Test",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQTest",
+        "inUse": false,
+        "viewString": "Doozer HQ Test (#DoozerHQTest)",
+        "priority": null,
+        "id": 677602,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677602"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677602{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677602/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677602/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677602/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677602/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677602/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Back Door",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "BackDoor",
+        "inUse": false,
+        "viewString": "Back Door (#BackDoor)",
+        "priority": null,
+        "id": 677752,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677752"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677752{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677752/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677752/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677752/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677752/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/677752/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ New Template",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQNewTemplate",
+        "inUse": false,
+        "viewString": "Doozer HQ New Template (#DoozerHQNewTemplate)",
+        "priority": null,
+        "id": 678118,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678118"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678118{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678118/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678118/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678118/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678118/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678118/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ 2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQ2",
+        "inUse": false,
+        "viewString": "Doozer HQ 2 (#DoozerHQ2)",
+        "priority": null,
+        "id": 678292,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678292"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678292{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678292/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678292/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678292/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678292/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/678292/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Long worded tags",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Wordy",
+        "inUse": true,
+        "viewString": "Long worded tags (#Wordy)",
+        "priority": null,
+        "id": 680910,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680910"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680910{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680910/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680910/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680910/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680910/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680910/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [
+          680910
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "TestingHowManyWordsICanPutInATag",
+        "inUse": true,
+        "viewString": "TestingHowManyWordsICanPutInATag",
+        "priority": null,
+        "id": 680911,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680911"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680911{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680911/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680911/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680911/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680911/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680911/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [
+          680910
+        ],
+        "longValue": null,
+        "description": null,
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "ThisTagIsGoingToBeVeryLongAndHopefullyWrap",
+        "inUse": true,
+        "viewString": "ThisTagIsGoingToBeVeryLongAndHopefullyWrap",
+        "priority": null,
+        "id": 680915,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680915"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680915{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680915/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680915/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680915/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680915/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/680915/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ Clean2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQClean2",
+        "inUse": false,
+        "viewString": "Doozer HQ Clean2 (#DoozerHQClean2)",
+        "priority": null,
+        "id": 684945,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/684945"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/684945{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/684945/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/684945/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/684945/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/684945/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/684945/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Software Company",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "SoftwareCompany",
+        "inUse": true,
+        "viewString": "Software Company (#SoftwareCompany)",
+        "priority": null,
+        "id": 690942,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/690942"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/690942{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/690942/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/690942/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/690942/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/690942/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/690942/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Honda Test 1",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "HondaTest1",
+        "inUse": true,
+        "viewString": "Honda Test 1 (#HondaTest1)",
+        "priority": null,
+        "id": 693607,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693607"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693607{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693607/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693607/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693607/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693607/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693607/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "WELD 1",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "WELD1",
+        "inUse": true,
+        "viewString": "WELD 1 (#WELD1)",
+        "priority": null,
+        "id": 693608,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693608"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693608{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693608/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693608/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693608/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693608/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/693608/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Front Desk",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "FrontDesk",
+        "inUse": true,
+        "viewString": "Front Desk (#FrontDesk)",
+        "priority": null,
+        "id": 699296,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/699296"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/699296{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/699296/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/699296/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/699296/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/699296/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/699296/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Fire 10",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Fire10",
+        "inUse": false,
+        "viewString": "Fire 10 (#Fire10)",
+        "priority": null,
+        "id": 702812,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/702812"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/702812{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/702812/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/702812/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/702812/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/702812/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/702812/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer Software",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerSoftware",
+        "inUse": true,
+        "viewString": "Doozer Software (#DoozerSoftware)",
+        "priority": null,
+        "id": 714706,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/714706"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/714706{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/714706/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/714706/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/714706/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/714706/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/714706/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Jay Test",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "JayTest",
+        "inUse": false,
+        "viewString": "Jay Test (#JayTest)",
+        "priority": null,
+        "id": 725026,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725026"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725026{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725026/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725026/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725026/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725026/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725026/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Front",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Front",
+        "inUse": true,
+        "viewString": "Front",
+        "priority": null,
+        "id": 725101,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725101"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725101{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725101/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725101/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725101/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725101/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/725101/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Fire 8 edit",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Fire8edit",
+        "inUse": false,
+        "viewString": "Fire 8 edit (#Fire8edit)",
+        "priority": null,
+        "id": 735267
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Jay Express 3",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "JayExpress3",
+        "inUse": false,
+        "viewString": "Jay Express 3 (#JayExpress3)",
+        "priority": null,
+        "id": 740499
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Fire 7",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Fire7",
+        "inUse": true,
+        "viewString": "Fire 7 (#Fire7)",
+        "priority": null,
+        "id": 740523
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Jay Kindle 8",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "JayKindle8",
+        "inUse": false,
+        "viewString": "Jay Kindle 8 (#JayKindle8)",
+        "priority": null,
+        "id": 740535
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Jay Galaxy S8+",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "JayGalaxyS8+",
+        "inUse": false,
+        "viewString": "Jay Galaxy S8+ (#JayGalaxyS8+)",
+        "priority": null,
+        "id": 740562,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/740562"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/740562{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/740562/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/740562/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/740562/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/740562/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/740562/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Jay Fire 7",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "JayFire7",
+        "inUse": true,
+        "viewString": "Jay Fire 7 (#JayFire7)",
+        "priority": null,
+        "id": 741999,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/741999"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/741999{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/741999/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/741999/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/741999/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/741999/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/741999/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "NoDataTestFac",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "NoDataTestFac",
+        "inUse": false,
+        "viewString": "NoDataTestFac",
+        "priority": null,
+        "id": 744417,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744417"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744417{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744417/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744417/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744417/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744417/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744417/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "noData",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "noData",
+        "inUse": false,
+        "viewString": "noData",
+        "priority": null,
+        "id": 744418,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744418"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744418{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744418/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744418/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744418/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744418/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744418/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "NoDataTestFac2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "NoDataTestFac2",
+        "inUse": false,
+        "viewString": "NoDataTestFac2",
+        "priority": null,
+        "id": 744429,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744429"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744429{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744429/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744429/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744429/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744429/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/744429/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "New Facility",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "NewFacility",
+        "inUse": false,
+        "viewString": "New Facility (#NewFacility)",
+        "priority": null,
+        "id": 749424,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749424"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749424{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749424/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749424/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749424/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749424/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749424/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "test",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "test",
+        "inUse": false,
+        "viewString": "test",
+        "priority": null,
+        "id": 749425,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749425"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749425{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749425/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749425/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749425/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749425/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/749425/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "FacilityNameTesting",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "FacilityNameTesting",
+        "inUse": false,
+        "viewString": "FacilityNameTesting",
+        "priority": null,
+        "id": 763145,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763145"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763145{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763145/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763145/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763145/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763145/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763145/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "FacilityNameTesting2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "FacilityNameTesting3afdsgdfg",
+        "inUse": false,
+        "viewString": "FacilityNameTesting2 (#FacilityNameTesting3afdsgdfg)",
+        "priority": null,
+        "id": 763163,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763163"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763163{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763163/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763163/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763163/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763163/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/763163/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "FacilityNameTesting2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "FacilityNameTesting2",
+        "inUse": false,
+        "viewString": "FacilityNameTesting2",
+        "priority": null,
+        "id": 764402,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764402"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764402{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764402/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764402/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764402/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764402/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764402/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Facility B",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "FacilityB",
+        "inUse": false,
+        "viewString": "Facility B (#FacilityB)",
+        "priority": null,
+        "id": 764426,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764426"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764426{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764426/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764426/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764426/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764426/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/764426/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Doozer HQ Clean3",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DoozerHQClean3",
+        "inUse": false,
+        "viewString": "Doozer HQ Clean3 (#DoozerHQClean3)",
+        "priority": null,
+        "id": 766319,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766319"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766319{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766319/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766319/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766319/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766319/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766319/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "AFacRenameTest 2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "AFacRenameTest2",
+        "inUse": true,
+        "viewString": "AFacRenameTest 2 (#AFacRenameTest2)",
+        "priority": null,
+        "id": 766370,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766370"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766370{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766370/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766370/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766370/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766370/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766370/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "AFacRenameTest New Facility",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "AFacRenameTestNewFacility",
+        "inUse": false,
+        "viewString": "AFacRenameTest New Facility (#AFacRenameTestNewFacility)",
+        "priority": null,
+        "id": 766373,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766373"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766373{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766373/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766373/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766373/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766373/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/766373/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "OldTest10",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "OldTest10",
+        "inUse": true,
+        "viewString": "OldTest10",
+        "priority": null,
+        "id": 776102,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/776102"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/776102{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/776102/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/776102/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/776102/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/776102/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/776102/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Globex Corporation",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "GlobexCorporation",
+        "inUse": true,
+        "viewString": "Globex Corporation (#GlobexCorporation)",
+        "priority": null,
+        "id": 804279,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/804279"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/804279{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/804279/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/804279/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/804279/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/804279/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/804279/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Globex 2",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Globex2",
+        "inUse": true,
+        "viewString": "Globex 2 (#Globex2)",
+        "priority": null,
+        "id": 809350,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/809350"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/809350{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/809350/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/809350/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/809350/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/809350/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/809350/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Globex 3",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Globex3",
+        "inUse": true,
+        "viewString": "Globex 3 (#Globex3)",
+        "priority": null,
+        "id": 810262,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810262"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810262{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810262/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810262/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810262/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810262/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810262/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Fire",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Fire",
+        "inUse": true,
+        "viewString": "Fire",
+        "priority": null,
+        "id": 810263,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810263"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810263{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810263/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810263/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810263/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810263/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/810263/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Registered Testing",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "RegisteredTesting",
+        "inUse": true,
+        "viewString": "Registered Testing (#RegisteredTesting)",
+        "priority": null,
+        "id": 832675,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832675"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832675{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832675/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832675/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832675/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832675/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832675/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Frie10",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Frie10",
+        "inUse": true,
+        "viewString": "Frie10",
+        "priority": null,
+        "id": 832676,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832676"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832676{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832676/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832676/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832676/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832676/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/832676/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Sales Door",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "SalesDoor",
+        "inUse": true,
+        "viewString": "Sales Door (#SalesDoor)",
+        "priority": null,
+        "id": 835248,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835248"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835248{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835248/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835248/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835248/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835248/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835248/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Dev Door",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DevDoor",
+        "inUse": true,
+        "viewString": "Dev Door (#DevDoor)",
+        "priority": null,
+        "id": 835255,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835255"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835255{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835255/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835255/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835255/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835255/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/835255/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Insignia",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Insignia",
+        "inUse": true,
+        "viewString": "Insignia",
+        "priority": null,
+        "id": 836156,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/836156"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/836156{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/836156/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/836156/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/836156/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/836156/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/836156/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Incremental Sync Testing",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "IncrementalSyncTesting",
+        "inUse": true,
+        "viewString": "Incremental Sync Testing (#IncrementalSyncTesting)",
+        "priority": null,
+        "id": 843408,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/843408"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/843408{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/843408/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/843408/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/843408/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/843408/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/843408/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Ted Pixel",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "TedPixel",
+        "inUse": false,
+        "viewString": "Ted Pixel (#TedPixel)",
+        "priority": null,
+        "id": 849894,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/849894"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/849894{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/849894/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/849894/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/849894/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/849894/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/849894/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Ted Fire 10 Testing",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "TedFire10Testing",
+        "inUse": true,
+        "viewString": "Ted Fire 10 Testing (#TedFire10Testing)",
+        "priority": null,
+        "id": 853336,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853336"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853336{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853336/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853336/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853336/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853336/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853336/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Aperture Science",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "ApertureScience",
+        "inUse": true,
+        "viewString": "Aperture Science (#ApertureScience)",
+        "priority": null,
+        "id": 853458,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853458"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853458{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853458/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853458/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853458/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853458/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853458/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Reception",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "Reception",
+        "inUse": true,
+        "viewString": "Reception",
+        "priority": null,
+        "id": 853459,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853459"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853459{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853459/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853459/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853459/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853459/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/853459/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Ted Fire 7 Testing",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "TedFire7Testing",
+        "inUse": true,
+        "viewString": "Ted Fire 7 Testing (#TedFire7Testing)",
+        "priority": null,
+        "id": 860617,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/860617"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/860617{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/860617/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/860617/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/860617/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/860617/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/860617/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Developer Wing Door",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "DeveloperWingDoor",
+        "inUse": true,
+        "viewString": "Developer Wing Door (#DeveloperWingDoor)",
+        "priority": null,
+        "id": 861061,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/861061"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/861061{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/861061/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/861061/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/861061/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/861061/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/861061/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Insignia Testing",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "InsigniaTesting",
+        "inUse": true,
+        "viewString": "Insignia Testing (#InsigniaTesting)",
+        "priority": null,
+        "id": 864297,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/864297"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/864297{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/864297/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/864297/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/864297/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/864297/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/864297/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "ACME Inc",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "ACMEInc",
+        "inUse": true,
+        "viewString": "ACME Inc (#ACMEInc)",
+        "priority": null,
+        "id": 865461,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865461"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865461{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865461/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865461/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865461/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865461/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865461/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "SoftwareCo",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "SoftwareCo",
+        "inUse": true,
+        "viewString": "SoftwareCo",
+        "priority": null,
+        "id": 865509,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865509"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865509{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865509/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865509/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865509/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865509/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/865509/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "test access point name",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "testaccesspointname",
+        "inUse": false,
+        "viewString": "test access point name (#testaccesspointname)",
+        "priority": null,
+        "id": 870688,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/870688"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/870688{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/870688/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/870688/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/870688/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/870688/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/870688/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Robert iPad Mini",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "RobertiPadMini",
+        "inUse": true,
+        "viewString": "Robert iPad Mini (#RobertiPadMini)",
+        "priority": null,
+        "id": 873459,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/873459"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/873459{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/873459/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/873459/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/873459/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/873459/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/873459/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [
+          334884
+        ],
+        "longValue": null,
+        "description": "Very long Day of the week name that is going to wrap a lot",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "verylongdayoftheweeknamethatisgoingtowrapalot",
+        "inUse": true,
+        "viewString": "Very long Day of the week name that is going to wrap a lot (#verylongdayoftheweeknamethatisgoingtowrapalot)",
+        "priority": null,
+        "id": 914711,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/914711"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/914711{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/914711/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/914711/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/914711/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/914711/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/914711/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "changing tags",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "changingtags",
+        "inUse": false,
+        "viewString": "changing tags (#changingtags)",
+        "priority": null,
+        "id": 922986,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/922986"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/922986{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/922986/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/922986/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/922986/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/922986/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/922986/updatedBy"
+          }
+        }
+      },
+      {
+        "styles": [],
+        "parents": [],
+        "longValue": null,
+        "description": "Southern Company",
+        "dollarValue": null,
+        "dateValue": null,
+        "stringValue": "SouthernCompany",
+        "inUse": true,
+        "viewString": "Southern Company (#SouthernCompany)",
+        "priority": null,
+        "id": 948280,
+        "_links": {
+          "self": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/948280"
+          },
+          "tagValue": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/948280{?projection}",
+            "templated": true
+          },
+          "log": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/948280/log"
+          },
+          "parents": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/948280/parents"
+          },
+          "styles": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/948280/styles"
+          },
+          "createdBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/948280/createdBy"
+          },
+          "updatedBy": {
+            "href": "https://logbook-test.doozer.com/api/tagValues/948280/updatedBy"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://logbook-test.doozer.com/api/tagValues"
+    },
+    "profile": {
+      "href": "https://logbook-test.doozer.com/api/profile/tagValues"
+    }
+  },
+  "page": {
+    "size": 1000,
+    "totalElements": 94,
+    "totalPages": 1,
+    "number": 0
+  }
+}

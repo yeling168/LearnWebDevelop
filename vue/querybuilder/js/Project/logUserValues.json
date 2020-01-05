@@ -1,0 +1,735 @@
+{
+  "_embedded" : {
+    "logUsers" : [ {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "id" : 25,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/25{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 25,
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "updated" : "2017-10-20T18:31:05.344+0000",
+      "createdBy" : {
+        "id" : 25,
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2017-10-20T18:31:05.344+0000",
+      "id" : 141
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "LogBook",
+        "lastName" : "Sentinel",
+        "id" : 75,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/75{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 25,
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "updated" : "2018-03-24T20:34:15.270+0000",
+      "createdBy" : {
+        "id" : 25,
+        "firstName" : "Robert",
+        "lastName" : "Hohn",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2017-11-01T14:23:49.730+0000",
+      "id" : 148
+    }, {
+      "defaultTemplate" : {
+        "turnover" : false,
+        "requireCommentOnAbnormal" : null,
+        "templateType" : {
+          "attributes" : {
+            "SECTIONAL" : true,
+            "ALLOW_SUBMIT_INCOMPLETE" : true,
+            "TABULAR" : true,
+            "TURNOVER" : true
+          },
+          "description" : "Inspection",
+          "sortOrder" : null,
+          "name" : "Inspection",
+          "id" : 2,
+          "_links" : {
+            "self" : {
+              "href" : "https://logbook-test.doozer.com/api/templateTypes/2{?projection}",
+              "templated" : true
+            }
+          }
+        },
+        "numSegments" : 0,
+        "numViews" : 0,
+        "allowAllUsers" : false,
+        "isDefaultTemplate" : false,
+        "walkdown" : false,
+        "evident" : false,
+        "enterNotes" : true,
+        "allowSubmitIncomplete" : false,
+        "logId" : 59,
+        "name" : "test template",
+        "updatedBy" : {
+          "id" : 11,
+          "firstName" : "Jay",
+          "lastName" : "Newton",
+          "updated" : "2001-01-01T00:00:00.000+0000"
+        },
+        "updated" : "2018-07-02T17:57:09.120+0000",
+        "createdBy" : {
+          "id" : 11,
+          "firstName" : "Jay",
+          "lastName" : "Newton",
+          "updated" : "2001-01-01T00:00:00.000+0000"
+        },
+        "created" : "2018-07-02T17:57:09.120+0000",
+        "id" : 183
+      },
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Nathan",
+        "lastName" : "Crocker",
+        "id" : 68,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/68{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "updated" : "2018-12-10T16:33:18.716+0000",
+      "createdBy" : {
+        "id" : 68,
+        "firstName" : "Nathan",
+        "lastName" : "Crocker",
+        "updated" : "2017-04-18T14:59:45.417+0000"
+      },
+      "created" : "2017-11-15T15:43:47.442+0000",
+      "id" : 153
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Sandy",
+        "lastName" : "Syx",
+        "id" : 2,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/2{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 2,
+        "firstName" : "Sandy",
+        "lastName" : "Syx",
+        "updated" : "2016-09-16T14:33:01.897+0000"
+      },
+      "updated" : "2017-12-01T16:06:23.917+0000",
+      "createdBy" : {
+        "id" : 2,
+        "firstName" : "Sandy",
+        "lastName" : "Syx",
+        "updated" : "2016-09-16T14:33:01.897+0000"
+      },
+      "created" : "2017-12-01T16:06:23.917+0000",
+      "id" : 156
+    }, {
+      "defaultTemplate" : {
+        "turnover" : false,
+        "requireCommentOnAbnormal" : null,
+        "templateType" : {
+          "attributes" : { },
+          "description" : "Operational",
+          "sortOrder" : null,
+          "name" : "Operational",
+          "id" : 1,
+          "_links" : {
+            "self" : {
+              "href" : "https://logbook-test.doozer.com/api/templateTypes/1{?projection}",
+              "templated" : true
+            }
+          }
+        },
+        "numSegments" : 0,
+        "numViews" : 0,
+        "allowAllUsers" : true,
+        "isDefaultTemplate" : true,
+        "walkdown" : false,
+        "evident" : false,
+        "enterNotes" : true,
+        "allowSubmitIncomplete" : false,
+        "logId" : 59,
+        "name" : "Basic Note",
+        "updatedBy" : {
+          "id" : 21,
+          "firstName" : "Ron",
+          "lastName" : "Perkins",
+          "updated" : "2001-01-01T00:00:00.000+0000"
+        },
+        "updated" : "2018-06-14T19:05:36.910+0000",
+        "createdBy" : {
+          "id" : 25,
+          "firstName" : "Robert",
+          "lastName" : "Hohn",
+          "updated" : "2001-01-01T00:00:00.000+0000"
+        },
+        "created" : "2017-10-20T18:31:05.407+0000",
+        "id" : 108
+      },
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Ron",
+        "lastName" : "Perkins",
+        "id" : 21,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/21{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 21,
+        "firstName" : "Ron",
+        "lastName" : "Perkins",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "updated" : "2018-06-14T19:03:44.003+0000",
+      "createdBy" : {
+        "id" : 21,
+        "firstName" : "Ron",
+        "lastName" : "Perkins",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-01-24T23:44:16.790+0000",
+      "id" : 164,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164"
+        },
+        "logUser" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164{?projection}",
+          "templated" : true
+        },
+        "defaultTemplate" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164/defaultTemplate"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164/createdBy"
+        },
+        "role" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164/role"
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164/log"
+        },
+        "user" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164/user"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/164/updatedBy"
+        }
+      }
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Branwin",
+        "lastName" : "DuBose",
+        "id" : 9,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/9{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 9,
+        "firstName" : "Branwin",
+        "lastName" : "DuBose",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "updated" : "2018-02-14T23:43:57.342+0000",
+      "createdBy" : {
+        "id" : 9,
+        "firstName" : "Branwin",
+        "lastName" : "DuBose",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-02-14T23:43:57.342+0000",
+      "id" : 180,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180"
+        },
+        "logUser" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180{?projection}",
+          "templated" : true
+        },
+        "defaultTemplate" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180/defaultTemplate"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180/createdBy"
+        },
+        "role" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180/role"
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180/log"
+        },
+        "user" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180/user"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/180/updatedBy"
+        }
+      }
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "John",
+        "lastName" : "Pruitt",
+        "id" : 70,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/70{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 70,
+        "firstName" : "John",
+        "lastName" : "Pruitt",
+        "updated" : "2017-07-12T18:31:05.646+0000"
+      },
+      "updated" : "2018-02-26T13:06:51.717+0000",
+      "createdBy" : {
+        "id" : 70,
+        "firstName" : "John",
+        "lastName" : "Pruitt",
+        "updated" : "2017-07-12T18:31:05.646+0000"
+      },
+      "created" : "2018-02-26T13:06:51.717+0000",
+      "id" : 183,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183"
+        },
+        "logUser" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183{?projection}",
+          "templated" : true
+        },
+        "defaultTemplate" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183/defaultTemplate"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183/createdBy"
+        },
+        "role" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183/role"
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183/log"
+        },
+        "user" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183/user"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/183/updatedBy"
+        }
+      }
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "id" : 11,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/11{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "updated" : "2018-03-02T21:23:10.465+0000",
+      "createdBy" : {
+        "id" : 11,
+        "firstName" : "Jay",
+        "lastName" : "Newton",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-03-02T21:23:10.465+0000",
+      "id" : 192,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192"
+        },
+        "logUser" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192{?projection}",
+          "templated" : true
+        },
+        "defaultTemplate" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192/defaultTemplate"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192/createdBy"
+        },
+        "role" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192/role"
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192/log"
+        },
+        "user" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192/user"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/192/updatedBy"
+        }
+      }
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Ted",
+        "lastName" : "Cook",
+        "id" : 92,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/92{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 92,
+        "firstName" : "Ted",
+        "lastName" : "Cook",
+        "updated" : "2018-04-30T16:03:08.656+0000"
+      },
+      "updated" : "2018-05-23T19:19:10.626+0000",
+      "createdBy" : {
+        "id" : 92,
+        "firstName" : "Ted",
+        "lastName" : "Cook",
+        "updated" : "2018-04-30T16:03:08.656+0000"
+      },
+      "created" : "2018-05-23T19:19:10.626+0000",
+      "id" : 221,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221"
+        },
+        "logUser" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221{?projection}",
+          "templated" : true
+        },
+        "defaultTemplate" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221/defaultTemplate"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221/createdBy"
+        },
+        "role" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221/role"
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221/log"
+        },
+        "user" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221/user"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/221/updatedBy"
+        }
+      }
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Read",
+        "sortOrder" : 1,
+        "name" : "Read",
+        "id" : 1,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/1{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Sandy",
+        "lastName" : "Readonly",
+        "id" : 27,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/27{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 27,
+        "firstName" : "Sandy",
+        "lastName" : "Readonly",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "updated" : "2018-08-16T21:45:41.649+0000",
+      "createdBy" : {
+        "id" : 27,
+        "firstName" : "Sandy",
+        "lastName" : "Readonly",
+        "updated" : "2001-01-01T00:00:00.000+0000"
+      },
+      "created" : "2018-08-16T21:45:41.649+0000",
+      "id" : 235,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235"
+        },
+        "logUser" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235{?projection}",
+          "templated" : true
+        },
+        "defaultTemplate" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235/defaultTemplate"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235/createdBy"
+        },
+        "role" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235/role"
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235/log"
+        },
+        "user" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235/user"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/235/updatedBy"
+        }
+      }
+    }, {
+      "defaultTemplate" : null,
+      "role" : {
+        "description" : "Admin",
+        "sortOrder" : 4,
+        "name" : "Admin",
+        "id" : 3,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logRoles/3{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "user" : {
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "id" : 105,
+        "_links" : {
+          "self" : {
+            "href" : "https://logbook-test.doozer.com/api/logBookUsers/105{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "updatedBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "updated" : "2018-12-10T15:29:49.288+0000",
+      "createdBy" : {
+        "id" : 105,
+        "firstName" : "Brandon",
+        "lastName" : "Lee",
+        "updated" : "2018-12-07T23:07:25.724+0000"
+      },
+      "created" : "2018-12-10T15:29:49.288+0000",
+      "id" : 249,
+      "_links" : {
+        "self" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249"
+        },
+        "logUser" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249{?projection}",
+          "templated" : true
+        },
+        "defaultTemplate" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249/defaultTemplate"
+        },
+        "createdBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249/createdBy"
+        },
+        "role" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249/role"
+        },
+        "log" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249/log"
+        },
+        "user" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249/user"
+        },
+        "updatedBy" : {
+          "href" : "https://logbook-test.doozer.com/api/logUsers/249/updatedBy"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://logbook-test.doozer.com/api/logUsers"
+    },
+    "profile" : {
+      "href" : "https://logbook-test.doozer.com/api/profile/logUsers"
+    }
+  },
+  "page" : {
+    "size" : 1000,
+    "totalElements" : 11,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
