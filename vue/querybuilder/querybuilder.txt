@@ -16,3 +16,7 @@ https://github.com/mistic100/jQuery-QueryBuilder/issues/479
 jQuery-QueryBuilder plugins datepicker
 
 //https://bootstrap-datepicker.readthedocs.io/en/latest/index.html
+
+//https://github.com/mistic100/jQuery-QueryBuilder/issues/571
+
+//https://docs.webix.com/api__ui.querybuilder_validate.html
