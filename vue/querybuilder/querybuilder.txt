@@ -14,3 +14,5 @@ https://github.com/mistic100/jQuery-QueryBuilder/issues/176
 https://github.com/mistic100/jQuery-QueryBuilder/issues/479
 
 jQuery-QueryBuilder plugins datepicker
+
+//https://bootstrap-datepicker.readthedocs.io/en/latest/index.html
