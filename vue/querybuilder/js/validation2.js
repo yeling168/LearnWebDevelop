@@ -104,7 +104,10 @@ var rules_basic = {
         placeholder: "____-____-____",
         operators: ["equal", "not_equal"],
         validation: {
-          format: /^.{4}-.{4}-.{4}$/
+          format: /^.{4}-.{4}-.{4}$/,
+          messages: {
+            format: 'The provided IP is not valid'
+          }
         }
       }
     ],
@@ -134,4 +137,11 @@ var rules_basic = {
   
   $("#builder").on("getRules.queryBuilder.filter", function(e) {
     console.info(e.value);
-  });  
+  });
+
+  $('#builder').on('validationError.queryBuilder', function(e, node, error, value) {
+    if (true) {
+      error[0] = 'My error message';
+    }
+  });
+  
