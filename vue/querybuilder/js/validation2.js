@@ -10,6 +10,8 @@
 //https://embed.plnkr.co/plunk/OAdBjz
 //https://git.canopsis.net/canopsis-ui-bricks/brick-rrule-editor/blob/200f7d30edf5ddb7b4f0c12b73828ad1101073df/externals/jQuery-QueryBuilder/examples/index.html
 //https://issue.life/questions/52895825/
+//https://github.com/mistic100/jQuery-QueryBuilder/issues?q=label%3Awiki+is%3Aclosed
+//https://codesandbox.io/s/p5opy02rj?from-embed
 var rules_basic = {
     condition: "AND",
     rules: [
