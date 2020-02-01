@@ -17,6 +17,7 @@ import Slot13 from '@/components/demo13/Slot13'
 import Slot14 from '@/components/demo14/Slot14'
 import Slot15 from '@/components/demo15/Slot15'
 import Slot16 from '@/components/demo16/Slot16'
+import dynamicComponent from '@/dynamic/dynamicComponent'
 
 Vue.use(Router)
 
@@ -103,6 +104,11 @@ export default new Router({
       path: '/Slot16',
       name: 'Slot16',
       component: Slot16
+    },
+    {
+      path: '/dynamic',
+      name: 'dynamic',
+      component: dynamicComponent
     }
   ]
 })
