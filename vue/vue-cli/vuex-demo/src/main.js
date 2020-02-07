@@ -11,8 +11,16 @@ import Vue from 'vue'
 // import App from './mutations/vuex.vue';
 
 //getters
-import store from './getters/store';
-import App from './getters/vuex.vue';
+// import store from './getters/store';
+// import App from './getters/vuex.vue';
+
+//actions
+// import store from './actions/store';
+// import App from './actions/vuex.vue';
+
+//modules
+import store from './modules/store';
+import App from './modules/vuex.vue';
 
 new Vue({
   store,
