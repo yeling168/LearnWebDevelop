@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="./vue.js"></script>
+</head>
+
+<body>
+	<div id="app">
+        <div style="float: left;">
+            <h2>自定义的下拉框</h2>
+        <custom-select btn="查询"></custom-select>
+        </div>
+        
+        <div style="float: left;">
+            <h2>自定义的下拉框</h2>
+        <custom-select btn="搜索"></custom-select>
+        </div>
+    </div>
+    <div id="app1">
+		<custom-select></custom-select>
+	</div>
+    <script>
+        //注册组件
+        Vue.component("custom-select",{
+            data() {
+                return {
+                    selectShow:false
+                }
+            },
+            props:["btn"],
+            template:`<section class="wrap">
+                <div class="searchIpt clearFix">
+                    <div class="clearFix">
+                        <input type="text" class="keyWord" value="" @click="selectShow=!selectShow"/>
+                        <input type="button" :value="btn">
+                        <span></span>
+                    </div>
+                    <custom-list v-show="selectShow"></custom-list>
+                </div>
+            </section>`
+        })
+
+        Vue.component("custom-list",{
+            template:`<ul class="list">
+                        <li>html+css</li>
+                        <li>html5+css3</li>
+                        <li>javascript</li>
+                        <li>angular</li>
+                        <li>react</li>
+                        <li>vue</li>
+                        <li>jquery</li>
+                        <li>nodejs</li>
+                    </ul>`
+        })
+        new Vue({
+			el: "#app",
+			data: {
+				list1: ["北京", "上海", "杭州"],
+				list2: ["17-02-17", "17-02-18", "17-02-19"]
+			}
+		})
+    </script>
+</body>
+
+</html>
