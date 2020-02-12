@@ -16,9 +16,11 @@ Vue.use(VueRouter);
 import Home from './components/Home.vue';
 import News from './components/News.vue';
 import User from './components/User.vue';
+import Tab from './components/tab.vue';
 //import Table from './components/Table.vue';
 //2.配置路由  注意：名字
 const routes = [
+  { path: '/tab', component: Tab },
   { path: '/home', component: Home },
   { path: '/news', component: News,name:'news' },
   { path: '/user', component: User},
