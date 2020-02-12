@@ -17,9 +17,15 @@ import Home from './components/Home.vue';
 import News from './components/News.vue';
 import User from './components/User.vue';
 import Tab from './components/tab.vue';
+import Collapse from './components/collapse.vue';
+import tableFilterBasic from './components/tableFilter/tableFilterBasic.vue'
+import tableFilterSelect from './components/tableFilter/tableFilterSelect.vue'
 //import Table from './components/Table.vue';
 //2.配置路由  注意：名字
 const routes = [
+  { path: '/tableFilterSelect', component: tableFilterSelect },
+  { path: '/tableFilterBasic', component: tableFilterBasic },
+  { path: '/collapse', component: Collapse },
   { path: '/tab', component: Tab },
   { path: '/home', component: Home },
   { path: '/news', component: News,name:'news' },
