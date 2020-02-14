@@ -20,9 +20,13 @@ import Tab from './components/tab.vue';
 import Collapse from './components/collapse.vue';
 import tableFilterBasic from './components/tableFilter/tableFilterBasic.vue'
 import tableFilterSelect from './components/tableFilter/tableFilterSelect.vue'
+import Dialog from './components/dialog/dialog.vue'
+import Sync from './components/sync/sync.vue'
 //import Table from './components/Table.vue';
 //2.配置路由  注意：名字
 const routes = [
+  { path: '/sync', component: Sync },
+  { path: '/dialog', component: Dialog },
   { path: '/tableFilterSelect', component: tableFilterSelect },
   { path: '/tableFilterBasic', component: tableFilterBasic },
   { path: '/collapse', component: Collapse },
