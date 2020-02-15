@@ -1,5 +1,5 @@
 <template>
   <div>
-      first内容
+      Home内容
   </div>
 </template>
