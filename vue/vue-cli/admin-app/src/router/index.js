@@ -5,7 +5,7 @@ import store from '@/store'
 Vue.use(Router)
 // https://juejin.im/post/5d69f6676fb9a06b0b1c8cd2
 // 通用routers
-import Layout from '@layout'
+import Layout from '@/layout'
 const currencyRoutes = [
     {
         path:'/login',

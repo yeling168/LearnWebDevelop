@@ -1,0 +1,22 @@
+<template>
+ <div class="header">
+     <div class="header_1">
+         <a href="javascript:;" class="logoLink">
+             <img src="./logo.png" alt="logo" />Vue Project
+         </a>
+     </div>
+     <div class="header_r">
+         <div class="headr_d1">
+             <side-collapse class="sidecoll"></side-collapse>
+         </div>
+     </div>
+ </div>
+</template>
+<script>
+import SideCollapse from '@/components/SideCollapse'
+export default {
+    components:{
+        SideCollapse
+    }
+}
+</script>
