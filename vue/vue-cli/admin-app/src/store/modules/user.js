@@ -1,14 +1,13 @@
-import { login, getInfo } from "@/api/login";
-import { Message } from "element-ui";
+import { login, getInfo } from '@/api/login'
+import { Message } from 'element-ui'
 import router, { resetRouter } from '@/router'
 
 const state = {
-  token: localStorage.getItem("token") ? localStorage.getItem("token") : "", // 认证凭证'
-  userName: "",
+  token: localStorage.getItem('token') ? localStorage.getItem('token') : '', // 认证凭证'
+  userName: '',
   roles: [],
-  introduce: ""
-};
-
+  introduce: ''
+}
 const mutations = {
   SET_TOKEN(state, val) {
     state.token = val
@@ -31,7 +30,6 @@ const mutations = {
     state.introduce = payload
   }
 }
-
 const actions = {
   // user login
   _login({ commit }, formdatas) {
@@ -40,35 +38,52 @@ const actions = {
         .then(res => {
           if (res.code === 0) {
             if (res.data.success) {
-              Message.success(res.data.msg);
-              commit("SET_TOKEN", res.data.token);
+              Message.success(res.data.msg)
+              commit('SET_TOKEN', res.data.token)
             } else {
-              Message.error(res.data.msg);
+              Message.error(res.data.msg)
             }
-            resolve(res);
+            resolve(res)
           }
         })
         .catch(error => {
-          reject(error);
-        });
-    });
+          reject(error)
+        })
+    })
   },
-  loginOut({commit}) {
+  loginOut({ commit }) {
     commit('DEL_TOKEN')
     resetRouter()
     router.push({
-      path:'/login',
-      query:{
+      path: '/login',
+      query: {
         redirect: '/'
       }
     })
+  },
+  _getInfo({ commit }) {
+    return new Promise((resolve, reject) => {
+      getInfo()
+        .then(res => {
+          if (res.code === 0) {
+            const { name, roles, introduce } = res.data
+            commit('SET_ROLES', roles)
+            commit('SET_NAME', name)
+            commit('SET_INTRODUCE', introduce)
+          } else {
+            Message.error(res.msg)
+          }
+          resolve(res.data)
+        })
+        .catch(error => {
+          reject(error)
+        })
+    })
   }
-};
-
-
+}
 export default {
-    namespaced: true,
-    state,
-    mutations,
-    actions
-  }
+  namespaced: true,
+  state,
+  mutations,
+  actions
+}

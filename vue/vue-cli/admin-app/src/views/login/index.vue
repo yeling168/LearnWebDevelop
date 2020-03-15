@@ -10,17 +10,16 @@
             :w="350"
             :h="175"
             ref="slideDiv"
-          >
-          </slide-verify>
+          ></slide-verify>
           <div class="iconBtn">
-            <i class="el-icon-circle-close" @click="showSlide"></i>
-            <i class="el-icon-refresh" @click="refresh"></i>
+            <i class="el-icon-circle-close" @click="showSlide = false"></i
+            ><i class="el-icon-refresh" @click="refresh"></i>
           </div>
         </div>
       </transition>
     </div>
     <div class="loginBox">
-      <h2 class="loginH2"><strong>Vue</strong>后台管理系统</h2>
+      <h2 class="loginH2"><strong>Vue</strong> 后台管理系统</h2>
       <div class="loginCon">
         <div class="titleDiv">
           <h3>Sign up now</h3>
@@ -56,19 +55,16 @@
 </template>
 
 <script>
-import SlideVerify from "@/components/SlideVerify";
+import SlideVerify from '@/components/SlideVerify'
 export default {
-  components: {
-    SlideVerify
-  },
   data() {
     return {
       notifyObj: null,
-      text: "向右滑动",
+      text: '向右滑动',
       showSlide: false,
       ruleForm: {
-        user: "admin",
-        password: "123456"
+        user: 'admin',
+        password: '123456'
       },
       rules: {
         user: [
@@ -77,49 +73,49 @@ export default {
         ],
         password: [{ required: true, message: '请输入密码', trigger: 'blur' }]
       }
-    };
+    }
   },
   mounted() {
-    this.shopTip();
+    this.shopTip()
   },
   methods: {
     onSuccess() {
-      this.showSlide = false;
-      this._login();
+      this.showSlide = false
+      this._login()
     },
     onFail() {
-      this.$message.error("验证失败");
+      this.$message.error('验证失败')
     },
     refresh() {
-      this.$refs.slideDiv.reset();
+      this.$refs.slideDiv.reset()
     },
     loginYz(form) {
       this.$refs[form].validate(valid => {
         if (valid) {
-          this.showSlide = true;
+          this.showSlide = true
         } else {
-          return;
+          return
         }
-      });
+      })
     },
     _login() {
       this.$store
-        .dispatch("user/_login", this.ruleForm)
+        .dispatch('user/_login', this.ruleForm)
         .then(res => {
           if (!res.data.success) {
-            this.refresh();
+            this.refresh()
           } else {
-            this.$router.push(this.$route.quer.redirect);
+            this.$router.push(this.$route.query.redirect)
             if (this.notifyObj) {
-              this.notifyObj.close();
+              this.notifyObj.close()
             }
-            this.notifyObj = null;
+            this.notifyObj = null
           }
         })
         .catch(error => {
-          this.refresh();
-          this.$message.error(error);
-        });
+          this.refresh()
+          this.$message.error(error)
+        })
     },
     shopTip() {
       this.notifyObj = this.$notify({
@@ -130,8 +126,11 @@ export default {
         iconClass: 'el-icon-s-opportunity'
       })
     }
+  },
+  components: {
+    SlideVerify
   }
-};
+}
 </script>
 <style scoped lang="scss">
 .login {
