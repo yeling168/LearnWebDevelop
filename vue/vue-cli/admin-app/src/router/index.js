@@ -64,56 +64,56 @@ export const currencyRoutes = [
   //     }
   //   ]
   // },
-  // {
-  //   path: '/driver',
-  //   name: 'Driver',
-  //   component: Layout,
-  //   redirect: '/driver/index',
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       name: 'Driver-index',
-  //       component: () => import('@/views/driver-page'),
-  //       meta: { title: '引导指南', icon: 'el-icon-s-flag' }
-  //     }
-  //   ]
-  // }
+  {
+    path: '/driver',
+    name: 'Driver',
+    component: Layout,
+    redirect: '/driver/index',
+    children: [
+      {
+        path: 'index',
+        name: 'Driver-index',
+        component: () => import('@/views/driver-page'),
+        meta: { title: '引导指南', icon: 'el-icon-s-flag' }
+      }
+    ]
+  }
 ]
 /*动态添加routers*/
 export const asyncRoutes = [
-  // {
-  //   path: '/permission',
-  //   name: 'Permission',
-  //   component: Layout,
-  //   redirect: '/permission/page-use',
-  //   meta: {
-  //     title: '权限许可',
-  //     icon: 'el-icon-lock'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'page-user',
-  //       name: 'PageUser',
-  //       component: () => import('@/views/permission/page-user'),
-  //       meta: { title: '用户页面', icon: 'el-icon-user' }
-  //     },
-  //     {
-  //       path: 'page-admin',
-  //       name: 'PageAdmin',
-  //       component: () => import('@/views/permission/page-admin'),
-  //       meta: {
-  //         title: '管理员页面',
-  //         icon: 'el-icon-user-solid'
-  //       }
-  //     },
-  //     {
-  //       path: 'roles',
-  //       name: 'Roles',
-  //       component: () => import('@/views/permission/roles'),
-  //       meta: { title: '权限设置', icon: 'el-icon-s-tools' }
-  //     }
-  //   ]
-  // },
+  {
+    path: '/permission',
+    name: 'Permission',
+    component: Layout,
+    redirect: '/permission/page-use',
+    meta: {
+      title: '权限许可',
+      icon: 'el-icon-lock'
+    },
+    children: [
+      {
+        path: 'page-user',
+        name: 'PageUser',
+        component: () => import('@/views/permission/page-user'),
+        meta: { title: '用户页面', icon: 'el-icon-user' }
+      },
+      {
+        path: 'page-admin',
+        name: 'PageAdmin',
+        component: () => import('@/views/permission/page-admin'),
+        meta: {
+          title: '管理员页面',
+          icon: 'el-icon-user-solid'
+        }
+      },
+      {
+        path: 'roles',
+        name: 'Roles',
+        component: () => import('@/views/permission/roles'),
+        meta: { title: '权限设置', icon: 'el-icon-s-tools' }
+      }
+    ]
+  },
   // {
   //   path: '/table',
   //   name: 'Table',
