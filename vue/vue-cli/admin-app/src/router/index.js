@@ -6,7 +6,7 @@ Vue.use(Router)
 // https://juejin.im/post/5d69f6676fb9a06b0b1c8cd2
 // 通用routers
 import Layout from '@/layout'
-import NavTest from './modules/nav-test'
+// import NavTest from './modules/nav-test'
 import { Message } from 'element-ui'
 import getTitle from '@/utils/getTitle'
 
@@ -81,39 +81,39 @@ export const currencyRoutes = [
 ]
 /*动态添加routers*/
 export const asyncRoutes = [
-  {
-    path: '/permission',
-    name: 'Permission',
-    component: Layout,
-    redirect: '/permission/page-use',
-    meta: {
-      title: '权限许可',
-      icon: 'el-icon-lock'
-    },
-    children: [
-      {
-        path: 'page-user',
-        name: 'PageUser',
-        component: () => import('@/views/permission/page-user'),
-        meta: { title: '用户页面', icon: 'el-icon-user' }
-      },
-      {
-        path: 'page-admin',
-        name: 'PageAdmin',
-        component: () => import('@/views/permission/page-admin'),
-        meta: {
-          title: '管理员页面',
-          icon: 'el-icon-user-solid'
-        }
-      },
-      {
-        path: 'roles',
-        name: 'Roles',
-        component: () => import('@/views/permission/roles'),
-        meta: { title: '权限设置', icon: 'el-icon-s-tools' }
-      }
-    ]
-  },
+  // {
+  //   path: '/permission',
+  //   name: 'Permission',
+  //   component: Layout,
+  //   redirect: '/permission/page-use',
+  //   meta: {
+  //     title: '权限许可',
+  //     icon: 'el-icon-lock'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'page-user',
+  //       name: 'PageUser',
+  //       component: () => import('@/views/permission/page-user'),
+  //       meta: { title: '用户页面', icon: 'el-icon-user' }
+  //     },
+  //     {
+  //       path: 'page-admin',
+  //       name: 'PageAdmin',
+  //       component: () => import('@/views/permission/page-admin'),
+  //       meta: {
+  //         title: '管理员页面',
+  //         icon: 'el-icon-user-solid'
+  //       }
+  //     },
+  //     {
+  //       path: 'roles',
+  //       name: 'Roles',
+  //       component: () => import('@/views/permission/roles'),
+  //       meta: { title: '权限设置', icon: 'el-icon-s-tools' }
+  //     }
+  //   ]
+  // },
   // {
   //   path: '/table',
   //   name: 'Table',
