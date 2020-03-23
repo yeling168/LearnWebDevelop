@@ -1,21 +1,25 @@
 <template>
-    <div class="notificatBar">
-        <div class="cardBox">
-            <div class="cardHead">
-                <p>消息中心</p>
-                <i class="el-icon-close" @click="$store.commit('app/SET_MSGISOPEN')"></i>
-            </div>
-        </div>
-        <ul class="conUI">
-            <li v-for="item in msgList" :key="item.id">
-                <router-link :to="item.link" class="conUI_link">
-                    <span class="conUI_sp0">{{item.content}}</span>
-                    <span class="conUI_sp1">{{item.time}}</span>
-                </router-link>
-            </li>
-        </ul>
+  <div class="notificatBar">
+    <div class="cardBox">
+      <div class="cardHead">
+        <p>消息中心</p>
+        <i
+          class="el-icon-close"
+          @click="$store.commit('app/SET_MSGISOPEN')"
+        ></i>
+      </div>
+      <ul class="conUl">
+        <li v-for="item in msgList" :key="item.id">
+          <router-link :to="item.link" class="conUl_link">
+            <span class="conUl_sp0">{{ item.content }}</span>
+            <span class="conUl_sp1">{{ item.time }}</span>
+          </router-link>
+        </li>
+      </ul>
     </div>
+  </div>
 </template>
+
 <script>
 export default {
   data() {

@@ -6,7 +6,7 @@ Vue.use(Router)
 // https://juejin.im/post/5d69f6676fb9a06b0b1c8cd2
 // 通用routers
 import Layout from '@/layout'
-// import NavTest from './modules/nav-test'
+import NavTest from './modules/nav-test'
 import { Message } from 'element-ui'
 import getTitle from '@/utils/getTitle'
 
@@ -22,19 +22,19 @@ import getTitle from '@/utils/getTitle'
 
 /*通用routers*/
 export const currencyRoutes = [
-  // {
-  //   path: '/login',
-  //   name: 'Login',
-  //   component: () => import('@/views/login'),
-  //   meta: { title: '登录页' },
-  //   hidden: true
-  // },
-  // {
-  //   path: '/404',
-  //   name: '404',
-  //   component: () => import('@/views/error-page/404.vue'),
-  //   hidden: true
-  // },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/login'),
+    meta: { title: '登录页' },
+    hidden: true
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('@/views/error-page/404.vue'),
+    hidden: true
+  },
   {
     path: '/',
     name: 'Home',
@@ -49,21 +49,21 @@ export const currencyRoutes = [
       }
     ]
   },
-  // {
-  //   path: '/personal',
-  //   name: 'Personal',
-  //   component: Layout,
-  //   redirect: '/personal/index',
-  //   hidden: true,
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       name: 'Personal-index',
-  //       component: () => import('@/views/personal'),
-  //       meta: { title: '个人中心' }
-  //     }
-  //   ]
-  // },
+  {
+    path: '/personal',
+    name: 'Personal',
+    component: Layout,
+    redirect: '/personal/index',
+    hidden: true,
+    children: [
+      {
+        path: 'index',
+        name: 'Personal-index',
+        component: () => import('@/views/personal'),
+        meta: { title: '个人中心' }
+      }
+    ]
+  },
   {
     path: '/driver',
     name: 'Driver',
@@ -233,32 +233,32 @@ export const asyncRoutes = [
       }
     ]
   },
-  // {
-  //   path: '/error',
-  //   component: Layout,
-  //   name: 'Error',
-  //   redirect: '/error/404',
-  //   children: [
-  //     {
-  //       path: '404',
-  //       name: 'Page404',
-  //       component: () => import('@/views/error-page/404'),
-  //       meta: { title: '404', icon: 'el-icon-s-release' }
-  //     }
-  //   ]
-  // },
-  // {
-  //   path: 'https://github.com/gcddblue/vue-admin-webapp',
-  //   name: 'Github',
-  //   meta: { icon: 'el-icon-link', title: '项目链接' }
-  // },
-  // NavTest,
-  // {
-  //   path: '*',
-  //   name: '*404',
-  //   redirect: '/404',
-  //   hidden: true
-  // }
+  {
+    path: '/error',
+    component: Layout,
+    name: 'Error',
+    redirect: '/error/404',
+    children: [
+      {
+        path: '404',
+        name: 'Page404',
+        component: () => import('@/views/error-page/404'),
+        meta: { title: '404', icon: 'el-icon-s-release' }
+      }
+    ]
+  },
+  {
+    path: 'https://github.com/gcddblue/vue-admin-webapp',
+    name: 'Github',
+    meta: { icon: 'el-icon-link', title: '项目链接' }
+  },
+  NavTest,
+  {
+    path: '*',
+    name: '*404',
+    redirect: '/404',
+    hidden: true
+  }
 ]
 const creatRouter = () => {
   return new Router({

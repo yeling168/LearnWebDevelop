@@ -44,6 +44,7 @@
     </el-card>
   </div>
 </template>
+
 <script>
 import { elIcons } from './element-icons'
 import { alIcons } from './iconfont'
