@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- 编辑如下 -->
     <div class="topoArea">
       <v-topo :editable="true" :topo-data="topoData1"></v-topo>
     </div>
