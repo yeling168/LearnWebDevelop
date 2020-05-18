@@ -25,6 +25,7 @@ export default {
   data() {
     return {
       editable: true,
+      topoId: '',
       svgToolbar: [],
       svgAttr: { width: 0, height: 0, isHand: false, viewX: 0, viewY: 0, minW: 0, minH: 0, isCrosshair: false }
     }
@@ -35,8 +36,15 @@ export default {
   methods: {
     saveTopoJson() {},
     dragShapeNode(nodeData, key, event) {
-      console.log('nodeData', nodeData)
-      console.log('key', key)
+      let NODE = nodeData[key]
+      console.log(NODE)
+      let toolbarName = NODE.type
+      let toolbarIcon = NODE.icon
+      let topoEle = $(`#topoId${this.topoId}`)
+      let svgOffsetLeft = topoEle.find('.topoSvg').offset().left
+      let svgOffsetTop = topoEle.find('topoSvg').offset().top
+      let svgWidth = topoEle.find('.topoSvg').width()
+      let svgHeight = topoEle.find('.topoSvg').height()
     }
   }
 }
