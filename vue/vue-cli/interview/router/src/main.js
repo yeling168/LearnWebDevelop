@@ -22,4 +22,10 @@ import Vue from 'vue'
 // import Router from './muitlRouter/Router'
 
 //重定向
-import Router from './redirectRouter/Router'
+// import Router from './redirectRouter/Router'
+
+//别名
+// import Router from './aliasRouter/Router'
+
+//传参
+import Router from './passProps/Router'
