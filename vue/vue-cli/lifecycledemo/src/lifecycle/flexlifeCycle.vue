@@ -1,21 +1,28 @@
 <template>
-  <div id="app">
+  <div id="app" v-if="showComponent">
     <ul>
       <li v-for="(item,index) of list" :key="'info-'+ index">{{item}}--{{message}}</li>
     </ul>
     <p>p1</p>
     <p>p1</p>
     <p>p1</p>
+    <user v-if="showComponent" :message="message"/>
+    <button @click="showOrHide()">change</button>
   </div>
 </template>
 
 <script>
+import user from '../component/user'
 export default {
   name: 'app',
+  components: {
+    user
+  },
   data() {
     return {
       message: 'this is message',
-      list: ['aaaa', 'bbbbbb', 'ccccc']
+      list: ['aaaa', 'bbbbbb', 'ccccc'],
+      showComponent: true
     }
   },
   //时刻监测数据message的变化，一但变化就会调该函数
@@ -28,19 +35,35 @@ export default {
   methods: {
     foo: function() {
       console.log('foo', '这是初始化方法')
+    },
+    showOrHide() {
+      this.message = 'I am new message.'
+      //this.showComponent = false 
     }
   },
-  //created钩子
+  beforeCreate: function() {
+    console.log(1)
+  },
   created: function() {
-    //调用Vue的data
-    console.log('created', this.message)
-    //调用Vue方法
-    this.foo()
-    //因为我们是通过v-for循环遍历li，所以created之前挂载阶段还没开始，我无法获取获取li的个数的
-    console.log('li数量', document.getElementsByTagName('li').length)
-    //直接加载出来的DOM是可以直接获取到的
-    console.log('p个数', document.getElementsByTagName('p').length)
-    console.log(this.$el)
+    console.log(2)
+  },
+  beforeMount: function() {
+    console.log(3)
+  },
+  mounted: function() {
+    console.log(4)
+  },
+  beforeUpdate() {
+    console.log(5)
+  },
+  updated: function() {
+    console.log(6)
+  },
+  beforeDestroy: function() {
+    console.log(7)
+  },
+  destroyed: function() {
+    console.log(8)
   }
 }
 </script>

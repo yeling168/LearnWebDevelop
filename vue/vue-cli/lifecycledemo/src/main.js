@@ -41,9 +41,16 @@ import Vue from 'vue'
 //   render: h => h(beforeDestroy)
 // })
 
-import nextclick from './lifecycle/nextclick.vue'
+// import nextclick from './lifecycle/nextclick.vue'
+
+// new Vue({
+//   el: '#app',
+//   render: h => h(nextclick)
+// })
+
+import flexlifeCycle from './lifecycle/flexlifeCycle'
 
 new Vue({
   el: '#app',
-  render: h => h(nextclick)
+  render: h => h(flexlifeCycle)
 })
