@@ -28,4 +28,10 @@ import Vue from 'vue'
 // import Router from './aliasRouter/Router'
 
 //传参
-import Router from './passProps/Router'
+// import Router from './passProps/Router'
+
+//动画
+// import Router from './transitionsRouter/Router'
+
+//滚动条
+import Router from './scrollRouter/Router'
