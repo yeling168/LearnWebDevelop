@@ -1,0 +1,41 @@
+{
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "window.menuBarVisibility": "default",
+    "workbench.startupEditor": "newUntitledFile",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "workbench.activityBar.visible": true,
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "files.associations": {
+    
+        "*.vue": "vue"
+    },
+    "vetur.validation.template": false,
+    "editor.parameterHints": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "workbench.statusBar.visible": true,
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
