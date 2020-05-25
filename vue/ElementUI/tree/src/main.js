@@ -15,8 +15,10 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 //引入公共的scss   注意：创建项目的时候必须用scss
-import './assets/css/basic.scss';   
+import './assets/css/basic.scss';
 
+// 指令
+import './directives/drag';
 //请求数据
 import VueResource from 'vue-resource';
 Vue.use(VueResource);
@@ -33,22 +35,49 @@ import User from './components/User.vue';
 import MyTree from './components/Tree.vue';
 import MyNavMenu from './components/NavMenu.vue';
 import MyDialog from './components/Dialog.vue';
+import dragDiv from './components/dragDiv.vue';
 
 //2.配置路由   注意：名字
-const routes = [
-  { path: '/home', component: Home },
-  { path: '/news', component: News,name:'news' },
-  { path: '/user', component: User},
-  { path: '/mytree', component: MyTree},
-  { path: '/navmenu', component: MyNavMenu},
-  { path: '/Dialog', component: MyDialog},
-  { path: '*', redirect: '/home' }   /*默认跳转路由*/
+const routes = [{
+    path: '/home',
+    component: Home
+  },
+  {
+    path: '/news',
+    component: News,
+    name: 'news'
+  },
+  {
+    path: '/user',
+    component: User
+  },
+  {
+    path: '/mytree',
+    component: MyTree
+  },
+  {
+    path: '/navmenu',
+    component: MyNavMenu
+  },
+  {
+    path: '/Dialog',
+    component: MyDialog
+  },
+  {
+    path: '/dragdiv',
+    component: dragDiv
+  },
+  {
+    path: '*',
+    redirect: '/home'
+  } /*默认跳转路由*/
 ]
 
 
 //3.实例化VueRouter  注意：名字
 const router = new VueRouter({
-  mode: 'history',   /*hash模式改为history*/
+  mode: 'history',
+  /*hash模式改为history*/
   routes // （缩写）相当于 routes: routes
 })
 
