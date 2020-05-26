@@ -36,6 +36,7 @@ import MyTree from './components/Tree.vue';
 import MyNavMenu from './components/NavMenu.vue';
 import MyDialog from './components/Dialog.vue';
 import dragDiv from './components/dragDiv.vue';
+import Key from './components/key.vue'
 
 //2.配置路由   注意：名字
 const routes = [{
@@ -66,6 +67,10 @@ const routes = [{
   {
     path: '/dragdiv',
     component: dragDiv
+  },
+  {
+    path: '/Key',
+    component: Key
   },
   {
     path: '*',

@@ -1,6 +1,7 @@
 <template>
   <div id="box">
-    <div v-drag></div>
+    <div v-drag class="drag"></div>
+    <div class='triangle'></div>
   </div>
 </template>
 <script>
@@ -35,13 +36,22 @@ export default {
 </script>
 <style lang="scss" scoped>
 #box {
-  div {
+  .drag {
     width: 100px;
     height: 100px;
     background: red;
     position: absolute;
     left: 100px;
     top: 100px;
+  }
+  .triangle {
+    width: 200px;
+    height: 200px;
+    border: 40px solid;
+    border-color: orange blue red green;
+    position: absolute;
+    left: 200px;
+    top: 200px;
   }
 }
 </style>
