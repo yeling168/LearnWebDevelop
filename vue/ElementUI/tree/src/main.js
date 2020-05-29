@@ -37,6 +37,7 @@ import MyNavMenu from './components/NavMenu.vue';
 import MyDialog from './components/Dialog.vue';
 import dragDiv from './components/dragDiv.vue';
 import Key from './components/key.vue'
+import parentDom from './components/attrs/parentDom'
 
 //2.配置路由   注意：名字
 const routes = [{
@@ -71,6 +72,10 @@ const routes = [{
   {
     path: '/Key',
     component: Key
+  },
+  {
+    path: '/parentDom',
+    component: parentDom
   },
   {
     path: '*',
