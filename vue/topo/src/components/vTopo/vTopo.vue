@@ -32,12 +32,35 @@
           </defs>
           <rect fill="url(#Pattern)" :width="svgAttr.width" :height="svgAttr.height"></rect>
           <g>
-            <g></g>
-            <g></g>
+            <g class="nodesG" v-for="(ele,key) in topoData.nodes" :class="{isSelect:ele.isSelect,hoverShowConnectorArror:editable}" :transform="'translate('+ele.x+','+ele.y+')'" :key="ele.id" @mouseover.stop="mouseoverNode(key,$event)" @mousedown.stop="dragSvgNode(key,$event)" @mouseout.stop="mouseoutLeftConnector(key)">
+              <rect x="0" y="0" rx="2" ry="2" :width="ele.width" :height="ele.height" class="reactClass" />
+              <text v-if="ele.classType=='T1'" class="nodeName" x="5" y="15">{{ele.name}}</text>
+              <image class="nodeImg" v-if="ele.classType=='T1'" :xlink:href="ele.icon" :x="ele.width-18" :y="3" height="15px" width="15px" />
+              <image class="nodeImg" v-if="ele.classType=='T2'" :xlink:href="ele.icon" :x="7" :y="7" height="36px" width="36px" />
+              <text v-if="ele.classType=='T2'" class="nodeName" x="0" :y="ele.height+14">{{ele.name}}</text>
+              <g class="connectorArror" :class="{'connector':ele.isLeftConnectShow}" :transform="'translate(0,'+ele.height/2+')'">
+                <circle r="8" cx="0" cy="0" class="circleColor"></circle>
+                <line x1="-3" y1="-5" x2="4" y2="0.5" stroke="#fff"></line>
+                <line x1="4" y1="-0.5" x2="-3" y2="5" stroke="#fff"></line>
+              </g>
+              <g class="connectorArror" :class="{'connector':ele.isRightConnectShow}" :transform="'translate('+ele.width+','+ele.height/2+')'" @mousedown.stop="drawConnectLine(key,$event)">
+                <circle r="8" cx="0" cy="0" class="circleColor"></circle>
+                <line x1="-3" y1="-5" x2="4" y2="0.5" stroke="#fff"></line>
+                <line x1="4" y1="-0.5" x2="-3" y2="5" stroke="#fff"></line>
+              </g>
+            </g>
+            <!--node间关系连线样式-->
+            <g class="connectorsG" :class="{active:ele.isSelect}" v-for="(ele,key) in topoData.connectors" v-if="ele.type == 'Line'" @mousedown.stop="selectConnectorLine(key)" :key="ele.id">
+              <!--连线方式一共7种情况-->
+              <!--自连-->
+              <path class="connectorLine"  :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW">
+
+              </path>
+            </g>
             <g></g>
           </g>
           <line :class="{isMarkerShow:marker.isMarkerShow}" id="xmarker" class="marker" x1="0" :y1="marker.xmarkerY" :x2="marker.xmarkerX" :y2="marker.xmarkerY"></line>
-          <line :class="{isMarkerShow:marker.isMarkerShow}" id="xmarker" class="marker" :x1="marker.ymarkerX" y1="0" :x2="marker.xmarkerX" :y2="marker.xmarkerY"></line>
+          <line :class="{isMarkerShow:marker.isMarkerShow}" id="ymarker" class="marker" :x1="marker.ymarkerX" y1="0" :x2="marker.ymarkerX" :y2="marker.ymarkerY"></line>
           <rect></rect>
         </svg>
       </div>
@@ -54,9 +77,18 @@
 <script>
 import vShapebar from './components/vShapebar'
 export default {
+  props: {
+    editable: { type: Boolean, default: true },
+    topoData: {
+      type: Object,
+      default() {
+        return {}
+      },
+      required: true
+    }
+  },
   data() {
     return {
-      editable: true,
       topoId: '',
       svgToolbar: [
         { name: '默认模式', className: 'toolbar-default', isActive: true },
@@ -102,7 +134,15 @@ export default {
           .substr(3, randomLength) + Date.now()
       ).toString(36)
     },
+    canConnectorTo(curNodeType, connectorToNodeType, connectorType) {
+      let canConnector = true
+      return canConnector
+    },
+    canConnectorTo() {},
+    mouseoverNode() {},
     saveTopoJson() {},
+    dragSvgNode() {},
+    mouseoutLeftConnector() {},
     dragShapeNode(nodeData, key, event) {
       let NODE = nodeData[key]
       console.log(NODE)
@@ -138,18 +178,80 @@ export default {
           let n1 = Math.floor(nodeX / 20) // grid宽高的整数倍
           let n2 = Math.floor(nodeY / 20)
           this.marker.xmarkerY = n2 * 20
-          this.marker.ymarkerY = n1 * 20
+          this.marker.ymarkerX = n1 * 20
         }
       }
       document.onmouseup = event => {
         document.onmousemove = null
         document.onmouseup = null
+        // 判断鼠标在svg区域
+        if (isContainSvgArea) {
+          let TOPODATA = this.topoData
+          console.log(TOPODATA)
+          let type = NODE.type
+          let name = NODE.type + '_' + NODE.num
+          NODE.num++
+          let id = GenNonDuplicateID(5)
+          let nodeEndX = this.marker.ymarkerX
+          let nodeEndY = this.marker.xmarkerY
+          let svgNode = {
+            name,
+            type,
+            id: id,
+            x: nodeEndX,
+            y: nodeEndY,
+            icon: NODE.icon,
+            width: NODE.width,
+            height: NODE.height,
+            initW: NODE.width,
+            initH: NODE.height,
+            classType: NODE.classType,
+            isLeftConnectShow: false,
+            isRightConnectShow: false,
+            containNodes: [],
+            attrs: []
+          }
+          this.marker.isMarkerShow = false //标尺取消显示
+          this.topoData.nodes.push(svgNode) //创建一个svg Node
+          // 计算是否与某个节点重叠
+          console.log(TOPODATA === this.topoData)
+          for (let i = TOPODATA.nodes.length - 1; i >= 0; i--) {
+            let node = TOPODATA.nodes[i]
+            if (node.x <= nodeEndX && nodeEndX <= node.x + node.width && nodeEndY >= node.y && node.y + node.height >= nodeEndY && node.id != id) {
+              let canBeContain = this.canConnectorTo(NODE.type, node.type, 'Contain')
+              if (canBeContain) {
+                let connectorId = this.GenNonDuplicateID(3)
+                let connector = {
+                  id: connectorId,
+                  type: 'Contain',
+                  sourceNode: {
+                    id: id
+                  },
+                  targetNode: {
+                    id: node.id
+                  },
+                  isSelect: false
+                }
+                TOPODATA.containNodes.push(connector)
+                node.containNodes.push(id) // 如果有嵌套关系，就在父节点放入子节点id
+              }
+            }
+          }
+        }
         // 重新初始toolbarMoveNode的值
         this.shapebarMoveNode.left = 0
         this.shapebarMoveNode.top = 0
         this.shapebarMoveNode.name = ''
         this.shapebarMoveNode.icon = ''
         this.shapebarMoveNode.isShow = false
+      }
+      // 生成唯一id值
+      function GenNonDuplicateID(randomLength) {
+        return Number(
+          Math.random()
+            .toString()
+            .substr(3, randomLength) + Date.now()
+        ).toString(36)
       }
     },
     mousedownTopoSvg() {},
@@ -181,6 +283,9 @@ export default {
 @stroke-select-color: red;
 @border-color: #aaaaaa;
 @storke-dasharray: 5, 5;
+.svgSelectClass {
+  filter: url(#f1);
+}
 /*svgMain*/
 .svgMain {
   height: 100%;
@@ -287,5 +392,70 @@ export default {
       cursor: crosshair;
     }
   }
+}
+.marker {
+  stroke: #3d7ed5;
+  stroke-width: 1;
+  display: none;
+  &.isMarkerShow {
+    display: block;
+  }
+}
+.nodesG {
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-select: none;
+  -ms-select: none;
+  -o-select: none;
+  &.isSelect .reactClass {
+    stroke-width: @stroke-select-width;
+    .svgSelectClass;
+  }
+  &.isSelect .nodeName {
+    font-weight: 500;
+  }
+  &.hoverShowConnectorArror:hover .connectorArror {
+    display: block;
+  }
+  .nodeImg {
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-select: none;
+    -ms-select: none;
+    -o-select: none;
+  }
+  .nodeName {
+    font-size: 12px;
+    fill: @svg-common-color;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .reactClass {
+    stroke-width: @stroke-width;
+    stroke: @svg-common-color;
+    fill: #fff;
+    cursor: default;
+  }
+  .connectorArror{display: none;
+    &.connector{display: block;}
+    .circleColor{fill:@svg-common-color}
+  }
+}
+.connectorsG {
+  .connectorLine {
+    fill:none;
+    &.defaultStrokeColor{stroke:@svg-common-color;}
+    &.defaultStrokeW{stroke-width:@stroke-width;}
+  }
+  &.active .connectorLine{.svgSelectClass;}
+}
+</style>
+<style>
+.el-collapse-item__header {
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-select: none;
+  -ms-select: none;
+  -o-select: none;
 }
 </style>
