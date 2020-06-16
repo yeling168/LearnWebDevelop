@@ -53,7 +53,8 @@
             <g class="connectorsG" :class="{active:ele.isSelect}" v-for="(ele,key) in topoData.connectors" v-if="ele.type == 'Line'" @mousedown.stop="selectConnectorLine(key)" :key="ele.id">
               <!--连线方式一共7种情况-->
               <!--自连-->
-              <path class="connectorLine"  :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW">
+              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id ===ele.targetNode.id" 
+              >
 
               </path>
             </g>
@@ -100,6 +101,20 @@ export default {
         name: '',
         icon: '',
         isShow: false
+      },
+      connectorWSelf: 15, //自连连线的宽度
+      connector: 15, //非自连连线宽度
+      containTop: 30, //包含关系的子node距离父node
+      containLeft: 22, //包含关系的左右距离
+      classchoose: false,
+      connectingLine: {
+        x1: 0,
+        y1: 0,
+        x2: 0,
+        y2: 0,
+        isConnecting: true,
+        sourceNode: '',
+        endNode: ''
       },
       svgAttr: { width: 0, height: 0, isHand: false, viewX: 0, viewY: 0, minW: 0, minH: 0, isCrosshair: false },
       marker: {
