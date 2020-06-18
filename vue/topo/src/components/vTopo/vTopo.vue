@@ -53,10 +53,28 @@
             <g class="connectorsG" :class="{active:ele.isSelect}" v-for="(ele,key) in topoData.connectors" v-if="ele.type == 'Line'" @mousedown.stop="selectConnectorLine(key)" :key="ele.id">
               <!--连线方式一共7种情况-->
               <!--自连-->
-              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id ===ele.targetNode.id" 
-              >
-
+              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id ===ele.targetNode.id" :d="'M'+(ele.sourceNode.x+ele.sourceNode.width)+','+(ele.sourceNode.y+ele.sourceNode.height/2)+
+              'h'+connectorWSelf+
+              'v'+(-(ele.sourceNode.height/2+connectorWSelf))+
+              'h'+(-(ele.sourceNode.width+2*connectorWSelf))+
+              'v'+(ele.sourceNode.height/2+connectorWSelf)+
+              'H'+(ele.targetNode.x)">
               </path>
+              <!--非自连:1.sourceNode的右侧箭头X <= targetNode的左侧箭头-->
+              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id !=ele.targetNode.id &&(ele.sourceNode.x+ele.sourceNode.width)<ele.targetNode.x" :d="'M'+(ele.sourceNode.x+ele.sourceNode.width)+','+(ele.sourceNode.y+ele.sourceNode.height/2)+
+              'h'+(ele.targetNode.x-ele.sourceNode.x-ele.sourceNode.x)/2+
+              'V'+(ele.targetNode.y+ele.targetNode.height/2)+
+              'H'+ele.targetNode.x">
+              </path>
+              <!--2.sourceNode的右侧箭头x>=targetNode的左侧箭头X
+              (2)且sourceNode的高度>targetNode的高度且高度未重叠-->
+              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id!=ele.targetNode.id&&(ele.sourceNode.x+ele.sourceNode.width)>=ele.targetNode.x&&
+              (ele.sourceNode.y+ele.sourceNode.height)<ele.targetNode.y" :d="'M'+(ele.sourceNode.x+ele.sourceNode.width)+','+(ele.sourceNode.y+ele.sourceNode.height/2)+
+              'h'+connectorWSelf+
+              'v'+(ele.sourceNode.height/2+(ele.targetNode.y-ele.sourceNode.y-ele.sourceNode.height)/2)+
+              'H'+(ele.targetNode.x-connectorWSelf)+
+              'V'+(ele.targetNode.y+ele.targetNode.height/2)+
+              'h'+connectorWSelf"></path>
             </g>
             <g></g>
           </g>
