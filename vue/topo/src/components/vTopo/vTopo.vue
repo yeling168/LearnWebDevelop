@@ -67,7 +67,7 @@
               'H'+ele.targetNode.x">
               </path>
               <!--2.sourceNode的右侧箭头x>=targetNode的左侧箭头X
-              (2)且sourceNode的高度>targetNode的高度且高度未重叠-->
+              (1)且sourceNode的高度>targetNode的高度且高度未重叠-->
               <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id!=ele.targetNode.id&&(ele.sourceNode.x+ele.sourceNode.width)>=ele.targetNode.x&&
               (ele.sourceNode.y+ele.sourceNode.height)<ele.targetNode.y" :d="'M'+(ele.sourceNode.x+ele.sourceNode.width)+','+(ele.sourceNode.y+ele.sourceNode.height/2)+
               'h'+connectorWSelf+
@@ -75,8 +75,48 @@
               'H'+(ele.targetNode.x-connectorWSelf)+
               'V'+(ele.targetNode.y+ele.targetNode.height/2)+
               'h'+connectorWSelf"></path>
+              <!--2.sourceNode的右侧箭头X>=targetNode的左侧箭头X
+              (2)且sourceNode的高度>target的高度且高度未重叠
+              大写字母，表示采用绝对定位。另一种是用小写字母，表示采用相对定位-->
+              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id!=ele.targetNode.id &&(ele.sourceNode.x+ele.sourceNode.width)>ele.targetNode.x&&(ele.targetNode.y+ele.targetNode.height)<ele.sourceNode.y" :d="'M'+(ele.sourceNode.x+ele.sourceNode.width)+','+(ele.sourceNode.y+ele.sourceNode.height/2)
+              +'h'+connectorWSelf+
+              'V'+(ele.sourceNode.y-(ele.sourceNode.y-ele.targetNode.y-ele.targetNode.height)/2)+
+              'H'+(ele.targetNode.x-connectorWSelf)+
+              'V'+(ele.targetNode.y+ele.targetNode.height/2)+
+              'H'+ele.targetNode.x">
+              </path>
+              <!--非自连
+              2.sourceNode的右侧箭头>=targetNode的左侧箭头X
+              (3)sourceNode的箭头y<=targetNode的箭头
+              sourceNode的y<targetNode的y<=(sourceNode的y+sourceNode的height)或者sourceNode的y介于其间
+              高度重叠-->
+              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id != ele.targetNode.id &&
+                (ele.sourceNode.x + ele.sourceNode.width) >= ele.targetNode.x &&
+                (ele.sourceNode.y + ele.sourceNode.height/2) <= (ele.targetNode.y + ele.targetNode.height / 2) &&
+                ((ele.targetNode.y <= (ele.sourceNode.y + ele.sourceNode.height) && ele.targetNode.y >= ele.sourceNode.y) ||
+                (ele.sourceNode.y <= (ele.targetNode.y + ele.targetNode.height) && ele.sourceNode.y >= ele.targetNode.y)
+                )" :d="'M'+(ele.sourceNode.x+ele.sourceNode.width)+','+(ele.sourceNode.y+ele.sourceNode.height/2)+'h'+connectorWSelf+
+                'V'+((ele.sourceNode.y-ele.targetNode.y)<=0?(ele.sourceNode.y-connectorWSelf):(ele.targetNode.y-connectorWSelf))+
+                'H'+(ele.targetNode.x-connectorWSelf)+
+                'V'+(ele.targetNode.y+ele.targetNode.height/2)+'H'+ele.targetNode.x"></path>
+              <!--非自连:
+                2.sourceNode的右侧箭头X>targetNode的左侧箭头x
+                (3)且sourceNode的高度<targetNode的高度且sourceNode起点>targetNode的重点且高度重叠-->
+              <path class="connectorLine" :class="{'defaultStrokeColor':!ele.color,'defaultStrokeW':!ele.strokeW}" :stroke="ele.color" :stroke-width="ele.strokeW" v-if="ele.sourceNode.id != ele.targetNode.id &&
+                (ele.sourceNode.x + ele.sourceNode.width) >= ele.targetNode.x &&
+                (ele.sourceNode.y + ele.sourceNode.height/2) > (ele.targetNode.y + ele.targetNode.height / 2) &&
+                ((ele.targetNode.y <= (ele.sourceNode.y + ele.sourceNode.height) && ele.targetNode.y >= ele.sourceNode.y) ||
+                (ele.sourceNode.y <= (ele.targetNode.y + ele.targetNode.height) && ele.sourceNode.y >= ele.targetNode.y)
+                )" :d="'M'+(ele.sourceNode.x+ele.sourceNode.width)+','+(ele.sourceNode.y+ele.sourceNode.height/2)+'h'+connectorWSelf+
+                'V'+ ((ele.sourceNode.y  + ele.sourceNode.height-ele.targetNode.y -ele.targetNode.height ) >= 0? (ele.sourceNode.y+ele.sourceNode.height + connectorWSelf) : (ele.targetNode.y+ele.targetNode.height +connectorWSelf)) +
+                'H'+(ele.targetNode.x - connectorWSelf) +
+                'V'+(ele.targetNode.y+ele.targetNode.height/2)+
+                'H'+ele.targetNode.x"></path>
             </g>
-            <g></g>
+            <!-- 动态绘制的连线 -->
+            <g>
+              <line :x1='connectingLine.x1' :y1="connectingLine.y1" :x2="connectingLine.x2" :y2="connectingLine.y2" v-show="connectingLine.isConnecting" stroke="#768699" stroke-width="2"></line>
+            </g>
           </g>
           <line :class="{isMarkerShow:marker.isMarkerShow}" id="xmarker" class="marker" x1="0" :y1="marker.xmarkerY" :x2="marker.xmarkerX" :y2="marker.xmarkerY"></line>
           <line :class="{isMarkerShow:marker.isMarkerShow}" id="ymarker" class="marker" :x1="marker.ymarkerX" y1="0" :x2="marker.ymarkerX" :y2="marker.ymarkerY"></line>
