@@ -120,7 +120,7 @@
           </g>
           <line :class="{isMarkerShow:marker.isMarkerShow}" id="xmarker" class="marker" x1="0" :y1="marker.xmarkerY" :x2="marker.xmarkerX" :y2="marker.xmarkerY"></line>
           <line :class="{isMarkerShow:marker.isMarkerShow}" id="ymarker" class="marker" :x1="marker.ymarkerX" y1="0" :x2="marker.ymarkerX" :y2="marker.ymarkerY"></line>
-          <rect></rect>
+          <rect :x="selectionBox.x" :y="selectionBox.y" :width="selectionBox.width" :height="selectionBox.height" stroke-dasharray="5,5" stroke-width="1" stroke="#222" fill="rgba(170,210,232,0.5)" v-show="selectionBox.isShow" />
         </svg>
       </div>
     </div>
@@ -160,6 +160,8 @@ export default {
         icon: '',
         isShow: false
       },
+      svgTopo: { isMoveover: false },
+      selectionBox: { x: 0, y: 0, width: 0, height: 0, isShow: false },
       connectorWSelf: 15, //自连连线的宽度
       connector: 15, //非自连连线宽度
       containTop: 30, //包含关系的子node距离父node
@@ -327,6 +329,31 @@ export default {
         ).toString(36)
       }
     },
+    // 动态绘制连线
+    drawConnectLine(key, event) {
+      console.log('key', key)
+      console.log('event', event)
+      if (!this.editable) return false //如果非编辑状态，不可连线
+      let CONNECTLINE = this.connectingLine //绘制连线对象
+      let CURNODE = this.topoData.nodes[key] // 当前点击node
+      console.log('CURNODE', CURNODE)
+      let nodeW = CURNODE.width // 当前node宽高
+      let nodeH = CURNODE.height
+      let sourceNodeX = CURNODE.x
+      let sourceNodeY = CURNODE.y
+      let mouseX = event.clientX
+      let mouseY = event.clientY
+      let topoEle = $(`#topoId${this.topoId}`)
+      let x1 = event.clientX - topoEle.find('.topoSvg').offset().left - 2 + $(document).scrollLeft() + this.svgAttr.viewX // 连线开始的位置:鼠标点击的实际位置
+      let y1 = event.clientY - topoEle.find('.topoSvg').offset().top + 4 + $(document).scrollTop() + this.svgAttr.viewY
+      CONNECTLINE.isConnecting = true // 显示绘制连线
+      CONNECTLINE.x1 = x1
+      CONNECTLINE.y1 = y1
+      CONNECTLINE.x2 = x1 //连线终点同样赋值为起点值
+      CONNECTLINE.y2 = y1
+      CONNECTLINE.sourceNode = CURNODE.id //将当前点击nodeid值赋给连线起点
+    },
+    selectConnectorLine() {},
     mousedownTopoSvg() {},
     initTopoWH() {
       this.$nextTick(() => {
