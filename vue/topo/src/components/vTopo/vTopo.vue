@@ -341,8 +341,8 @@ export default {
       let nodeH = CURNODE.height
       let sourceNodeX = CURNODE.x
       let sourceNodeY = CURNODE.y
-      let mouseX = event.clientX
-      let mouseY = event.clientY
+      let mouseX0 = event.clientX
+      let mouseY0 = event.clientY
       let topoEle = $(`#topoId${this.topoId}`)
       let x1 = event.clientX - topoEle.find('.topoSvg').offset().left - 2 + $(document).scrollLeft() + this.svgAttr.viewX // 连线开始的位置:鼠标点击的实际位置
       let y1 = event.clientY - topoEle.find('.topoSvg').offset().top + 4 + $(document).scrollTop() + this.svgAttr.viewY
@@ -352,6 +352,21 @@ export default {
       CONNECTLINE.x2 = x1 //连线终点同样赋值为起点值
       CONNECTLINE.y2 = y1
       CONNECTLINE.sourceNode = CURNODE.id //将当前点击nodeid值赋给连线起点
+      document.onmousemove = event => {
+        let disX = event.clientX - mouseX0
+        let disY = event.clientY - mouseY0
+        let x2 = x1 + disX
+        let y2 = y1 + disY
+        CURNODE.isRightConnectShow = true
+        CONNECTLINE.x2 = x2
+        CONNECTLINE.y2 = y2
+      }
+      document.onmouseup = () => {
+        document.onmousemove = null
+        document.onmouseup = null
+        let hasConnected = false // 标记是否已经有过连线
+        let CONNECTORS = this.topoData.connectors
+      }
     },
     selectConnectorLine() {},
     mousedownTopoSvg() {},
