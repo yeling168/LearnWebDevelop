@@ -366,8 +366,40 @@ export default {
         document.onmouseup = null
         let hasConnected = false // 标记是否已经有过连线
         let CONNECTORS = this.topoData.connectors
+        let sourceNodeW = nodeW
+        let sourceNodeH = nodeH
+        let targetNodeW = 0 // 目标节点相关信息
+        let targetNodeH = 0
+        let targetNodeX = 0
+        let targetNodeY = 0
+        let targetNodeType = ''
+        let connectType = ''
+        if (CONNECTLINE.endNode) {
+          // 正确连线:添加连线信息在connectors中
+          // 判断是否有已经有连线的情况
+          CONNECTORS.forEach((item, index) => {
+            if (item.sourceNode.id == CURNODE.id && item.targetNode.id == CONNECTLINE.endNode && item.type == 'Line') {
+              hasConnected = true
+            }
+          })
+          // 未连线情况下增加两者连线
+          if (!hasConnected) {
+            connectType = 'Line'
+            // 获取目标节点的宽高
+            this.topoData.nodes.forEach((item, index) => {
+              if (item.id === CONNECTLINE.endNode) {
+                targetNodeH = item.width
+                targetNodeW = item.height
+                targetNodeX = item.x
+                targetNodeY = item.y
+                targetNodeType = item.type
+              }
+            })
+          }
+        }
       }
     },
+    // https://blog.csdn.net/zxmin1302/article/details/82911983?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
     selectConnectorLine() {},
     mousedownTopoSvg() {},
     initTopoWH() {
