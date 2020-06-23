@@ -213,7 +213,6 @@ export default {
       let canConnector = true
       return canConnector
     },
-    canConnectorTo() {},
     mouseoverNode() {},
     saveTopoJson() {},
     dragSvgNode() {},
@@ -374,7 +373,9 @@ export default {
         let targetNodeY = 0
         let targetNodeType = ''
         let connectType = ''
+        console.log('connectingLine', this.connectingLine)
         if (CONNECTLINE.endNode) {
+          console.log('CONNECTLINE.endNode', 1)
           // 正确连线:添加连线信息在connectors中
           // 判断是否有已经有连线的情况
           CONNECTORS.forEach((item, index) => {
@@ -395,9 +396,78 @@ export default {
                 targetNodeType = item.type
               }
             })
+            let canLinkToTargetNode = this.canConnectorTo(CURNODE.type, targetNodeType, 'Link')
+            if (!canLinkToTargetNode) {
+              this.$message({
+                showClose: true,
+                message: CURNODE.type + '类型 不能连接' + targetNodeType + '类型',
+                type: 'error'
+              })
+              CURNODE.isRightConnectShow = false // 连线失败：起点右侧箭头且设置为消失
+              CONNECTORS.forEach((item, key) => {
+                this.topoData.nodes.forEach((node, key) => {
+                  if (node.id == item.sourceNode.id && item.type == 'Line') {
+                    node.isRightConnectShow = true
+                  }
+                })
+              })
+            } else {
+              // 类型:包含
+              let connectorId = this.GenNonDuplicateID(3)
+              let connector = {
+                id: connectorId,
+                type: connectType,
+                strokeW: 3, //仅用于Line类型，默认3
+                color: '#768699', //仅用于Line类型，默认颜色
+                targetNode: {
+                  x: targetNodeX,
+                  y: targetNodeY,
+                  id: CONNECTLINE.endNode,
+                  width: targetNodeW,
+                  height: targetNodeH
+                },
+                sourceNode: {
+                  x: sourceNodeX,
+                  y: sourceNodeY,
+                  id: CURNODE.id,
+                  width: sourceNodeW,
+                  height: sourceNodeH
+                }
+              }
+              CURNODE.isRightConnectShow = true
+              this.topoData.nodes.forEach((item, key) => {
+                if (item.id == CONNECTLINE.endNode) item.isLeftConnectShow = true
+              })
+              CONNECTORS.push(connector)
+            }
           }
+        } else {
+          CURNODE.isRightConnectShow = false //连线失败：起点右侧箭头暂且设置为消失
+          CONNECTORS.forEach((item, key) => {
+            this.topoData.nodes.forEach((node, key) => {
+              if (node.id == item.sourceNode.id && item.type == 'Line') node.isRightConnectShow = true
+            })
+          })
         }
+        //绘制连线恢复初始值
+        CONNECTLINE.x1 = 0
+        CONNECTLINE.y1 = 0
+        CONNECTLINE.x2 = 0
+        CONNECTLINE.y2 = 0
+        CONNECTLINE.isConnecting = false
+        CONNECTLINE.sourceNode = ''
+        CONNECTLINE.endNode = ''
       }
+    },
+    // 鼠标滑过node
+    mouseoverNode(key, event) {
+      this.marker.xmarkerY = this.topoData.nodes[key].y
+      this.marker.ymarkerY = this.topoData.nodes[key].x
+      this.getConnectLine(key)
+    },
+    //获取连线终点时的node的ID值
+    getConnectLine(key) {
+      this.connectingLine.endNode = this.topoData.nodes[key].id
     },
     // https://blog.csdn.net/zxmin1302/article/details/82911983?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
     selectConnectorLine() {},
