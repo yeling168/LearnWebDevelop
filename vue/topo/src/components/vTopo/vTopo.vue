@@ -148,6 +148,7 @@ export default {
   },
   data() {
     return {
+      selectNodeData: {},
       topoId: '',
       svgToolbar: [
         { name: '默认模式', className: 'toolbar-default', isActive: true },
@@ -469,8 +470,43 @@ export default {
     getConnectLine(key) {
       this.connectingLine.endNode = this.topoData.nodes[key].id
     },
+    //鼠标划出左侧箭头时，将connectingLine.endNode再次初始化
+    mouseoutLeftConnector(key) {
+      this.connectingLine.endNode = ''
+    },
+    //点击选中连线
+    selectConnectorLine(key) {
+      if (!this.editable) return false //如果非编辑状态 不可点击
+      let connectors = this.topoData.connectors
+      let nodes = this.topoData.nodes
+      let selectLine = this.topoData.connectors[key]
+      let lastIndex = connectors.length - 1
+      connectors.splice(key, 1)
+      connectors.push(selectLine)
+      // 取消所有选中样式
+      this.cancelAllNodesSelect()
+      this.cancelAllLinksSelect()
+      selectLine.isSelect = true
+      this.$set(connectors, lastIndex, selectLine)
+      this.selectNodeData = selectLine // 将点击的连线信息赋值给属性面板
+    },
+    // 取消所有节点选中
+    cancelAllNodesSelect() {
+      this.topoData.nodes.forEach((ele, key) => {
+        ele.isSelect = false
+        this.$set(this.topoData.nodes, key, ele)
+      })
+      this.selectNodeData = {}
+    },
+    // 取消所有连线选中
+    cancelAllLinksSelect() {
+      this.topoData.connectors.forEach((ele, key) => {
+        ele.isSelect = false
+        this.$set(this.topoData.connectors, key, ele)
+      })
+      this.selectNodeData = {}
+    },
     // https://blog.csdn.net/zxmin1302/article/details/82911983?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
-    selectConnectorLine() {},
     mousedownTopoSvg() {},
     initTopoWH() {
       this.$nextTick(() => {
