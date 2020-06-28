@@ -47,6 +47,7 @@ import Key from "./components/key.vue";
 import parentDom from "./components/attrs/parentDom";
 import BusA from "./components/busA/index.vue";
 import busHome from './components/busB/Home.vue'
+import table from './components/table.vue'
 
 //2.配置路由   注意：名字
 const routes = [{
@@ -93,6 +94,10 @@ const routes = [{
   {
     path: "/busHome",
     component: busHome
+  },
+  {
+    path: "/table",
+    component: table
   },
   {
     path: "*",
