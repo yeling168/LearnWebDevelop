@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 module.exports = {
   devtool: "eval-source-map",
   entry: __dirname + "/app/main.js",
@@ -11,8 +12,7 @@ module.exports = {
     inline: true, //实时刷新
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /(\.jsx|\.js)$/,
         use: {
           loader: "babel-loader",
@@ -21,8 +21,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          {
+        use: [{
             loader: "style-loader",
           },
           {
@@ -31,9 +30,15 @@ module.exports = {
               modules: true, // 指定启用css modules
               localIdentName: "[name]__[local]--[hash:base64:5]", // 指定css的类名格式
             },
+          },
+          {
+            loader: "postcss-loader"
           }
         ],
       },
     ],
   },
+  plugins: [
+    new webpack.BannerPlugin('版权所有，翻版必究')
+  ]
 };
