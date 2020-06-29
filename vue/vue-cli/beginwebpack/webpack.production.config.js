@@ -7,7 +7,7 @@ module.exports = {
   entry: __dirname + "/app/main.js", //已多次提及的唯一入口文件
   output: {
     path: __dirname + "/build",
-    filename: "bundle.js",
+    filename: "bundle.js"
   },
   devtool: "none",
   devServer: {
@@ -17,8 +17,7 @@ module.exports = {
     hot: true,
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /(\.jsx|\.js)$/,
         use: {
           loader: "babel-loader",
@@ -27,8 +26,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          {
+        use: [{
             loader: "style-loader",
           },
           {
