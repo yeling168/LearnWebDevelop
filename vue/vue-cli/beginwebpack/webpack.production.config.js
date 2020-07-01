@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: __dirname + "/app/main.js", //已多次提及的唯一入口文件
   output: {
@@ -50,7 +51,8 @@ module.exports = {
       template: __dirname + "/app/index.tmpl.html",
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new ExtractTextPlugin("style.css")
+    new ExtractTextPlugin("style.css"),
+    new CleanWebpackPlugin(),
   ],
   optimization: {
     minimizer: [
