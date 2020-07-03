@@ -1,0 +1,126 @@
+<template>
+  <div v-loading="loading">
+    <p style="color: red;font-size: 12px;">渲染成 Excel 表格</p>
+
+    <p>
+      <el-button size="mini" @click="$refs.elxEditable.insert()">新增</el-button>
+      <el-button size="mini" @click="getInsertEvent">获取新增</el-button>
+      <el-button size="mini" @click="getUpdateEvent">获取改动</el-button>
+      <el-button size="mini" @click="getResultEvent">获取有值数据</el-button>
+    </p>
+
+    <elx-editable
+      ref="elxEditable"
+      class="excel-table1"
+      border
+      size="customSize"
+      :data.sync="list"
+      :edit-config="{trigger: 'dblclick', showIcon: false}"
+      style="width: 100%" >
+      <elx-editable-column type="index" align="center" width="50"></elx-editable-column>
+      <template v-for="(column, index) in columnConfigs">
+        <elx-editable-column :key="index" v-bind="column" header-align="center" min-width="60"></elx-editable-column>
+      </template>
+    </elx-editable>
+  </div>
+</template>
+
+<script>
+import { MessageBox } from 'element-ui'
+
+export default {
+  data () {
+    let columns = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W']
+    return {
+      loading: false,
+      list: [],
+      columnConfigs: columns.map(name => {
+        return {
+          prop: name.toLowerCase(),
+          label: name,
+          editRender: { name: 'ElInput' }
+        }
+      })
+    }
+  },
+  created () {
+    this.loading = true
+    setTimeout(() => {
+      let list = [
+        {
+          a: 'tt',
+          c: 'xx',
+          d: 'tt'
+        }, {
+          b: 'tt',
+          g: 'xx',
+          f: 'tt'
+        }, {
+          h: 'tt',
+          g: 'xx',
+          j: 'tt'
+        }
+      ]
+      this.list = list
+      this.loading = false
+    }, 300)
+  },
+  methods: {
+    getInsertEvent () {
+      let rest = this.$refs.elxEditable.getInsertRecords()
+      MessageBox({ message: JSON.stringify(rest), title: `获取新增数据(${rest.length}条)` }).catch(e => e)
+    },
+    getUpdateEvent () {
+      let rest = this.$refs.elxEditable.getUpdateRecords()
+      MessageBox({ message: JSON.stringify(rest), title: `获取已修改数据(${rest.length}条)` }).catch(e => e)
+    },
+    getResultEvent () {
+      let rest = this.$refs.elxEditable.getRecords().filter(item => Object.keys(item).some(key => item[key]))
+      MessageBox({ message: JSON.stringify(rest), title: `获取有值数据(${rest.length}条)` }).catch(e => e)
+    }
+  }
+}
+</script>
+
+<style>
+.excel-table1.el-table--customSize .elx-editable-column {
+  height: 30px;
+}
+.excel-table1 .el-table__body .elx-editable-row>td {
+  cursor: cell;
+}
+.excel-table1 .el-table__header th,
+.excel-table1 .el-table__body .elx-editable-row>td:first-child,
+.excel-table1 .el-table__body .elx-editable-row:hover>td:first-child {
+  background-color: #f5f5f5;
+}
+.excel-table1 .el-table__body .elx-editable-row>td:first-child {
+  cursor: default;
+}
+.excel-table1 .el-table__body .elx-editable-row:hover>td {
+  background-color: inherit;
+}
+.excel-table1 .el-table__body .elx-editable-row>td.elx_checked {
+  border: 1px solid #217346;
+}
+.excel-table1 .el-table__body .elx-editable-row>td .cell {
+  width: 100% !important;
+  padding: 0 3px;
+}
+.excel-table1 .el-table__body .elx-editable-row>td.elx_checked .cell {
+  padding: 0 2px;
+}
+.excel-table1 .el-table__body .elx-editable-row>td.elx_active .cell {
+  padding: 0;
+}
+.excel-table1 .el-table__body .elx-editable-row>td .cell,
+.excel-table1 .el-table__body .elx-editable-row>td .cell .el-input,
+.excel-table1 .el-table__body .elx-editable-row>td .cell .el-input__inner {
+  height: 100%;
+}
+.excel-table1 .el-table__body .elx-editable-row>td .cell .el-input__inner {
+  border-radius: 0;
+  padding: 0 2px;
+  border-color: #217346;
+}
+</style>
