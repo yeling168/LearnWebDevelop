@@ -59,6 +59,10 @@ module.exports = {
 				loader: 'vue-html'
 			},
 			{
+				test: /\.less$/,
+				loader: 'less-loader'
+			},
+			{
 				test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
 				loader: 'url',
 				query: {

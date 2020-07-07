@@ -2,7 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import AlleyUI from './components'
 import router from './router'
+Vue.use(AlleyUI)
 
 Vue.config.productionTip = false
 

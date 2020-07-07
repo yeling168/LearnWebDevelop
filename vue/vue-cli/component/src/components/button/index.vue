@@ -16,14 +16,14 @@
 
 <script>
 export default {
-  name: "alley-Button",
+  name: 'alley-Button',
   props: {
     type: {
       type: String,
-      default: "Default",
-    },
-  },
-};
+      default: 'Default'
+    }
+  }
+}
 </script>
 
 <style>
