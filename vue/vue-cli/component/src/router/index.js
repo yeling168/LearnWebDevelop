@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/views/HelloWorld'
 import customButton from '@/views/customButton'
 import simpleTable from '@/views/simpleTable'
+import customconfirm from '@/views/customconfirm'
 Vue.use(Router)
 
 export default new Router({
@@ -18,5 +19,9 @@ export default new Router({
     path: '/simpleTable',
     name: 'simpleTable',
     component: simpleTable
+  },{
+    path: '/customconfirm',
+    name: 'customconfirm',
+    component: customconfirm
   }]
 })

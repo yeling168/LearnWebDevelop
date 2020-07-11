@@ -7,12 +7,18 @@ import router from './router'
 import $ from 'jquery'
 Vue.use(AlleyUI)
 
+// 全局confirm弹框
+import theConfirm  from './components/confirm/confirm'
+Vue.prototype.$confirm = theConfirm ;
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
