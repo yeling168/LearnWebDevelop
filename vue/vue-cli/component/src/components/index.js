@@ -6,7 +6,10 @@ import vTable from './vTable/index'
 // https://www.jb51.net/article/173205.htm
 //vue封装所有组件
 // https://www.jb51.net/list/list_269_1.htm
-const components = [Button, vTable]
+// 日历
+//https://www.jb51.net/article/164011.htm
+import Month from './month/index'
+const components = [Button, vTable, Month]
 // vue.use使用时，必须要有install方法。参数就是vue。
 const install = (Vue) => {
   for (var key in components) {
@@ -17,5 +20,6 @@ const install = (Vue) => {
 export default {
   install,
   Button,
-  vTable
+  vTable,
+  Month
 }

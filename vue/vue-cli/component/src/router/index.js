@@ -4,6 +4,7 @@ import HelloWorld from '@/views/HelloWorld'
 import customButton from '@/views/customButton'
 import simpleTable from '@/views/simpleTable'
 import customconfirm from '@/views/customconfirm'
+import customCalender from '@/views/customCalender'
 Vue.use(Router)
 
 export default new Router({
@@ -19,9 +20,13 @@ export default new Router({
     path: '/simpleTable',
     name: 'simpleTable',
     component: simpleTable
-  },{
+  }, {
     path: '/customconfirm',
     name: 'customconfirm',
     component: customconfirm
+  }, {
+    path: '/customCalender',
+    name: 'customCalender',
+    component: customCalender
   }]
 })
