@@ -11,6 +11,9 @@ Vue.use(AlleyUI)
 import theConfirm  from './components/confirm/confirm'
 Vue.prototype.$confirm = theConfirm ;
 
+// css
+import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/less/font-awesome.less";
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
