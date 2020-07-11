@@ -18,6 +18,8 @@ import simpledrag4 from '@/views/dragable/simpledrag4'
 import simpledrag5 from '@/views/dragable/simpledrag5'
 // http://www.qiutianaimeili.com/html/page/2019/09/uudmg0p3mbc.html
 import simpledrag6 from '@/views/dragable/simpledrag6'
+// http://www.qiutianaimeili.com/html/page/2019/09/uudmg0p3mbc.html
+import simpledrag7 from '@/views/dragable/simpledrag7'
 Vue.use(Router)
 
 export default new Router({
@@ -68,6 +70,11 @@ export default new Router({
       path: '/simpledrag6',
       name: 'simpledrag6',
       component: simpledrag6
+    },
+    {
+      path: '/simpledrag7',
+      name: 'simpledrag7',
+      component: simpledrag7
     }
   ]
 })
