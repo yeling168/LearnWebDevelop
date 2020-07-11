@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import AlleyUI from './components'
 import router from './router'
+import $ from 'jquery'
 Vue.use(AlleyUI)
 
 Vue.config.productionTip = false

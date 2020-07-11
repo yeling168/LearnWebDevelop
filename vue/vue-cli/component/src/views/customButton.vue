@@ -6,10 +6,9 @@
     <alley-Button>按钮</alley-Button>
   </div>
 </template>
- <script>
+<script>
 export default {
   name: 'app'
 }
 </script>
- ​
- <style></style>
+<style></style>

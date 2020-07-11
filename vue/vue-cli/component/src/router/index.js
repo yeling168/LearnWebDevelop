@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import customButton from '@/components/customButton'
+import HelloWorld from '@/views/HelloWorld'
+import customButton from '@/views/customButton'
+import simpleTable from '@/views/simpleTable'
 Vue.use(Router)
 
 export default new Router({
@@ -13,5 +14,9 @@ export default new Router({
     path: '/customButton',
     name: 'customButton',
     component: customButton
+  }, {
+    path: '/simpleTable',
+    name: 'simpleTable',
+    component: simpleTable
   }]
 })
