@@ -14,6 +14,15 @@ Vue.prototype.$confirm = theConfirm ;
 // css
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/less/font-awesome.less";
+
+// 引入elementUI
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+
+// 引入代码展示器
+import rawDisplayer from './views/rawdisplayer/rawdisplayer.vue';
+Vue.component("rawDisplayer", rawDisplayer);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
