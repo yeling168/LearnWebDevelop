@@ -27,6 +27,7 @@ import simpledrag9 from '@/views/dragable/simpledrag9'
 // https://sortablejs.github.io/Vue.Draggable/#/simple
 import simple from '@/views/flexdrag/simple'
 import twoLists from '@/views/flexdrag/two-lists'
+import clone from '@/views/flexdrag/clone'
 Vue.use(Router)
 
 export default new Router({
@@ -101,6 +102,11 @@ export default new Router({
       path: '/twoLists',
       name: 'twoLists',
       component: twoLists
+    },
+    {
+      path: '/clone',
+      name: 'clone',
+      component: clone
     }
   ]
 })
