@@ -28,6 +28,10 @@ import simpledrag9 from '@/views/dragable/simpledrag9'
 import simple from '@/views/flexdrag/simple'
 import twoLists from '@/views/flexdrag/two-lists'
 import clone from '@/views/flexdrag/clone'
+import table from '@/views/flexdrag/table'
+import tableColumn from '@/views/flexdrag/table-column'
+import footerslot from '@/views/flexdrag/footerslot'
+import headerslot from '@/views/flexdrag/headerslot'
 Vue.use(Router)
 
 export default new Router({
@@ -107,6 +111,25 @@ export default new Router({
       path: '/clone',
       name: 'clone',
       component: clone
+    },
+    {
+      path: '/table',
+      name: 'table',
+      component: table
+    },
+    {
+      path: '/tableColumn',
+      name: 'tableColumn',
+      component: tableColumn
+    }, {
+      path: '/footerslot',
+      name: 'footerslot',
+      component: footerslot
+    },
+    {
+      path: '/headerslot',
+      name: 'headerslot',
+      component: headerslot
     }
   ]
 })
