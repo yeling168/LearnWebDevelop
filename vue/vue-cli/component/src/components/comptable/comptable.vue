@@ -30,3 +30,62 @@
     </el-table>
   </div>
 </template>
+<script>
+// 自定义内容组件
+var exSlot = {
+  functional: true,
+  props: {
+    row: Object,
+    render: Function,
+    index: Number,
+    column: {
+      type: Object,
+      default: null
+    }
+  },
+  render: (h, data) => {
+    const params = {
+      row: data.props.row,
+      index: data.props.index
+    }
+    if (data.props.column) {
+      params.column = data.props.column
+    }
+    return data.props.render(h, params)
+  }
+}
+export default {
+  name:'comp-table',
+  components:{exSlot},
+  props:{
+    // 表格数据
+    tableData:{
+      type:Array,
+      default:function() {
+        return []
+      }
+    },
+    // 表头数据
+    tableHeader:{
+      type:Array,
+      default:function() {
+        return []
+      }
+    },
+    methods:{
+      // 排序事件
+      handleSort(sort) {
+        this.$emit('sort-events',sort)
+      },
+      // 筛选事件
+      filterHandler(filters) {
+        this.$emit('filter-events',filters)
+      },
+      // 某一行被点击
+      handleRowClick(row) {
+        this.$emit('click-events',row)
+      }
+    }
+  }
+}
+</script>

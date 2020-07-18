@@ -32,6 +32,7 @@ import table from '@/views/flexdrag/table'
 import tableColumn from '@/views/flexdrag/table-column'
 import footerslot from '@/views/flexdrag/footerslot'
 import headerslot from '@/views/flexdrag/headerslot'
+import comptable from '@/views/comptable'
 Vue.use(Router)
 
 export default new Router({
@@ -130,6 +131,11 @@ export default new Router({
       path: '/headerslot',
       name: 'headerslot',
       component: headerslot
-    }
+    }, 
+    // {
+    //   path: '/comptable',
+    //   name: 'comptable',
+    //   component: comptable
+    // }
   ]
 })
