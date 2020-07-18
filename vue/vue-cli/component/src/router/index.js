@@ -32,7 +32,9 @@ import table from '@/views/flexdrag/table'
 import tableColumn from '@/views/flexdrag/table-column'
 import footerslot from '@/views/flexdrag/footerslot'
 import headerslot from '@/views/flexdrag/headerslot'
+// https://www.cnblogs.com/puerile/p/11898086.html
 import comptable from '@/views/comptable'
+import treeselecttable from '@/views/treeselecttable'
 Vue.use(Router)
 
 export default new Router({
@@ -131,11 +133,16 @@ export default new Router({
       path: '/headerslot',
       name: 'headerslot',
       component: headerslot
-    }, 
+    },
     // {
     //   path: '/comptable',
     //   name: 'comptable',
     //   component: comptable
     // }
+    {
+      path: '/treeselecttable',
+      name: 'treeselecttable',
+      component: treeselecttable
+    }
   ]
 })

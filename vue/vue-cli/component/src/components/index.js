@@ -9,7 +9,8 @@ import vTable from './vTable/index'
 // 日历
 //https://www.jb51.net/article/164011.htm
 import Month from './month/index'
-const components = [Button, vTable, Month]
+import configTableCol from './tableColumn/index'
+const components = [Button, vTable, Month, configTableCol]
 // vue.use使用时，必须要有install方法。参数就是vue。
 const install = (Vue) => {
   for (var key in components) {
@@ -21,5 +22,6 @@ export default {
   install,
   Button,
   vTable,
-  Month
+  Month,
+  configTableCol
 }
