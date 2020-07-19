@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-import { getMinNodeIdList, getDefaultChecked ,getLinearList} from '@/util/objectDisposed'
+import { getMinNodeIdList, getDefaultChecked, getLinearList } from '@/util/objectDisposed'
 export default {
   data() {
     return {
@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     copyContentSetLinearTable() {
-      return getLinearList(this.copyContentTableDisplay, this.defaultCopyTableProps.children);
+      return getLinearList(this.copyContentTableDisplay, this.defaultCopyTableProps.children)
     },
     // 复制内容表格最小子节点数组,判断勾选
     copyContentSetMinList() {
@@ -87,20 +87,21 @@ export default {
     this.getCopyContentDetail()
   },
   methods: {
+    handleCheckedChange(type, scope, flag) {},
     handleCheckedAll(flag, props, checkedListName) {
-      if (!this.copyContentSetMinList || this.copyContentSetMinList.length === 0) return;
+      if (!this.copyContentSetMinList || this.copyContentSetMinList.length === 0) return
       this.copyContentSetMinList.forEach(id => {
-        const node = this.copyContentSetLinearTable.getIndexById(id, props.id, true);
-        const index = this[checkedListName].indexOf(id);
-        node[props.selected] = flag;
+        const node = this.copyContentSetLinearTable.getIndexById(id, props.id, true)
+        const index = this[checkedListName].indexOf(id)
+        node[props.selected] = flag
         if (flag) {
-          index === -1 ? this[checkedListName].push(id) : "";
-          setSelectAll(flag, node, props, 0, false, this.copyContentSetLinearTable);
+          index === -1 ? this[checkedListName].push(id) : ''
+          setSelectAll(flag, node, props, 0, false, this.copyContentSetLinearTable)
         } else {
-          index > -1 ? this[checkedListName].splice(index, 1) : "";
-          setSelectAll(flag, node, props, 0, false, this.copyContentSetLinearTable);
+          index > -1 ? this[checkedListName].splice(index, 1) : ''
+          setSelectAll(flag, node, props, 0, false, this.copyContentSetLinearTable)
         }
-      });
+      })
     },
     getCopyContentDetail() {
       let res = [
